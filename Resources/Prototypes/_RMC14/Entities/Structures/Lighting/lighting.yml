@@ -572,7 +572,7 @@
     enabled: true
 
 - type: entity
-  parent: CMLightFixtureSmall
+  parent: RMCLightFixtureSmall
   id: CMLightFixtureSmallRed
   suffix: Red
   components:
