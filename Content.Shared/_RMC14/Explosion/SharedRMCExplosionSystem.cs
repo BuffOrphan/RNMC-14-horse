@@ -18,6 +18,7 @@ using Content.Shared.Stunnable;
 using Content.Shared.Throwing;
 using Content.Shared.Whitelist;
 using Robust.Shared.Map;
+using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 
@@ -38,6 +39,7 @@ public abstract class SharedRMCExplosionSystem : EntitySystem
     [Dependency] private readonly RMCDazedSystem _dazed = default!;
     [Dependency] private readonly StatusEffectsSystem _statusEffects = default!;
     [Dependency] private readonly SharedDeafnessSystem _deafness = default!;
+    [Dependency] private readonly INetManager _net = default!;
 
     private static readonly ProtoId<DamageTypePrototype> StructuralDamage = "Structural";
     private static readonly ProtoId<StatusEffectPrototype> FlashedKey = "Flashed";
@@ -127,7 +129,7 @@ public abstract class SharedRMCExplosionSystem : EntitySystem
             _statusEffects.TryAddStatusEffect<FlashedComponent>(ent, FlashedKey, ent.Comp.BlindTime * bombArmorMult, true);
             _deafness.TryDeafen(ent, TimeSpan.FromSeconds(severity * 0.5), true);
 
-            var knockBackDistance = (float) Math.Clamp(severity / 5 / dir.Length(), 0.5, severity / 10);
+            var knockBackDistance = (float) Math.Clamp(severity / 5 / dir.Length(), 0.5, Math.Max(severity / 10, 0.5));
 
             if (!HasComp<XenoNestedComponent>(ent))
                 _sizeStun.KnockBack(ent, args.Epicenter, knockBackDistance, knockBackDistance, knockBackSpeed: (float) severity);
@@ -209,8 +211,11 @@ public abstract class SharedRMCExplosionSystem : EntitySystem
         if (total < ent.Comp.Threshold)
             return;
 
+        if (_net.IsClient)
+            return;
+
         if (!TerminatingOrDeleted(ent))
-            _body.GibBody(ent);
+            _body.GibBody(ent, true);
     }
 
     public void DoEffect(Entity<CMExplosionEffectComponent> ent)

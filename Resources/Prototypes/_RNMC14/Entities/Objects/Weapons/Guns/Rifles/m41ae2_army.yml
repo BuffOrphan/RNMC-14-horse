@@ -1,7 +1,7 @@
 
 - type: entity
   name: M41AE2 heavy pulse rifle
-  parent: WeaponRifleM54CE2
+  parent: RMCWeaponRifleM54CE2
   id: RNMCWeaponRifleM41AE2
   description: The US Army's adoption of the M41AE2 adds a longer barrel and improved retention system, operating in a more traditional machine gun role.
   components:

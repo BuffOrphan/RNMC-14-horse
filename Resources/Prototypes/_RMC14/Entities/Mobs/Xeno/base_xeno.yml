@@ -47,10 +47,18 @@
   abstract: true
   save: false
   components: # TODO RMC14 camera recoil from large explosions? check 13
+  - type: BlockEntityStorage
+    whitelist:
+      components:
+      - EntityStorage
   - type: Damageable
     damageContainer: Xeno
   - type: Destructible
     thresholds: []
+  - type: RMCMedicalExamine
+    simple: true
+    deadText: rmc-medical-examine-dead-xeno
+  - type: RMCBlockMedicalExamine
   - type: MobState
     allowedStates:
     - Alive
@@ -79,15 +87,15 @@
       collection: XenoDeath
       params:
         volume: -4
-  - type: HealthExaminable
-    examineShowEmpty: false
-    examinableTypes:
-    - Blunt
-    - Slash
-    - Piercing
-    - Heat
-    - Shock
-  - type: CMDefibrillatorBlocked
+  - type: RMCHealthExaminable
+  - type: AcidBloodSplash
+    closeSplashRadius: 0.5
+    standardSplashRadius: 1.5
+    gibSplashRadius: 2.5
+    damage:
+      types:
+        Heat: 25
+  - type: RMCDefibrillatorBlocked
     popup: defibrillator-xeno
     showOnExamine: false
   - type: MovementSpeedModifier
@@ -123,8 +131,13 @@
       Flammable: [ Touch ]
       Extinguish: [ Touch ]
   - type: FireVisuals
-    sprite: Mobs/Effects/onfire.rsi
-    normalState: Generic_mob_burning
+    sprite: _RMC14/Mobs/Effects/on_fire_xeno.rsi
+    normalState: simple_onfire
+    lightEnergyPerStack: 0.2
+    lightRadiusPerStack: 0.1
+    maxLightRadius: 2
+    maxLightEnergy: 8
+  - type: RMCFireColor
   - type: Sprite
     noRot: true
     drawdepth: Mobs
@@ -136,6 +149,9 @@
     - map: [ "enum.XenoInhandVisualLayers.Left" ]
       visible: false
     - map: [ "enum.XenoInhandVisualLayers.Right" ]
+      visible: false
+    - map: [ "enum.RMCShieldVisuals.Base" ]
+      sprite: _RMC14/Effects/xeno_shields.rsi
       visible: false
     - map: [ "focused" ]
       sprite: _RMC14/Interface/xeno_hud.rsi
@@ -203,6 +219,12 @@
         layer:
         - BulletImpassable
   - type: CMSurgeryTarget
+  - type: Gibbable
+  - type: RMCGibOnDeath
+  - type: RMCSpawnEntitiesOnGib
+    entities:
+    - RMCDecalSpawnerGibsDrone # TODO one for every caste
+    - RMCGibEffectXenoSmall # TODO larger gib effect for larger xenos
   - type: Body
     prototype: Xenonid
   - type: Xeno
@@ -335,11 +357,11 @@
     - enum.PaperUiKey.Key
     - enum.RMCCameraUiKey.Key
   - type: HiveTracker
-    mode: Queen
     trackerModes:
     - Queen
     - HiveLeader
     - Tunnel
+    - HiveCore
   - type: RequireProjectileTarget
     active: false
   - type: TacticalMapTracked
@@ -352,10 +374,10 @@
   - type: MotionDetectorTracked
   - type: TacticalMapIcon
     icon:
-      sprite: _RMC14/Interface/map_blips.rsi
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
       state: xeno
     background:
-      sprite: _RMC14/Interface/map_blips.rsi
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
       state: background_xeno
   - type: XenoMapTracked
   - type: Evasion
@@ -398,6 +420,8 @@
       components:
       - Marine
   - type: EmoteCooldown
+  - type: RMCMesonsNonviewable
+    xenoVisible: true
 
 - type: entity
   abstract: true
@@ -406,8 +430,7 @@
   - type: Prying
     pryPowered: true
     speedModifier: 2.7
-    useSound:
-      path: /Audio/Items/crowbar.ogg
+    useSound: null
 
 - type: entity
   abstract: true
@@ -465,6 +488,14 @@
 #  - type: HTN # TODO RMC14 needs to not target nested marines
 #    rootTask:
 #      task: CMXenoCompound
+
+- type: entity
+  abstract: true
+  id: RMCXenoVentCrawler
+  components:
+  - type: VentCrawler
+    ventCrawlIcon: unknown
+  - type: RMCTrayCrawler
 
 - type: entity
   id: CMXenoDeveloped
