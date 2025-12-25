@@ -21,17 +21,6 @@
       amount: 2
 
 - type: entity
-  parent: RMCSecureCaseStrapped
-  id: RMCSecureCaseStrappedMRE
-  name: MRE supply crate (x60)
-  description: A supply crate containing sixty units of MREs.
-  components:
-  - type: CrateOpenable
-    spawn:
-    - id: RMCBoxMRE
-      amount: 5
-
-- type: entity
   parent: RMCSecureCase
   id: RMCSecureCaseMaterials
   name: materials crate
