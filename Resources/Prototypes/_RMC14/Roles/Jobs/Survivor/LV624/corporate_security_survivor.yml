@@ -3,23 +3,13 @@
   id: CMSurvivorLV624SecurityGuard
   name: rmc-job-name-survivor-lv624-security-guard
   description: cm-job-description-survivor
-  playTimeTracker: CMJobSurvivorLV624SecurityGuard
   startingGear: RMCGearSurvivorLV624SecurityGuard
   spawnMenuRoleName: Security Guard (LV624 Survivor)
   special:
   - !type:AddComponentSpecial
     components:
     - type: Skills
-      skills:
-        RMCSkillEngineer: 1
-        RMCSkillMeleeWeapons: 1
-        RMCSkillConstruction: 1
-        RMCSkillMedical: 1
-        RMCSkillEndurance: 2
-        RMCSkillCqc: 2
-        RMCSkillFirearms: 1
-        RMCSkillPolice: 0 # RMC14
-        RMCSkillFireman: 2
+      preset: SurvivorMarshal
     - type: RMCSurvivor
     - type: MotionDetectorTracked
     - type: NpcFactionMember
@@ -30,6 +20,7 @@
     - type: RMCAllowSuitStorage
     - type: EquipSurvivorPreset
       preset: RMCGearSurvivorPresetLV624SecurityGuard
+  useLoadoutOfJob: CMSurvivorSecurity # for inheritance
 
 - type: startingGear
   parent: RMCGearSurvivorSecurity
@@ -39,6 +30,7 @@
     jumpsuit: RMCJumsuitWhiteService
     outerClothing: RMCArmorVestWeYa
     ears: RMCHeadsetDistressWeYa
+    id: CMIDCardLiaisonColony
 
 - type: entity
   parent: CMSpawnPointJobBase
@@ -53,10 +45,6 @@
       state: green
     - sprite: _RMC14/Markers/cm_jobs.rsi
       state: survivor
-
-- type: playTimeTracker
-  id: CMJobSurvivorLV624SecurityGuard
-  isHumanoid: true
 
 - type: entity
   parent: RMCSurvivorPresetSecurity
