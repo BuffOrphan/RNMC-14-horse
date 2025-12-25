@@ -184,6 +184,14 @@
         crate: RMCCrateFlashlights
       - cost: 1000
         crate: RMCCrateHighCapacityPowerCell
+      # Start of RNMC-14 modifications
+      - cost: 4000
+        crate: RNMCCrateSmallVehicleParts
+      - cost: 3000
+        crate: RNMCCrateVehicleControls
+      - cost: 1000
+        crate: RNMCCrateSpareTires
+      # End of RNMC-14 modifications
     - name: Explosives
       entries:
       - cost: 3000
@@ -360,6 +368,10 @@
       - cost: 4000
         crate: RMCCratePyroTankTypeX
 
+      # Start of RNMC-14 modifications
+      - cost: 3500
+        crate: RNMCCrateF99BehemothAmmo
+      # End of RNMC-14 modifications
 
 
 #        Black Market Orders

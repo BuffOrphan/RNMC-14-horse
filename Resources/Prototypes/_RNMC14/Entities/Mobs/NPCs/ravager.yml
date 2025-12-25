@@ -17,3 +17,35 @@
         30
       AggroVisionRadius: !type:Single
         30
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      900: Dead
+      700: Critical
+  - type: Tag
+    tags:
+    - FootstepSound
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: XenoFootstepLarge
+      params:
+        volume: -6
+  - type: MeleeWeapon
+    attackRate: 1.05
+    damage:
+      groups:
+        Brute: 55
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 900
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          RNMCXenoGibLarge:
+            min: 1
+            max: 1
+            offset: 0

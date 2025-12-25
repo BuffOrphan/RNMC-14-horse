@@ -17,7 +17,7 @@
   joinNotifyCrew: false
   supervisors: cm-job-supervisors-co
   accessGroups:
-  - CMAccessPlatco
+  - PlatcoAccess
   roleWeight: 0.25
   special:
   - !type:AddComponentSpecial
@@ -56,11 +56,26 @@
       icon:
         sprite: _RMC14/Interface/map_blips.rsi
         state: platco
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        200: Critical
+        350: Dead
+    - type: Perishable
+      rotAfter: 0
 
 - type: startingGear
   id: CMGearPlatco
   equipment:
-    id: CMIDCardStaffOfficer
+    id: CMIDCardPlatoonCommander
+
+- type: entity
+  parent: CMIDCardSilver
+  id: CMIDCardPlatoonCommander
+  name: platoon commander ID card
+  components:
+  - type: PresetIdCard
+    job: CMPlatoonCommanderPVE
 
 - type: playTimeTracker
   id: CMJobPlatoonCommanderPVE

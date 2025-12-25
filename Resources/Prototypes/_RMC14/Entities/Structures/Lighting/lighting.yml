@@ -116,7 +116,7 @@
     - state: bptube1
       map: ["enum.PoweredLightLayers.Base"]
   - type: PointLight
-    color: "#D2E3EC"
+    color: "#dae2ff"
   - type: PoweredLightVisuals
     spriteStateMap:
       Empty: bptube-empty
@@ -360,8 +360,8 @@
       Broken: bptube-broken
       Burned: bptube-burned
   - type: PointLight
-    color: "#e7c0a4"
-    energy: 0.35
+    color: "#dae2ff"
+    energy: 0.7
 
 - type: entity
   parent: [RMCLightFixtureBlueDouble, RMCLightFixtureOffset]

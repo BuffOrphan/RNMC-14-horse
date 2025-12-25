@@ -64,6 +64,8 @@
     heldPrefix: green
   - type: Access
     groups:
+    - MARSOCAllAccessPVE
+    - CMSPPShipmasterAccess
     - ShipMasterAccess
     - Colony
     - Corp

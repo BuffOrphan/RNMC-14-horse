@@ -3,13 +3,6 @@
   id: CMXenoCrusherNPC
   suffix: AI
   components:
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      600: Critical
-      800: Dead
-  - type: NPCUseActionOnTarget
-    actionId: ActionXenoCharge
   - type: Xeno
     role: CMXenoCrusherNPC
   - type: HTN
@@ -20,3 +13,34 @@
         true
       NavSmash: !type:Bool
         true
+      VisionRadius: !type:Single
+        30
+      AggroVisionRadius: !type:Single
+        30
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      1000: Critical
+      1100: Dead
+  - type: Tag
+    tags:
+    - FootstepSound
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: XenoFootstepLarge
+      params:
+        volume: -6
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          RNMCXenoGibLarge:
+            min: 1
+            max: 1
+            offset: 0

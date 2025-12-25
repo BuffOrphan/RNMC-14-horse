@@ -1,0 +1,234 @@
+# SMALL VEHICLES
+# Speed Buggy
+- type: entity
+  parent: RNMCVehicleSmallBase
+  id: RNMCVehicleSmallSpeedBuggy
+  name: speed buggy
+  description: A speedy buggy. You can go almost anywhere with it.
+  components:
+  - type: RMCAllowStrapMovement
+  - type: PowerLoader
+    skills:
+      all:
+        RMCSkillVehicles: 1
+  - type: Pullable
+  - type: Sprite
+    sprite: _RNMC14/Objects/Vehicles/Speed_Buggy/speed_buggy.rsi
+    drawdepth: Mobs
+    noRot: true
+    layers:
+    - state: speed-buggy
+      map: ["movement"]
+    - state: light-speed-buggy
+      shader: unshaded
+      visible: false
+      map: [ "light" ]
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: speed-buggy-moving
+    noMovementLayers:
+      movement:
+        state: speed-buggy
+  - type: Construction
+    graph: RNMCSpeedBuggy
+    node: speedBuggy
+  - type: ToggleableVisuals
+    spriteLayer: light
+  - type: HandheldLight
+    blinkingBehaviourId: blinking
+    radiatingBehaviourId: radiating
+  - type: LightBehaviour
+    behaviours:
+      - !type:FadeBehaviour
+        id: radiating
+        maxDuration: 2.0
+        startValue: 3.0
+        endValue: 2.0
+        isLooped: true
+        reverseWhenFinished: true
+      - !type:PulseBehaviour
+        id: blinking
+        interpolate: Nearest
+        maxDuration: 1.0
+        minValue: 0.1
+        maxValue: 2.0
+        isLooped: true
+  - type: PointLight
+    enabled: false
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    radius: 7
+    netsync: false
+  - type: ItemTogglePointLight
+  - type: Battery
+    maxCharge: 600
+    startingCharge: 600
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 2
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 5
+    baseSprintSpeed: 7.5
+  - type: TileFrictionModifier
+    modifier: 0.4
+  - type: NoRotateOnInteract
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            CMRodMetal1:
+              min: 0
+              max: 5
+            RMCCableCoil:
+              min: 0
+              max: 2
+            CMSheetMetal1:
+              min: 0
+              max: 5
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            CMRodMetal1:
+              min: 5
+              max: 10
+            RNMCStockPartSmallEngine:
+              min: 0
+              max: 1
+            CMStockPartMatterBin:
+              min: 0
+              max: 1
+            RNMCStockPartSmallTransmission:
+              min: 0
+              max: 1
+            RMCFlashlight:
+              min: 0
+              max: 1
+            RNMCStockPartSteeringWheel:
+              min: 0
+              max: 1
+            RNMCStockPartPedal:
+              min: 0
+              max: 2
+            RMCCableCoil:
+              min: 1
+              max: 4
+            RNMCStockPartVehicleSeat:
+              min: 0
+              max: 1
+            CMSheetMetal1:
+              min: 1
+              max: 10
+            RNMCStockPartShockAbsorber:
+              min: 1
+              max: 4
+            RNMCStockPartWheel:
+              min: 1
+              max: 4
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            RNMCSpeedBuggyFrame:
+              min: 1
+              max: 1
+            RNMCStockPartSmallEngine:
+              min: 0
+              max: 1
+            CMStockPartMatterBin:
+              min: 0
+              max: 1
+            RNMCStockPartSmallTransmission:
+              min: 0
+              max: 1
+            RMCFlashlight:
+              min: 0
+              max: 1
+            RNMCStockPartSteeringWheel:
+              min: 0
+              max: 1
+            RNMCStockPartPedal:
+              min: 0
+              max: 2
+            RMCCableCoil:
+              min: 1
+              max: 4
+            RNMCStockPartVehicleSeat:
+              min: 0
+              max: 1
+            CMSheetMetal1:
+              min: 1
+              max: 10
+            RNMCStockPartShockAbsorber:
+              min: 1
+              max: 4
+            RNMCStockPartWheel:
+              min: 1
+              max: 4
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            RNMCSpeedBuggyFrameDestroyed:
+              min: 1
+              max: 1
+            RNMCStockPartShockAbsorber:
+              min: 1
+              max: 4
+            RNMCStockPartWheel:
+              min: 1
+              max: 4
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            RNMCSpeedBuggyFrameDisabled:
+              min: 1
+              max: 1
+            RNMCStockPartWheel:
+              min: 1
+              max: 4
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
