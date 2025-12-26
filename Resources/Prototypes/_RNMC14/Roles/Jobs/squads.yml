@@ -21,12 +21,6 @@
       CMSectionSergeantPVE: 1
       CMPlatoonCommanderPVE: 1
     group: SunRiders
-    minimapBackground:
-      sprite: /Textures/_RMC14/Interface/map_blips.rsi
-      state: background_delta
-  - type: Tag
-    tags:
-    - RMCSquadSunRiders
 
 - type: entity
   id: SquadRedDawn

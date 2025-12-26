@@ -10,7 +10,6 @@ using Robust.Client.Graphics;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Shared.Configuration;
-using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 
@@ -250,7 +249,7 @@ namespace Content.Client.Chat.UI
             {
                 if (message.SpeechStyleClass != null)
                     speechStyleClass = message.SpeechStyleClass;
-                else if (entityManager.HasComponent<SquadLeaderComponent>(senderUid) || entityManager.HasComponent<HiveLeaderComponent>(senderUid) || entityManager.HasComponent<InnateCommandSpeechComponent>(senderUid))
+                else if (entityManager.HasComponent<SquadLeaderComponent>(senderUid) || entityManager.HasComponent<HiveLeaderComponent>(senderUid))
                     speechStyleClass = "commanderSpeech";
             }
 
