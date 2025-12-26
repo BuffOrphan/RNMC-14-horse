@@ -1,6 +1,6 @@
 # Light Bulb, Always powered
 - type: entity
-  parent: RMCLightFixtureSmallAlwaysPowered
+  parent: CMLightFixtureSmallAlwaysPowered
   id: RNMCLightFixtureSmallRedAlwaysPowered
   suffix: Red, Always Powered
   components:
@@ -24,7 +24,7 @@
       Burned: bulb-burned
 
 - type: entity
-  parent: RMCLightFixtureSmallAlwaysPowered
+  parent: CMLightFixtureSmallAlwaysPowered
   id: RNMCLightFixtureSmallGreenAlwaysPowered
   suffix: Green, Always Powered
   components:
@@ -49,7 +49,7 @@
 
 # Light Bulb, Empty
 - type: entity
-  parent: RMCLightFixtureSmallEmpty
+  parent: CMLightFixtureSmallEmpty
   id: RNMCLightFixtureSmallRedEmpty
   suffix: Red, Empty
   components:
@@ -67,7 +67,7 @@
       Burned: bulb-burned
 
 - type: entity
-  parent: RMCLightFixtureSmallEmpty
+  parent: CMLightFixtureSmallEmpty
   id: RNMCLightFixtureSmallGreenEmpty
   suffix: Green, Empty
   components:
@@ -86,7 +86,7 @@
 
 # Light Bulb
 - type: entity
-  parent: RMCLightFixtureSmall
+  parent: CMLightFixtureSmall
   id: RNMCLightFixtureSmallRed
   suffix: Red, RNMC # Added the RNMC tag to prevent confusion with the existing CMLightFixtureSmallRed prototype. RNMCLightFixtureSmallRed actually creates red light.
   components:
@@ -106,7 +106,7 @@
   #    Burned: bbulb-burned
 
 - type: entity
-  parent: RMCLightFixtureSmall
+  parent: CMLightFixtureSmall
   id: RNMCLightFixtureSmallGreen
   suffix: Green
   components:

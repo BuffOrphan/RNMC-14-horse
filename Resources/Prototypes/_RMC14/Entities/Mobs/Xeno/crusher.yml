@@ -101,7 +101,7 @@
     prefix: crusher
   - type: TacticalMapIcon
     icon:
-      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      sprite: _RMC14/Interface/map_blips.rsi
       state: crusher
   - type: StunOnExplosionReceived
     weak: false
@@ -137,8 +137,6 @@
   - type: XenoEvolution
     strains:
     - RMCXenoCrusherCharger
-  - type: RMCActionOrder
-    id: RMCXenoCrusher
 
 - type: entity
   parent: CMXenoCrusherBase
@@ -201,5 +199,3 @@
         Blunt: 75
   - type: XenoToggleCharging
   - type: XenoHidden
-  - type: RMCActionOrder
-    id: RMCXenoCrusherCharger

@@ -42,8 +42,6 @@ rmc-dropship-weapons-cancel = CANCEL
 rmc-dropship-weapons-exit = EXIT
 rmc-dropship-weapons-lock = LOCK
 rmc-dropship-weapons-clear = CLEAR
-rmc-dropship-weapons-enable = ENABLE
-rmc-dropship-weapons-disable = DISABLE
 
 rmc-dropship-weapons-offset-calibration = Camera
   Offset
@@ -100,7 +98,3 @@ rmc-dropship-paradrop-target-screen-target-targeting = Locked to {$dropTarget}.
 
 rmc-dropship-paradrop-lock-no-target = No target selected.
 rmc-dropship-paradrop-lock-target-not-flying = You can only enable the paradrop module while in flight.
-
-rmc-dropship-medevac-system-screen-text = RMU-4M Medevac System
-
-rmc-dropship-fulton-system-screen-text = RMU-19 Fulton Recovery System

@@ -31,9 +31,9 @@
     - Burst
     - FullAuto
     recoilUnwielded: 4
-    scatterWielded: 4
-    scatterUnwielded: 11
-    baseFireRate: 4
+    scatterWielded: 3
+    scatterUnwielded: 10
+    baseFireRate: 2.5
     burstScatterMult: 1
   - type: RMCWeaponAccuracy
     accuracyMultiplier: 1.3
@@ -61,7 +61,6 @@
           tags:
           - RMCAttachmentBarrelCharger
           - RMCAttachmentExtendedBarrel
-          - RMCAttachmentExtendedCompensator
           - RMCAttachmentSuppressor
           - RMCM5Bayonet
       rmc-aslot-rail:
