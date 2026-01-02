@@ -1954,7 +1954,7 @@ entities:
     - type: Transform
       pos: 13.782949,-30.314629
       parent: 1
-- proto: CMLightFixtureSmall
+- proto: RMCLightFixtureSmall
   entities:
   - uid: 81
     components:

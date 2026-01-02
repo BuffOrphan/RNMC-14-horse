@@ -224,7 +224,7 @@ entities:
         -4,0: RNMCAreaShuttleDrop1Midway
         -4,1: RNMCAreaShuttleDrop1Midway
         -4,2: RNMCAreaShuttleDrop1Midway
-- proto: CMLightFixtureSmallAlwaysPowered
+- proto: RMCLightFixtureSmallAlwaysPowered
   entities:
   - uid: 75
     components:

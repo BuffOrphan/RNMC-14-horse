@@ -20337,7 +20337,7 @@ entities:
     - type: Transform
       pos: 35.196415,61.268414
       parent: 1
-- proto: WeaponRifleM54CMK1Unloaded
+- proto: RMCWeaponRifleM54CMK1Unloaded
   entities:
   - uid: 2420
     components:

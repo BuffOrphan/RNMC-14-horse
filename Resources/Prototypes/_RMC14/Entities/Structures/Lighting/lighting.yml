@@ -572,16 +572,6 @@
     enabled: true
 
 - type: entity
-  parent: CMLightFixtureSmall
-  id: CMLightFixtureSmallRed
-  suffix: Red
-  components:
-  - type: PointLight
-    color: "#832121"
-    energy: 0.5
-    enabled: true
-
-- type: entity
   parent: [RMCLightFixtureSmall, RMCLightFixtureSmallAlwaysPoweredOffset]
   id: RMCLightFixtureSmallOffset
   suffix: ""

@@ -29699,7 +29699,7 @@ entities:
       parent: 1
     - type: Fixtures
       fixtures: {}
-- proto: CMLightFixtureSmall
+- proto: RMCLightFixtureSmall
   entities:
   - uid: 179
     components:
