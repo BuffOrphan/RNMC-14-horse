@@ -259,9 +259,6 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
         Subs.CVar(_config, RMCCVars.RMCHijackShipWeight, v => _hijackShipWeight = v, true);
         Subs.CVar(_config, RMCCVars.RMCMinimumHijackBurrowed, v => _hijackMinBurrowed = v, true);
         Subs.CVar(_config, RMCCVars.RMCDistressXenosMinimum, v => _xenosMinimum = v, true);
-        // RNMC edit start
-        Subs.CVar(_config, RMCCVars.RNMCCheckRoundEndConditions, v => _checkRoundEndConditions = v, true);
-        // RNMC edit end
         Subs.CVar(_config, RMCCVars.RMCQueenBuildingBoost, v => _queenBuildingBoostEnabled = v, true);
         Subs.CVar(_config, RMCCVars.RMCQueenBuildingBoostDurationMinutes, v => _queenBoostDuration = TimeSpan.FromMinutes(v), true);
         Subs.CVar(_config, RMCCVars.RMCQueenBuildingBoostSpeedMultiplier, v => _queenBoostSpeedMultiplier = v, true);
@@ -1248,13 +1245,6 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
 
     private void CheckRoundShouldEnd()
     {
-    // rnmc edit start
-            var checkRoundEndConditions = _config.GetCVar(RMCCVars.RNMCCheckRoundEndConditions);
-        if (checkRoundEndConditions == false)
-        {
-            return;
-        }
-    // rnmc edit end
         var query = QueryActiveRules();
         while (query.MoveNext(out var uid, out _, out var distress, out var gameRule))
         {

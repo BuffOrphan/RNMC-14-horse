@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 264.0.0
+  engineVersion: 264.0.2
   forkId: ""
   forkVersion: ""
-  time: 10/06/2025 10:05:42
-  entityCount: 2420
+  time: 01/02/2026 21:14:58
+  entityCount: 2428
 maps:
 - 1
 grids:
@@ -105,7 +105,7 @@ entities:
           version: 7
         3,3:
           ind: 3,3
-          tiles: CwAAAAAAAAsAAAAAAAALAAAAAAAAIAAAAAAAAA4AAAAAAAANAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAAIAAAAAAAAAgAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAACAAAAAAAAAIAAAAAAAADQAAAAAAAA4AAAAAAAAOAAAAAAAADgAAAAAAAA4AAAAAAAALAAAAAAAACwAAAAAAACAAAAAAAAAIAAAAAAAACwAAAAAAAAsAAAAAAAAkAAAAAAAAJAAAAAAAACQAAAAAAAAlAAAAAAAACAAAAAAAAA0AAAAAAAAOAAAAAAAADgAAAAAAAA4AAAAAAAAOAAAAAAAACwAAAAAAAAgAAAAAAAAgAAAAAAAACAAAAAAAAAsAAAAAAAALAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAgAAAAAAAAIAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAAoAAAAAAAAJAAAAAAAACkAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACAAAAAAAAAsAAAAAAAAIAAAAAAAADQAAAAAAAA0AAAAAAAALAAAAAAAADQAAAAAAAA0AAAAAAAALAAAAAAAAKgAAAAAAAB4AAAAAAAAfAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAgAAAAAAAALAAAAAAAACAAAAAAAAA0AAAAAAAALAAAAAAAACwAAAAAAAB4AAAAAAAAZAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAAAQAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAAAQAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAANAAAAAAAAIAAAAAAAAAsAAAAAAAAoAAAAAAAAJAAAAAAAACkAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAAGAAAAAAAABgAAAAAAAAYAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAAIAAAAAAAAAgAAAAAAAAPAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAAGAAAAAAAABgAAAAAAAASAAAAAAAAAQAAAAAAACAAAAAAAAALAAAAAAAACwAAAAAAACkAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACAAAAAAAAAsAAAAAAAALAAAAAAAAFwAAAAAAAAsAAAAAAAAgAAAAAAAACAAAAAAAAAgAAAAAAAAPAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAACsAAAAAAAALAAAAAAAAKgAAAAAAAB4AAAAAAAAeAAAAAAAAHwAAAAAAAAsAAAAAAAANAAAAAAAACAAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAEAAAAAAAABAAAAAAAACwAAAAAAAAEAAAAAAAABAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAADQAAAAAAABgAAAAAAAALAAAAAAAACwAAAAAAACgAAAAAAAAkAAAAAAAAJAAAAAAAACQAAAAAAAAkAAAAAAAAJAAAAAAAACkAAAAAAAALAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACwAAAAAAAA0AAAAAAAANAAAAAAAACwAAAAAAAA0AAAAAAAAgAAAAAAAACwAAAAAAAAsAAAAAAAAIAAAAAAAACwAAAAAAAAsAAAAAAAAPAAAAAAAAAQAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAA==
+          tiles: CAAAAAAAAAgAAAAAAAAIAAAAAAAAIAAAAAAAAA4AAAAAAAANAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAAIAAAAAAAAAgAAAAAAAALAAAAAAAACwAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAACAAAAAAAAAIAAAAAAAADQAAAAAAAA4AAAAAAAAOAAAAAAAADgAAAAAAAA4AAAAAAAALAAAAAAAACwAAAAAAACAAAAAAAAAIAAAAAAAACwAAAAAAAAsAAAAAAAAkAAAAAAAAJAAAAAAAACQAAAAAAAAlAAAAAAAACAAAAAAAAA0AAAAAAAAOAAAAAAAADgAAAAAAAA4AAAAAAAAOAAAAAAAACwAAAAAAAAgAAAAAAAAgAAAAAAAACAAAAAAAAAsAAAAAAAALAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAgAAAAAAAAIAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAAoAAAAAAAAJAAAAAAAACkAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACAAAAAAAAAsAAAAAAAAIAAAAAAAADQAAAAAAAA0AAAAAAAALAAAAAAAADQAAAAAAAA0AAAAAAAALAAAAAAAAKgAAAAAAAB4AAAAAAAAfAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAgAAAAAAAALAAAAAAAACAAAAAAAAA0AAAAAAAALAAAAAAAACwAAAAAAAB4AAAAAAAAZAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAAAQAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAAAQAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAANAAAAAAAAIAAAAAAAAAsAAAAAAAAoAAAAAAAAJAAAAAAAACkAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAAGAAAAAAAABgAAAAAAAAYAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAAIAAAAAAAAAgAAAAAAAAPAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAAGAAAAAAAABgAAAAAAAASAAAAAAAAAQAAAAAAACAAAAAAAAALAAAAAAAACwAAAAAAACkAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACAAAAAAAAAsAAAAAAAALAAAAAAAAFwAAAAAAAAsAAAAAAAAgAAAAAAAACAAAAAAAAAgAAAAAAAAPAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAACsAAAAAAAALAAAAAAAAKgAAAAAAAB4AAAAAAAAeAAAAAAAAHwAAAAAAAAsAAAAAAAANAAAAAAAACAAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAEAAAAAAAABAAAAAAAACwAAAAAAAAEAAAAAAAABAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAADQAAAAAAABgAAAAAAAALAAAAAAAACwAAAAAAACgAAAAAAAAkAAAAAAAAJAAAAAAAACQAAAAAAAAkAAAAAAAAJAAAAAAAACkAAAAAAAALAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACwAAAAAAAA0AAAAAAAANAAAAAAAACwAAAAAAAA0AAAAAAAAgAAAAAAAACwAAAAAAAAsAAAAAAAAIAAAAAAAACwAAAAAAAAsAAAAAAAAPAAAAAAAAAQAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAA==
           version: 7
         3,2:
           ind: 3,2
@@ -216,7 +216,6 @@ entities:
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
         path: /Audio/Effects/alert.ogg
-      enabled: True
     - type: DecalGrid
       chunkCollection:
         version: 2
@@ -6439,10 +6438,10 @@ entities:
       parent: 1
 - proto: CMAdvFirstAidKitFilled
   entities:
-  - uid: 14
+  - uid: 49
     components:
     - type: Transform
-      pos: 38.65626,48.809555
+      pos: 37.84375,46.241695
       parent: 1
 - proto: CMAirlock
   entities:
@@ -6505,65 +6504,87 @@ entities:
       rot: 3.141592653589793 rad
       pos: 22.5,71.5
       parent: 1
+    - type: SpriteSetRenderOrder
+      offset: -0.5,-1.5
   - uid: 23
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 52.5,54.5
       parent: 1
+    - type: SpriteSetRenderOrder
+      offset: 0.7,-1.45
   - uid: 24
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 57.5,54.5
       parent: 1
+    - type: SpriteSetRenderOrder
+      offset: -0.7,-0.4
   - uid: 25
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 64.5,69.5
       parent: 1
+    - type: SpriteSetRenderOrder
+      offset: 0.7,-1.45
   - uid: 26
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 34.5,57.5
       parent: 1
+    - type: SpriteSetRenderOrder
+      offset: -0.5,-1.5
   - uid: 27
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 22.5,55.5
       parent: 1
+    - type: SpriteSetRenderOrder
+      offset: -0.7,-0.4
   - uid: 28
     components:
     - type: Transform
       pos: 62.5,86.5
       parent: 1
+    - type: SpriteSetRenderOrder
+      offset: 0.45,-0.32
   - uid: 29
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 36.5,54.5
       parent: 1
+    - type: SpriteSetRenderOrder
+      offset: 0.7,-1.45
   - uid: 30
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 20.5,55.5
       parent: 1
+    - type: SpriteSetRenderOrder
+      offset: 0.7,-1.45
   - uid: 31
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 57.5,69.5
       parent: 1
+    - type: SpriteSetRenderOrder
+      offset: -0.5,-1.5
   - uid: 32
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 92.5,80.5
       parent: 1
+    - type: SpriteSetRenderOrder
+      offset: 0.7,-1.45
 - proto: CMASRSConsole
   entities:
   - uid: 33
@@ -6663,10 +6684,10 @@ entities:
       parent: 1
 - proto: CMBurnAidKitFilled
   entities:
-  - uid: 49
+  - uid: 14
     components:
     - type: Transform
-      pos: 38.234386,48.809555
+      pos: 37.1875,46.25732
       parent: 1
 - proto: CMCargoElevator
   entities:
@@ -8466,7 +8487,7 @@ entities:
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: 58.464054,54.622948
+      pos: 58.5,54.5
       parent: 1
   - uid: 405
     components:
@@ -8518,25 +8539,25 @@ entities:
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
-      pos: 71.6358,78.58232
+      pos: 71.5,78.5
       parent: 1
   - uid: 414
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: 72.4483,77.691696
+      pos: 72.5,77.5
       parent: 1
   - uid: 415
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: 73.41705,77.629196
+      pos: 73.5,77.5
       parent: 1
   - uid: 416
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
-      pos: 75.5733,78.691696
+      pos: 75.5,78.5
       parent: 1
   - uid: 417
     components:
@@ -8932,7 +8953,7 @@ entities:
   - uid: 480
     components:
     - type: Transform
-      pos: 38.46876,48.41893
+      pos: 37.578125,45.85107
       parent: 1
 - proto: CMFirstAidKitFilledRobust
   entities:
@@ -10679,13 +10700,6 @@ entities:
     components:
     - type: Transform
       pos: 46.5,68.5
-      parent: 1
-- proto: CMVendorMedical
-  entities:
-  - uid: 777
-    components:
-    - type: Transform
-      pos: 34.5,50.5
       parent: 1
 - proto: CMVendorSnack
   entities:
@@ -15772,7 +15786,7 @@ entities:
   - uid: 1684
     components:
     - type: Transform
-      pos: 36.5,51
+      pos: 36.5,51.5
       parent: 1
     - type: Fixtures
       fixtures:
@@ -15796,7 +15810,7 @@ entities:
   - uid: 1685
     components:
     - type: Transform
-      pos: 37.5,51
+      pos: 37.5,51.5
       parent: 1
     - type: Fixtures
       fixtures:
@@ -16163,27 +16177,52 @@ entities:
   - uid: 1740
     components:
     - type: Transform
-      pos: 63.504482,69.85321
+      pos: 62.967125,65.16353
       parent: 1
   - uid: 1741
     components:
     - type: Transform
-      pos: 63.51194,69.57629
+      pos: 63.014,65.6479
       parent: 1
   - uid: 1742
     components:
     - type: Transform
-      pos: 63.51194,69.57629
+      pos: 63.23275,65.8979
       parent: 1
   - uid: 1743
     components:
     - type: Transform
-      pos: 63.54319,69.52941
+      pos: 63.3265,65.7729
       parent: 1
   - uid: 1744
     components:
     - type: Transform
-      pos: 63.51194,69.63879
+      pos: 62.998375,65.5854
+      parent: 1
+  - uid: 2424
+    components:
+    - type: Transform
+      pos: 63.5,69.5
+      parent: 1
+  - uid: 2425
+    components:
+    - type: Transform
+      pos: 63.5,69.5
+      parent: 1
+  - uid: 2426
+    components:
+    - type: Transform
+      pos: 63.5,69.5
+      parent: 1
+  - uid: 2427
+    components:
+    - type: Transform
+      pos: 63.5,69.5
+      parent: 1
+  - uid: 2428
+    components:
+    - type: Transform
+      pos: 63.5,69.5
       parent: 1
 - proto: RMCBoxShellsBuckshot
   entities:
@@ -16199,12 +16238,26 @@ entities:
     - type: Transform
       pos: 60.497578,70
       parent: 1
+- proto: RMCBruteAidKitFilledPVE
+  entities:
+  - uid: 2422
+    components:
+    - type: Transform
+      pos: 38.65625,48.764156
+      parent: 1
 - proto: RMCBucketJanitorial
   entities:
   - uid: 1747
     components:
     - type: Transform
       pos: 55.47615,55.039665
+      parent: 1
+- proto: RMCBurnAidKitFilledPVE
+  entities:
+  - uid: 2423
+    components:
+    - type: Transform
+      pos: 38.21875,48.774574
       parent: 1
 - proto: RMCCandle
   entities:
@@ -16668,7 +16721,7 @@ entities:
       pos: 34.5,74.2
       parent: 1
     - type: Door
-      secondsUntilStateChange: -16173.625
+      secondsUntilStateChange: -16305.057
       state: Opening
     - type: Physics
       bodyType: Dynamic
@@ -19017,7 +19070,7 @@ entities:
   - uid: 2215
     components:
     - type: Transform
-      pos: 64.48233,69.5
+      pos: 64.435875,69.53853
       parent: 1
   - uid: 2216
     components:
@@ -19658,13 +19711,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 57.5,74.5
       parent: 1
-- proto: RNMCSpawnerShuttleGoldenArrow
-  entities:
-  - uid: 2312
-    components:
-    - type: Transform
-      pos: 81.5,63.5
-      parent: 1
 - proto: RMCStairs
   entities:
   - uid: 2313
@@ -19706,6 +19752,13 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 59.5,50.5
+      parent: 1
+- proto: RMCStandardAidKitFilledPVE
+  entities:
+  - uid: 2421
+    components:
+    - type: Transform
+      pos: 38.385418,48.462074
       parent: 1
 - proto: RMCStethoscope
   entities:
@@ -19930,6 +19983,10 @@ entities:
     - type: Transform
       pos: 46.5,50.5
       parent: 1
+    - type: TacticalMapComputer
+      skillLevel: 0
+    missingComponents:
+    - AccessReader
   - uid: 2344
     components:
     - type: Transform
@@ -19942,6 +19999,59 @@ entities:
     - type: Transform
       pos: 48.5,48.5
       parent: 1
+    - type: TacticalMapComputer
+      skillLevel: 0
+      blips:
+        43250:
+          hiveLeader: False
+          background: null
+          status: Alive
+          color: '#FFFFFFFF'
+          image:
+            sprite: /Textures/_RMC14/Interface/map_blips.rsi
+            state: sensor_tower
+          indices: 136,-82
+        75467:
+          hiveLeader: False
+          background: null
+          status: Alive
+          color: '#FFFFFFFF'
+          image:
+            sprite: /Textures/_RMC14/Interface/map_blips.rsi
+            state: supply
+          indices: 67,-157
+        75468:
+          hiveLeader: False
+          background: null
+          status: Alive
+          color: '#FFFFFFFF'
+          image:
+            sprite: /Textures/_RMC14/Interface/map_blips.rsi
+            state: supply
+          indices: 22,-75
+        90612:
+          hiveLeader: False
+          background: null
+          status: Defibabble
+          color: '#FFFFFFFF'
+          image:
+            sprite: /Textures/_RMC14/Interface/map_blips.rsi
+            state: synth
+          indices: 76,-48
+        93417:
+          hiveLeader: False
+          background: null
+          status: Alive
+          color: '#FFFFFFFF'
+          image:
+            sprite: /Textures/_RMC14/Interface/map_blips.rsi
+            state: private
+          indices: 58,-56
+    - type: TacticalMapLines
+      xenoLines: []
+      marineLines: []
+    missingComponents:
+    - AccessReader
 - proto: RMCTankReagentFuel
   entities:
   - uid: 2346
@@ -20002,6 +20112,13 @@ entities:
     components:
     - type: Transform
       pos: 38.5,52.5
+      parent: 1
+- proto: RMCVendorMedicalPVE
+  entities:
+  - uid: 777
+    components:
+    - type: Transform
+      pos: 34.5,50.5
       parent: 1
 - proto: RMCVendorNutriCoDrink
   entities:
@@ -20160,6 +20277,28 @@ entities:
     components:
     - type: Transform
       pos: 93.5,75.5
+      parent: 1
+- proto: RMCWeaponRifleM54CMK1Unloaded
+  entities:
+  - uid: 2420
+    components:
+    - type: Transform
+      pos: 52.628574,72.57528
+      parent: 1
+    - type: RMCWeaponAccuracy
+      modifiedAccuracyMultiplier: 0.5
+    - type: UseDelay
+      delays:
+        RMCWieldDelay:
+          endTime: 3369.0636602
+          startTime: 5181.0281523
+          length: 0.4
+- proto: RNMCSpawnerShuttleGoldenArrow
+  entities:
+  - uid: 2312
+    components:
+    - type: Transform
+      pos: 81.5,63.5
       parent: 1
 - proto: SpawnPointLatejoin
   entities:
@@ -20337,19 +20476,4 @@ entities:
     - type: Transform
       pos: 35.196415,61.268414
       parent: 1
-- proto: RMCWeaponRifleM54CMK1Unloaded
-  entities:
-  - uid: 2420
-    components:
-    - type: Transform
-      pos: 52.628574,72.57528
-      parent: 1
-    - type: RMCWeaponAccuracy
-      modifiedAccuracyMultiplier: 0.5
-    - type: UseDelay
-      delays:
-        RMCWieldDelay:
-          endTime: 3369.0636602
-          startTime: 5181.0281523
-          length: 0.4
 ...
