@@ -57,7 +57,11 @@
         350: Dead
     - type: Perishable
       rotAfter: 0
-      
+    - type: AssignSquad
+      whitelist:
+        tags:
+        - RMCSquadSunRiders
+
 - type: playTimeTracker
   id: CMJobSmartGunOperatorPVE
   isHumanoid: true
