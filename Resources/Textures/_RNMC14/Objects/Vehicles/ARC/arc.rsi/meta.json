@@ -60,6 +60,10 @@
     {
         "name": "markings-intel",
         "directions": 4
+    },
+    {
+        "name": "markings-neutral",
+        "directions": 4
     }
     ]
 }
