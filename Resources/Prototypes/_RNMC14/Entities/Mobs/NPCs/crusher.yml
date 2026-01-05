@@ -51,3 +51,8 @@
     damage:
       types:
         Heat: 25
+  - type: MeleeWeapon
+    damage:
+      groups:
+        Brute: 65
+        Structural: 20

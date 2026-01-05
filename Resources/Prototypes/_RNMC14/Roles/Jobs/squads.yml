@@ -13,13 +13,6 @@
     - Goggles
     - Armor
     - Gloves
-    maxRoles:
-      CMSquadLeaderPVE: 2
-      CMSmartGunOperatorPVE: 2
-      CMHospitalCorpsmanPVE: 1
-      CMRiflemanPVE: 4
-      CMSectionSergeantPVE: 1
-      CMPlatoonCommanderPVE: 1
     group: SunRiders
     minimapBackground:
       sprite: /Textures/_RMC14/Interface/map_blips.rsi

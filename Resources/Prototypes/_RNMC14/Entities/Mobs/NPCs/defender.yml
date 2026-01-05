@@ -27,11 +27,21 @@
   - type: MeleeWeapon
     damage:
       groups:
-        Brute: 50
-  - type: RMCSpawnEntitiesOnGib
-    entities:
-    - RMCDecalSpawnerGibsDrone # TODO one for every caste
-    - RMCGibEffectXenoSmall # TODO larger gib effect for larger xenos
+        Brute: 35
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 550
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          RNMCXenoGib:
+            min: 1
+            max: 1
+            offset: 0
   - type: AcidBloodSplash
     closeSplashRadius: 0.5
     standardSplashRadius: 1.5
