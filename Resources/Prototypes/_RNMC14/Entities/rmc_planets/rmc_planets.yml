@@ -86,3 +86,12 @@
       CMSurvivorScientist:
       - RMCSurvivorHybrisaXenoarchaeologist: 2
       - RMCSurvivorHybrisaXenobiologist: 2
+
+- type: entity
+  id: RMCPlanetLV295Blacksite
+  name: LV-295 Blacksite
+  components:
+  - type: RMCPlanetMapPrototype
+    map: /Maps/_RNMC14/lv295_blacksite.yml
+    camouflage: Snow
+    minPlayers: 1337 # admin only

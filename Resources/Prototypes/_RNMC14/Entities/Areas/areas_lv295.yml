@@ -1,0 +1,238 @@
+- type: entity
+  parent: RMCAreaBase
+  id: RNMCAreaBlacksite
+  name: Out Of Bounds
+  suffix: LV295 Blacksite
+  components:
+  - type: Sprite
+    sprite: _RMC14/Areas/areas.rsi
+    state: unknown
+  - type: Area
+    buildSpecial: true
+    powerNet: ground
+    minimapColor: "#dbd6d6"
+    CAS: false
+    fulton: false
+    lasing: false
+    mortarPlacement: false
+    mortarFire: false
+    medevac: false
+    OB: false
+    supplyDrop: false
+    resinAllowed: false
+    avoidBioscan: false
+    noTunnel: true
+    unweedable: true
+    weatherEnabled: false
+
+- type: entity
+  parent: RMCAreaBase
+  id: RNMCAreaBlacksiteOutdoors
+  name: LV295 - Outdoors
+  suffix: LV295 Blacksite
+  components:
+  - type: Sprite
+    sprite: _RMC14/Areas/areas.rsi
+    state: red
+  - type: Area
+    buildSpecial: true
+    powerNet: ground
+    minimapColor: "#5b5757"
+    CAS: true
+    fulton: true
+    lasing: true
+    mortarPlacement: true
+    mortarFire: true
+    medevac: true
+    OB: true
+    supplyDrop: true
+    resinAllowed: true
+    avoidBioscan: false
+    noTunnel: false
+    unweedable: false
+    weatherEnabled: true
+
+- type: entity
+  parent: RMCAreaBase
+  id: RNMCAreaBlacksiteIndoors
+  name: LV295 - Indoors
+  suffix: LV295 Blacksite
+  components:
+  - type: Sprite
+    sprite: _RMC14/Areas/areas.rsi
+    state: red
+  - type: Area
+    buildSpecial: true
+    powerNet: ground
+    minimapColor: "#5b5757"
+    fulton: false
+    mortarFire: false
+    medevac: false
+    supplyDrop: false
+    weatherEnabled: false
+    paradropping: false
+
+- type: entity
+  parent: RNMCAreaBlacksiteOutdoors
+  id: RNMCAreaBlacksiteLZ2
+  name: LV295 - Landing Zone Two
+  suffix: LV295 Blacksite
+  components:
+  - type: Sprite
+    sprite: _RMC14/Areas/areas.rsi
+    state: mining_outpost
+  - type: Area
+    minimapColor: "#969191"
+    landingZone: true
+
+- type: entity
+  parent: RNMCAreaBlacksiteOutdoors
+  id: RNMCAreaBlacksiteLZ1
+  name: LV295 - Landing Zone One
+  suffix: LV295 Blacksite
+  components:
+  - type: Sprite
+    sprite: _RMC14/Areas/areas.rsi
+    state: mining_outpost
+  - type: Area
+    minimapColor: "#969191"
+    landingZone: true
+
+- type: entity
+  parent: RNMCAreaBlacksiteOutdoors
+  id: RNMCAreaBlacksiteExteriorCompound
+  name: LV295 - Exterior Compound
+  suffix: LV295 Blacksite
+  components:
+  - type: Sprite
+    sprite: _RMC14/Areas/areas.rsi
+    state: alarm_ready
+
+- type: entity
+  parent: RNMCAreaBlacksiteIndoors
+  id: RNMCAreaBlacksiteSurfaceFacility
+  name: LV295 - Surface Facility
+  suffix: LV295 Blacksite
+  components:
+  - type: Sprite
+    sprite: _RMC14/Areas/areas.rsi
+    state: alarm_evac
+
+- type: entity
+  parent: RNMCAreaBlacksiteIndoors
+  id: RNMCAreaBlacksiteFacilityMaintenance
+  name: LV295 - Facility Maintenance
+  suffix: LV295 Blacksite
+  components:
+  - type: Sprite
+    sprite: _RMC14/Areas/areas.rsi
+    state: alarm_evac
+  - type: Area
+    CAS: false
+    fulton: false
+    lasing: false
+    mortarPlacement: false
+    mortarFire: false
+    medevac: false
+    supplyDrop: true
+    resinAllowed: true
+    avoidBioscan: false
+    noTunnel: false
+    unweedable: false
+    weatherEnabled: false
+
+- type: entity
+  parent: RNMCAreaBlacksiteIndoors
+  id: RNMCAreaBlacksiteSublevel1
+  name: LV295 - Sublevel 1
+  suffix: LV295 Blacksite
+  components:
+  - type: Sprite
+    sprite: _RMC14/Areas/areas.rsi
+    state: yellow
+  - type: Area
+    minimapColor: '#C19504E7'
+    CAS: false
+    fulton: false
+    lasing: false
+    mortarPlacement: false
+    mortarFire: false
+    medevac: false
+    supplyDrop: false
+    resinAllowed: true
+    avoidBioscan: false
+    noTunnel: false
+    unweedable: false
+    weatherEnabled: false
+
+- type: entity
+  parent: RNMCAreaBlacksiteIndoors
+  id: RNMCAreaBlacksiteSublevel2
+  name: LV295 - Sublevel 2
+  suffix: LV295 Blacksite
+  components:
+  - type: Sprite
+    sprite: _RMC14/Areas/areas.rsi
+    state: yellow
+  - type: Area
+    minimapColor: '#2D3FA2EE'
+    CAS: false
+    fulton: false
+    lasing: false
+    mortarPlacement: false
+    mortarFire: false
+    medevac: false
+    supplyDrop: false
+    resinAllowed: true
+    avoidBioscan: false
+    noTunnel: false
+    unweedable: false
+    weatherEnabled: false
+
+- type: entity
+  parent: RNMCAreaBlacksiteIndoors
+  id: RNMCAreaBlacksiteSublevel3
+  name: LV295 - Sublevel 3
+  suffix: LV295 Blacksite
+  components:
+  - type: Sprite
+    sprite: _RMC14/Areas/areas.rsi
+    state: mechbay
+  - type: Area
+    minimapColor: '#A22D2DEE'
+    CAS: false
+    fulton: false
+    lasing: false
+    mortarPlacement: false
+    mortarFire: false
+    medevac: false
+    supplyDrop: false
+    resinAllowed: true
+    avoidBioscan: false
+    noTunnel: false
+    unweedable: false
+    weatherEnabled: false
+
+- type: entity
+  parent: RNMCAreaBlacksiteIndoors
+  id: RNMCAreaBlacksiteSublevel4
+  name: LV295 - Sublevel 4
+  suffix: LV295 Blacksite
+  components:
+  - type: Sprite
+    sprite: _RMC14/Areas/areas.rsi
+    state: mechbay
+  - type: Area
+    minimapColor: '#3DBF75EE'
+    CAS: false
+    fulton: false
+    lasing: false
+    mortarPlacement: false
+    mortarFire: false
+    medevac: false
+    supplyDrop: false
+    resinAllowed: true
+    avoidBioscan: false
+    noTunnel: false
+    unweedable: false
+    weatherEnabled: false
