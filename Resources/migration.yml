@@ -1433,10 +1433,10 @@ SignSmoking: CMPosterNoSmoking2
 CMLightReplacerEmpty: RMCLightReplacerEmpty
 CMLightReplacer: RMCLightReplacer
 CMLightFixture: RMCLightFixture
-CMLightFixtureSmall:  RMCLightFixtureSmall
+RMCLightFixtureSmall:  RMCLightFixtureSmall
 CMLightFixtureAlwaysPowered: RMCLightFixtureAlwaysPowered
-CMLightFixtureSmallAlwaysPowered: RMCLightFixtureSmallAlwaysPowered
-CMLightFixtureSmallOffset: RMCLightFixtureSmallOffset
+RMCLightFixtureSmallAlwaysPowered: RMCLightFixtureSmallAlwaysPowered
+RMCLightFixtureSmallOffset: RMCLightFixtureSmallOffset
 CMLightFixtureEmpty: RMCLightFixtureEmpty
 
 # 2025-11-14
