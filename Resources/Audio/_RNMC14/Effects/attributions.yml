@@ -2,3 +2,53 @@
   license: "CC-BY-SA-3.0"
   copyright: "Taken from cmss13-pve"
   source: "https://github.com/cmss13-devs/cmss13-pve/blob/master/sound/machines/twobeep.ogg"
+
+- files: ["shield_hit_1.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13 halo-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve-halo/blob/master/sound/effects/shields/shield_hit_1.ogg"
+
+- files: ["shield_hit_2.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13 halo-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve-halo/blob/master/sound/effects/shields/shield_hit_2.ogg"
+
+- files: ["shield_hit_3.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13 halo-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve-halo/blob/master/sound/effects/shields/shield_hit_3.ogg"
+
+- files: ["shield_hit_4.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13 halo-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve-halo/blob/master/sound/effects/shields/shield_hit_4.ogg"
+
+- files: ["shield_hit_5.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13 halo-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve-halo/blob/master/sound/effects/shields/shield_hit_5.ogg"
+
+- files: ["shield_hit_6.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13 halo-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve-halo/blob/master/sound/effects/shields/shield_hit_6.ogg"
+
+- files: ["shield_charge.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13 halo-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve-halo/blob/master/sound/effects/shields/shield_charge.ogg"
+
+- files: ["shield_pop_1.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13 halo-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve-halo/blob/master/sound/effects/shields/shield_pop_1.ogg"
+
+- files: ["shield_pop_2.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13 halo-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve-halo/blob/master/sound/effects/shields/shield_pop_2.ogg"
+
+- files: ["shield_pop_3.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13 halo-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve-halo/blob/master/sound/effects/shields/shield_pop_3.ogg"
