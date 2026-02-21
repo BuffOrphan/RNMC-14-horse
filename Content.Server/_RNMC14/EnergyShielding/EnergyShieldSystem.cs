@@ -47,7 +47,9 @@ namespace Content.Server._RNMC14.EnergyShield
         /// </summary>
         private void OnUnequipped(Entity<EnergyShieldComponent> ent, ref GotUnequippedEvent args)
         {
+            if (_equipee != null)
             RemComp<AuraComponent>(_equipee);
+            
             _equipee = default!;
             ent.Comp.IsEquipped = false;
         }
