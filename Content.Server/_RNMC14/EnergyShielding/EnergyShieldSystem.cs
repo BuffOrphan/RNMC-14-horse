@@ -39,7 +39,9 @@ namespace Content.Server._RNMC14.EnergyShield
             _equipee = args.Equipee;
             ent.Comp.IsEquipped = true;
             if (ent.Comp.TotalDamage < ent.Comp.DamageThreshold)
-            _rmcAura.GiveAura(_equipee, ent.Comp.ShieldColor, null);
+                _rmcAura.GiveAura(_equipee, ent.Comp.ShieldColor, null);
+            else
+                _rmcAura.GiveAura(_equipee, ent.Comp.ShieldColorLow, null);
         }
         // This is probably going to be weird if the unequip attempt isn't catched. Is it gonna happen? Probably not. Am I gonna make a failsafe? Fuck No.
         /// <summary>

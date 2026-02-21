@@ -38,7 +38,7 @@ public sealed partial class EnergyShieldComponent : Component
     public SoundSpecifier? ShieldBustedSound = new SoundCollectionSpecifier("shieldbusted");
 
     [DataField("shieldRechargeSound")]
-    public SoundSpecifier? ShieldRechargeSound = new SoundPathSpecifier("/Audio/shield_charge.ogg");
+    public SoundSpecifier? ShieldRechargeSound = new SoundPathSpecifier("/Audio/_RNMC14/Effects/shield_charge.ogg");
 
     [DataField("shieldColor")]
     public Color ShieldColor = Color.LightBlue;
