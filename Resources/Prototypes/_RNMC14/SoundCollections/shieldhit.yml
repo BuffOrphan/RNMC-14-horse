@@ -1,16 +1,16 @@
 - type: soundCollection
   id: shieldhit
   files:
-    - /Audio/shield_hit_1.ogg
-    - /Audio/shield_hit_2.ogg
-    - /Audio/shield_hit_3.ogg
-    - /Audio/shield_hit_4.ogg
-    - /Audio/shield_hit_5.ogg
-    - /Audio/shield_hit_6.ogg
+    - /Audio/_RNMC14/Effects/shield_hit_1.ogg
+    - /Audio/_RNMC14/Effects/shield_hit_2.ogg
+    - /Audio/_RNMC14/Effects/shield_hit_3.ogg
+    - /Audio/_RNMC14/Effects/shield_hit_4.ogg
+    - /Audio/_RNMC14/Effects/shield_hit_5.ogg
+    - /Audio/_RNMC14/Effects/shield_hit_6.ogg
 
 - type: soundCollection
   id: shieldbusted
   files:
-    - /Audio/shield_pop_1.ogg
-    - /Audio/shield_pop_2.ogg
-    - /Audio/shield_pop_3.ogg
+    - /Audio/_RNMC14/Effects/shield_pop_1.ogg
+    - /Audio/_RNMC14/Effects/shield_pop_2.ogg
+    - /Audio/_RNMC14/Effects/shield_pop_3.ogg
