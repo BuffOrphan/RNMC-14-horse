@@ -306,17 +306,17 @@ public sealed partial class GunSystem : SharedGunSystem
         };
 
         _animPlayer.Play(ent, anim, "muzzle-flash");
-        if (!TryComp(gunUid, out PointLightComponent? light))
+        if (!TryComp(ent, out PointLightComponent? light))
         {
             light = Factory.GetComponent<PointLightComponent>();
             light.NetSyncEnabled = false;
-            AddComp(gunUid, light);
+            AddComp(ent, light);
         }
 
-        Lights.SetEnabled(gunUid, true, light);
-        Lights.SetRadius(gunUid, 2f, light);
-        Lights.SetColor(gunUid, Color.FromHex("#cc8e2b"), light);
-        Lights.SetEnergy(gunUid, 5f, light);
+        Lights.SetEnabled(ent, true, light);
+        Lights.SetRadius(ent, 2f, light);
+        Lights.SetColor(ent, Color.FromHex("#cc8e2b"), light);
+        Lights.SetEnergy(ent, 5f, light);
 
         var animTwo = new Animation()
         {
@@ -348,10 +348,10 @@ public sealed partial class GunSystem : SharedGunSystem
             }
         };
 
-        var uidPlayer = EnsureComp<AnimationPlayerComponent>(gunUid);
+        var uidPlayer = EnsureComp<AnimationPlayerComponent>(ent);
 
-        _animPlayer.Stop(gunUid, uidPlayer, "muzzle-flash-light");
-        _animPlayer.Play((gunUid, uidPlayer), animTwo, "muzzle-flash-light");
+        _animPlayer.Stop(ent, uidPlayer, "muzzle-flash-light");
+        _animPlayer.Play((ent, uidPlayer), animTwo, "muzzle-flash-light");
     }
 
     public override void ShootProjectile(EntityUid uid,

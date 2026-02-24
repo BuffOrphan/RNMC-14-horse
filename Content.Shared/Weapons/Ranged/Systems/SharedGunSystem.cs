@@ -1096,6 +1096,7 @@ public abstract partial class SharedGunSystem : EntitySystem
         if (TryComp(gun, out GunComponent? gunComp))
         {
             var beforeEv = new RMCBeforeMuzzleFlashEvent(gun, gunComp.ShootOriginOffset);
+            RaiseLocalEvent(gun, ref beforeEv);
             gun = beforeEv.Weapon;
             muzzleFlashOriginOffset = beforeEv.Offset;
         }

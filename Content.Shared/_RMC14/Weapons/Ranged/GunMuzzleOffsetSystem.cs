@@ -1,7 +1,10 @@
 using System.Numerics;
+using Content.Shared._RMC14.Emplacements;
 using Content.Shared.Vehicle.Components;
+using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Systems;
 using Robust.Shared.Containers;
+using Robust.Shared.Map;
 using Robust.Shared.Maths;
 
 namespace Content.Shared._RMC14.Weapons.Ranged;
@@ -10,9 +13,11 @@ public sealed class GunMuzzleOffsetSystem : EntitySystem
 {
     [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
+
     public override void Initialize()
     {
         SubscribeLocalEvent<GunMuzzleOffsetComponent, AttemptShootEvent>(OnAttemptShoot);
+        SubscribeLocalEvent<GunMuzzleOffsetComponent, RMCBeforeMuzzleFlashEvent>(OnBeforeMuzzleFlash, after: new[] { typeof(MountableWeaponSystem) });
     }
 
     private void OnAttemptShoot(Entity<GunMuzzleOffsetComponent> ent, ref AttemptShootEvent args)
@@ -20,42 +25,80 @@ public sealed class GunMuzzleOffsetSystem : EntitySystem
         if (args.Cancelled)
             return;
 
-        if (ent.Comp.Offset == Vector2.Zero && ent.Comp.MuzzleOffset == Vector2.Zero && !ent.Comp.UseDirectionalOffsets)
+        if (!TryGetMuzzleCoordinates(ent, args.ToCoordinates, out var fromCoords))
             return;
 
+        args.FromCoordinates = fromCoords;
+    }
+
+    private void OnBeforeMuzzleFlash(Entity<GunMuzzleOffsetComponent> ent, ref RMCBeforeMuzzleFlashEvent args)
+    {
+        if (!ent.Comp.ApplyToMuzzleFlash)
+            return;
+
+        EntityCoordinates? target = null;
+        if (TryComp(ent, out GunComponent? gun))
+            target = gun.ShootCoordinates;
+
+        if (!TryGetMuzzleCoordinates(ent, target, out var muzzleCoords))
+            return;
+
+        var muzzleMap = _transform.ToMapCoordinates(muzzleCoords);
+        var weaponMap = _transform.GetMapCoordinates(args.Weapon);
+        if (muzzleMap.MapId != weaponMap.MapId)
+            return;
+
+        var worldOffset = muzzleMap.Position - weaponMap.Position;
+        var weaponRotation = _transform.GetWorldRotation(args.Weapon);
+        args.Offset = (-weaponRotation).RotateVec(worldOffset);
+    }
+
+    private bool TryGetMuzzleCoordinates(
+        Entity<GunMuzzleOffsetComponent> ent,
+        EntityCoordinates? toCoordinates,
+        out EntityCoordinates muzzleCoords)
+    {
+        muzzleCoords = default;
+
+        if (ent.Comp.Offset == Vector2.Zero &&
+            ent.Comp.MuzzleOffset == Vector2.Zero &&
+            !ent.Comp.UseDirectionalOffsets)
+        {
+            return false;
+        }
+
         var baseUid = ent.Owner;
-        EntityUid? containerOwner = null;
         if (ent.Comp.UseContainerOwner &&
             _container.TryGetContainingContainer((ent.Owner, null), out var container))
         {
             baseUid = container.Owner;
-            containerOwner = container.Owner;
         }
 
         var baseCoords = _transform.GetMoverCoordinates(baseUid);
         var baseRotation = GetBaseRotation(baseUid, ent.Comp.AngleOffset);
         var (offset, rotateOffset) = GetOffset(ent.Comp, baseUid, baseRotation);
-        var fromCoords = rotateOffset
+        muzzleCoords = rotateOffset
             ? baseCoords.Offset(baseRotation.RotateVec(offset))
             : baseCoords.Offset(offset);
+
+        if (ent.Comp.MuzzleOffset == Vector2.Zero)
+            return true;
+
         var muzzleRotation = baseRotation;
-        if (ent.Comp.MuzzleOffset != Vector2.Zero)
+        if (ent.Comp.UseAimDirection && toCoordinates != null)
         {
-            if (ent.Comp.UseAimDirection && args.ToCoordinates != null)
+            var pivotMap = _transform.ToMapCoordinates(muzzleCoords);
+            var targetMap = _transform.ToMapCoordinates(toCoordinates.Value);
+            if (pivotMap.MapId == targetMap.MapId)
             {
-                var pivotMap = _transform.ToMapCoordinates(fromCoords);
-                var targetMap = _transform.ToMapCoordinates(args.ToCoordinates.Value);
                 var direction = targetMap.Position - pivotMap.Position;
                 if (direction.LengthSquared() > 0.0001f)
-                {
                     muzzleRotation = direction.ToWorldAngle() + ent.Comp.AngleOffset;
-                }
             }
-
-            fromCoords = fromCoords.Offset(muzzleRotation.RotateVec(ent.Comp.MuzzleOffset));
         }
 
-        args.FromCoordinates = fromCoords;
+        muzzleCoords = muzzleCoords.Offset(muzzleRotation.RotateVec(ent.Comp.MuzzleOffset));
+        return true;
     }
 
     private Angle GetBaseRotation(EntityUid baseUid, Angle angleOffset)

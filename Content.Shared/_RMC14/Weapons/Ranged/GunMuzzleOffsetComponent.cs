@@ -38,4 +38,7 @@ public sealed partial class GunMuzzleOffsetComponent : Component
 
     [DataField, AutoNetworkedField]
     public bool UseAimDirection = false;
+
+    [DataField, AutoNetworkedField]
+    public bool ApplyToMuzzleFlash = true;
 }
