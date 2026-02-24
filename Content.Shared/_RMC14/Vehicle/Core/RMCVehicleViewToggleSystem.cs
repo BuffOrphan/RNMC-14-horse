@@ -1,3 +1,4 @@
+using System.Linq;
 using Content.Shared.Actions;
 using Content.Shared.Actions.Components;
 using Robust.Shared.GameObjects;
@@ -23,13 +24,13 @@ public sealed class RMCVehicleViewToggleSystem : EntitySystem
         bool isOutside)
     {
         var toggle = EnsureComp<RMCVehicleViewToggleComponent>(user);
+        toggle.Sources.Add(source);
         toggle.Source = source;
         toggle.OutsideTarget = outsideTarget;
         toggle.InsideTarget = insideTarget;
         toggle.IsOutside = isOutside;
 
-        if (toggle.Action == null)
-            toggle.Action = _actions.AddAction(user, toggle.ActionId);
+        EnsureSingleToggleAction(user, toggle);
 
         if (toggle.Action is { } actionUid && TryComp(actionUid, out ActionComponent? actionComp))
         {
@@ -47,12 +48,31 @@ public sealed class RMCVehicleViewToggleSystem : EntitySystem
         if (!TryComp(user, out RMCVehicleViewToggleComponent? toggle))
             return;
 
+        toggle.Sources.Remove(source);
+        if (toggle.Sources.Count > 0)
+        {
+            foreach (var remaining in toggle.Sources)
+            {
+                toggle.Source = remaining;
+                break;
+            }
+
+            EnsureSingleToggleAction(user, toggle);
+            UpdateActionState(toggle);
+            Dirty(user, toggle);
+            return;
+        }
+
         if (toggle.Action is { } action)
-            _actions.RemoveAction(action);
+            RemoveAndDeleteToggleAction(action);
 
         toggle.Action = null;
+        toggle.Source = null;
+        toggle.OutsideTarget = null;
+        toggle.InsideTarget = null;
+        toggle.IsOutside = false;
 
-        RemCompDeferred<RMCVehicleViewToggleComponent>(user);
+        RemComp<RMCVehicleViewToggleComponent>(user);
     }
 
     private void OnToggleViewShutdown(Entity<RMCVehicleViewToggleComponent> ent, ref ComponentShutdown args)
@@ -60,7 +80,7 @@ public sealed class RMCVehicleViewToggleSystem : EntitySystem
         if (ent.Comp.Action is not { } action)
             return;
 
-        _actions.RemoveAction(action);
+        RemoveAndDeleteToggleAction(action);
     }
 
     private void OnToggleViewAction(Entity<RMCVehicleViewToggleComponent> ent, ref RMCVehicleToggleViewActionEvent args)
@@ -86,8 +106,10 @@ public sealed class RMCVehicleViewToggleSystem : EntitySystem
             ent.Comp.IsOutside = true;
         }
 
+        EnsureSingleToggleAction(ent.Owner, ent.Comp);
         UpdateActionState(ent.Comp);
         Dirty(ent.Owner, ent.Comp);
+        RaiseLocalEvent(ent.Owner, new RMCVehicleViewToggledEvent(ent.Comp.IsOutside));
     }
 
     private void UpdateActionState(RMCVehicleViewToggleComponent toggle)
@@ -96,5 +118,99 @@ public sealed class RMCVehicleViewToggleSystem : EntitySystem
             return;
 
         _actions.SetToggled(toggle.Action, toggle.IsOutside);
+    }
+
+    private void EnsureSingleToggleAction(EntityUid user, RMCVehicleViewToggleComponent toggle)
+    {
+        bool IsToggleActionPrototype(EntityUid actionUid)
+        {
+            if (TerminatingOrDeleted(actionUid) ||
+                !TryComp(actionUid, out MetaDataComponent? metaData))
+            {
+                return false;
+            }
+
+            return metaData.EntityPrototype?.ID == toggle.ActionId.ToString();
+        }
+
+        bool IsLiveToggleAction(EntityUid actionUid)
+        {
+            if (!IsToggleActionPrototype(actionUid))
+                return false;
+
+            if (!TryComp(actionUid, out ActionComponent? actionComp) ||
+                actionComp.AttachedEntity != user)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        if (TryComp(user, out ActionsContainerComponent? containerComp))
+        {
+            foreach (var action in containerComp.Container.ContainedEntities.ToArray())
+            {
+                if (!IsToggleActionPrototype(action))
+                    continue;
+
+                if (TryComp(action, out ActionComponent? actionComp) &&
+                    actionComp.AttachedEntity == user)
+                {
+                    continue;
+                }
+
+                RemoveAndDeleteToggleAction(action);
+            }
+        }
+
+        EntityUid? primaryAction = null;
+
+        if (toggle.Action is { } existing &&
+            IsLiveToggleAction(existing))
+        {
+            primaryAction = existing;
+        }
+
+        if (TryComp(user, out ActionsComponent? actionsComp))
+        {
+            foreach (var action in actionsComp.Actions.ToArray())
+            {
+                if (!IsLiveToggleAction(action))
+                {
+                    continue;
+                }
+
+                if (primaryAction == null)
+                {
+                    primaryAction = action;
+                    continue;
+                }
+
+                if (action == primaryAction.Value)
+                    continue;
+
+                RemoveAndDeleteToggleAction(action);
+            }
+        }
+
+        if (primaryAction == null)
+            primaryAction = _actions.AddAction(user, toggle.ActionId);
+
+        toggle.Action = primaryAction;
+
+        if (toggle.Action is { } ensuredAction)
+            _actions.SetEnabled(ensuredAction, true);
+    }
+
+    private void RemoveAndDeleteToggleAction(EntityUid action)
+    {
+        if (TerminatingOrDeleted(action))
+            return;
+
+        _actions.RemoveAction(action);
+
+        if (Exists(action))
+            QueueDel(action);
     }
 }

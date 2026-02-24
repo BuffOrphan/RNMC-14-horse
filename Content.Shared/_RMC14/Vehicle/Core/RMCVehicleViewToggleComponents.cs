@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using Content.Shared.Actions;
+using Robust.Shared.GameObjects;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 
@@ -25,6 +27,19 @@ public sealed partial class RMCVehicleViewToggleComponent : Component
 
     [DataField, AutoNetworkedField]
     public bool IsOutside;
+
+    [DataField]
+    public HashSet<EntityUid> Sources = new();
 }
 
 public sealed partial class RMCVehicleToggleViewActionEvent : InstantActionEvent;
+
+public sealed class RMCVehicleViewToggledEvent : EntityEventArgs
+{
+    public readonly bool IsOutside;
+
+    public RMCVehicleViewToggledEvent(bool isOutside)
+    {
+        IsOutside = isOutside;
+    }
+}

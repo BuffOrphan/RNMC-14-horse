@@ -58,6 +58,7 @@ public sealed class RMCVehicleWeaponsSystem : EntitySystem
         SubscribeLocalEvent<VehicleWeaponsOperatorComponent, ComponentShutdown>(OnOperatorShutdown);
         SubscribeLocalEvent<VehicleWeaponsOperatorComponent, ShotAttemptedEvent>(OnOperatorShotAttempted);
         SubscribeLocalEvent<VehicleWeaponsOperatorComponent, RMCVehicleHardpointSelectActionEvent>(OnHardpointActionSelect);
+        SubscribeLocalEvent<VehicleWeaponsOperatorComponent, RMCVehicleViewToggledEvent>(OnViewToggled);
 
         SubscribeLocalEvent<RMCHardpointSlotsChangedEvent>(OnHardpointSlotsChanged);
 
@@ -471,6 +472,23 @@ public sealed class RMCVehicleWeaponsSystem : EntitySystem
         }
     }
 
+    private void OnViewToggled(Entity<VehicleWeaponsOperatorComponent> ent, ref RMCVehicleViewToggledEvent args)
+    {
+        if (_net.IsClient)
+            return;
+
+        if (ent.Comp.Vehicle is not { } vehicle ||
+            !TryComp(vehicle, out RMCVehicleWeaponsComponent? weapons))
+        {
+            return;
+        }
+
+        RefreshHardpointActions(ent.Owner, vehicle, weapons, ent.Comp);
+
+        if (TryGetOperatorSeat(weapons, out var seat))
+            UpdateWeaponsUi(seat, vehicle, weapons);
+    }
+
     private void UpdateGunnerView(EntityUid user, EntityUid vehicle, bool removeOnly = false)
     {
         if (!removeOnly && TryComp(vehicle, out RMCVehicleGunnerViewComponent? gunnerView) && gunnerView.PvsScale > 0f)
@@ -882,7 +900,10 @@ public sealed class RMCVehicleWeaponsSystem : EntitySystem
             return;
         }
 
-        var desired = GetSelectableHardpointActionSlots(vehicle, user, weapons, hardpoints, itemSlots);
+        var desired = CanUseHardpointActions(user)
+            ? GetSelectableHardpointActionSlots(vehicle, user, weapons, hardpoints, itemSlots)
+            : new List<HardpointActionSlot>();
+
         var desiredSlots = new HashSet<string>(desired.Select(slot => slot.SlotId));
 
         foreach (var pair in operatorComp.HardpointActions.ToArray())

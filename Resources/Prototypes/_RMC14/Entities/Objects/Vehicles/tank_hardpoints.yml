@@ -453,18 +453,26 @@
   - type: RMCWeaponAccuracy
     accuracyMultiplier: 4
     accuracyMultiplierUnwielded: 4
-  - type: ShootAtFixedPoint
-  - type: BallisticAmmoProvider
-    cycleable: false
-    proto: RMCVehicleCartridgeTankFlamer
-    capacity: 60
-  - type: RMCVehicleHardpointAmmo
-    magazineSize: 60
-    maxStoredMagazines: 1
+  - type: SolutionContainerManager
+    solutions:
+      rmc_flamer_tank:
+        maxVol: 60
+        reagents:
+        - ReagentId: RMCNapalmUTTank
+          Quantity: 60
+  - type: RMCFlamerAmmoProvider
+  - type: RMCFlamerTank
+    maxIntensity: 30
+    maxDuration: 20
+    maxRange: 7
+    reagentWhitelist:
+    - RMCNapalmUTTank
+  - type: RMCFlushableSolution
+    solution: rmc_flamer_tank
+    flushTime: 1.5
+  - type: NoMixingReagents
   - type: GunFireArc
     arc: 120
-  - type: RefillableByBulletBox
-    bulletType: RMCVehicleAmmoBoxDragonFlameTank
   - type: GunMuzzleOffset
     offset: "0,0"
     useDirectionalOffsets: true
