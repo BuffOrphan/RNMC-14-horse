@@ -169,12 +169,12 @@ public sealed class VehicleTurretVisualSystem : EntitySystem
 
     private static Direction GetDirectionalDir(Angle facing)
     {
-        return facing.GetCardinalDir();
+        return VehicleTurretDirectionHelpers.GetRenderAlignedCardinalDir(facing);
     }
 
     private static Direction GetDirectionalDir(float normalized)
     {
-        return new Angle(normalized).GetCardinalDir();
+        return VehicleTurretDirectionHelpers.GetRenderAlignedCardinalDir(new Angle(normalized));
     }
 
     private static Angle GetDirectionalAngle(Direction dir)

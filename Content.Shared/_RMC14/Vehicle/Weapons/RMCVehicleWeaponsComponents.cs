@@ -57,6 +57,12 @@ public sealed partial class VehicleTurretComponent : Component
     public float FireWhileRotatingGraceDegrees = 0f;
 
     [DataField, AutoNetworkedField]
+    public bool UseBarrelDirectionForShots = false;
+
+    [DataField, AutoNetworkedField]
+    public float MaxShotCurvatureDegrees = 0f;
+
+    [DataField, AutoNetworkedField]
     public bool StabilizedRotation = false;
 
     [DataField, AutoNetworkedField]

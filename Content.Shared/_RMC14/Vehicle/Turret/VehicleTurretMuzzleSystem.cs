@@ -51,7 +51,7 @@ public sealed class VehicleTurretMuzzleSystem : EntitySystem
             return baseOffset;
         }
 
-        return baseRotation.GetCardinalDir() switch
+        return VehicleTurretDirectionHelpers.GetRenderAlignedCardinalDir(baseRotation) switch
         {
             Direction.North => useRight ? muzzle.OffsetRightNorth : muzzle.OffsetLeftNorth,
             Direction.East => useRight ? muzzle.OffsetRightEast : muzzle.OffsetLeftEast,
