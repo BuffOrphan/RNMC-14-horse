@@ -16,7 +16,6 @@ using Content.Shared._RMC14.Actions;
 using Content.Shared._RMC14.Vehicle;
 using Content.Shared.Actions;
 using Content.Shared.Actions.Components;
-using Content.Shared.CombatMode;
 using Content.Shared.Charges.Systems;
 using Content.Shared.Input;
 using Robust.Client.GameObjects;
@@ -43,7 +42,7 @@ using static Robust.Shared.Input.Binding.PointerInputCmdHandler;
 
 namespace Content.Client.UserInterface.Systems.Actions;
 
-public sealed class ActionUIController : UIController, IOnStateChanged<GameplayState>, IOnSystemChanged<ActionsSystem>
+public sealed partial class ActionUIController : UIController, IOnStateChanged<GameplayState>, IOnSystemChanged<ActionsSystem>
 {
     [Dependency] private readonly IOverlayManager _overlays = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
@@ -57,8 +56,6 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
 
     private ActionButtonContainer? _container;
     private readonly List<EntityUid?> _actions = new();
-    private readonly List<EntityUid?> _vehicleActions = new();
-    private bool _vehicleHotbarOverride;
     private readonly DragDropHelper<ActionButton> _menuDragHelper;
     private readonly TextureRect _dragShadow;
     private ActionsWindow? _window;
@@ -298,196 +295,6 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
     {
         QueueWindowUpdate();
         RefreshVehicleHotbarOverride(forceUpdate: true);
-    }
-
-    private IReadOnlyList<EntityUid?> GetActiveHotbarActions()
-    {
-        return _vehicleHotbarOverride ? _vehicleActions : _actions;
-    }
-
-    private List<EntityUid?> GetEditableHotbarActions()
-    {
-        return _vehicleHotbarOverride ? _vehicleActions : _actions;
-    }
-
-    private void RefreshVehicleHotbarOverride(bool forceUpdate = false)
-    {
-        if (_actionsSystem == null)
-            return;
-
-        var hasVehicleContext = HasVehicleHotbarContext();
-        var shouldOverride = ShouldUseVehicleHotbarOverride();
-        var changed = false;
-
-        if (!shouldOverride && !_vehicleHotbarOverride && !forceUpdate)
-            return;
-
-        if (shouldOverride)
-        {
-            if (!_vehicleHotbarOverride)
-            {
-                _vehicleHotbarOverride = true;
-                changed = true;
-            }
-
-            if (RebuildVehicleActionList())
-                changed = true;
-        }
-        else if (_vehicleHotbarOverride)
-        {
-            _vehicleHotbarOverride = false;
-            if (!hasVehicleContext)
-                _vehicleActions.Clear();
-            changed = true;
-        }
-        else if (!hasVehicleContext && _vehicleActions.Count > 0)
-        {
-            _vehicleActions.Clear();
-        }
-
-        if (changed || forceUpdate)
-            _container?.SetActionData(_actionsSystem, GetActiveHotbarActions().ToArray());
-    }
-
-    private bool ShouldUseVehicleHotbarOverride()
-    {
-        if (_playerManager.LocalEntity is not { } user)
-            return false;
-
-        if (!EntityManager.HasComponent<VehicleWeaponsOperatorComponent>(user))
-            return false;
-
-        return true;
-    }
-
-    private bool HasVehicleHotbarContext()
-    {
-        if (_playerManager.LocalEntity is not { } user)
-            return false;
-
-        return EntityManager.HasComponent<VehicleWeaponsOperatorComponent>(user);
-    }
-
-    private bool RebuildVehicleActionList()
-    {
-        if (_actionsSystem == null)
-            return false;
-
-        var old = _vehicleActions.ToList();
-        var desiredOrdered = new List<EntityUid?>();
-        var includeHardpointActions = true;
-
-        if (_playerManager.LocalEntity is { } localUser &&
-            EntityManager.TryGetComponent<RMCVehicleViewToggleComponent>(localUser, out var viewToggle))
-        {
-            includeHardpointActions = viewToggle.IsOutside;
-        }
-
-        if (!includeHardpointActions)
-        {
-            foreach (var action in _actions)
-            {
-                if (action is not { } actionUid ||
-                    EntityManager.HasComponent<RMCVehicleHardpointActionComponent>(actionUid))
-                {
-                    continue;
-                }
-
-                desiredOrdered.Add(actionUid);
-            }
-        }
-        else if (_playerManager.LocalEntity is { } user &&
-                 EntityManager.TryGetComponent<CombatModeComponent>(user, out var combat) &&
-                 combat.CombatToggleActionEntity is { } combatAction &&
-                 !EntityManager.HasComponent<RMCVehicleHardpointActionComponent>(combatAction))
-        {
-            desiredOrdered.Add(combatAction);
-        }
-
-        if (includeHardpointActions)
-        {
-            var hardpointActions = _actionsSystem
-                .GetClientActions()
-                .Where(action => EntityManager.TryGetComponent<RMCVehicleHardpointActionComponent>(action, out _))
-                .OrderBy(action =>
-                {
-                    EntityManager.TryGetComponent<RMCVehicleHardpointActionComponent>(action, out var hardpointAction);
-                    return hardpointAction?.SortOrder ?? 0;
-                });
-
-            foreach (var (uid, _) in hardpointActions)
-            {
-                desiredOrdered.Add(uid);
-            }
-        }
-
-        EntityUid? viewToggleAction = null;
-        if (_playerManager.LocalEntity is { } toggleUser &&
-            EntityManager.TryGetComponent<RMCVehicleViewToggleComponent>(toggleUser, out var toggleState) &&
-            toggleState.Action is { } viewAction &&
-            !EntityManager.HasComponent<RMCVehicleHardpointActionComponent>(viewAction))
-        {
-            viewToggleAction = viewAction;
-        }
-
-        if (viewToggleAction == null)
-        {
-            foreach (var action in _actionsSystem.GetClientActions())
-            {
-                var uid = action.Owner;
-                if (EntityManager.HasComponent<RMCVehicleHardpointActionComponent>(uid) ||
-                    !EntityManager.TryGetComponent<MetaDataComponent>(uid, out var metaData) ||
-                    metaData.EntityPrototype?.ID != "ActionRMCVehicleToggleView")
-                {
-                    continue;
-                }
-
-                viewToggleAction = uid;
-                break;
-            }
-        }
-
-        if (viewToggleAction is { } ensuredViewAction)
-            desiredOrdered.Add(ensuredViewAction);
-
-        // Preserve manual ordering while all current actions still exist.
-        var remaining = new HashSet<EntityUid>();
-        foreach (var desired in desiredOrdered)
-        {
-            if (desired is { } uid)
-                remaining.Add(uid);
-        }
-
-        var rebuilt = new List<EntityUid?>();
-        foreach (var existing in _vehicleActions)
-        {
-            if (existing is not { } existingUid || !remaining.Remove(existingUid))
-                continue;
-
-            rebuilt.Add(existingUid);
-        }
-
-        foreach (var desired in desiredOrdered)
-        {
-            if (desired is not { } desiredUid || !remaining.Remove(desiredUid))
-                continue;
-
-            rebuilt.Add(desiredUid);
-        }
-
-        _vehicleActions.Clear();
-        _vehicleActions.AddRange(rebuilt);
-
-        if (old.Count != _vehicleActions.Count)
-            return true;
-
-        for (var i = 0; i < old.Count; i++)
-        {
-            if (old[i] != _vehicleActions[i])
-                return true;
-        }
-
-        return false;
     }
 
     private void ActionButtonPressed(ButtonEventArgs args)

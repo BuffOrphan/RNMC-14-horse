@@ -16,6 +16,7 @@ using Robust.Shared.EntitySerialization;
 using Robust.Shared.EntitySerialization.Systems;
 using Robust.Shared.GameStates;
 using Robust.Shared.Localization;
+using Robust.Shared.Log;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Network;
@@ -36,6 +37,7 @@ public sealed class RMCVehicleSystem : EntitySystem
     [Dependency] private readonly SkillsSystem _skills = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly VehicleSystem _vehicles = default!;
+    [Dependency] private readonly RMCVehicleLockSystem _vehicleLock = default!;
 
     private readonly Dictionary<EntityUid, InteriorData> _vehicleInteriors = new();
     private readonly Dictionary<MapId, EntityUid> _mapToVehicle = new();
@@ -71,15 +73,27 @@ public sealed class RMCVehicleSystem : EntitySystem
 
     private void OnVehicleEnterActivate(Entity<VehicleEnterComponent> ent, ref ActivateInWorldEvent args)
     {
-        if (args.Handled)
-            return;
-
         if (_net.IsClient)
             return;
 
+        Logger.InfoS("rmc.vehicle.lock", $"[VehicleLockDebug] Enter activate vehicle={ToPrettyString(ent.Owner)} user={ToPrettyString(args.User)} handled={args.Handled}");
+
+        if (IsEntryBlockedByLock(ent.Owner, args.User))
+        {
+            Logger.InfoS("rmc.vehicle.lock", $"[VehicleLockDebug] Entry blocked vehicle={ToPrettyString(ent.Owner)} user={ToPrettyString(args.User)}");
+            _popup.PopupEntity(Loc.GetString("rmc-vehicle-enter-locked"), args.User, args.User, PopupType.SmallCaution);
+            args.Handled = true;
+            return;
+        }
+
+        if (args.Handled)
+        {
+            return;
+        }
+
         if (!TryFindEntry(ent, args.User, out var entryIndex))
         {
-            _popup.PopupClient("You need to use a doorway to enter.", args.User, args.User);
+            _popup.PopupEntity("You need to use a doorway to enter.", args.User, args.User);
             return;
         }
 
@@ -91,7 +105,7 @@ public sealed class RMCVehicleSystem : EntitySystem
 
         if (locks.Contains(entryIndex))
         {
-            _popup.PopupClient("Someone is already entering there.", args.User, args.User);
+            _popup.PopupEntity("Someone is already entering there.", args.User, args.User);
             return;
         }
 
@@ -115,6 +129,13 @@ public sealed class RMCVehicleSystem : EntitySystem
 
     private bool TryEnter(Entity<VehicleEnterComponent> ent, EntityUid user, int entryIndex = -1)
     {
+        if (IsEntryBlockedByLock(ent.Owner, user))
+        {
+            Logger.InfoS("rmc.vehicle.lock", $"[VehicleLockDebug] TryEnter blocked vehicle={ToPrettyString(ent.Owner)} user={ToPrettyString(user)} entryIndex={entryIndex}");
+            _popup.PopupEntity(Loc.GetString("rmc-vehicle-enter-locked"), user, user, PopupType.SmallCaution);
+            return false;
+        }
+
         if (!_vehicleInteriors.TryGetValue(ent.Owner, out var interior))
         {
             if (!EnsureInterior(ent, out interior))
@@ -128,7 +149,7 @@ public sealed class RMCVehicleSystem : EntitySystem
         {
             if (ent.Comp.MaxXenos > 0 && !xenos.Contains(user) && xenos.Count >= ent.Comp.MaxXenos)
             {
-                _popup.PopupClient("There's no room for more xenos inside.", user, user);
+                _popup.PopupEntity("There's no room for more xenos inside.", user, user);
                 return false;
             }
         }
@@ -136,7 +157,7 @@ public sealed class RMCVehicleSystem : EntitySystem
         {
             if (ent.Comp.MaxPassengers > 0 && !passengers.Contains(user) && passengers.Count >= ent.Comp.MaxPassengers)
             {
-                _popup.PopupClient("There's no room for more passengers inside.", user, user);
+                _popup.PopupEntity("There's no room for more passengers inside.", user, user);
                 return false;
             }
         }
@@ -266,15 +287,17 @@ public sealed class RMCVehicleSystem : EntitySystem
 
     private void OnVehicleExitActivate(Entity<VehicleExitComponent> ent, ref ActivateInWorldEvent args)
     {
-        if (args.Handled)
+        if (_net.IsClient)
             return;
 
-        if (_net.IsClient)
+        Logger.InfoS("rmc.vehicle.lock", $"[VehicleLockDebug] Exit activate exit={ToPrettyString(ent.Owner)} user={ToPrettyString(args.User)} handled={args.Handled}");
+
+        if (args.Handled)
             return;
 
         if (_exitLocks.Contains(ent.Owner))
         {
-            _popup.PopupClient("Someone is already using this exit.", args.User, args.User);
+            _popup.PopupEntity("Someone is already using this exit.", args.User, args.User);
             return;
         }
 
@@ -289,6 +312,14 @@ public sealed class RMCVehicleSystem : EntitySystem
 
         if (!TryComp(vehicle, out VehicleEnterComponent? enter))
             return;
+
+        if (IsExitBlockedByLock(vehicle, args.User))
+        {
+            Logger.InfoS("rmc.vehicle.lock", $"[VehicleLockDebug] Exit blocked vehicle={ToPrettyString(vehicle)} user={ToPrettyString(args.User)}");
+            _popup.PopupEntity(Loc.GetString("rmc-vehicle-enter-locked"), args.User, args.User, PopupType.SmallCaution);
+            args.Handled = true;
+            return;
+        }
 
         _exitLocks.Add(ent.Owner);
 
@@ -390,6 +421,13 @@ public sealed class RMCVehicleSystem : EntitySystem
 
         if (!TryComp(vehicle, out VehicleEnterComponent? enter))
             return false;
+
+        if (IsExitBlockedByLock(vehicle, user))
+        {
+            Logger.InfoS("rmc.vehicle.lock", $"[VehicleLockDebug] TryExit blocked vehicle={ToPrettyString(vehicle)} user={ToPrettyString(user)}");
+            _popup.PopupEntity(Loc.GetString("rmc-vehicle-enter-locked"), user, user, PopupType.SmallCaution);
+            return false;
+        }
 
         var vehicleXform = Transform(vehicle);
 
@@ -499,6 +537,7 @@ public sealed class RMCVehicleSystem : EntitySystem
         _vehicles.TrySetOperator((vehicle.Value, vehicleComp), args.Buckle.Owner);
 
         EnsureComp<VehicleOperatorComponent>(args.Buckle.Owner);
+        _vehicleLock.EnableLockAction(args.Buckle.Owner, vehicle.Value);
     }
 
     private void OnDriverSeatUnstrapped(Entity<VehicleDriverSeatComponent> ent, ref UnstrappedEvent args)
@@ -511,6 +550,8 @@ public sealed class RMCVehicleSystem : EntitySystem
         {
             return;
         }
+
+        _vehicleLock.DisableLockAction(args.Buckle.Owner, vehicle.Value);
 
         if (vehicleComp.Operator != args.Buckle.Owner)
             return;
@@ -560,6 +601,45 @@ public sealed class RMCVehicleSystem : EntitySystem
             return false;
 
         return HasComp<VehicleDriverSeatComponent>(buckle.BuckledTo);
+    }
+
+    private bool IsEntryBlockedByLock(EntityUid vehicle, EntityUid user)
+    {
+        if (!TryComp(vehicle, out RMCVehicleLockComponent? vehicleLock) || !vehicleLock.Locked)
+            return false;
+
+        var bypass = CanBypassLockWithDestroyedFrame(vehicle, user);
+        Logger.InfoS("rmc.vehicle.lock", $"[VehicleLockDebug] Entry lock check vehicle={ToPrettyString(vehicle)} user={ToPrettyString(user)} locked={vehicleLock.Locked} bypass={bypass}");
+        return !bypass;
+    }
+
+    private bool IsExitBlockedByLock(EntityUid vehicle, EntityUid user)
+    {
+        if (!TryComp(vehicle, out RMCVehicleLockComponent? vehicleLock) || !vehicleLock.Locked)
+            return false;
+
+        var bypass = CanBypassLockWithDestroyedFrame(vehicle, user);
+        Logger.InfoS("rmc.vehicle.lock", $"[VehicleLockDebug] Exit lock check vehicle={ToPrettyString(vehicle)} user={ToPrettyString(user)} locked={vehicleLock.Locked} bypass={bypass}");
+        return !bypass;
+    }
+
+    private bool CanBypassLockWithDestroyedFrame(EntityUid vehicle, EntityUid user)
+    {
+        if (!HasComp<XenoComponent>(user))
+        {
+            Logger.InfoS("rmc.vehicle.lock", $"[VehicleLockDebug] Bypass denied vehicle={ToPrettyString(vehicle)} user={ToPrettyString(user)} reason=not-xeno");
+            return false;
+        }
+
+        if (!TryComp(vehicle, out RMCHardpointIntegrityComponent? frameIntegrity))
+        {
+            Logger.InfoS("rmc.vehicle.lock", $"[VehicleLockDebug] Bypass denied vehicle={ToPrettyString(vehicle)} user={ToPrettyString(user)} reason=no-frame-integrity");
+            return false;
+        }
+
+        var bypass = frameIntegrity.BypassEntryOnZero && frameIntegrity.Integrity <= 0f;
+        Logger.InfoS("rmc.vehicle.lock", $"[VehicleLockDebug] Bypass eval vehicle={ToPrettyString(vehicle)} user={ToPrettyString(user)} bypassOnZero={frameIntegrity.BypassEntryOnZero} integrity={frameIntegrity.Integrity} bypass={bypass}");
+        return bypass;
     }
 
     public bool TryGetVehicleFromInterior(EntityUid interiorEntity, out EntityUid? vehicle)

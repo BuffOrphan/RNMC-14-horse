@@ -21,6 +21,22 @@
     itemIconStyle: BigItem
 
 - type: entity
+  id: ActionRMCVehicleLock
+  name: Toggle Vehicle Lock
+  description: Locks or unlocks vehicle entry doors.
+  components:
+  - type: InstantAction
+    event: !type:RMCVehicleLockActionEvent
+  - type: Action
+    icon:
+      sprite: _RMC14/Actions/id_lock_actions.rsi
+      state: id_lock_unlocked
+    iconOn:
+      sprite: _RMC14/Actions/id_lock_actions.rsi
+      state: id_lock_locked
+    itemIconStyle: BigItem
+
+- type: entity
   id: ActionRMCVehicleSelectHardpoint
   name: Select Hardpoint
   description: Select this hardpoint for firing.
