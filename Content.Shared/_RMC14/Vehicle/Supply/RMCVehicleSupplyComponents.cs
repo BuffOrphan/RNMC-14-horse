@@ -54,4 +54,7 @@ public sealed partial class RMCVehicleHardpointVendorComponent : Component
 
     [NonSerialized]
     public readonly Dictionary<string, int> LastVehicleCounts = new();
+
+    [NonSerialized]
+    public readonly Dictionary<string, int> RemainingGroupAmounts = new();
 }

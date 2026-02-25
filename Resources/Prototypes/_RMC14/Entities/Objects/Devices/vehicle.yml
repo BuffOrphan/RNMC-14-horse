@@ -1287,6 +1287,9 @@
     - map: [ secondary ]
       state: SECONDARY
       visible: false
+    - map: [ support ]
+      state: SUPPORT
+      visible: false
     - map: [ rmc-wheels ]
       state: wheels_1
   - type: SpriteMovement
@@ -1349,6 +1352,14 @@
       visualLayer: secondary
       insertDelay: 2.5
       required: false
+    - id: support
+      hardpointType: Support
+      visualLayer: support
+      insertDelay: 2.0
+      required: false
+      whitelist:
+        tags:
+        - RMCVehicleHardpointSupportAttachment
     - id: wheel-1
       hardpointType: Wheel
       insertDelay: 2.0

@@ -149,8 +149,7 @@
     damage:
       types:
         Heat: 30
-    soundHit:
-      path: /Audio/Weapons/Guns/Hits/bullet_hit.ogg
+    soundHit: null
   - type: TriggerOnFixedDistanceStop
     delay: 0
   - type: DeleteOnTrigger
@@ -205,8 +204,7 @@
     damage:
       types:
         Heat: 30
-    soundHit:
-      path: /Audio/Weapons/Guns/Hits/bullet_hit.ogg
+    soundHit: null
   - type: TriggerOnFixedDistanceStop
     delay: 0
   - type: DeleteOnTrigger

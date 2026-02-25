@@ -105,6 +105,9 @@ public sealed partial class GridVehicleMoverSystem : EntitySystem
             maxSpeed *= overcharge.SpeedMultiplier;
         if (TryComp<RMCVehicleSpeedModifierComponent>(uid, out var speedMod))
             maxSpeed *= speedMod.SpeedMultiplier;
+        var accelModifier = 1f;
+        if (TryComp<RMCVehicleAccelerationModifierComponent>(uid, out var accelMod))
+            accelModifier = MathF.Max(0.05f, accelMod.AccelerationMultiplier);
 
         var targetCenter = new Vector2(mover.TargetTile.X + 0.5f, mover.TargetTile.Y + 0.5f);
         var toTarget = targetCenter - mover.Position;
@@ -123,7 +126,7 @@ public sealed partial class GridVehicleMoverSystem : EntitySystem
         else
         {
             targetSpeed = maxSpeed;
-            accel = mover.Acceleration;
+            accel = mover.Acceleration * accelModifier;
         }
 
         if (mover.CurrentSpeed < targetSpeed)
@@ -226,6 +229,9 @@ public sealed partial class GridVehicleMoverSystem : EntitySystem
             maxSpeed *= speedMod.SpeedMultiplier;
             maxReverseSpeed *= speedMod.SpeedMultiplier;
         }
+        var accelModifier = 1f;
+        if (TryComp<RMCVehicleAccelerationModifierComponent>(uid, out var accelMod))
+            accelModifier = MathF.Max(0.05f, accelMod.AccelerationMultiplier);
 
         var targetCenter = new Vector2(mover.TargetTile.X + 0.5f, mover.TargetTile.Y + 0.5f);
         var toTarget = targetCenter - mover.Position;
@@ -254,7 +260,7 @@ public sealed partial class GridVehicleMoverSystem : EntitySystem
             else
             {
                 targetSpeed = -maxReverseSpeed;
-                accel = mover.ReverseAcceleration;
+                accel = mover.ReverseAcceleration * accelModifier;
             }
         }
         else
@@ -267,7 +273,7 @@ public sealed partial class GridVehicleMoverSystem : EntitySystem
             else
             {
                 targetSpeed = maxSpeed;
-                accel = mover.Acceleration;
+                accel = mover.Acceleration * accelModifier;
             }
         }
 

@@ -185,9 +185,11 @@ public sealed class RMCHardpointSystem : EntitySystem
         var accuracyMult = FixedPoint2.New(1);
         var fireRateMult = 1f;
         var speedMult = 1f;
+        var accelMult = 1f;
         var viewScale = 0f;
         var hasWeaponMods = false;
         var hasSpeedMods = false;
+        var hasAccelMods = false;
         var hasViewMods = false;
 
         void Accumulate(EntityUid item)
@@ -203,6 +205,12 @@ public sealed class RMCHardpointSystem : EntitySystem
             {
                 speedMult *= speedMod.SpeedMultiplier;
                 hasSpeedMods = true;
+            }
+
+            if (TryComp(item, out RMCVehicleAccelerationModifierAttachmentComponent? accelMod))
+            {
+                accelMult *= accelMod.AccelerationMultiplier;
+                hasAccelMods = true;
             }
 
             if (TryComp(item, out RMCVehicleGunnerViewAttachmentComponent? viewMod))
@@ -265,6 +273,17 @@ public sealed class RMCHardpointSystem : EntitySystem
         else
         {
             RemCompDeferred<RMCVehicleSpeedModifierComponent>(vehicle);
+        }
+
+        if (hasAccelMods)
+        {
+            var accel = EnsureComp<RMCVehicleAccelerationModifierComponent>(vehicle);
+            accel.AccelerationMultiplier = accelMult;
+            Dirty(vehicle, accel);
+        }
+        else
+        {
+            RemCompDeferred<RMCVehicleAccelerationModifierComponent>(vehicle);
         }
 
         if (hasViewMods && viewScale > 0f)
@@ -752,7 +771,7 @@ public sealed class RMCHardpointSystem : EntitySystem
 
         if (anyIntact)
         {
-            var hardpointDamage = totalDamage * ent.Comp.HardpointDamageMultiplier;
+            var hardpointDamage = ScaleDamage(args.Damage, ent.Comp.HardpointDamageMultiplier);
 
             foreach (var (item, integrity) in intactHardpoints)
             {
@@ -809,9 +828,37 @@ public sealed class RMCHardpointSystem : EntitySystem
         return scaled;
     }
 
-    private void ApplyDamageToHardpoint(EntityUid vehicle, EntityUid hardpoint, RMCHardpointIntegrityComponent integrity, float amount)
+    private void ApplyDamageToHardpoint(EntityUid vehicle, EntityUid hardpoint, RMCHardpointIntegrityComponent integrity, DamageSpecifier damage)
     {
+        var amount = GetHardpointDamageAmount(hardpoint, damage);
+        if (amount <= 0f)
+            return;
+
         DamageHardpoint(vehicle, hardpoint, amount, integrity);
+    }
+
+    private float GetHardpointDamageAmount(EntityUid hardpoint, DamageSpecifier damage)
+    {
+        var total = MathF.Max(damage.GetTotal().Float(), 0f);
+
+        if (!TryComp(hardpoint, out RMCHardpointDamageModifierComponent? hardpointModifiers) ||
+            hardpointModifiers.ModifierSets.Count == 0)
+        {
+            return total;
+        }
+
+        var modifierSets = new List<DamageModifierSet>(hardpointModifiers.ModifierSets.Count);
+        foreach (var modifierSetId in hardpointModifiers.ModifierSets)
+        {
+            if (_prototypeManager.TryIndex<DamageModifierSetPrototype>(modifierSetId, out var modifierSet))
+                modifierSets.Add(modifierSet);
+        }
+
+        if (modifierSets.Count == 0)
+            return total;
+
+        var modifiedDamage = DamageSpecifier.ApplyModifierSets(damage, modifierSets);
+        return MathF.Max(modifiedDamage.GetTotal().Float(), 0f);
     }
 
     private void OnHardpointIntegrityInit(Entity<RMCHardpointIntegrityComponent> ent, ref ComponentInit args)

@@ -69,6 +69,29 @@
 
 - type: entity
   parent: RMCVehicleTankHardpointBase
+  id: RMCVehicleTankReinforcedTreads
+  name: reinforced tank treads
+  description: Heavier tank treads with better durability and acid resistance at the cost of acceleration.
+  components:
+  - type: Sprite
+    state: treads
+  - type: RMCHardpointItem
+    hardpointType: Wheel
+  - type: Tag
+    tags:
+    - RMCVehicleHardpointWheel
+    - RMCVehicleHardpointTreads
+  - type: RMCVehicleWheelItem
+  - type: RMCHardpointIntegrity
+    maxIntegrity: 150
+  - type: RMCHardpointDamageModifier
+    modifierSets:
+    - RMCVehicleArmorCaustic
+  - type: RMCVehicleAccelerationModifierAttachment
+    accelerationMultiplier: 0.9
+
+- type: entity
+  parent: RMCVehicleTankHardpointBase
   id: RMCVehicleTankTires
   name: tank tires
   description: Reinforced tank tires.
@@ -383,7 +406,7 @@
   - type: GunIgnoreContainerOwnerCollision
   - type: GunIgnorePrediction
   - type: Gun
-    fireRate: 1.2
+    fireRate: 0.5
     projectileSpeed: 20
     selectedMode: SemiAuto
     availableModes:
@@ -397,9 +420,9 @@
   - type: BallisticAmmoProvider
     cycleable: false
     proto: RMCVehicleCartridgeDragonFlame
-    capacity: 100
+    capacity: 150
   - type: RMCVehicleHardpointAmmo
-    magazineSize: 100
+    magazineSize: 150
     maxStoredMagazines: 1
   - type: GunFireArc
     arc: 120

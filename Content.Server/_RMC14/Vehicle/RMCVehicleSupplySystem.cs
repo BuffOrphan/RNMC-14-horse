@@ -1,11 +1,13 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Numerics;
 using Content.Shared._RMC14.Intel;
 using Content.Shared._RMC14.Intel.Tech;
 using Content.Shared._RMC14.Vehicle;
 using Content.Shared._RMC14.Vehicle.Supply;
 using Content.Shared._RMC14.Vendors;
+using Content.Shared._RMC14.Weapons.Ranged.Ammo.BulletBox;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Physics;
@@ -24,6 +26,7 @@ namespace Content.Server._RMC14.Vehicle;
 public sealed class RMCVehicleSupplySystem : EntitySystem
 {
     private readonly record struct HardpointItemInfo(string ProtoId, HashSet<ProtoId<TagPrototype>> Tags);
+    private const int VendedHardpointAmmoCount = 3;
 
     [Dependency] private readonly AudioSystem _audio = default!;
     [Dependency] private readonly IntelSystem _intel = default!;
@@ -38,6 +41,7 @@ public sealed class RMCVehicleSupplySystem : EntitySystem
     [Dependency] private readonly RMCVehicleSystem _rmcVehicles = default!;
 
     private readonly Dictionary<string, List<HardpointItemInfo>> _hardpointItemsByType = new();
+    private readonly Dictionary<string, string> _hardpointTypeByProto = new();
     private readonly Dictionary<string, List<string>> _hardpointsByVehicleCache = new();
 
     private readonly record struct PreviewOffset(
@@ -47,6 +51,13 @@ public sealed class RMCVehicleSupplySystem : EntitySystem
         Vector2 East,
         Vector2 South,
         Vector2 West);
+    private readonly record struct VendorHardpointEntry(
+        string Id,
+        string SharedKey,
+        int SortOrder,
+        string DisplayName,
+        string SectionName,
+        int SectionOrder);
 
     public override void Initialize()
     {
@@ -55,6 +66,7 @@ public sealed class RMCVehicleSupplySystem : EntitySystem
         SubscribeLocalEvent<RMCVehicleHardpointVendorComponent, MapInitEvent>(OnVendorMapInit);
         SubscribeLocalEvent<RMCVehicleHardpointVendorComponent, BeforeActivatableUIOpenEvent>(OnVendorBeforeUiOpen);
         SubscribeLocalEvent<RMCVehicleSupplyLiftComponent, MapInitEvent>(OnLiftMapInit);
+        SubscribeLocalEvent<ActorComponent, RMCAutomatedVendedUserEvent>(OnAutomatedVendorVended);
 
         Subs.BuiEvents<RMCVehicleSupplyConsoleComponent>(RMCVehicleSupplyUIKey.Key, subs =>
         {
@@ -75,6 +87,22 @@ public sealed class RMCVehicleSupplySystem : EntitySystem
     private static int GetStoredCount(RMCVehicleSupplyLiftComponent lift, string key)
     {
         return lift.Stored.TryGetValue(key, out var count) ? count : 0;
+    }
+
+    private static int GetVendorAvailableVehicleCount(RMCVehicleSupplyLiftComponent lift, string key)
+    {
+        var count = GetStoredCount(lift, key);
+
+        if (lift.Deployed.Contains(key))
+            count++;
+
+        if (!string.IsNullOrWhiteSpace(lift.PendingVehicle) &&
+            Normalize(lift.PendingVehicle) == key)
+        {
+            count++;
+        }
+
+        return count;
     }
 
     private static void AddStored(RMCVehicleSupplyLiftComponent lift, string key, int amount = 1)
@@ -212,6 +240,7 @@ public sealed class RMCVehicleSupplySystem : EntitySystem
     private void ReloadHardpointItems()
     {
         _hardpointItemsByType.Clear();
+        _hardpointTypeByProto.Clear();
 
         foreach (var proto in _prototypes.EnumeratePrototypes<EntityPrototype>())
         {
@@ -220,6 +249,8 @@ public sealed class RMCVehicleSupplySystem : EntitySystem
 
             if (!proto.TryGetComponent(out RMCHardpointItemComponent? hardpointItem, _compFactory))
                 continue;
+
+            _hardpointTypeByProto[Normalize(proto.ID)] = hardpointItem.HardpointType;
 
             var key = Normalize(hardpointItem.HardpointType);
             if (!_hardpointItemsByType.TryGetValue(key, out var list))
@@ -313,6 +344,63 @@ public sealed class RMCVehicleSupplySystem : EntitySystem
         UpdateVendorSections(ent.Owner, ent.Comp);
     }
 
+    private void OnAutomatedVendorVended(Entity<ActorComponent> ent, ref RMCAutomatedVendedUserEvent args)
+    {
+        if (!HasComp<RMCHardpointItemComponent>(args.Item))
+            return;
+
+        TrySpawnVendedHardpointAmmo(ent.Owner, args.Item);
+        UpdateVendorSectionsAll();
+    }
+
+    private void TrySpawnVendedHardpointAmmo(EntityUid user, EntityUid hardpointItem)
+    {
+        if (!TryComp(hardpointItem, out RMCVehicleHardpointAmmoComponent? _) ||
+            !TryComp(hardpointItem, out RefillableByBulletBoxComponent? refillable) ||
+            refillable.BulletType is not { } bulletType)
+        {
+            return;
+        }
+
+        if (!TryResolveVendedAmmoPrototype(bulletType, out var ammoProto))
+            return;
+
+        for (var i = 0; i < VendedHardpointAmmoCount; i++)
+        {
+            SpawnNextToOrDrop(ammoProto, user);
+        }
+    }
+
+    private bool TryResolveVendedAmmoPrototype(EntProtoId bulletType, out EntProtoId ammoProto)
+    {
+        ammoProto = bulletType;
+
+        if (_prototypes.TryIndex<EntityPrototype>(bulletType, out var exact) && !exact.Abstract)
+            return true;
+
+        string? fallback = null;
+        foreach (var proto in _prototypes.EnumeratePrototypes<EntityPrototype>())
+        {
+            if (proto.Abstract)
+                continue;
+
+            if (!proto.TryGetComponent(out BulletBoxComponent? box, _compFactory))
+                continue;
+
+            if (box.BulletType != bulletType)
+                continue;
+
+            if (fallback == null || string.CompareOrdinal(proto.ID, fallback) < 0)
+                fallback = proto.ID;
+        }
+
+        if (fallback == null)
+            return false;
+
+        ammoProto = fallback;
+        return true;
+    }
+
     private void OnVehicleSelected(Entity<RMCVehicleSupplyConsoleComponent> ent, ref RMCVehicleSupplySelectMsg args)
     {
         if (string.IsNullOrWhiteSpace(args.VehicleId))
@@ -386,7 +474,6 @@ public sealed class RMCVehicleSupplySystem : EntitySystem
 
                                 console.Comp.SelectedVehicle = string.Empty;
                                 console.Comp.SelectedVehicleCopyIndex = 0;
-                                UpdateVendorSectionsAll();
                             }
                         }
                     }
@@ -402,6 +489,8 @@ public sealed class RMCVehicleSupplySystem : EntitySystem
                 comp.PendingVehicle = string.Empty;
                 comp.PendingVehicleEntity = null;
             }
+
+            UpdateVendorSectionsAll();
         }
         else
         {
@@ -763,6 +852,7 @@ public sealed class RMCVehicleSupplySystem : EntitySystem
 
         var previousCounts = new Dictionary<string, int>(vendor.LastVehicleCounts);
         vendor.LastVehicleCounts.Clear();
+        var validGroupStateKeys = new HashSet<string>();
 
         var sections = new List<CMVendorSection>();
         foreach (var entry in catalog)
@@ -771,75 +861,202 @@ public sealed class RMCVehicleSupplySystem : EntitySystem
                 continue;
 
             var vehicleKey = Normalize(entry.Vehicle.Id);
-            var count = hasLift ? GetStoredCount(lift.Comp, vehicleKey) : 0;
+            var count = hasLift ? GetVendorAvailableVehicleCount(lift.Comp, vehicleKey) : 0;
             var lastCount = previousCounts.TryGetValue(vehicleKey, out var prev) ? prev : 0;
-            var maxCount = Math.Max(lastCount, count);
-            var delta = count > lastCount ? count - lastCount : 0;
+            var delta = count - lastCount;
 
             var hardpoints = GetHardpointsForVehicle(entry.Vehicle.Id, catalog);
             if (hardpoints.Count == 0)
                 continue;
 
-            var hasExistingAny = false;
+            var hardpointEntries = new List<VendorHardpointEntry>();
+            var vehicleName = GetEntryName(entry);
             foreach (var hardpoint in hardpoints)
             {
                 if (string.IsNullOrWhiteSpace(hardpoint))
                     continue;
 
-                if (existingAmounts.ContainsKey(new EntProtoId(hardpoint)))
+                var displayName = GetPrototypeName(hardpoint);
+                var sharedKey = Normalize(hardpoint);
+                var order = int.MaxValue;
+                var sectionName = vehicleName;
+                var sectionOrder = int.MaxValue;
+
+                if (TryGetTankSharedCategory(entry.Vehicle.Id, hardpoint, out var categoryKey, out var categoryLabel, out var categoryOrder))
                 {
-                    hasExistingAny = true;
-                    break;
+                    sharedKey = categoryKey;
+                    order = categoryOrder;
+                    sectionName = $"{vehicleName} - {categoryLabel}";
+                    sectionOrder = categoryOrder;
                 }
+
+                hardpointEntries.Add(new VendorHardpointEntry(
+                    hardpoint,
+                    sharedKey,
+                    order,
+                    displayName,
+                    sectionName,
+                    sectionOrder));
             }
 
-            if (maxCount <= 0 && !hasExistingAny)
+            if (hardpointEntries.Count == 0)
                 continue;
 
-            vendor.LastVehicleCounts[vehicleKey] = maxCount;
-
-            var section = new CMVendorSection
+            var groupedBySharedKey = new Dictionary<string, List<EntProtoId>>();
+            foreach (var hardpoint in hardpointEntries)
             {
-                Name = GetEntryName(entry),
-                Entries = new List<CMVendorEntry>()
-            };
-
-            foreach (var hardpoint in hardpoints)
-            {
-                if (string.IsNullOrWhiteSpace(hardpoint))
-                    continue;
-
-                var id = new EntProtoId(hardpoint);
-                var hasExisting = existingAmounts.TryGetValue(id, out var existing);
-                int amount;
-                if (hasExisting)
+                var id = new EntProtoId(hardpoint.Id);
+                if (!groupedBySharedKey.TryGetValue(hardpoint.SharedKey, out var list))
                 {
-                    amount = existing + (delta > 0 ? delta : 0);
-                }
-                else if (maxCount > 0)
-                {
-                    amount = maxCount;
-                }
-                else
-                {
-                    continue;
+                    list = new List<EntProtoId>();
+                    groupedBySharedKey[hardpoint.SharedKey] = list;
                 }
 
-                section.Entries.Add(new CMVendorEntry
-                {
-                    Id = id,
-                    Name = GetPrototypeName(hardpoint),
-                    Amount = amount,
-                    Multiplier = amount,
-                    Max = amount
-                });
+                list.Add(id);
             }
 
-            if (section.Entries.Count > 0)
-                sections.Add(section);
+            if (count <= 0)
+            {
+                foreach (var sharedKey in groupedBySharedKey.Keys)
+                {
+                    var groupStateKey = $"{vehicleKey}:{sharedKey}";
+                    vendor.RemainingGroupAmounts.Remove(groupStateKey);
+                }
+
+                continue;
+            }
+
+            vendor.LastVehicleCounts[vehicleKey] = count;
+
+            var sharedAmounts = new Dictionary<string, int>();
+            foreach (var (sharedKey, ids) in groupedBySharedKey)
+            {
+                var groupStateKey = $"{vehicleKey}:{sharedKey}";
+                validGroupStateKeys.Add(groupStateKey);
+
+                var remaining = vendor.RemainingGroupAmounts.TryGetValue(groupStateKey, out var tracked)
+                    ? tracked
+                    : lastCount;
+
+                var hasExistingForGroup = false;
+                var minExisting = int.MaxValue;
+                foreach (var id in ids)
+                {
+                    if (!existingAmounts.TryGetValue(id, out var existing))
+                        continue;
+
+                    hasExistingForGroup = true;
+                    if (existing < minExisting)
+                        minExisting = existing;
+                }
+
+                if (hasExistingForGroup)
+                    remaining = minExisting;
+
+                if (delta > 0)
+                    remaining += delta;
+
+                remaining = Math.Clamp(remaining, 0, count);
+                vendor.RemainingGroupAmounts[groupStateKey] = remaining;
+                sharedAmounts[sharedKey] = remaining;
+            }
+
+            foreach (var sectionGroup in hardpointEntries
+                         .GroupBy(h => h.SectionName)
+                         .OrderBy(g => g.Min(h => h.SectionOrder))
+                         .ThenBy(g => g.Key, StringComparer.OrdinalIgnoreCase))
+            {
+                var section = new CMVendorSection
+                {
+                    Name = sectionGroup.Key,
+                    Entries = new List<CMVendorEntry>()
+                };
+
+                foreach (var hardpoint in sectionGroup
+                             .OrderBy(h => h.SortOrder)
+                             .ThenBy(h => h.DisplayName, StringComparer.OrdinalIgnoreCase))
+                {
+                    if (!sharedAmounts.TryGetValue(hardpoint.SharedKey, out var amount))
+                        continue;
+
+                    var id = new EntProtoId(hardpoint.Id);
+                    section.Entries.Add(new CMVendorEntry
+                    {
+                        Id = id,
+                        Name = hardpoint.DisplayName,
+                        Amount = amount,
+                        Multiplier = amount,
+                        Max = amount
+                    });
+                }
+
+                if (section.Entries.Count > 0)
+                    sections.Add(section);
+            }
+        }
+
+        var staleGroupKeys = vendor.RemainingGroupAmounts.Keys
+            .Where(key => !validGroupStateKeys.Contains(key))
+            .ToArray();
+        foreach (var key in staleGroupKeys)
+        {
+            vendor.RemainingGroupAmounts.Remove(key);
         }
 
         _vendor.SetSections((uid, automated), sections);
+    }
+
+    private bool TryGetTankSharedCategory(
+        string vehicleId,
+        string hardpointId,
+        out string categoryKey,
+        out string categoryLabel,
+        out int categoryOrder)
+    {
+        categoryKey = string.Empty;
+        categoryLabel = string.Empty;
+        categoryOrder = int.MaxValue;
+
+        if (!string.Equals(Normalize(vehicleId), "rmcvehicletank", StringComparison.Ordinal))
+            return false;
+
+        var hardpointKey = Normalize(hardpointId);
+        if (hardpointKey == "rmcvehicletanksnowplow")
+        {
+            categoryKey = "tank-general";
+            categoryLabel = "General";
+            categoryOrder = 3;
+            return true;
+        }
+
+        if (!_hardpointTypeByProto.TryGetValue(Normalize(hardpointId), out var hardpointType))
+            return false;
+
+        switch (Normalize(hardpointType))
+        {
+            case "cannon":
+                categoryKey = "tank-primary";
+                categoryLabel = "Primary";
+                categoryOrder = 0;
+                return true;
+            case "launcher":
+                categoryKey = "tank-secondary";
+                categoryLabel = "Secondary";
+                categoryOrder = 1;
+                return true;
+            case "armor":
+                categoryKey = "tank-armor";
+                categoryLabel = "Armor";
+                categoryOrder = 2;
+                return true;
+            case "support":
+                categoryKey = "tank-support";
+                categoryLabel = "Support";
+                categoryOrder = 4;
+                return true;
+            default:
+                return false;
+        }
     }
 
     private bool TryGetLiftForVendor(

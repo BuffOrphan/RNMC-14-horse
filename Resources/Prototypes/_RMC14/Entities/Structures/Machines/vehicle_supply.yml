@@ -92,6 +92,30 @@
       - RMCAPCFlareLauncher
       - RMCAPCFreightStorage
       - RMCAPCWheel
+    - name: tank
+      vehicle: RMCVehicleTank
+      unlock: RMCVehicleTank
+      hardpoints:
+      - RMCVehicleTankTurret
+      - RMCVehicleTankTreads
+      - RMCVehicleTankReinforcedTreads
+      - RMCVehicleTankTires
+      - RMCVehicleTankArmorBallistic
+      - RMCVehicleTankArmorConcussive
+      - RMCVehicleTankArmorCaustic
+      - RMCVehicleTankArmorPaladin
+      - RMCVehicleTankSnowplow
+      - RMCVehicleTankLTAAAPMinigun
+      - RMCVehicleTankAceAutocannon
+      - RMCVehicleTankDragonFlamer
+      - RMCVehicleTankFlamer
+      - RMCVehicleTankGrenadeLauncher
+      - RMCVehicleTankRERE700
+      - RMCVehicleTankWarningArray
+      - RMCVehicleTankOverdriveEnhancer
+      - RMCVehicleTankRocketLauncher
+      - RMCVehicleTankFlareModule
+      - RMCVehicleTankArtilleryModule
     - name: humvee (arc)
       vehicle: RMCVehicleHumveeARC
       unlock: RMCVehicleHumveeARC

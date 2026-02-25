@@ -52,6 +52,27 @@ public sealed partial class RMCVehicleSpeedModifierComponent : Component
 }
 
 /// <summary>
+/// Applied to hardpoints that modify vehicle acceleration.
+/// </summary>
+[RegisterComponent]
+public sealed partial class RMCVehicleAccelerationModifierAttachmentComponent : Component
+{
+    [DataField]
+    public float AccelerationMultiplier = 1f;
+}
+
+/// <summary>
+/// Aggregated acceleration modifier applied on the vehicle.
+/// </summary>
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
+[Access(typeof(RMCHardpointSystem))]
+public sealed partial class RMCVehicleAccelerationModifierComponent : Component
+{
+    [DataField, AutoNetworkedField]
+    public float AccelerationMultiplier = 1f;
+}
+
+/// <summary>
 /// Applied to support hardpoints that increase gunner view.
 /// </summary>
 [RegisterComponent]
