@@ -7,5 +7,5 @@ namespace Content.Shared._RMC14.Medical.CPR;
 public sealed partial class CPRReceivedComponent : Component
 {
     [DataField, AutoNetworkedField]
-    public TimeSpan FuckGingerbreads;
+    public TimeSpan Last;
 }
