@@ -10,7 +10,7 @@
     anchored: true
   - type: Sprite
     sprite: _RMC14/Structures/Vehicles/Interiors/tank.rsi
-    drawdepth: Overdoors
+    drawdepth: Walls
   - type: InteractionTransparency
 
 - type: entity
@@ -30,13 +30,6 @@
     sprite: _RMC14/Structures/Vehicles/Interiors/tank.rsi
     drawdepth: Overdoors
   - type: InteractionTransparency
-  - type: RMCSpriteFade
-    targetAlpha: 0.35
-    changeRate: 4.0
-    reactToMouse: false
-    fadeOnSharedGrid: true
-    fadeLayers:
-    - "roof"
 
 - type: entity
   abstract: true
@@ -92,7 +85,7 @@
     arc: 360
   - type: Sprite
     sprite: _RMC14/Structures/Vehicles/Interiors/tank.rsi
-    drawdepth: Overdoors
+    drawdepth: Walls
     layers:
     - state: locker
       map: ["enum.StorageVisualLayers.Base"]
@@ -109,6 +102,7 @@
   id: RMCVehicleTankWall
   components:
   - type: Sprite
+    drawdepth: Walls
     state: wall
 
 - type: entity
@@ -231,18 +225,29 @@
     state: tank_right_1
 
 - type: entity
-  parent: RMCVehicleTankWallBase
+  parent: RMCVehicleTankRoofBase
   id: RMCVehicleTankTankRight2
   components:
   - type: Sprite
-    state: tank_right_2
+    layers:
+    - state: tank_right_2
+      map: [ "roof" ]
+  - type: RMCSpriteFade
+    targetAlpha: 0.35
+    changeRate: 4.0
+    reactToMouse: false
+    fadeOnSharedGrid: true
+    fadeLayers:
+    - "roof"
 
 - type: entity
-  parent: RMCVehicleTankWallBase
+  parent: RMCVehicleTankRoofBase
   id: RMCVehicleTankTankRight3
   components:
   - type: Sprite
-    state: tank_right_3
+    layers:
+    - state: tank_right_3
+      map: [ "roof" ]
 
 - type: entity
   parent: RMCVehicleTankDoorBase
@@ -255,6 +260,15 @@
   parent: RMCVehicleTankHatch
   id: RMCVehicleTankExitHatch
   components:
+  - type: RemoveComponents
+    components:
+    - type: Fixtures
+    - type: Occluder
+  - type: Transform
+    anchored: false
+  - type: Physics
+    bodyType: Static
+    canCollide: false
   - type: VehicleExit
 
 - type: entity
@@ -265,6 +279,13 @@
     layers:
     - state: exterior_1
       map: ["roof"]
+  - type: RMCSpriteFade
+    targetAlpha: 0.35
+    changeRate: 4.0
+    reactToMouse: false
+    fadeOnSharedGrid: true
+    fadeLayers:
+    - "roof"
 
 - type: entity
   parent: RMCVehicleTankRoofBase
@@ -276,13 +297,36 @@
       map: ["roof"]
 
 - type: entity
-  parent: RMCVehicleTankRoofBase
+  parent: RMCVehicleTankInteriorBase
   id: RMCVehicleTankExterior3
   components:
   - type: Sprite
-    layers:
-    - state: exterior_3
-      map: ["roof"]
+    drawdepth: Objects
+    state: exterior_3
+
+- type: entity
+  abstract: true
+  parent: RMCVehicleTankInteriorBase
+  id: RMCVehicleTankSolidPropBase
+  components:
+  - type: Physics
+    bodyType: Static
+    canCollide: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,0.49"
+        density: 20000
+        hard: true
+        mask:
+        - FullTileMask
+        layer:
+        - HighImpassable
+        - MidImpassable
+        - LowImpassable
+        - InteractImpassable
 
 - type: entity
   parent: RMCVehicleTankInteriorBase
@@ -299,17 +343,18 @@
     state: prop1
 
 - type: entity
-  parent: RMCVehicleTankInteriorBase
+  parent: RMCVehicleTankSolidPropBase
   id: RMCVehicleTankProp2
   components:
   - type: Sprite
     state: prop2
 
 - type: entity
-  parent: RMCVehicleTankInteriorBase
+  parent: RMCVehicleTankSolidPropBase
   id: RMCVehicleTankProp3
   components:
   - type: Sprite
+    drawdepth: Walls
     state: prop3
 
 - type: entity
@@ -331,6 +376,7 @@
   id: RMCVehicleTankProp6
   components:
   - type: Sprite
+    drawdepth: Walls
     state: prop6
 
 - type: entity

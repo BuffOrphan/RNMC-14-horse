@@ -1375,15 +1375,12 @@
     fuelUsed: 8
   - type: Appearance
   - type: VehicleEnter
-    interiorPath: /Maps/_RMC14/Vehicles/humvee_interior.yml
+    interiorPath: /Maps/_RMC14/Vehicles/tank_interior.yml
     enterDoAfter: 1.0
     exitDoAfter: 1.0
     maxPassengers: 4
     maxXenos: 2
     entryPoints:
-    - offset: -1,-0.1
+    - offset: 0,2
       radius: 1
-      interiorCoords: 3.56,-1.42
-    - offset: 1,-0.1
-      radius: 1
-      interiorCoords: 3.56, -0.42
+      interiorCoords: 0.5,-1

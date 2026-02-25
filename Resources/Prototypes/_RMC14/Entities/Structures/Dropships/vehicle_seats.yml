@@ -138,6 +138,32 @@
       all: {}
 
 - type: entity
+  parent: RMCSeatArmoredBase
+  id: RMCSeatTankDriver
+  name: tank driver seat
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: VehicleDriverSeat
+    skills:
+      all: {}
+
+- type: entity
+  parent: RMCSeatArmoredBase
+  id: RMCSeatTankGunner
+  name: tank gunner seat
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: VehicleWeaponsSeat
+    skills:
+      all: {}
+  - type: UserInterface
+    interfaces:
+      enum.RMCVehicleWeaponsUiKey.Key:
+        type: RMCVehicleWeaponsBoundUserInterface
+
+- type: entity
   abstract: true
   parent: CMSeatBase
   id: RMCSeatHumveeBase

@@ -172,44 +172,102 @@
     stateBaseOpen: locker_open
 
 - type: entity
-  parent: RMCVehicleInteriorWallMountedBase
+  abstract: true
+  parent: RMCExtinguisherCabinet
+  id: RMCVehicleInteriorExtinguisherCabinetBase
+  name: interior extinguisher cabinet
+  description: A wall-mounted fire extinguisher cabinet for vehicle interiors.
+  placement:
+    mode: PlaceFree
+  components:
+  - type: Transform
+    anchored: false
+  - type: Sprite
+    sprite: _RMC14/Structures/Vehicles/Interiors/general.rsi
+    drawdepth: Overdoors
+    layers:
+    - state: extinguisher
+    - state: extinguisher_full
+      map: ["enum.ItemCabinetVisuals.Layer"]
+      visible: false
+  - type: GenericVisualizer
+    visuals:
+      enum.ItemCabinetVisuals.ContainsItem:
+        enum.ItemCabinetVisuals.Layer:
+          True: { state: extinguisher_full }
+          False: { state: extinguisher_empty }
+      enum.OpenableVisuals.Opened:
+        enum.ItemCabinetVisuals.Layer:
+          True: { visible: true }
+          False: { visible: false }
+
+- type: entity
+  parent: RMCVehicleInteriorExtinguisherCabinetBase
   id: RMCVehicleInteriorExtinguisher
   name: interior extinguisher
   components:
-  - type: Sprite
-    state: extinguisher
+  - type: ContainerFill
+    containers:
+      ItemCabinet:
+      - CMFireExtinguisher
 
 - type: entity
-  parent: RMCVehicleInteriorWallMountedBase
+  parent: RMCVehicleInteriorExtinguisherCabinetBase
   id: RMCVehicleInteriorExtinguisherClosed
   name: interior extinguisher (closed)
   components:
-  - type: Sprite
-    state: extinguisher_closed
+  - type: ContainerFill
+    containers:
+      ItemCabinet:
+      - CMFireExtinguisher
 
 - type: entity
-  parent: RMCVehicleInteriorWallMountedBase
+  parent: RMCVehicleInteriorExtinguisherCabinetBase
   id: RMCVehicleInteriorExtinguisherFull
   name: interior extinguisher (full)
   components:
-  - type: Sprite
-    state: extinguisher_full
+  - type: Openable
+    opened: true
+  - type: ContainerFill
+    containers:
+      ItemCabinet:
+      - CMFireExtinguisher
 
 - type: entity
-  parent: RMCVehicleInteriorWallMountedBase
+  parent: RMCVehicleInteriorExtinguisherCabinetBase
   id: RMCVehicleInteriorExtinguisherMini
   name: interior extinguisher (mini)
   components:
+  - type: Openable
+    opened: true
+  - type: ContainerFill
+    containers:
+      ItemCabinet:
+      - CMFireExtinguisherPortable
   - type: Sprite
-    state: extinguisher_mini
+    layers:
+    - state: extinguisher
+    - state: extinguisher_mini
+      map: ["enum.ItemCabinetVisuals.Layer"]
+      visible: false
+  - type: GenericVisualizer
+    visuals:
+      enum.ItemCabinetVisuals.ContainsItem:
+        enum.ItemCabinetVisuals.Layer:
+          True: { state: extinguisher_mini }
+          False: { state: extinguisher_empty }
+      enum.OpenableVisuals.Opened:
+        enum.ItemCabinetVisuals.Layer:
+          True: { visible: true }
+          False: { visible: false }
 
 - type: entity
-  parent: RMCVehicleInteriorWallMountedBase
+  parent: RMCVehicleInteriorExtinguisherCabinetBase
   id: RMCVehicleInteriorExtinguisherEmpty
   name: interior extinguisher (empty)
   components:
-  - type: Sprite
-    state: extinguisher_empty
+  - type: Openable
+    opened: true
 
 - type: entity
   parent: RMCNanoMed
