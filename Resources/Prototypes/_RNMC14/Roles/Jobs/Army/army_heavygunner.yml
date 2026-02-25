@@ -73,7 +73,7 @@
     sprite: _RMC14/Markers/landmarks.rsi
     state: co_spawn
   - type: RandomHumanoidSpawner
-    settings: RMCArmyHeavyGunner
+    settings: RNMCArmyHeavyGunner
 
 - type: randomHumanoidSettings
   parent: RMCEventHumanoid

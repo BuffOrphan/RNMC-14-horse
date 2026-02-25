@@ -8,7 +8,7 @@ public sealed partial class ReceivingCPRComponent : Component
 {
     // The time it takes to perform CPR pre skill modification.
     [DataField, AutoNetworkedField]
-    public int CPRPerformingTime = 4;
+    public int CPRPerformingTime = 1; // RNMC
 
     [DataField, AutoNetworkedField]
     public TimeSpan StartTime;

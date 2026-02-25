@@ -133,7 +133,7 @@ public sealed class CPRSystem : EntitySystem
 
         // TODO RMC14 move this value to a component
         if (!_mobState.IsDead(ent) ||
-            ent.Comp.Last <= _timing.CurTime - TimeSpan.FromSeconds(7))
+            ent.Comp.Last <= _timing.CurTime)  //- TimeSpan.FromSeconds(7)) - RNMC
         {
             return;
         }

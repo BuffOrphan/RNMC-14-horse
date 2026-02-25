@@ -1,6 +1,6 @@
 ﻿- type: job
   parent: CMJobBase
-  id: CMSSPPlatoonCommanderPVE
+  id: CMSPPlatoonCommanderPVE
   name: cm-job-name-platoon-commander
   description: cm-job-description-platoon-commander
   playTimeTracker: CMJobSSPPlatoonCommanderPVE
@@ -59,16 +59,9 @@
       icon:
         sprite: _RMC14/Interface/map_blips.rsi
         state: platco
-    - type: MobThresholds
-      thresholds:
-        0: Alive
-        200: Critical
-        350: Dead
-    - type: Perishable
-      rotAfter: 0
 
 - type: playTimeTracker
-  id: CMJobSSPPlatoonCommanderPVE
+  id: CMSPPlatoonCommanderPVE
   isHumanoid: true
 
 - type: entity
@@ -77,7 +70,7 @@
   name: red dawn platoon commander spawn point
   components:
   - type: SpawnPoint
-    job_id: CMSSPPlatoonCommanderPVE
+    job_id: CMSPPlatoonCommanderPVE
   - type: Sprite
     state: marine_spawn
 
@@ -94,7 +87,7 @@
   name: Platoon Commander's dogtags
   components:
   - type: PresetIdCard
-    job: CMSPPPlatoonCommanderPVE
+    job: CMSPPlatoonCommanderPVE
 
 - type: startingGear
   id: RMCGearSPPPlatoonCommander
