@@ -11,7 +11,7 @@
       stationProto: StandardUNMCWarship
       components:
       - type: StationNameSetup
-        mapNameTemplate: 'UNS Golden Arrow'
+        mapNameTemplate: 'USS Golden Arrow'
       - type: StationJobs
         availableJobs:
           #Command

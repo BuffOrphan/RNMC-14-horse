@@ -1,0 +1,9 @@
+﻿- type: entity
+  id: RNMCDistressSignal
+  parent: BaseGameRule
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: GameRule
+    minPlayers: 1
+  - type: CMDistressSignalRule
+    squadIds: [ SquadSunRiders ]

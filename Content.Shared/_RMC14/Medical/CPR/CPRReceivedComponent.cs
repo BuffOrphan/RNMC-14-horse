@@ -1,4 +1,4 @@
-﻿using Robust.Shared.GameStates;
+using Robust.Shared.GameStates;
 
 namespace Content.Shared._RMC14.Medical.CPR;
 
@@ -7,5 +7,5 @@ namespace Content.Shared._RMC14.Medical.CPR;
 public sealed partial class CPRReceivedComponent : Component
 {
     [DataField, AutoNetworkedField]
-    public TimeSpan Last;
+    public TimeSpan FuckGingerbreads;
 }

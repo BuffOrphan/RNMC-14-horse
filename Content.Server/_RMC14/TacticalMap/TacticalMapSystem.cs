@@ -979,7 +979,7 @@ public sealed class TacticalMapSystem : SharedTacticalMapSystem
                     }
                 }
 
-                _marineAnnounce.AnnounceARESStaging(user, "The UNMC tactical map has been updated.", sound);
+                //_marineAnnounce.AnnounceARESStaging(user, "The UNMC tactical map has been updated.", sound); RNMC - this is a disgrace to humanity (also dont need)
                 _adminLog.Add(LogType.RMCTacticalMapUpdated, $"{ToPrettyString(user)} updated the marine tactical map for {ToPrettyString(mapId)}");
             }
 

@@ -89,6 +89,9 @@ public sealed class AcidBloodSplashSystem : EntitySystem
                 continue;
 
             ent.Comp.NextSplashAvailable = _timing.CurTime + ent.Comp.SplashCooldown;
+
+            if (!HasComp<XenoComponent>(target)) // rnmc
+
             _damageable.TryChangeDamage(target, _xeno.TryApplyXenoAcidDamageMultiplier(target, ent.Comp.Damage));
             i++;
 

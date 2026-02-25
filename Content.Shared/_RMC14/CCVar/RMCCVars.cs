@@ -1,5 +1,6 @@
 using Robust.Shared;
 using Robust.Shared.Configuration;
+using Robust.Shared.Prototypes;
 
 namespace Content.Shared._RMC14.CCVar;
 
@@ -169,7 +170,7 @@ public sealed partial class RMCCVars : CVars
         CVarDef.Create("rmc.planet_map_vote_carryover", true, CVar.SERVER | CVar.SERVERONLY);
 
     public static readonly CVarDef<int> RMCTacticalMapAnnounceCooldownSeconds =
-        CVarDef.Create("rmc.tactical_map_announce_cooldown_seconds", 240, CVar.SERVER | CVar.SERVERONLY);
+        CVarDef.Create("rmc.tactical_map_announce_cooldown_seconds", 2, CVar.SERVER | CVar.SERVERONLY); // RNMC, 240 -> 2
 
     public static readonly CVarDef<int> RMCTacticalMapLineLimit =
         CVarDef.Create("rmc.tactical_map_line_limit", 1000, CVar.SERVER | CVar.REPLICATED);
@@ -454,7 +455,7 @@ public sealed partial class RMCCVars : CVars
     CVarDef.Create("rmc.hijack_minimum_burrowed", 5, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<int> RMCDistressXenosMinimum =
-        CVarDef.Create("rmc.distress_xenos_minimum", 4, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("rmc.distress_xenos_minimum", 0, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<float> VolumeGainCassettes =
         CVarDef.Create("rmc.volume_gain_cassettes", 0.33f, CVar.REPLICATED | CVar.CLIENT | CVar.ARCHIVE);
