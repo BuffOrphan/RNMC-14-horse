@@ -8,8 +8,8 @@
   - CMSPPInfantrymanPVE
   - CMSPPSanitarPVE
   - CMSPPMachinegunnerPVE
-  - CMSSPSquadSergeantPVE
+  - CMSPPSquadSergeantPVE
   - CMSPPPlatoonSergeantPVE
-  - CMSSPPlatoonCommanderPVE
+  - CMSPPPlatoonCommanderPVE
   departmentRadio: RedDawn
   headOfDepartment: CMPlatoonCommanderPVE

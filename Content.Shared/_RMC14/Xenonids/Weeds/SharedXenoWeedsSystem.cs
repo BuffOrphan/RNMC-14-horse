@@ -451,8 +451,8 @@ public abstract class SharedXenoWeedsSystem : EntitySystem
         if (weeds == null)
             return false;
 
-        if (!_hive.FromSameHive(entity.Owner, weeds.Value.Owner))
-            return false;
+        //if (!_hive.FromSameHive(entity.Owner, weeds.Value.Owner))
+        //    return false;
 
         return true;
     }
