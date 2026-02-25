@@ -1,6 +1,5 @@
 using Robust.Shared;
 using Robust.Shared.Configuration;
-using Robust.Shared.Prototypes;
 
 namespace Content.Shared._RMC14.CCVar;
 
