@@ -2,6 +2,7 @@ using System.Linq;
 using Content.Shared.Actions;
 using Content.Shared.Actions.Components;
 using Robust.Shared.GameObjects;
+using Robust.Shared.Network;
 
 namespace Content.Shared._RMC14.Vehicle;
 
@@ -9,6 +10,7 @@ public sealed class RMCVehicleViewToggleSystem : EntitySystem
 {
     [Dependency] private readonly SharedActionsSystem _actions = default!;
     [Dependency] private readonly SharedEyeSystem _eye = default!;
+    [Dependency] private readonly INetManager _net = default!;
 
     public override void Initialize()
     {
@@ -36,6 +38,7 @@ public sealed class RMCVehicleViewToggleSystem : EntitySystem
         {
             actionComp.ItemIconStyle = ItemActionIconStyle.BigAction;
             actionComp.EntIcon = null;
+            _actions.SetTemporary((actionUid, actionComp), false);
             Dirty(actionUid, actionComp);
         }
 
@@ -64,7 +67,7 @@ public sealed class RMCVehicleViewToggleSystem : EntitySystem
         }
 
         if (toggle.Action is { } action)
-            RemoveAndDeleteToggleAction(action);
+            RemoveAndDeleteToggleAction(action, user);
 
         toggle.Action = null;
         toggle.Source = null;
@@ -80,7 +83,7 @@ public sealed class RMCVehicleViewToggleSystem : EntitySystem
         if (ent.Comp.Action is not { } action)
             return;
 
-        RemoveAndDeleteToggleAction(action);
+        RemoveAndDeleteToggleAction(action, ent.Owner);
     }
 
     private void OnToggleViewAction(Entity<RMCVehicleViewToggleComponent> ent, ref RMCVehicleToggleViewActionEvent args)
@@ -160,7 +163,7 @@ public sealed class RMCVehicleViewToggleSystem : EntitySystem
                     continue;
                 }
 
-                RemoveAndDeleteToggleAction(action);
+                RemoveAndDeleteToggleAction(action, user);
             }
         }
 
@@ -190,7 +193,7 @@ public sealed class RMCVehicleViewToggleSystem : EntitySystem
                 if (action == primaryAction.Value)
                     continue;
 
-                RemoveAndDeleteToggleAction(action);
+                RemoveAndDeleteToggleAction(action, user);
             }
         }
 
@@ -203,12 +206,19 @@ public sealed class RMCVehicleViewToggleSystem : EntitySystem
             _actions.SetEnabled(ensuredAction, true);
     }
 
-    private void RemoveAndDeleteToggleAction(EntityUid action)
+    private void RemoveAndDeleteToggleAction(EntityUid action, EntityUid? user = null)
     {
         if (TerminatingOrDeleted(action))
             return;
 
-        _actions.RemoveAction(action);
+        if (user is { } actionUser)
+            _actions.RemoveAction(actionUser, action);
+        else
+            _actions.RemoveAction(action);
+
+        // The action entity is networked; client-side queued deletion causes prediction errors.
+        if (_net.IsClient)
+            return;
 
         if (Exists(action))
             QueueDel(action);

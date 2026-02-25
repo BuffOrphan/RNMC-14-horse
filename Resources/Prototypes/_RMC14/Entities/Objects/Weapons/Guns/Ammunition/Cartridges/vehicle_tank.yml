@@ -145,7 +145,8 @@
       shader: unshaded
   - type: Projectile
     deleteOnCollide: true
-    impactEffect: BulletImpactEffect
+    impactEffect: null
+    forceSound: true
     damage:
       types:
         Heat: 30
@@ -184,6 +185,7 @@
   - type: TileFireOnTrigger
     range: 1
     spawn: RMCTileFireHCNapalm
+    sound: null
 
 - type: entity
   parent: RMCBaseBullet
@@ -200,7 +202,8 @@
       shader: unshaded
   - type: Projectile
     deleteOnCollide: true
-    impactEffect: BulletImpactEffect
+    impactEffect: null
+    forceSound: true
     damage:
       types:
         Heat: 30

@@ -95,6 +95,7 @@ public abstract partial class SharedGunSystem : EntitySystem
     // RMC14
     [Dependency] private readonly AttachableHolderSystem _attachableHolder = default!;
     [Dependency] private readonly SharedRMCFlamerSystem _flamer = default!;
+    [Dependency] private readonly RMCVehicleWeaponsSystem _rmcVehicleWeapons = default!;
     [Dependency] private readonly RMCSharedWeaponControllerSystem _rmcSharedWeaponController = default!;
 
     private const float InteractNextFire = 0.3f;
@@ -208,9 +209,7 @@ public abstract partial class SharedGunSystem : EntitySystem
 
         if (TryComp(entity, out VehicleWeaponsOperatorComponent? vehicleOperator) &&
             vehicleOperator.Vehicle is { } vehicle &&
-            TryComp(vehicle, out RMCVehicleWeaponsComponent? weapons) &&
-            weapons.Operator == entity &&
-            weapons.SelectedWeapon is { } selected &&
+            _rmcVehicleWeapons.TryGetSelectedWeaponForOperator(vehicle, entity, out var selected) &&
             TryComp(selected, out GunComponent? selectedGun))
         {
             gunEntity = selected;

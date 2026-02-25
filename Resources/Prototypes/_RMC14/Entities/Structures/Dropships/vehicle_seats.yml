@@ -123,6 +123,9 @@
   - type: VehicleWeaponsSeat
     skills:
       all: {}
+    isPrimaryOperatorSeat: true
+    allowUiSelection: true
+    allowHotbarSelection: true
   - type: UserInterface
     interfaces:
       enum.RMCVehicleWeaponsUiKey.Key:
@@ -147,6 +150,18 @@
   - type: VehicleDriverSeat
     skills:
       all: {}
+  - type: VehicleWeaponsSeat
+    skills:
+      all: {}
+    isPrimaryOperatorSeat: false
+    allowUiSelection: false
+    allowHotbarSelection: true
+    allowedHardpointTypes:
+    - Support
+  - type: UserInterface
+    interfaces:
+      enum.RMCVehicleWeaponsUiKey.Key:
+        type: RMCVehicleWeaponsBoundUserInterface
 
 - type: entity
   parent: RMCSeatArmoredBase
@@ -158,6 +173,9 @@
   - type: VehicleWeaponsSeat
     skills:
       all: {}
+    isPrimaryOperatorSeat: true
+    allowUiSelection: true
+    allowHotbarSelection: true
   - type: UserInterface
     interfaces:
       enum.RMCVehicleWeaponsUiKey.Key:
@@ -201,6 +219,9 @@
   - type: VehicleWeaponsSeat
     skills:
       all: {}
+    isPrimaryOperatorSeat: true
+    allowUiSelection: true
+    allowHotbarSelection: true
   - type: UserInterface
     interfaces:
       enum.RMCVehicleWeaponsUiKey.Key:

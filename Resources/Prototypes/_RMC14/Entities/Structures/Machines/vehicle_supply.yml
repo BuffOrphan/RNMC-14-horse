@@ -106,6 +106,7 @@
       - RMCVehicleTankArmorPaladin
       - RMCVehicleTankSnowplow
       - RMCVehicleTankLTAAAPMinigun
+      - RMCVehicleTankLTBCannon
       - RMCVehicleTankAceAutocannon
       - RMCVehicleTankDragonFlamer
       - RMCVehicleTankFlamer
@@ -114,6 +115,7 @@
       - RMCVehicleTankWarningArray
       - RMCVehicleTankOverdriveEnhancer
       - RMCVehicleTankRocketLauncher
+      - RMCVehicleTankTowLauncher
       - RMCVehicleTankFlareModule
       - RMCVehicleTankArtilleryModule
     - name: humvee (arc)

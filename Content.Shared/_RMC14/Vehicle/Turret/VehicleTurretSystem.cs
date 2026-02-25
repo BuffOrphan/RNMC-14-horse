@@ -126,9 +126,9 @@ public sealed class VehicleTurretSystem : EntitySystem
             if (TryComp(user, out RMCVehicleViewToggleComponent? viewToggle) && !viewToggle.IsOutside)
                 return;
 
-            if (!TryComp(vehicle, out RMCVehicleWeaponsComponent? weapons) ||
-                weapons.Operator != user ||
-                weapons.SelectedWeapon != turretUid)
+            if (!TryComp(user, out VehicleWeaponsOperatorComponent? operatorComp) ||
+                operatorComp.Vehicle != vehicle ||
+                operatorComp.SelectedWeapon != turretUid)
             {
                 return;
             }
@@ -790,8 +790,12 @@ public sealed class VehicleTurretSystem : EntitySystem
         if (!TryGetVehicle(turretUid, out var vehicle))
             return true;
 
-        if (!TryComp(vehicle, out RMCVehicleWeaponsComponent? weapons) || weapons.Operator != user)
+        if (!TryComp(user, out VehicleWeaponsOperatorComponent? operatorComp) ||
+            operatorComp.Vehicle != vehicle)
             return true;
+
+        if (operatorComp.SelectedWeapon != turretUid)
+            return false;
 
         if (TryComp(user, out RMCVehicleViewToggleComponent? viewToggle) && !viewToggle.IsOutside)
             return false;

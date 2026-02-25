@@ -38,14 +38,12 @@ public sealed class VehicleTurretInputSystem : EntitySystem
             return;
 
         if (!TryComp(user, out VehicleWeaponsOperatorComponent? operatorComp) ||
-            operatorComp.Vehicle is not { } vehicle)
+            operatorComp.Vehicle is not { })
         {
             return;
         }
 
-        if (!TryComp(vehicle, out RMCVehicleWeaponsComponent? weapons) ||
-            weapons.Operator != user ||
-            weapons.SelectedWeapon is not { } turretUid)
+        if (operatorComp.SelectedWeapon is not { } turretUid)
         {
             return;
         }

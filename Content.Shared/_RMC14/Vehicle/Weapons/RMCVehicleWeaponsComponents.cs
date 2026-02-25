@@ -31,6 +31,9 @@ public sealed partial class VehicleWeaponsOperatorComponent : Component
     [DataField, AutoNetworkedField]
     public EntityUid? Vehicle;
 
+    [DataField, AutoNetworkedField]
+    public EntityUid? SelectedWeapon;
+
     [NonSerialized]
     public Dictionary<string, EntityUid> HardpointActions = new();
 
@@ -44,6 +47,18 @@ public sealed partial class VehicleWeaponsSeatComponent : Component
 {
     [DataField, AutoNetworkedField]
     public SkillWhitelist Skills = new();
+
+    [DataField]
+    public bool IsPrimaryOperatorSeat = true;
+
+    [DataField]
+    public bool AllowUiSelection = true;
+
+    [DataField]
+    public bool AllowHotbarSelection = true;
+
+    [DataField]
+    public List<string> AllowedHardpointTypes = new();
 }
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]

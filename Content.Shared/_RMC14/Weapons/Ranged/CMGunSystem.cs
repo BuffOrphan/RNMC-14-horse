@@ -74,6 +74,7 @@ public sealed class CMGunSystem : EntitySystem
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly SharedRMCLagCompensationSystem _rmcLagCompensation = default!;
     [Dependency] private readonly RMCProjectileSystem _rmcProjectileSystem = default!;
+    [Dependency] private readonly RMCVehicleWeaponsSystem _vehicleWeapons = default!;
     [Dependency] private readonly SkillsSystem _skills = default!;
     [Dependency] private readonly ItemSlotsSystem _slots = default!;
     [Dependency] private readonly StandingStateSystem _standing = default!;
@@ -215,8 +216,13 @@ public sealed class CMGunSystem : EntitySystem
             if (!_physicsQuery.TryComp(projectile, out var physics))
                 continue;
 
-            // Calculate needed impulse to get to target, remove all velocity from projectile, then apply.
-            var impulse = normalized * gun.ProjectileSpeedModified * physics.Mass;
+            // Preserve spread direction for multi-projectile shots. Single projectiles still snap to target.
+            var projectileDirection = normalized;
+            if (args.FiredProjectiles.Count > 1 && physics.LinearVelocity != Vector2.Zero)
+                projectileDirection = physics.LinearVelocity.Normalized();
+
+            // Calculate needed impulse to get to target direction, remove all velocity from projectile, then apply.
+            var impulse = projectileDirection * gun.ProjectileSpeedModified * physics.Mass;
             _physics.SetLinearVelocity(projectile, Vector2.Zero, body: physics);
             _physics.ApplyLinearImpulse(projectile, impulse, body: physics);
             _physics.SetBodyStatus(projectile, physics, BodyStatus.InAir);
@@ -240,7 +246,7 @@ public sealed class CMGunSystem : EntitySystem
                 distance = distance > 0 ? Math.Min(normalProjectile.MaxFixedRange.Value, distance) : normalProjectile.MaxFixedRange.Value;
             }
             // Calculate travel time and equivalent distance based either on click location or calculated max range, whichever is shorter.
-            comp.TargetCoordinates = new MapCoordinates(from.Position + normalized * distance, from.MapId);
+            comp.TargetCoordinates = new MapCoordinates(from.Position + projectileDirection * distance, from.MapId);
             comp.FlyEndTime = time + TimeSpan.FromSeconds(distance / gun.ProjectileSpeedModified);
         }
 
@@ -657,7 +663,9 @@ public sealed class CMGunSystem : EntitySystem
             var ev = new ProjectileFixedDistanceStopEvent();
             RaiseLocalEvent(uid, ref ev);
 
-            if (_net.IsClient && HasComp<DeleteOnFixedDistanceStopComponent>(uid))
+            if (_net.IsClient &&
+                IsClientSide(uid) &&
+                HasComp<DeleteOnFixedDistanceStopComponent>(uid))
                 QueueDel(uid);
         }
     }
@@ -798,9 +806,7 @@ public sealed class CMGunSystem : EntitySystem
     public bool TryGetGunUser(EntityUid gun, out Entity<HandsComponent> user)
     {
         if (_container.TryGetContainingContainer((gun, null), out var container) &&
-            TryComp(container.Owner, out RMCVehicleWeaponsComponent? weapons) &&
-            weapons.Operator is { } operatorUid &&
-            weapons.SelectedWeapon == gun &&
+            _vehicleWeapons.TryGetOperatorForSelectedWeapon(container.Owner, gun, out var operatorUid) &&
             TryComp(operatorUid, out HandsComponent? operatorHands))
         {
             user = (operatorUid, operatorHands);

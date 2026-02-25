@@ -357,12 +357,6 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
         if (!EntityManager.HasComponent<VehicleWeaponsOperatorComponent>(user))
             return false;
 
-        if (EntityManager.TryGetComponent<RMCVehicleViewToggleComponent>(user, out var viewToggle) &&
-            !viewToggle.IsOutside)
-        {
-            return false;
-        }
-
         return true;
     }
 
@@ -383,18 +377,31 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
         var desiredOrdered = new List<EntityUid?>();
         var includeHardpointActions = true;
 
-        if (_playerManager.LocalEntity is { } user &&
-            EntityManager.TryGetComponent<CombatModeComponent>(user, out var combat) &&
-            combat.CombatToggleActionEntity is { } combatAction &&
-            !EntityManager.HasComponent<RMCVehicleHardpointActionComponent>(combatAction))
-        {
-            desiredOrdered.Add(combatAction);
-        }
-
         if (_playerManager.LocalEntity is { } localUser &&
             EntityManager.TryGetComponent<RMCVehicleViewToggleComponent>(localUser, out var viewToggle))
         {
             includeHardpointActions = viewToggle.IsOutside;
+        }
+
+        if (!includeHardpointActions)
+        {
+            foreach (var action in _actions)
+            {
+                if (action is not { } actionUid ||
+                    EntityManager.HasComponent<RMCVehicleHardpointActionComponent>(actionUid))
+                {
+                    continue;
+                }
+
+                desiredOrdered.Add(actionUid);
+            }
+        }
+        else if (_playerManager.LocalEntity is { } user &&
+                 EntityManager.TryGetComponent<CombatModeComponent>(user, out var combat) &&
+                 combat.CombatToggleActionEntity is { } combatAction &&
+                 !EntityManager.HasComponent<RMCVehicleHardpointActionComponent>(combatAction))
+        {
+            desiredOrdered.Add(combatAction);
         }
 
         if (includeHardpointActions)
@@ -414,13 +421,34 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
             }
         }
 
+        EntityUid? viewToggleAction = null;
         if (_playerManager.LocalEntity is { } toggleUser &&
             EntityManager.TryGetComponent<RMCVehicleViewToggleComponent>(toggleUser, out var toggleState) &&
             toggleState.Action is { } viewAction &&
             !EntityManager.HasComponent<RMCVehicleHardpointActionComponent>(viewAction))
         {
-            desiredOrdered.Add(viewAction);
+            viewToggleAction = viewAction;
         }
+
+        if (viewToggleAction == null)
+        {
+            foreach (var action in _actionsSystem.GetClientActions())
+            {
+                var uid = action.Owner;
+                if (EntityManager.HasComponent<RMCVehicleHardpointActionComponent>(uid) ||
+                    !EntityManager.TryGetComponent<MetaDataComponent>(uid, out var metaData) ||
+                    metaData.EntityPrototype?.ID != "ActionRMCVehicleToggleView")
+                {
+                    continue;
+                }
+
+                viewToggleAction = uid;
+                break;
+            }
+        }
+
+        if (viewToggleAction is { } ensuredViewAction)
+            desiredOrdered.Add(ensuredViewAction);
 
         // Preserve manual ordering while all current actions still exist.
         var remaining = new HashSet<EntityUid>();
