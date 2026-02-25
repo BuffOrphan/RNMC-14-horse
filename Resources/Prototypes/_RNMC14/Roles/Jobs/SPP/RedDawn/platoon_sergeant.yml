@@ -62,7 +62,7 @@
   name: red dawn platoon sergeant spawn point
   components:
   - type: SpawnPoint
-    job_id: CMSSPPlatoonSergeantPVE
+    job_id: CMSPPPlatoonSergeantPVE
   - type: Sprite
     state: marine_spawn
 
@@ -79,7 +79,7 @@
   name: Platoon Sergeant's dogtags
   components:
   - type: PresetIdCard
-    job: CMSSPPlatoonSergeantPVE
+    job: CMSPPPlatoonSergeantPVE
 
 - type: startingGear
   id: RMCGearSPPPlatoonSergeant
