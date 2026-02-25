@@ -38,7 +38,7 @@
         RMCSkillVehicles: 1
         RMCSkillSpecialistWeapons: 7
         RMCSkillPowerLoader: 1
-        RmcSkillPilot: 1
+        RMCSkillPilot: 1
     - type: MarineOrders
     - type: SquadArmorWearer
       leader: true
@@ -49,17 +49,6 @@
       icon:
         sprite: _RMC14/Interface/map_blips.rsi
         state: tl
-    - type: MobThresholds
-      thresholds:
-        0: Alive
-        200: Critical
-        350: Dead
-    - type: Perishable
-      rotAfter: 0
-    - type: AssignSquad
-      whitelist:
-        tags:
-        - RMCSquadSunRiders
 
 - type: playTimeTracker
   id: CMJobSquadLeaderPVE

@@ -19,7 +19,6 @@
     consumable: false
     scalingDoAfter: 0.1
     damage: -10
-    minimumDoAfter: 0.5
     canUseUnskilled: false
     skills:
       RMCSkillMedical: 5
