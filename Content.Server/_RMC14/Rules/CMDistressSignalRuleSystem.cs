@@ -183,9 +183,6 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
     private int _hijackMinBurrowed;
     private int _xenosMinimum;
     private bool _usingCustomOperationName;
-// rnmc edit start
-    private bool _checkRoundEndConditions;
-// rnmc edit end
     private bool _queenBuildingBoostEnabled;
     private TimeSpan _queenBoostDuration;
     private float _queenBoostSpeedMultiplier;
@@ -1252,12 +1249,13 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
                 continue;
 
             distress.NextCheck ??= Timing.CurTime + distress.CheckEvery;
-
-            if (distress.ForceEndAt != null && Timing.CurTime >= distress.ForceEndAt)
-            {
-                EndRound(distress, DistressSignalRuleResult.MinorXenoVictory, "rmc-distress-signal-minorxenovictory-timeout");
-                continue;
-            }
+            // RNMC
+            //if (distress.ForceEndAt != null && Timing.CurTime >= distress.ForceEndAt)
+            //{
+            //    EndRound(distress, DistressSignalRuleResult.MinorXenoVictory, "rmc-distress-signal-minorxenovictory-timeout");
+            //    continue;
+            //}
+            // RNMC
 
             var hijack = false;
             var dropshipQuery = EntityQueryEnumerator<DropshipComponent>();
@@ -1336,33 +1334,34 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
                 if (marinesAlive && _marineList.Count > 1)
                     break;
             }
+            // RNMC
+            //if (xenosAlive && !marinesAlive)
+            //{
+            //    EndRound(distress, DistressSignalRuleResult.MajorXenoVictory);
+            //    continue;
+            //}
 
-            if (xenosAlive && !marinesAlive)
-            {
-                EndRound(distress, DistressSignalRuleResult.MajorXenoVictory);
-                continue;
-            }
+            //if (!xenosAlive && marinesAlive)
+            //{
+            //    // TODO RMC14 this should be when the dropship crashes, not if xenos ever boarded
+            //    if (distress.Hijack)
+            //    {
+            //        EndRound(distress, DistressSignalRuleResult.MinorXenoVictory);
+            //        continue;
+            //    }
+            //    else
+            //    {
+            //        EndRound(distress, DistressSignalRuleResult.MajorMarineVictory);
+            //        continue;
+            //    }
+            //}
 
-            if (!xenosAlive && marinesAlive)
-            {
-                // TODO RMC14 this should be when the dropship crashes, not if xenos ever boarded
-                if (distress.Hijack)
-                {
-                    EndRound(distress, DistressSignalRuleResult.MinorXenoVictory);
-                    continue;
-                }
-                else
-                {
-                    EndRound(distress, DistressSignalRuleResult.MajorMarineVictory);
-                    continue;
-                }
-            }
-
-            if (!xenosAlive && !marinesAlive)
-            {
-                EndRound(distress, DistressSignalRuleResult.AllDied);
-                continue;
-            }
+            //if (!xenosAlive && !marinesAlive)
+            //{
+            //    EndRound(distress, DistressSignalRuleResult.AllDied);
+            //    continue;
+            //}
+            // RNMC
 
             if (_marineList.Count == 1)
             {
@@ -1370,26 +1369,28 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
                 var lastMarine = _marineList.Last();
 
                 var cloaks = EntityQueryEnumerator<ThermalCloakComponent>();
-                while (cloaks.MoveNext(out var cloakId, out var cloak))
-                {
-                    if (!cloak.Enabled)
-                        continue;
+                // RNMC
+                //while (cloaks.MoveNext(out var cloakId, out var cloak))
+                //{
+                //    if (!cloak.Enabled)
+                //        continue;
 
-                    _thermalCloak.SetInvisibility((cloakId, cloak), lastMarine, false, true);
-                    _actions.SetCooldown(cloak.Action, Timing.CurTime, Timing.CurTime + TimeSpan.FromHours(2));
-                    _actions.SetUseDelay(cloak.Action, TimeSpan.FromHours(2));
-                }
+                //    _thermalCloak.SetInvisibility((cloakId, cloak), lastMarine, false, true);
+                //    _actions.SetCooldown(cloak.Action, Timing.CurTime, Timing.CurTime + TimeSpan.FromHours(2));
+                //    _actions.SetUseDelay(cloak.Action, TimeSpan.FromHours(2));
+                //}
 
                 var ghillies = EntityQueryEnumerator<GhillieSuitComponent>();
-                while (ghillies.MoveNext(out var ghillieId, out var ghillie))
-                {
-                    if (!ghillie.Enabled)
-                        continue;
+                //while (ghillies.MoveNext(out var ghillieId, out var ghillie))
+                //{
+                //    if (!ghillie.Enabled)
+                //        continue;
 
-                    _ghillieSuit.ToggleInvisibility((ghillieId, ghillie), lastMarine, false);
-                    _actions.SetCooldown(ghillie.Action, Timing.CurTime, Timing.CurTime + TimeSpan.FromHours(2));
-                    _actions.SetUseDelay(ghillie.Action, TimeSpan.FromHours(2));
-                }
+                //    _ghillieSuit.ToggleInvisibility((ghillieId, ghillie), lastMarine, false);
+                //    _actions.SetCooldown(ghillie.Action, Timing.CurTime, Timing.CurTime + TimeSpan.FromHours(2));
+                //    _actions.SetUseDelay(ghillie.Action, TimeSpan.FromHours(2));
+                //}
+                // RNMC
             }
 
             if (_xenoEvolution.HasLiving<XenoEvolutionGranterComponent>(1))
@@ -1402,13 +1403,15 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
             if (distress.QueenDiedCheck == null)
                 continue;
 
-            if (Timing.CurTime >= distress.QueenDiedCheck)
-            {
-                if (_xenoEvolution.HasLiving<XenoComponent>(4))
-                    EndRound(distress, DistressSignalRuleResult.MinorMarineVictory);
-                else
-                    EndRound(distress, DistressSignalRuleResult.MajorMarineVictory, "rmc-distress-signal-majormarinevictory-timeout");
-            }
+            // RNMC
+            //if (Timing.CurTime >= distress.QueenDiedCheck)
+            //{
+            //    if (_xenoEvolution.HasLiving<XenoComponent>(4))
+            //        EndRound(distress, DistressSignalRuleResult.MinorMarineVictory);
+            //    else
+            //        EndRound(distress, DistressSignalRuleResult.MajorMarineVictory, "rmc-distress-signal-majormarinevictory-timeout");
+            //}
+            // RNMC
         }
     }
 
@@ -1772,13 +1775,15 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
         if (component.QueenDiedCheck == null)
             return;
 
-        if (time >= component.QueenDiedCheck)
-        {
-            if (_xenoEvolution.HasLiving<XenoComponent>(4))
-                EndRound(component, DistressSignalRuleResult.MinorMarineVictory);
-            else
-                EndRound(component, DistressSignalRuleResult.MajorMarineVictory, "rmc-distress-signal-majormarinevictory-timeout");
-        }
+        // RNMC
+        //if (time >= component.QueenDiedCheck)
+        //{
+        //    if (_xenoEvolution.HasLiving<XenoComponent>(4))
+        //        EndRound(component, DistressSignalRuleResult.MinorMarineVictory);
+        //    else
+        //        EndRound(component, DistressSignalRuleResult.MajorMarineVictory, "rmc-distress-signal-majormarinevictory-timeout");
+        //}
+        // RNMC
     }
 
     private RMCPlanet SelectRandomPlanet()

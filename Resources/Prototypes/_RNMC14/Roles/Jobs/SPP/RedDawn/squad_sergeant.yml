@@ -1,6 +1,6 @@
 - type: job
   parent: CMJobBase
-  id: CMSSPSquadSergeantPVE
+  id: CMSPPSquadSergeantPVE
   name: cm-job-name-squad-sergeant
   description: cm-job-description-squad-leader
   playTimeTracker: CMJobSPPSquadSergeantPVE
@@ -52,13 +52,6 @@
       icon:
         sprite: _RMC14/Interface/map_blips.rsi
         state: tl
-    - type: MobThresholds
-      thresholds:
-        0: Alive
-        200: Critical
-        350: Dead
-    - type: Perishable
-      rotAfter: 0
 
 - type: playTimeTracker
   id: CMJobSPPSquadSergeantPVE
@@ -70,7 +63,7 @@
   name: red dawn squad sergeant spawn point
   components:
   - type: SpawnPoint
-    job_id: CMSSPSquadSergeantPVE
+    job_id: CMSPPSquadSergeantPVE
   - type: Sprite
     state: marine_spawn
 
@@ -87,7 +80,7 @@
   name: Squad Sergeant's dogtags
   components:
   - type: PresetIdCard
-    job: CMSSPSquadSergeantPVE
+    job: CMSPPSquadSergeantPVE
 
 - type: startingGear
   id: RMCGearSPPSquadSergeant

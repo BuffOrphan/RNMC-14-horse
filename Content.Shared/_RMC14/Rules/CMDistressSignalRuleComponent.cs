@@ -186,22 +186,22 @@ public sealed partial class CMDistressSignalRuleComponent : Component
     public bool SpawnPlanet = true;
 
     [DataField]
-    public bool SpawnSurvivors = true;
+    public bool SpawnSurvivors = false;
 
     [DataField]
-    public bool SpawnXenos = true;
+    public bool SpawnXenos = false;
 
     [DataField]
     public bool DoJobSlotScaling = true;
 
     [DataField]
-    public bool AutoEnd = true;
+    public bool AutoEnd = false;
 
     [DataField]
-    public bool StartARESAnnouncements = true;
+    public bool StartARESAnnouncements = false;
 
     [DataField]
-    public bool Bioscan = true;
+    public bool Bioscan = false;
 
     [DataField]
     public bool SetHunger = true;

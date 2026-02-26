@@ -51,13 +51,6 @@
       icon:
         sprite: _RMC14/Interface/map_blips.rsi
         state: leader
-    - type: MobThresholds
-      thresholds:
-        0: Alive
-        200: Critical
-        350: Dead
-    - type: Perishable
-      rotAfter: 0
 
 - type: playTimeTracker
   id: CMJobSPPPlatoonSergeantPVE
@@ -69,7 +62,7 @@
   name: red dawn platoon sergeant spawn point
   components:
   - type: SpawnPoint
-    job_id: CMSSPPlatoonSergeantPVE
+    job_id: CMSPPPlatoonSergeantPVE
   - type: Sprite
     state: marine_spawn
 
@@ -86,7 +79,7 @@
   name: Platoon Sergeant's dogtags
   components:
   - type: PresetIdCard
-    job: CMSSPPlatoonSergeantPVE
+    job: CMSPPPlatoonSergeantPVE
 
 - type: startingGear
   id: RMCGearSPPPlatoonSergeant

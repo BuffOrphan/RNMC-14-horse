@@ -87,7 +87,7 @@
   name: Platoon Commander's dogtags
   components:
   - type: PresetIdCard
-    job: CMSPPPlatoonCommanderPVE
+    job: CMSPPlatoonCommanderPVE
 
 - type: startingGear
   id: RMCGearSPPPlatoonCommander
