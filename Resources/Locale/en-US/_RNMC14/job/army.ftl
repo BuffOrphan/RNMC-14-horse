@@ -43,6 +43,10 @@ rnmc-job-name-army-logi-officer = Army Logistics Officer
 rnmc-job-prefix-army-logi-officer = LogiOff
 RNMCJobArmyLogiOfficer = Army Logistics Officer
 
+rnmc-job-name-army-logi-spec = Logistics Specialist
+rnmc-job-prefix-army-logi-spec = LogiSpec
+RNMCJobArmyLogiSpec = Army Logistics Specialist
+
 rnmc-job-name-army-platoon-officer = Army Lieutenant
 rnmc-job-prefix-army-platoon-officer = PltOff
 RNMCJobArmyPlatoonOfficer = Army Lieutenant
@@ -65,3 +69,7 @@ RNMCJobArmySLLesserRank = Army Squad Leader (Lesser Rank)
 rnmc-job-name-army-trooper = Army Trooper
 rnmc-job-prefix-army-trooper = TRPR
 RNMCJobArmyTrooper = Army Trooper
+
+rnmc-job-name-army-at-loader = Army Trooper
+rnmc-job-prefix-army-at-loader = AT-LDR
+RNMCJobAntiTankLoader = Army Anti-Tank Loader

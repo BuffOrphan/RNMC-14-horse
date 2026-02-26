@@ -117,6 +117,7 @@
       types:
         Heat: 1
   - type: RMCRevivable
+    unrevivableDelay: 0 # RNMC
   - type: RMCMedicalExamine
   - type: FireVisuals
     sprite: _RMC14/Mobs/Effects/on_fire.rsi
@@ -227,11 +228,11 @@
       whitelist:
         components:
         - RequisitionsCrate #Lockers/Crates
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      150: Critical
-      200: Dead
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        200: Critical  # RNMC
+        350: Dead
   - type: MobStateActions
     actions:
       Critical:

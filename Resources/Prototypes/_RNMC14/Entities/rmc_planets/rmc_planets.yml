@@ -56,7 +56,7 @@
   name: LV-759 Hybrisa Prospera Greenshift
   components:
   - type: RMCPlanetMapPrototype
-    map: /Maps/_RNMC14/hybrisa_greenshift.yml
+    map: /Maps/_RMC14/hybrisa_greenshift.yml
     camouflage: Urban
     announcement: "Currently orbiting above a Weston-Yamada colony, Hybrisa Prospera — a vast, city-like settlement renowned for its immense wealth, extensive mining operations, and thriving commerce."
     minPlayers: 130

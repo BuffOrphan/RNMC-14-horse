@@ -4,7 +4,7 @@
   id: RNMCAntiTankLoader
   name: rnmc-job-name-at-loader
   description: rnmc-ghost-role-information-army-description
-  playTimeTracker: RNMCJobAntiTankloader
+  playTimeTracker: RNMCJobAntiTankLoader
   ranks:
     RMCRankPrivateFirstClass: []
   startingGear: RNMCJobAntiTankLoader

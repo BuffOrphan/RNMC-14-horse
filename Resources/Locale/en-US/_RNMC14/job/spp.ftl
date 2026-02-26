@@ -10,7 +10,7 @@ cm-job-name-synth-commie = SPP Synthetic
 RMCJobSyntheticCommunist = SPP Synthetic
 
 cm-job-name-platoon-sergeant = Platoon Sergeant
-CMJobSPPPlatoonSergeantPVE = Platoon Sergeant
+CMSPPlatoonCommanderPVE = Platoon Sergeant
 cm-job-prefix-platoon-sergeant = PLTSRGT
 
 cm-job-name-sanitar = Sanitar
