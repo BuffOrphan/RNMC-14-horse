@@ -1,13 +1,13 @@
 ﻿- type: job
   parent: CMJobBase
-  id: CMSPPlatoonCommanderPVE
+  id: CMSPPPlatoonCommanderPVE
   name: cm-job-name-platoon-commander
   description: cm-job-description-platoon-commander
-  playTimeTracker: CMJobSSPPlatoonCommanderPVE
+  playTimeTracker: CMJobSPPPlatoonCommanderPVE
   ranks:
     RMCRankSPPStarshiyLeytenant:
     - !type:RoleTimeRequirement
-      role: CMJobSSPPlatoonCommanderPVE
+      role: CMJobSPPPlatoonCommanderPVE
       time: 36000 # 10 hours
     RMCRankSPPMladshiyLeytenant: []
   weight: 5
@@ -61,7 +61,7 @@
         state: platco
 
 - type: playTimeTracker
-  id: CMSPPlatoonCommanderPVE
+  id: CMJobSPPPlatoonCommanderPVE
   isHumanoid: true
 
 - type: entity
@@ -70,7 +70,7 @@
   name: red dawn platoon commander spawn point
   components:
   - type: SpawnPoint
-    job_id: CMSPPlatoonCommanderPVE
+    job_id: CMSPPPlatoonCommanderPVE
   - type: Sprite
     state: marine_spawn
 
