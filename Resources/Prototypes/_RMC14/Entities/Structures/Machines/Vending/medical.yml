@@ -172,21 +172,21 @@
 #        amount: 6
     - name: Autoinjectors
       entries:
-      - id: CMBicaridineAutoInjector
+      - id: RNMCEZBicaridineAutoInjector
         amount: 3
-      - id: CMDexalinPlusAutoInjector
+      - id: RNMCEZDexalinPlusAutoInjector
         amount: 3
-      - id: CMEpinephrineAutoInjector
+      - id: RNMCEZEpinephrineAutoInjector
         amount: 3
-      - id: CMInaprovalineAutoInjector
+      - id: RNMCEZInaprovalineAutoInjector
         amount: 3
-      - id: CMKelotaneAutoInjector
+      - id: RNMCEZKelotaneAutoInjector
         amount: 3
 #      - id: CMOxycodoneAutoinjector # TODO RMC14
 #        amount: 3
 #      - id: CMTramadolAutoinjector # TODO RMC14
 #        amount: 3
-      - id: CMTricordrazineAutoInjector
+      - id: RNMCEZTricordrazineAutoInjector
         amount: 3
     - name: Liquid bottles
       entries:

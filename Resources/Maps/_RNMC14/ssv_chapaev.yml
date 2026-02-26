@@ -5286,7 +5286,7 @@ entities:
     - type: Transform
       pos: 2.5,-48.5
       parent: 1
-- proto: CMVendorMedical
+- proto: RMCVendorMedicalPVE
   entities:
   - uid: 390
     components:

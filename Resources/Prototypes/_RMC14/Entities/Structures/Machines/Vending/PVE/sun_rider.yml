@@ -212,11 +212,11 @@
       - id: CMEmergencyAutoInjector
         name: Emergency Autoinjector
         amount: 15
-      - id: CMBicaridineAutoInjector
+      - id: RNMCEZBicaridineAutoInjector
         amount: 15
-      - id: CMKelotaneAutoInjector
+      - id: RNMCEZKelotaneAutoInjector
         amount: 15
-      - id: CMTricordrazineAutoInjector
+      - id: RNMCEZTricordrazineAutoInjector
         amount: 15
     - name: Tools
       entries:
