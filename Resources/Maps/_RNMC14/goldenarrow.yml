@@ -10680,7 +10680,7 @@ entities:
     - type: Transform
       pos: 46.5,68.5
       parent: 1
-- proto: CMVendorMedical
+- proto: RMCVendorMedicalPVE
   entities:
   - uid: 777
     components:
