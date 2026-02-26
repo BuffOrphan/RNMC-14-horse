@@ -54,5 +54,4 @@ public enum RMCVehicleWheelVisuals : byte
 public static class RMCVehicleWheelLayers
 {
     public const string Wheels = "rmc-wheels";
-    public const string Treads = "rmc-treads";
 }

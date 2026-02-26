@@ -36,14 +36,8 @@ public sealed class RMCVehicleWheelVisualizerSystem : VisualizerSystem<RMCVehicl
         if (sprite == null && !TryComp(uid, out sprite))
             return;
 
-        var useTreads = false;
         if (!_sprite.LayerMapTryGet((uid, sprite), RMCVehicleWheelLayers.Wheels, out var layer, false))
-        {
-            if (!_sprite.LayerMapTryGet((uid, sprite), RMCVehicleWheelLayers.Treads, out layer, false))
-                return;
-
-            useTreads = true;
-        }
+            return;
 
         var hasWheels = true;
 
@@ -92,9 +86,7 @@ public sealed class RMCVehicleWheelVisualizerSystem : VisualizerSystem<RMCVehicl
         if (destroyed)
             brightness = 1f;
 
-        var targetState = destroyed
-            ? (useTreads ? "treads_1" : "wheels_1")
-            : (useTreads ? "treads_0" : "wheels_0");
+        var targetState = destroyed ? "wheels_1" : "wheels_0";
 
         if (sprite.LayerGetState(layer) != targetState)
         {
