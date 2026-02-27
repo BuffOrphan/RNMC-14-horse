@@ -111,3 +111,27 @@
   - type: MedicallyUnskilledDoAfter
     min: 0
     doAfter: 0
+
+- type: entity
+  parent: CMAutoInjector
+  id: RNMCEZInaprovalineAutoInjector
+  name: EZ inaprovaline autoinjector
+  description: An autoinjector loaded with 3 uses of Inaprovaline, an emergency stabilization medicine for patients in critical condition.
+  components:
+  - type: Hypospray
+    transferAmount: 30
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 90
+        reagents:
+        - ReagentId: CMInaprovaline
+          Quantity: 90
+  - type: CMRefillableSolution
+    reagents:
+      CMInaprovaline: 90
+  - type: IconLabel
+    labelTextLocId: rmc-inaprovaline-container-label-text
+  - type: MedicallyUnskilledDoAfter
+    min: 0
+    doAfter: 0
