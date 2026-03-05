@@ -57,7 +57,7 @@
     - type: CommandAccent
     - type: TacticalMapIcon
       icon:
-        sprite: _RNMC14/Interface/map_blips.rsi
+        sprite: /Textures/_RNMC14/Interface/map_blips.rsi
         state: platco
 
 - type: playTimeTracker

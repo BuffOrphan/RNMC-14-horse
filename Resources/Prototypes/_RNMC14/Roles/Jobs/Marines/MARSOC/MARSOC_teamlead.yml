@@ -47,12 +47,12 @@
       prefix: cm-job-prefix-squad-leader
     - type: TacticalMapIcon
       icon:
-        sprite: _RNMC14/Interface/map_blips.rsi
+        sprite: /Textures/_RNMC14/Interface/map_blips.rsi
         state: sof_sl
     - type: Sleeping
     - type: SquadLeader
       icon:
-        sprite: _RMC14/Interface/cm_job_icons.rsi
+        sprite: /Textures/_RMC14/Interface/cm_job_icons.rsi
         state: hudsquad_soctl_a
       
 - type: playTimeTracker
