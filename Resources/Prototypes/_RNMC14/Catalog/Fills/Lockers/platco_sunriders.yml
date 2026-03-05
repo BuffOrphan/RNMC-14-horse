@@ -1,7 +1,5 @@
 - type: entityTable
   id: RMCClosetGoldenArrowPlatoonCommanderFill
-  name: platoon commander locker
-  suffix: Platoon Commander
   table: !type:AllSelector
     children:
     - id: CMBootsBlackFilled

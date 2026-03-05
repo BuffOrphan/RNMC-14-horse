@@ -29,7 +29,7 @@
         RMCSkillVehicles: 1
     - type: DemoSpecWhitelist
     - type: JobPrefix
-      prefix: rnmc-job-prefix-at-loader
+      prefix: rnmc-job-prefix-army-at-loader
   hidden: true
 
 - type: entity

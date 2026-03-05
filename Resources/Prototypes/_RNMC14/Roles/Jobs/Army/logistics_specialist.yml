@@ -45,7 +45,7 @@
 
 - type: randomHumanoidSettings
   parent: RMCEventHumanoid
-  id: RNMCArmyLogiSped
+  id: RNMCArmyLogisticsSpecialist
   components:
   - type: GhostRole
     name: rnmc-job-name-army-logi-spec

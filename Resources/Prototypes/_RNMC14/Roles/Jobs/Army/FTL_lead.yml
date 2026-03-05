@@ -29,7 +29,7 @@
         RMCSkillConstruction: 1
         RMCSkillEndurance: 2
         RMCSkillVehicles: 1
-        RMCSkillJTAC: 3
+        RMCSkillJtac: 3
     - type: JobPrefix
       prefix: rnmc-job-prefix-army-ftl-lead
   hidden: true

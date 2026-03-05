@@ -29,7 +29,7 @@
         RMCSkillConstruction: 1
         RMCSkillEndurance: 2
         RMCSkillVehicles: 1
-        RMCSkillJTAC: 3
+        RMCSkillJtac: 3
     - type: JobPrefix
       prefix: rnmc-job-prefix-army-sl
   hidden: true
@@ -89,7 +89,7 @@
     description: rnmc-ghost-role-information-army-description
     rules: rmc-ghost-role-information-pmc-rules
     reregister: false
-    job: RNMCArmySL
+    job: RNMCArmySquadLeader
     raffle:
       settings: short
 

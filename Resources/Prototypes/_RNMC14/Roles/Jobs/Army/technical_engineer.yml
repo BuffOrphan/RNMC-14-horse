@@ -29,7 +29,7 @@
         RMCSkillPowerLoader: 2
         RMCSkillEndurance: 2
         RMCSkillVehicles: 3
-        RMCSkillJTAC: 2
+        RMCSkillJtac: 2
     - type: JobPrefix
       prefix: rnmc-job-prefix-army-tech-engi
   hidden: true
