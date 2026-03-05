@@ -15,24 +15,7 @@
   - type: RMCPlanetMapPrototype
     map: /Maps/_RNMC14/lv624_greenshift.yml
     camouflage: Jungle
-    announcement: "Uplink with the ground established. Ship orbiting above LV-624 Archeology Site. No emergencies detected."
-    survivorJobInserts:
-      CMSurvivor:
-      - CMSurvivor: -1
-      - CMSurvivorPriest: 1
-      CMSurvivorCorporate:
-      - CMSurvivorLV624CorporateLiaison: 2
-      CMSurvivorDoctor:
-      - CMSurvivorLV624MedicalTechnician: 3
-      CMSurvivorEngineer:
-      - CMSurvivorLV624Engineer: 2
-      - CMSurvivorLV624CargoTechnician: 2
-      CMSurvivorSecurity:
-      - CMSurvivorGoon: 2
-      - CMSurvivorCMBDeputy: 2
-      - CMSurvivorLV624SecurityGuard: 2
-      CMSurvivorScientist:
-      - CMSurvivorLV624Archeologist: 2
+    announcement: "Uplink with the ground established. Ship orbiting above LV-624 Archeology Site"
 
 - type: entity
   id: RNMCPlanetVaraderoGreenshift
