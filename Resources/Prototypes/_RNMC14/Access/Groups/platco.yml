@@ -7,7 +7,7 @@
   - CMAccessArmory # MP weapon vault
   - CMAccessBravo # Squad prep access
   - CMAccessCharlie # Squad prep access
-  - CMAccessCommand # all command level doors, including bridge. May need to be split.
+  - RMCAccessCommand # all command level doors, including bridge. May need to be split.
   - CMAccessCrewman # access for dropship maintenance doors
   - CMAccessDelta # Squad prep access
   - CMAccessDropship # access to open dropship doors

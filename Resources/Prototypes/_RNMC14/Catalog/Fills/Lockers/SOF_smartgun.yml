@@ -1,8 +1,6 @@
 
 - type: entityTable
   id: RMCSOFSmartgunFill
-  name: smartgunner locker
-  suffix: SOF Smartgunner
   table: !type:AllSelector
     children:
     - id: RMCPowerCellSmartgun

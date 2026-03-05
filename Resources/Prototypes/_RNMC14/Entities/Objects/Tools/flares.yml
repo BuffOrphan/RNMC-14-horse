@@ -16,7 +16,7 @@
       - map: [ "enum.ExpendableLightVisualLayers.Overlay" ]
         state: overlay
   - type: Icon
-    sprite: _RMC14/Objects/Misc/Flares/r52.rsi
+    sprite: _RNMC14/Objects/Misc/Flares/r52.rsi
 
 - type: entity
   parent: RMCBoxPackFlareEmpty

@@ -1,7 +1,5 @@
 - type: entityTable
   id: RMCChapaevMachinegunnerFill
-  name: machinegunner locker
-  suffix: Red Dawn Machinegunner
   table: !type:AllSelector
     children:
     - id: RMCMagazineLMGQYJ72

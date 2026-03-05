@@ -29,7 +29,7 @@
         RMCSkillLeadership: 2
         RMCSkillOverwatch: 1
         RMCSkillPolice: 1
-        RMCSkillJTAC: 3
+        RMCSkillJtac: 3
         RMCSkillPilot: 1
         RMCSkillConstruction: 1
     - type: JobPrefix

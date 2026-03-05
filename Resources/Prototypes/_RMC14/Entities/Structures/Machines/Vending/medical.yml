@@ -181,8 +181,6 @@
         amount: 3
       - id: RNMCEZDexalinPlusAutoInjector
         amount: 3
-      - id: RNMCEZEpinephrineAutoInjector
-        amount: 3
       - id: RNMCEZInaprovalineAutoInjector
         amount: 3
       - id: RNMCEZKelotaneAutoInjector

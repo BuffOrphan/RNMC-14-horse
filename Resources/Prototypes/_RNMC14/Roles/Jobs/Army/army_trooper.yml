@@ -92,4 +92,4 @@
   name: Army Trooper's dogtags
   components:
   - type: PresetIdCard
-    job: RNMCJobArmyTrooper
+    job: RNMCArmyTrooper
