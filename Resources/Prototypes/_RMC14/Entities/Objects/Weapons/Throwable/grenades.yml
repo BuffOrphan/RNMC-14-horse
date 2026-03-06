@@ -96,6 +96,8 @@
     - LauncherCompatibleGrenade
     - RMCGrenadeM40
     - RMCGrenadeHEDP
+  - type: TriggerOnThrowEnd # RNMC
+    delay: 0
 
 - type: entity
   parent:
@@ -124,6 +126,8 @@
     - RMCGrenadeM40
     - RMCGrenadeRiot
   - type: Ammo
+  - type: TriggerOnThrowEnd # RNMC
+    delay: 0
 
 - type: entity
   parent: Smoke
@@ -218,6 +222,8 @@
     - LauncherCompatibleGrenade
     - RMCGrenadeM40
     - RMCGrenadeHEFA
+  - type: TriggerOnThrowEnd # RNMC
+    delay: 0
 
 - type: entity
   parent: CMGrenadeHighExplosive
@@ -314,6 +320,8 @@
     spawn: RMCTileFireGreen
     sound:
       path: /Audio/_RMC14/Weapons/Guns/Flamer/gun_flamethrower2.ogg
+  - type: TriggerOnThrowEnd # RNMC
+    delay: 0
 
 - type: entity
   parent: RMCGrenadeIncendiary
