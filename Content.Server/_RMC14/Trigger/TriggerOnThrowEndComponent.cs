@@ -17,8 +17,4 @@ public sealed partial class TriggerOnThrowEndComponent : Component
 
     [DataField]
     public SoundSpecifier? BeepSound;
-
-    // rnmc
-    [DataField]
-    public bool ShotOutOfGun;
 }
