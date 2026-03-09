@@ -7,28 +7,25 @@ namespace Content.Shared._RNMC14.EnergyShield;
 public sealed partial class EnergyShieldComponent : Component
 {
 
-    [DataField("isEnabled")]
-    public bool IsEnabled;
-
-    [DataField("isBroken")]
+    [DataField]
     public bool IsBroken;
 
-    [DataField("totalDamage")]
+    [DataField]
     public float TotalDamage;
 
     [DataField("damageThreshold")]
-    public float DamageThreshold = 200;
+    public float DamageThreshold = 100;
 
     [DataField("rechargeCooldown")]
     public TimeSpan RechargeCooldown = TimeSpan.FromSeconds(5);
 
     [DataField("rechargeRate")]
-    public TimeSpan RechargeRate = TimeSpan.FromMilliseconds(25);
+    public TimeSpan RechargeRate = TimeSpan.FromSeconds(1);
 
     [DataField("rechargeRateAmount")]
-    public float RechargeRateAmount = 10;
+    public float RechargeRateAmount = 20;
 
-    [DataField("isEquipped")]
+    [DataField]
     public bool IsEquipped;
 
     [DataField("damagedSound")]
@@ -45,5 +42,8 @@ public sealed partial class EnergyShieldComponent : Component
 
     [DataField("shieldColorLow")]
     public Color ShieldColorLow = Color.Red;
+
+    [DataField]
+    public bool Recharging;
 
 }

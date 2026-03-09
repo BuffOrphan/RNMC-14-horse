@@ -1,0 +1,1 @@
+cmd-shakecamera-desc = Shakes entity's camera.

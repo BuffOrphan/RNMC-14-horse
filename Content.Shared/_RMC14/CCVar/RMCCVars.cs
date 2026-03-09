@@ -230,7 +230,7 @@ public sealed partial class RMCCVars : CVars
         CVarDef.Create("rmc.survivors_maximum", 7, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<int> RMCSpawnerMaxCorpses =
-        CVarDef.Create("rmc.spawner_max_corpses", 100, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("rmc.spawner_max_corpses", 1000, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<int> RMCHiveSpreadEarlyMinutes =
         CVarDef.Create("rmc.hive_spread_early_minutes", 0, CVar.REPLICATED | CVar.SERVER);

@@ -49,9 +49,7 @@ namespace Content.Server._RNMC14.EnergyShield
         /// </summary>
         private void OnUnequipped(Entity<EnergyShieldComponent> ent, ref GotUnequippedEvent args)
         {
-            if (_equipee != null)
             RemComp<AuraComponent>(_equipee);
-            
             _equipee = default!;
             ent.Comp.IsEquipped = false;
         }
@@ -64,12 +62,13 @@ namespace Content.Server._RNMC14.EnergyShield
             uid = _equipee;
             var _damage = args.Args.Damage.GetTotal();
 
-            if (_damage > 0 && comp.IsEquipped && !comp.IsBroken && comp.IsEnabled)
+            if (_damage > 0 && comp.IsEquipped && !comp.IsBroken)
             {
                 comp.TotalDamage += (float)_damage;
                 args.Args.Damage = new DamageSpecifier();
                 _rechargeTiming = _timing.CurTime + comp.RechargeCooldown;
                 _rechargeSoundPlayed = false;
+                comp.Recharging = false;
 
                 if (comp.TotalDamage >= comp.DamageThreshold)
                 {
@@ -92,25 +91,31 @@ namespace Content.Server._RNMC14.EnergyShield
 
             while (query.MoveNext(out var uid, out var comp))
             {
+
                 if (time >= _rechargeTiming && comp.TotalDamage > 0)
                 {
-                    if (!_rechargeSoundPlayed)
-                    {
-                        _audioSystem.PlayPvs(comp.ShieldRechargeSound, uid);
-                        _rechargeSoundPlayed = true;
-                        if (_equipee != null)
-                        {
-                            RemComp<AuraComponent>(_equipee);
-                            _rmcAura.GiveAura(_equipee, comp.ShieldColor, null);
-                        }
-                    }
-                    comp.TotalDamage -= comp.RechargeRateAmount;
+                    comp.Recharging = true;
+                }
 
-                    if (comp.TotalDamage <= 0)
-                    {
-                        comp.TotalDamage = 0;
-                        comp.IsBroken = false;
-                    }
+                if (!_rechargeSoundPlayed && comp.Recharging)
+                {
+                    _audioSystem.PlayPvs(comp.ShieldRechargeSound, uid);
+                    _rechargeSoundPlayed = true;
+                    RemComp<AuraComponent>(_equipee);
+                    _rmcAura.GiveAura(_equipee, comp.ShieldColor, null);
+                }
+
+                if (comp.Recharging && time >= _rechargeTiming)
+                {
+                    comp.TotalDamage -= comp.RechargeRateAmount;
+                    comp.IsBroken = false;
+                    _rechargeTiming = time + comp.RechargeRate;
+                }
+
+                if (comp.TotalDamage <= 0)
+                {
+                    comp.TotalDamage = 0;
+                    comp.Recharging = false;
                 }
             }
         }
