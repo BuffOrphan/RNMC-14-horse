@@ -90,9 +90,9 @@
       Starving: 50
       Dead: 0
     hungerThresholdDecayModifiers:
-      Overfed: 1
+      Overfed: 1.5
       Okay: 1
-      Peckish: 1
+      Peckish: 1.5
       Starving: 1
       Dead: 0
   - type: Thirst
