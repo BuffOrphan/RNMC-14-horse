@@ -95,7 +95,7 @@
   components:
   - type: RMCEmitSoundOnSpawn
     sound:
-      path: /Audio/_RMC14/Medical/air_release.ogg
+      path: /Audio/_RMC14/Medical/defib_charge.ogg
 
 - type: entity
   parent: RMCMarkerSoundSingleBase
