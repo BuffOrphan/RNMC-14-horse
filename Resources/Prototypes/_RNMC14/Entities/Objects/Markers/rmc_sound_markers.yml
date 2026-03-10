@@ -1,0 +1,116 @@
+- type: entity
+  parent: RMCMarkerSoundSingleBase
+  id: RNMCMarkerSoundGauInCockpit
+  suffix: GAU, in cockpit
+  components:
+  - type: RMCEmitSoundOnSpawn
+    sound:
+      path: /Audio/_RMC14/Dropship/gau_incockpit.ogg
+
+- type: entity
+  parent: RMCMarkerSoundSingleBase
+  id: RNMCMarkerSoundGau
+  suffix: GAU
+  components:
+  - type: RMCEmitSoundOnSpawn
+    sound:
+      path: /Audio/_RMC14/Dropship/gau.ogg
+
+- type: entity
+  parent: RMCMarkerSoundSingleBase
+  id: RNMCMarkerSoundLaserDesignation
+  suffix: Laser Designation
+  components:
+  - type: RMCEmitSoundOnSpawn
+    sound:
+      path: /Audio/_RMC14/Effects/Binoculars/binoctarget.ogg
+
+- type: entity
+  parent: RMCMarkerSoundSingleBase
+  id: RNMCMarkerSoundNightVision
+  suffix: Night Vision
+  components:
+  - type: RMCEmitSoundOnSpawn
+    sound:
+      path: /Audio/_RMC14/Effects/Binoculars/nightvision.ogg
+
+- type: entity
+  parent: RMCMarkerSoundSingleBase
+  id: RNMCMarkerSoundHeavyImpact
+  suffix: Heavy Impact
+  components:
+  - type: RMCEmitSoundOnSpawn
+    sound:
+      path: /Audio/_RMC14/Effects/meteorimpact.ogg
+
+- type: entity
+  parent: RMCMarkerSoundSingleBase
+  id: RNMCMarkerSoundMegaphoneSpeech
+  suffix: Megaphone Speech
+  components:
+  - type: RMCEmitSoundOnSpawn
+    sound:
+      path: /Audio/_RMC14/Items/megaphone.ogg
+
+- type: entity
+  parent: RMCMarkerSoundSingleBase
+  id: RNMCMarkerSoundMetalChairClang
+  suffix: Metal Chair Clang
+  components:
+  - type: RMCEmitSoundOnSpawn
+    sound:
+      path: /Audio/_RMC14/Items/metal_chair_clang.ogg
+
+- type: entity
+  parent: RMCMarkerSoundSingleBase
+  id: RNMCMarkerSoundPodLaunch
+  suffix: Pod Launch
+  components:
+  - type: RMCEmitSoundOnSpawn
+    sound:
+      path: /Audio/_RMC14/Machines/escape_pod_launch.ogg
+
+- type: entity
+  parent: RMCMarkerSoundSingleBase
+  id: RNMCMarkerSoundPodWarmup
+  suffix: Pod Warmup
+  components:
+  - type: RMCEmitSoundOnSpawn
+    sound:
+      path: /Audio/_RMC14/Machines/escape_pod_warmup.ogg
+
+- type: entity
+  parent: RMCMarkerSoundSingleBase
+  id: RNMCMarkerSoundAirRelease
+  suffix: Air Release
+  components:
+  - type: RMCEmitSoundOnSpawn
+    sound:
+      path: /Audio/_RMC14/Medical/air_release.ogg
+
+- type: entity
+  parent: RMCMarkerSoundSingleBase
+  id: RNMCMarkerSoundDefibWarmup
+  suffix: Defib Warmup
+  components:
+  - type: RMCEmitSoundOnSpawn
+    sound:
+      path: /Audio/_RMC14/Medical/air_release.ogg
+
+- type: entity
+  parent: RMCMarkerSoundSingleBase
+  id: RNMCMarkerSoundDefibRelease
+  suffix: Defib Release
+  components:
+  - type: RMCEmitSoundOnSpawn
+    sound:
+      path: /Audio/_RMC14/Medical/defib_release.ogg
+
+- type: entity
+  parent: RMCMarkerSoundSingleBase
+  id: RNMCMarkerSoundDefibrillation
+  suffix: Defib, Combined
+  components:
+  - type: RMCEmitSoundOnSpawn
+    sound:
+      path: /Audio/_RNMC14/Medical/defibrillation.ogg
