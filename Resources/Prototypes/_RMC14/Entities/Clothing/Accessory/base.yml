@@ -60,6 +60,7 @@
     - ShinGuard
     - KneeGuard
     - Paint
+    - Ponchos #RNMC
 
 - type: entity
   abstract: true
