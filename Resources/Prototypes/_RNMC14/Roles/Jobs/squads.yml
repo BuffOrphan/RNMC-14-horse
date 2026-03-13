@@ -44,3 +44,6 @@
       CMSPPPlatoonSergeantPVE: 1
       CMSPPPlatoonCommanderPVE: 1
     group: RedDawn
+  - type: Tag
+    tags:
+    - RNMCSquadRedDawn

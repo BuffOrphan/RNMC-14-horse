@@ -1,5 +1,5 @@
 - type: job
-  parent: CMJobSquadBase
+  parent: CMJobBase
   id: CMRiflemanPVE
   name: cm-job-name-rifleman
   description: cm-job-description-rifleman
@@ -49,6 +49,10 @@
       icon:
         sprite: /Textures/_RMC14/Interface/map_blips.rsi
         state: private
+    - type: AssignSquad
+      whitelist:
+        tags:
+        - RMCSquadSunRiders
 
 - type: playTimeTracker
   id: CMJobRiflemanPVE
