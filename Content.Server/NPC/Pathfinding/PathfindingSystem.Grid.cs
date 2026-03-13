@@ -1,7 +1,4 @@
-using System.Diagnostics.CodeAnalysis;
-using System.Numerics;
-using System.Threading;
-using System.Threading.Tasks;
+using Content.Shared._RNMC14.NPCIgnoreDoor;
 using Content.Shared.NPC;
 using Content.Shared.Physics;
 using Robust.Shared.Collections;
@@ -11,6 +8,10 @@ using Robust.Shared.Physics;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using System.Diagnostics.CodeAnalysis;
+using System.Numerics;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Content.Server.NPC.Pathfinding;
 
@@ -518,7 +519,7 @@ public sealed partial class PathfindingSystem
                                 flags |= PathfindingBreadcrumbFlag.Access;
                             }
 
-                            if (_doorQuery.HasComponent(ent))
+                            if (_doorQuery.HasComponent(ent)) // RNMC
                             {
                                 flags |= PathfindingBreadcrumbFlag.Door;
                             }

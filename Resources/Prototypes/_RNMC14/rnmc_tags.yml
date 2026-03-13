@@ -20,6 +20,9 @@
 - type: Tag
   id: RNMCStockPartVehicleSeat
 
+- type: Tag
+  id: RNMCSquadRedDawn
+
 # UPSTREAM PARTS WITH TAGS:
 - type: Tag
   id: CMStockPartMatterBin

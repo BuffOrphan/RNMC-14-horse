@@ -1,5 +1,5 @@
 - type: job
-  parent: CMJobSquadBase
+  parent: CMJobBase
   id: CMSmartGunOperatorPVE
   name: cm-job-name-smart-gun-operator
   description: cm-job-description-smart-gun-operator
@@ -50,6 +50,10 @@
       icon:
         sprite: /Textures/_RMC14/Interface/map_blips.rsi
         state: smartgunner
+    - type: AssignSquad
+      whitelist:
+        tags:
+        - RMCSquadSunRiders
 
 - type: playTimeTracker
   id: CMJobSmartGunOperatorPVE

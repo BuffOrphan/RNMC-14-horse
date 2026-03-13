@@ -24,3 +24,12 @@
   color: "#075f31"
   longRange: true
   tower: true
+
+- type: radioChannel
+  id: FORECON
+  name: chat-radio-FORECON
+  keycode: "4"
+  frequency: 1496
+  color: "#32CD32"
+  longRange: true
+  tower: true

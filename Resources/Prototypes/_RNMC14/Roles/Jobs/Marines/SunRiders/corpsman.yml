@@ -1,5 +1,5 @@
 - type: job
-  parent: CMJobSquadBase
+  parent: CMJobBase
   id: CMHospitalCorpsmanPVE
   name: cm-job-name-hospital-corpsman
   description: cm-job-description-hospital-corpsman
@@ -55,6 +55,10 @@
       icon:
         sprite: /Textures/_RMC14/Interface/map_blips.rsi
         state: medic
+    - type: AssignSquad
+      whitelist:
+        tags:
+        - RMCSquadSunRiders
 
 - type: playTimeTracker
   id: CMJobCorpsmanPVE

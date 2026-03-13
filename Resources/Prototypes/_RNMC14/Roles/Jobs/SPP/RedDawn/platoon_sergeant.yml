@@ -51,6 +51,10 @@
       icon:
         sprite: /Textures/_RMC14/Interface/map_blips.rsi
         state: leader
+    - type: AssignSquad
+      whitelist:
+        tags:
+        - RNMCSquadRedDawn
 
 - type: playTimeTracker
   id: CMJobSPPPlatoonSergeantPVE

@@ -1,6 +1,7 @@
 using Content.Server.Destructible;
 using Content.Server.NPC.Components;
 using Content.Server.NPC.Pathfinding;
+using Content.Shared._RNMC14.NPCIgnoreDoor;
 using Content.Shared.Climbing;
 using Content.Shared.CombatMode;
 using Content.Shared.DoAfter;
@@ -76,20 +77,28 @@ public sealed partial class NPCSteeringSystem
             var obstacleEnts = new List<EntityUid>();
 
             GetObstacleEntities(poly, mask, layer, obstacleEnts);
+            bool ignoreDoor = false; // rnmc
             var isDoor = (poly.Data.Flags & PathfindingBreadcrumbFlag.Door) != 0x0;
             var isAccessRequired = (poly.Data.Flags & PathfindingBreadcrumbFlag.Access) != 0x0;
             var isClimbable = (poly.Data.Flags & PathfindingBreadcrumbFlag.Climb) != 0x0;
 
-            // Just walk into it stupid
+            //Just walk into it stupid
             if (isDoor && !isAccessRequired)
             {
                 var doorQuery = GetEntityQuery<DoorComponent>();
+                var ignoreDoorQuery = GetEntityQuery<NPCIgnoreDoorComponent>(); // RNMC
 
                 // ... At least if it's not a bump open.
                 foreach (var ent in obstacleEnts)
                 {
                     if (!doorQuery.TryGetComponent(ent, out var door))
                         continue;
+
+                    if (ignoreDoorQuery.TryGetComponent(ent, out var ignore)) // RNMC
+                    {
+                        ignoreDoor = true;
+                        continue;
+                    }
 
                     if (!door.BumpOpen && (component.Flags & PathFlags.Interact) != 0x0)
                     {
@@ -104,7 +113,7 @@ public sealed partial class NPCSteeringSystem
                 // If we get to here then didn't succeed for reasons.
             }
 
-            if ((component.Flags & PathFlags.Prying) != 0x0 && isDoor)
+            if ((component.Flags & PathFlags.Prying) != 0x0 && isDoor && !ignoreDoor)
             {
                 var doorQuery = GetEntityQuery<DoorComponent>();
 

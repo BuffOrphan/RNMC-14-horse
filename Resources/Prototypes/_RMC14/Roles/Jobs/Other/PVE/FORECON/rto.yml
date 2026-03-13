@@ -63,9 +63,9 @@
   id: RMCJobFORECONPVERadioTelephoneOperator
   equipment:
     id: CMDogtagRifleman
-    ears: RMCHeadsetMarine
-    jumpsuit: JumpsuitMarine
-    shoes: CMBootsBlackFilled
+    # ears: RMCHeadsetMarine
+    # jumpsuit: JumpsuitMarine RNMC
+    # shoes: CMBootsBlackFilled
 
 - type: playTimeTracker
   id: CMJobFORECONPVERadioTelephoneOperator

@@ -1,5 +1,5 @@
 - type: job
-  parent: CMJobSquadBase
+  parent: CMJobBase
   id: CMSectionSergeantPVE
   name: cm-job-name-section-sergeant
   description: cm-job-description-section-sergeant
@@ -48,6 +48,10 @@
       icon:
         sprite: /Textures/_RMC14/Interface/map_blips.rsi
         state: leader
+    - type: AssignSquad
+      whitelist:
+        tags:
+        - RMCSquadSunRiders
 
 - type: playTimeTracker
   id: CMJobSectionSergeantPVE

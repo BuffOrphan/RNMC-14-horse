@@ -1,0 +1,11 @@
+- type: entity
+  parent: CMEncryptionKey
+  id: RNMCEncryptionKeyFORECON
+  name: FORECON Radio Encryption Key
+  components:
+  - type: EncryptionKey
+    channels:
+    - FORECON
+    defaultChannel: FORECON
+  - type: Sprite
+    state: echo_key

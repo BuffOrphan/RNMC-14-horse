@@ -56,6 +56,10 @@
       icon:
         sprite: /Textures/_RNMC14/Interface/map_blips.rsi
         state: platco
+    - type: AssignSquad
+      whitelist:
+        tags:
+        - RMCSquadSunRiders
 
 - type: startingGear
   id: CMGearPlatco
