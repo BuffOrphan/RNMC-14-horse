@@ -18,12 +18,11 @@
     state: ltb_cannon
   - type: RMCHardpointItem
     hardpointType: Turret
+    vehicleFamily: Tank
+    slotType: Turret
     damageMultiplier: 0.05
   - type: RMCHardpointIntegrity
     maxIntegrity: 450
-  - type: Tag
-    tags:
-    - RMCVehicleHardpointTankTurret
   - type: VehicleTurret
     rotateToCursor: true
     stabilizedRotation: false
@@ -37,21 +36,18 @@
     pixelOffsetSouth: "0,10"
     pixelOffsetWest: "10,0"
   - type: RMCHardpointSlots
+    vehicleFamily: Tank
     slots:
     - id: turret-cannon
       hardpointType: Cannon
+      slotType: Cannon
       required: false
       insertDelay: 2.0
-      whitelist:
-        tags:
-        - RMCVehicleHardpointTankCannon
     - id: turret-launcher
       hardpointType: Launcher
+      slotType: Launcher
       required: false
       insertDelay: 2.0
-      whitelist:
-        tags:
-        - RMCVehicleHardpointTankLauncher
 
 - type: entity
   parent: RMCVehicleTankHardpointBase
@@ -63,13 +59,11 @@
     state: treads
   - type: RMCHardpointItem
     hardpointType: Wheel
+    vehicleFamily: Tank
+    slotType: Treads
     damageMultiplier: 0.15
   - type: RMCHardpointIntegrity
     maxIntegrity: 300
-  - type: Tag
-    tags:
-    - RMCVehicleHardpointWheel
-    - RMCVehicleHardpointTreads
   - type: RMCVehicleWheelItem
 
 - type: entity
@@ -82,11 +76,9 @@
     state: treads
   - type: RMCHardpointItem
     hardpointType: Wheel
+    vehicleFamily: Tank
+    slotType: Treads
     damageMultiplier: 0.15
-  - type: Tag
-    tags:
-    - RMCVehicleHardpointWheel
-    - RMCVehicleHardpointTreads
   - type: RMCVehicleWheelItem
   - type: RMCHardpointIntegrity
     maxIntegrity: 500
@@ -106,13 +98,11 @@
     state: tires
   - type: RMCHardpointItem
     hardpointType: Wheel
+    vehicleFamily: Tank
+    slotType: Tires
     damageMultiplier: 0.15
   - type: RMCHardpointIntegrity
     maxIntegrity: 100
-  - type: Tag
-    tags:
-    - RMCVehicleHardpointWheel
-    - RMCVehicleHardpointTires
   - type: RMCVehicleWheelItem
 
 - type: entity
@@ -125,6 +115,8 @@
     state: ballistic_armor
   - type: RMCHardpointItem
     hardpointType: Armor
+    vehicleFamily: Tank
+    slotType: Armor
     damageMultiplier: 0.5
   - type: RMCHardpointIntegrity
     maxIntegrity: 1000
@@ -144,6 +136,8 @@
     state: concussive_armor
   - type: RMCHardpointItem
     hardpointType: Armor
+    vehicleFamily: Tank
+    slotType: Armor
     damageMultiplier: 0.5
   - type: RMCHardpointIntegrity
     maxIntegrity: 1000
@@ -162,6 +156,8 @@
     state: caustic_armor
   - type: RMCHardpointItem
     hardpointType: Armor
+    vehicleFamily: Tank
+    slotType: Armor
     damageMultiplier: 0.5
   - type: RMCHardpointIntegrity
     maxIntegrity: 1000
@@ -181,6 +177,8 @@
     state: paladin_armor
   - type: RMCHardpointItem
     hardpointType: Armor
+    vehicleFamily: Tank
+    slotType: Armor
     damageMultiplier: 0.5
   - type: RMCHardpointIntegrity
     maxIntegrity: 1000
@@ -201,6 +199,8 @@
     state: snowplow
   - type: RMCHardpointItem
     hardpointType: Armor
+    vehicleFamily: Tank
+    slotType: Armor
     damageMultiplier: 0.5
   - type: RMCHardpointIntegrity
     maxIntegrity: 150
@@ -217,12 +217,11 @@
     state: ltb_cannon
   - type: RMCHardpointItem
     hardpointType: Cannon
+    vehicleFamily: Tank
+    slotType: Cannon
     damageMultiplier: 0.125
   - type: RMCHardpointIntegrity
     maxIntegrity: 500
-  - type: Tag
-    tags:
-    - RMCVehicleHardpointTankCannon
   - type: VehicleTurretAttachment
   - type: VehicleTurret
     offsetRotatesWithTurret: true
@@ -282,12 +281,11 @@
     state: ltaaap_minigun
   - type: RMCHardpointItem
     hardpointType: Cannon
+    vehicleFamily: Tank
+    slotType: Cannon
     damageMultiplier: 0.125
   - type: RMCHardpointIntegrity
     maxIntegrity: 350
-  - type: Tag
-    tags:
-    - RMCVehicleHardpointTankCannon
   - type: VehicleTurretAttachment
   - type: VehicleTurret
     fireWhileRotatingGraceDegrees: 180
@@ -365,12 +363,11 @@
     state: ace_autocannon
   - type: RMCHardpointItem
     hardpointType: Cannon
+    vehicleFamily: Tank
+    slotType: Cannon
     damageMultiplier: 0.125
   - type: RMCHardpointIntegrity
     maxIntegrity: 500
-  - type: Tag
-    tags:
-    - RMCVehicleHardpointTankCannon
   - type: VehicleTurretAttachment
   - type: VehicleTurret
     offsetRotatesWithTurret: true
@@ -421,12 +418,11 @@
     state: drgn_flamer
   - type: RMCHardpointItem
     hardpointType: Cannon
+    vehicleFamily: Tank
+    slotType: Cannon
     damageMultiplier: 0.125
   - type: RMCHardpointIntegrity
     maxIntegrity: 400
-  - type: Tag
-    tags:
-    - RMCVehicleHardpointTankCannon
   - type: VehicleTurretAttachment
   - type: VehicleTurret
     showOverlay: true
@@ -484,12 +480,11 @@
     state: flamer
   - type: RMCHardpointItem
     hardpointType: Launcher
+    vehicleFamily: Tank
+    slotType: Launcher
     damageMultiplier: 0.0
   - type: RMCHardpointIntegrity
     maxIntegrity: 300
-  - type: Tag
-    tags:
-    - RMCVehicleHardpointTankLauncher
   - type: VehicleTurretAttachment
   - type: VehicleTurret
     offsetRotatesWithTurret: true
@@ -555,12 +550,11 @@
     state: glauncher
   - type: RMCHardpointItem
     hardpointType: Launcher
+    vehicleFamily: Tank
+    slotType: Launcher
     damageMultiplier: 0.0
   - type: RMCHardpointIntegrity
     maxIntegrity: 500
-  - type: Tag
-    tags:
-    - RMCVehicleHardpointTankLauncher
   - type: VehicleTurretAttachment
   - type: VehicleTurret
     offsetRotatesWithTurret: true
@@ -624,12 +618,11 @@
     state: tow_launcher
   - type: RMCHardpointItem
     hardpointType: Launcher
+    vehicleFamily: Tank
+    slotType: Launcher
     damageMultiplier: 0.0
   - type: RMCHardpointIntegrity
     maxIntegrity: 500
-  - type: Tag
-    tags:
-    - RMCVehicleHardpointTankLauncher
   - type: VehicleTurretAttachment
   - type: VehicleTurret
     offsetRotatesWithTurret: true
@@ -689,12 +682,11 @@
     state: m56_cupola
   - type: RMCHardpointItem
     hardpointType: Launcher
+    vehicleFamily: Tank
+    slotType: Launcher
     damageMultiplier: 0.0
   - type: RMCHardpointIntegrity
     maxIntegrity: 350
-  - type: Tag
-    tags:
-    - RMCVehicleHardpointTankLauncher
   - type: VehicleTurretAttachment
   - type: VehicleTurret
     offsetRotatesWithTurret: true
@@ -757,12 +749,11 @@
     state: m56_cupola
   - type: RMCHardpointItem
     hardpointType: Launcher
+    vehicleFamily: Tank
+    slotType: Launcher
     damageMultiplier: 0.0
   - type: RMCHardpointIntegrity
     maxIntegrity: 350
-  - type: Tag
-    tags:
-    - RMCVehicleHardpointTankLauncher
   - type: VehicleTurretAttachment
   - type: VehicleTurret
     offsetRotatesWithTurret: true
@@ -823,12 +814,11 @@
     state: warray
   - type: RMCHardpointItem
     hardpointType: Support
+    vehicleFamily: Tank
+    slotType: SupportAttachment
     damageMultiplier: 0.075
   - type: RMCHardpointIntegrity
     maxIntegrity: 250
-  - type: Tag
-    tags:
-    - RMCVehicleHardpointTankSupportAttachment
   - type: RMCVehicleWeaponSupportAttachment
     accuracyMultiplier: 1.2
     fireRateMultiplier: 1.15
@@ -845,12 +835,11 @@
     state: odrive_enhancer
   - type: RMCHardpointItem
     hardpointType: Support
+    vehicleFamily: Tank
+    slotType: SupportAttachment
     damageMultiplier: 0.075
   - type: RMCHardpointIntegrity
     maxIntegrity: 250
-  - type: Tag
-    tags:
-    - RMCVehicleHardpointTankSupportAttachment
   - type: RMCVehicleSpeedModifierAttachment
     speedMultiplier: 1.2
   - type: RMCHardpointVisual
@@ -866,12 +855,11 @@
     state: slauncher_0
   - type: RMCHardpointItem
     hardpointType: Support
+    vehicleFamily: Tank
+    slotType: SupportAttachment
     damageMultiplier: 0.075
   - type: RMCHardpointIntegrity
     maxIntegrity: 100
-  - type: Tag
-    tags:
-    - RMCVehicleHardpointTankSupportAttachment
   - type: VehicleTurret
     useDirectionalOffsets: true
     pixelOffsetNorth: "0,-10"
@@ -923,12 +911,11 @@
     state: slauncher_1
   - type: RMCHardpointItem
     hardpointType: Support
+    vehicleFamily: Tank
+    slotType: SupportAttachment
     damageMultiplier: 0.075
   - type: RMCHardpointIntegrity
     maxIntegrity: 500
-  - type: Tag
-    tags:
-    - RMCVehicleHardpointTankSupportAttachment
   - type: VehicleTurret
     useDirectionalOffsets: true
     pixelOffsetNorth: "0,-10"
@@ -983,12 +970,11 @@
     state: artillery
   - type: RMCHardpointItem
     hardpointType: Support
+    vehicleFamily: Tank
+    slotType: SupportAttachment
     damageMultiplier: 0.075
   - type: RMCHardpointIntegrity
     maxIntegrity: 250
-  - type: Tag
-    tags:
-    - RMCVehicleHardpointTankSupportAttachment
   - type: RMCVehicleGunnerViewAttachment
     pvsScale: 0.35
   - type: RMCHardpointVisual
