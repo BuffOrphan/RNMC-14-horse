@@ -106,10 +106,6 @@
       whitelist:
         components:
         - RMCVehicleWheelItem
-    - id: turret-1
-      hardpointType: Turret
-      required: false
-      insertDelay: 1.5
   - type: RMCVehicleWheelSlots
     slotCount: 1
   - type: RMCHardpointIntegrity
@@ -251,10 +247,6 @@
       whitelist:
         components:
         - RMCVehicleWheelItem
-    - id: turret-1
-      hardpointType: Turret
-      required: false
-      insertDelay: 1.5
   - type: RMCVehicleWheelSlots
     slotCount: 1
   - type: RMCHardpointIntegrity
@@ -396,10 +388,6 @@
       whitelist:
         components:
         - RMCVehicleWheelItem
-    - id: turret-1
-      hardpointType: Turret
-      required: false
-      insertDelay: 1.5
   - type: RMCVehicleWheelSlots
     slotCount: 1
   - type: RMCHardpointIntegrity
@@ -541,10 +529,6 @@
       whitelist:
         components:
         - RMCVehicleWheelItem
-    - id: turret-1
-      hardpointType: Turret
-      required: false
-      insertDelay: 1.5
   - type: RMCVehicleWheelSlots
     slotCount: 1
   - type: RMCHardpointIntegrity
@@ -733,7 +717,7 @@
       required: false
       whitelist:
         tags:
-        - RMCVehicleHardpointTurret
+        - RMCVehicleHardpointAPCTurret
     - id: secondary
       hardpointType: Cannon
       visualLayer: secondary
@@ -741,7 +725,7 @@
       required: false
       whitelist:
         tags:
-        - RMCVehicleHardpointCannon
+        - RMCVehicleHardpointAPCCannon
     - id: support
       hardpointType: SupportAttachment
       visualLayer: support
@@ -749,7 +733,7 @@
       required: false
       whitelist:
         tags:
-        - RMCVehicleHardpointSupportAttachment
+        - RMCVehicleHardpointAPCSupportAttachment
     - id: wheel-1
       hardpointType: Wheel
       insertDelay: 1.5
@@ -1000,7 +984,7 @@
       required: false
       whitelist:
         tags:
-        - RMCVehicleHardpointRoofAttachment
+        - RMCVehicleHardpointHumveeRoofAttachment
     - id: front
       hardpointType: FrontAttachment
       visualLayer: support-2
@@ -1008,7 +992,7 @@
       required: false
       whitelist:
         tags:
-        - RMCVehicleHardpointFrontAttachment
+        - RMCVehicleHardpointHumveeFrontAttachment
     - id: wheel-1
       hardpointType: Wheel
       insertDelay: 1.5
@@ -1094,7 +1078,7 @@
       required: false
       whitelist:
         tags:
-        - RMCVehicleHardpointRoofAttachment
+        - RMCVehicleHardpointHumveeRoofAttachment
     - id: front
       hardpointType: FrontAttachment
       visualLayer: support-2
@@ -1102,7 +1086,7 @@
       required: false
       whitelist:
         tags:
-        - RMCVehicleHardpointFrontAttachment
+        - RMCVehicleHardpointHumveeFrontAttachment
     - id: wheel-1
       hardpointType: Wheel
       insertDelay: 1.5
@@ -1167,7 +1151,7 @@
       required: false
       whitelist:
         tags:
-        - RMCVehicleHardpointRoofAttachment
+        - RMCVehicleHardpointHumveeRoofAttachment
     - id: front
       hardpointType: FrontAttachment
       visualLayer: support-2
@@ -1175,7 +1159,7 @@
       required: false
       whitelist:
         tags:
-        - RMCVehicleHardpointFrontAttachment
+        - RMCVehicleHardpointHumveeFrontAttachment
     - id: wheel-1
       hardpointType: Wheel
       insertDelay: 1.5
@@ -1357,7 +1341,7 @@
         startingItem: RMCVehicleTankTurret
         whitelist:
           tags:
-          - RMCVehicleHardpointTurret
+          - RMCVehicleHardpointTankTurret
       wheel-1:
         startingItem: RMCVehicleTankTreads
         whitelist:
@@ -1380,6 +1364,9 @@
       visualLayer: primary
       insertDelay: 3.0
       required: false
+      whitelist:
+        tags:
+        - RMCVehicleHardpointTankTurret
     - id: secondary
       hardpointType: Secondary
       visualLayer: secondary
@@ -1392,7 +1379,7 @@
       required: false
       whitelist:
         tags:
-        - RMCVehicleHardpointSupportAttachment
+        - RMCVehicleHardpointTankSupportAttachment
     - id: wheel-1
       hardpointType: Wheel
       insertDelay: 2.0

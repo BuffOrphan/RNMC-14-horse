@@ -23,7 +23,7 @@
     maxIntegrity: 450
   - type: Tag
     tags:
-    - RMCVehicleHardpointTurret
+    - RMCVehicleHardpointTankTurret
   - type: VehicleTurret
     rotateToCursor: true
     stabilizedRotation: false
@@ -44,14 +44,14 @@
       insertDelay: 2.0
       whitelist:
         tags:
-        - RMCVehicleHardpointCannon
+        - RMCVehicleHardpointTankCannon
     - id: turret-launcher
       hardpointType: Launcher
       required: false
       insertDelay: 2.0
       whitelist:
         tags:
-        - RMCVehicleHardpointLauncher
+        - RMCVehicleHardpointTankLauncher
 
 - type: entity
   parent: RMCVehicleTankHardpointBase
@@ -222,7 +222,7 @@
     maxIntegrity: 500
   - type: Tag
     tags:
-    - RMCVehicleHardpointCannon
+    - RMCVehicleHardpointTankCannon
   - type: VehicleTurretAttachment
   - type: VehicleTurret
     offsetRotatesWithTurret: true
@@ -287,7 +287,7 @@
     maxIntegrity: 350
   - type: Tag
     tags:
-    - RMCVehicleHardpointCannon
+    - RMCVehicleHardpointTankCannon
   - type: VehicleTurretAttachment
   - type: VehicleTurret
     fireWhileRotatingGraceDegrees: 180
@@ -370,7 +370,7 @@
     maxIntegrity: 500
   - type: Tag
     tags:
-    - RMCVehicleHardpointCannon
+    - RMCVehicleHardpointTankCannon
   - type: VehicleTurretAttachment
   - type: VehicleTurret
     offsetRotatesWithTurret: true
@@ -426,7 +426,7 @@
     maxIntegrity: 400
   - type: Tag
     tags:
-    - RMCVehicleHardpointCannon
+    - RMCVehicleHardpointTankCannon
   - type: VehicleTurretAttachment
   - type: VehicleTurret
     showOverlay: true
@@ -489,7 +489,7 @@
     maxIntegrity: 300
   - type: Tag
     tags:
-    - RMCVehicleHardpointLauncher
+    - RMCVehicleHardpointTankLauncher
   - type: VehicleTurretAttachment
   - type: VehicleTurret
     offsetRotatesWithTurret: true
@@ -560,7 +560,7 @@
     maxIntegrity: 500
   - type: Tag
     tags:
-    - RMCVehicleHardpointLauncher
+    - RMCVehicleHardpointTankLauncher
   - type: VehicleTurretAttachment
   - type: VehicleTurret
     offsetRotatesWithTurret: true
@@ -629,7 +629,7 @@
     maxIntegrity: 500
   - type: Tag
     tags:
-    - RMCVehicleHardpointLauncher
+    - RMCVehicleHardpointTankLauncher
   - type: VehicleTurretAttachment
   - type: VehicleTurret
     offsetRotatesWithTurret: true
@@ -694,7 +694,7 @@
     maxIntegrity: 350
   - type: Tag
     tags:
-    - RMCVehicleHardpointLauncher
+    - RMCVehicleHardpointTankLauncher
   - type: VehicleTurretAttachment
   - type: VehicleTurret
     offsetRotatesWithTurret: true
@@ -762,7 +762,7 @@
     maxIntegrity: 350
   - type: Tag
     tags:
-    - RMCVehicleHardpointLauncher
+    - RMCVehicleHardpointTankLauncher
   - type: VehicleTurretAttachment
   - type: VehicleTurret
     offsetRotatesWithTurret: true
@@ -828,7 +828,7 @@
     maxIntegrity: 250
   - type: Tag
     tags:
-    - RMCVehicleHardpointSupportAttachment
+    - RMCVehicleHardpointTankSupportAttachment
   - type: RMCVehicleWeaponSupportAttachment
     accuracyMultiplier: 1.2
     fireRateMultiplier: 1.15
@@ -850,7 +850,7 @@
     maxIntegrity: 250
   - type: Tag
     tags:
-    - RMCVehicleHardpointSupportAttachment
+    - RMCVehicleHardpointTankSupportAttachment
   - type: RMCVehicleSpeedModifierAttachment
     speedMultiplier: 1.2
   - type: RMCHardpointVisual
@@ -871,7 +871,7 @@
     maxIntegrity: 100
   - type: Tag
     tags:
-    - RMCVehicleHardpointSupportAttachment
+    - RMCVehicleHardpointTankSupportAttachment
   - type: VehicleTurret
     useDirectionalOffsets: true
     pixelOffsetNorth: "0,-10"
@@ -928,7 +928,7 @@
     maxIntegrity: 500
   - type: Tag
     tags:
-    - RMCVehicleHardpointSupportAttachment
+    - RMCVehicleHardpointTankSupportAttachment
   - type: VehicleTurret
     useDirectionalOffsets: true
     pixelOffsetNorth: "0,-10"
@@ -988,7 +988,7 @@
     maxIntegrity: 250
   - type: Tag
     tags:
-    - RMCVehicleHardpointSupportAttachment
+    - RMCVehicleHardpointTankSupportAttachment
   - type: RMCVehicleGunnerViewAttachment
     pvsScale: 0.35
   - type: RMCHardpointVisual
