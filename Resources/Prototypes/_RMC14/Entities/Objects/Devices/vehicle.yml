@@ -1044,6 +1044,11 @@
   - type: NpcFactionMember # RNMC
     factions:
     - Human
+  - type: MarineMapTracked
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: gm_exclamation
 
 - type: entity
   parent: RMCVehicleHumveeBase
@@ -1429,3 +1434,8 @@
   - type: NpcFactionMember # RNMC
     factions:
     - Human
+  - type: MarineMapTracked
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: gm_exclamation

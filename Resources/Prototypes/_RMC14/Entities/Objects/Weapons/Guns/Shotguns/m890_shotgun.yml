@@ -10,6 +10,7 @@
     sprite: _RMC14/Objects/Weapons/Guns/Shotguns/m890.rsi
   - type: Gun
     shotsPerBurst: 1
+    fireRate: 6.66 # RNMC
     soundGunshot:
       collection: RMCTacticalShotgunShoot
   - type: ShootUseDelay
@@ -27,7 +28,6 @@
     whitelist:
       tags:
       - RMCShellShotgun
-    proto: CMShellShotgunSlugs
     capacity: 8
   - type: AttachableHolder
     slots:
@@ -61,3 +61,10 @@
       rmc-aslot-rail: -0.025, 0.125
       rmc-aslot-stock: -0.50, 0.065
       rmc-aslot-underbarrel: 0.30, -0.31
+  - type: Tag # RNMC
+    tags:
+    - RNMCWeaponShotgunM890
+    - RMCWeaponShotgun
+
+- type: Tag # RNMC
+  id: RNMCWeaponShotgunM890

@@ -86,11 +86,11 @@
   query:
     - !type:NearbyHostilesQuery
   considerations:
-    - !type:TargetIsAliveCon
+    - !type:TargetIsNotDeadCon
       curve: !type:BoolCurve
-    # - !type:TargetDistanceCon
-    #   curve: !type:PresetCurve
-    #     preset: TargetDistance
+    - !type:TargetDistanceCon
+      curve: !type:PresetCurve
+        preset: TargetDistance
     # - !type:TargetHealthCon
     #   curve: !type:PresetCurve
     #     preset: TargetHealth
