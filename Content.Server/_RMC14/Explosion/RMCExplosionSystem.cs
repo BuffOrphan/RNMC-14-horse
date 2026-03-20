@@ -6,7 +6,6 @@ using Content.Server.Explosion.Components;
 using Content.Server.Explosion.EntitySystems;
 using Content.Server.Popups;
 using Content.Shared._RMC14.Explosion;
-using Content.Shared._RMC14.Map;
 using Content.Shared._RMC14.Voicelines;
 using Content.Shared.Coordinates;
 using Content.Shared.Decals;
@@ -28,14 +27,12 @@ public sealed class RMCExplosionSystem : SharedRMCExplosionSystem
     [Dependency] private readonly DecalSystem _decals = default!;
     [Dependency] private readonly ExplosionSystem _explosion = default!;
     [Dependency] private readonly HumanoidVoicelinesSystem _humanoidVoicelines = default!;
-    [Dependency] private readonly SharedMapSystem _map = default!;
-    [Dependency] private readonly RMCMapSystem _rmcMap = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly TriggerSystem _trigger = default!;
 
-    private readonly Dictionary<string, ProtoId<DecalPrototype>[]> _scorchDecalsByTag = new();
+    private string[] _scorchDecals = [];
 
     public override void Initialize()
     {
@@ -52,8 +49,7 @@ public sealed class RMCExplosionSystem : SharedRMCExplosionSystem
 
         SubscribeLocalEvent<RandomTimerTriggerComponent, ExaminedEvent>(OnRandomTimerTriggerExamined);
 
-        CacheDecals("RMCScorch");
-        CacheDecals("RMCScorchSmall");
+        CacheDecals();
     }
 
     private void OnActiveTimerTrigger(ref ActiveTimerTriggerEvent ev)
@@ -100,67 +96,13 @@ public sealed class RMCExplosionSystem : SharedRMCExplosionSystem
 
     private void OnExplosionEffectTriggered(Entity<RMCScorchEffectComponent> ent, ref CMExplosiveTriggeredEvent args)
     {
-        if (ent.Comp.Radius > 0)
-        {
-            if (!_rmcMap.TryGetTileRefForEnt(Transform(ent).Coordinates, out var grid, out var tile))
-                return;
+        if (_scorchDecals.Length == 0)
+            return;
 
-            var centerDecals = GetDecals(ent.Comp.CenterDecalTag);
-            var edgeDecals = GetDecals(ent.Comp.EdgeDecalTag);
-            if (centerDecals.Length == 0 || edgeDecals.Length == 0)
-                return;
-
-            var radius = Math.Max(1, ent.Comp.Radius);
-            var centerRadius = Math.Max(0, ent.Comp.CenterRadius);
-            var centerRadiusSq = centerRadius * centerRadius;
-            var radiusSq = radius * radius;
-            var center = tile.GridIndices;
-
-            for (var dx = -radius; dx <= radius; dx++)
-            {
-                for (var dy = -radius; dy <= radius; dy++)
-                {
-                    var distSq = dx * dx + dy * dy;
-                    if (distSq > radiusSq)
-                        continue;
-
-                    var indices = new Vector2i(center.X + dx, center.Y + dy);
-                    var coords = _map.GridTileToLocal(tile.GridUid, grid, indices);
-                    var decalCoords = coords.Offset(new Vector2(-0.5f, -0.5f));
-                    var decals = distSq <= centerRadiusSq ? centerDecals : edgeDecals;
-                    var decalId = decals[_random.Next(decals.Length)];
-                    var rotation = ent.Comp.RandomRotation ? _random.NextAngle() : Angle.FromDegrees(_random.Next(4) * 90);
-                    _decals.TryAddDecal(decalId, decalCoords, out _, rotation: rotation, cleanable: true);
-                }
-            }
-        }
-        else
-        {
-            var decals = GetDecals(ent.Comp.CenterDecalTag);
-            if (decals.Length == 0)
-                return;
-
-            var count = Math.Max(1, ent.Comp.Count);
-            // Decals spawn based on bottom left corner, if bigger decals are used the offset will have to change
-            var baseCoords = Transform(ent).Coordinates.Offset(new Vector2(-0.5f, -0.5f));
-            var scatterRadius = Math.Max(0f, ent.Comp.ScatterRadius);
-
-            for (var i = 0; i < count; i++)
-            {
-                var decalId = decals[_random.Next(decals.Length)];
-                var offset = Vector2.Zero;
-                if (scatterRadius > 0f)
-                {
-                    var angle = _random.NextAngle();
-                    var dist = _random.NextFloat() * scatterRadius;
-                    offset = angle.ToVec() * dist;
-                }
-
-                var coords = baseCoords.Offset(offset);
-                var rotation = ent.Comp.RandomRotation ? _random.NextAngle() : Angle.FromDegrees(_random.Next(4) * 90);
-                _decals.TryAddDecal(decalId, coords, out _, rotation: rotation, cleanable: true);
-            }
-        }
+        var decalId = _scorchDecals[_random.Next(_scorchDecals.Length)];
+        //Decals spawn based on bottom left corner, if bigger decals are used the offset will have to change
+        var coords = Transform(ent).Coordinates.Offset(new Vector2(-0.5f, -0.5f));
+        _decals.TryAddDecal(decalId, coords, out _, rotation: _random.NextAngle(), cleanable: true);
     }
 
     private void OnRandomTimerTriggerExamined(Entity<RandomTimerTriggerComponent> ent, ref ExaminedEvent args)
@@ -206,24 +148,10 @@ public sealed class RMCExplosionSystem : SharedRMCExplosionSystem
         _explosion.TriggerExplosive(uid, null, delete, totalIntensity, radius, user);
     }
 
-    private ProtoId<DecalPrototype>[] GetDecals(string decalTag)
+    private void CacheDecals()
     {
-        if (_scorchDecalsByTag.TryGetValue(decalTag, out var cached))
-            return cached;
-
-        CacheDecals(decalTag);
-        return _scorchDecalsByTag.TryGetValue(decalTag, out var decals) ? decals : Array.Empty<ProtoId<DecalPrototype>>();
-    }
-
-    private void CacheDecals(string decalTag)
-    {
-        var decals = _prototypeManager.EnumeratePrototypes<DecalPrototype>()
-            .Where(x => x.Tags.Contains(decalTag))
-            .Select(x => new ProtoId<DecalPrototype>(x.ID))
-            .ToArray();
-
-        _scorchDecalsByTag[decalTag] = decals;
-        if (decals.Length == 0)
-            Log.Error($"Failed to get any decals for RMCScorchEffectComponent. Check that at least one decal has tag {decalTag}.");
+        _scorchDecals = _prototypeManager.EnumeratePrototypes<DecalPrototype>().Where(x => x.Tags.Contains("RMCScorch")).Select(x => x.ID).ToArray();
+        if (_scorchDecals.Length == 0)
+            Log.Error("Failed to get any decals for RMCScorchEffectComponent. Check that at least one decal has tag RMCScorch.");
     }
 }
