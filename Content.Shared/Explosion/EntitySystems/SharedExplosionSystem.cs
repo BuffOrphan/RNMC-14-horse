@@ -37,15 +37,4 @@ public abstract class SharedExplosionSystem : EntitySystem
     public virtual void TriggerExplosive(EntityUid uid, ExplosiveComponent? explosive = null, bool delete = true, float? totalIntensity = null, float? radius = null, EntityUid? user = null)
     {
     }
-
-    /// <summary>
-    /// Sets explosion resistance values through the authorized explosion system.
-    /// </summary>
-    public void SetExplosionResistance(EntityUid uid, float damageCoefficient, bool worn, ExplosionResistanceComponent? resistance = null)
-    {
-        resistance ??= EnsureComp<ExplosionResistanceComponent>(uid);
-        resistance.DamageCoefficient = damageCoefficient;
-        resistance.Worn = worn;
-        Dirty(uid, resistance);
-    }
 }

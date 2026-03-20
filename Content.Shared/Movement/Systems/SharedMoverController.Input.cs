@@ -296,25 +296,28 @@ namespace Content.Shared.Movement.Systems
             Dirty(entity.Owner, entity.Comp);
         }
 
-        private void HandleDirChange(Entity<InputMoverComponent?> entity, Direction dir, ushort subTick, bool state)
+        private void HandleDirChange(EntityUid entity, Direction dir, ushort subTick, bool state)
         {
-            var hasMover = MoverQuery.Resolve(entity.Owner, ref entity.Comp, false);
-
             // Relayed movement just uses the same keybinds given we're moving the relayed entity
             // the same as us.
 
             // TODO: Should move this into HandleMobMovement itself.
-            if (hasMover && entity.Comp != null && entity.Comp.CanMove && RelayQuery.TryComp(entity, out var relayMover))
+            if (TryComp<RelayInputMoverComponent>(entity, out var relayMover))
             {
-                DebugTools.Assert(relayMover.RelayEntity != entity.Owner);
+                DebugTools.Assert(relayMover.RelayEntity != entity);
                 DebugTools.AssertNotNull(relayMover.RelayEntity);
 
                 if (MoverQuery.TryGetComponent(entity, out var mover))
-                    SetMoveInput((entity.Owner, mover), MoveButtons.None);
+                    SetMoveInput((entity, mover), MoveButtons.None);
 
-                HandleDirChange(relayMover.RelayEntity, dir, subTick, state);
+                if (!_mobState.IsIncapacitated(entity))
+                    HandleDirChange(relayMover.RelayEntity, dir, subTick, state);
+
                 return;
             }
+
+            if (!MoverQuery.TryGetComponent(entity, out var moverComp))
+                return;
 
             // For stuff like "Moving out of locker" or the likes
             // We'll relay a movement input to the parent.
@@ -327,10 +330,7 @@ namespace Content.Shared.Movement.Systems
                 RaiseLocalEvent(xform.ParentUid, ref relayMoveEvent);
             }
 
-            if (!hasMover || entity.Comp == null)
-                return;
-
-            SetVelocityDirection(new Entity<InputMoverComponent>(entity.Owner, entity.Comp), dir, subTick, state);
+            SetVelocityDirection((entity, moverComp), dir, subTick, state);
         }
 
         private void OnInputInit(Entity<InputMoverComponent> entity, ref ComponentInit args)

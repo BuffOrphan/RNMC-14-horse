@@ -12,7 +12,6 @@ using Content.Shared._RMC14.Xenonids.Energy;
 using Content.Shared._RMC14.Xenonids.Parasite;
 using Content.Shared._RMC14.Xenonids.Plasma;
 using Content.Shared._RMC14.Xenonids.Weeds;
-using Content.Shared._RMC14.Vehicle;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Coordinates.Helpers;
 using Content.Shared.Damage;
@@ -28,9 +27,7 @@ using Content.Shared.Popups;
 using Content.Shared.Standing;
 using Content.Shared.StepTrigger.Systems;
 using Content.Shared.Stunnable;
-using Content.Shared.Vehicle.Components;
 using Robust.Server.Audio;
-using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Physics.Components;
@@ -60,8 +57,6 @@ public sealed class XenoResinHoleSystem : SharedXenoResinHoleSystem
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
     [Dependency] private readonly DestructibleSystem _destructible = default!;
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
-    [Dependency] private readonly SharedContainerSystem _containers = default!;
-    [Dependency] private readonly RMCVehicleWheelSystem _wheels = default!;
 
     private EntityQuery<PhysicsComponent> _physicsQuery;
 
@@ -208,7 +203,7 @@ public sealed class XenoResinHoleSystem : SharedXenoResinHoleSystem
                 if (!_xenoEnergy.HasEnergyPopup(args.User, ourAcid.Cost, false))
                     return;
             }
-            else
+            else 
             {
                 if (!_xenoPlasma.HasPlasmaPopup(args.User, ourAcid.Cost, false))
                     return;
@@ -367,12 +362,6 @@ public sealed class XenoResinHoleSystem : SharedXenoResinHoleSystem
             return;
         }
 
-        if (TryGetVehicleForTrap(args.Tripper, out _))
-        {
-            args.Continue = true;
-            return;
-        }
-
         if (_mobState.IsDead(args.Tripper) ||
             _standing.IsDown(args.Tripper) ||
             !_interaction.InRangeUnobstructed(args.Source, args.Tripper, 1.5f))
@@ -391,13 +380,6 @@ public sealed class XenoResinHoleSystem : SharedXenoResinHoleSystem
     {
         if (_mobState.IsDead(args.Tripper))
             return;
-
-        if (resinHole.Comp.TrapPrototype is { } trap &&
-            IsAcidPrototype(trap, out var trapLevel) &&
-            TryGetVehicleForTrap(args.Tripper, out var vehicle))
-        {
-            _wheels.DamageWheels(vehicle, GetVehicleWheelDamageForTrapLevel(trapLevel));
-        }
 
         if (resinHole.Comp.TrapPrototype == XenoResinHoleComponent.ParasitePrototype)
         {
@@ -647,41 +629,6 @@ public sealed class XenoResinHoleSystem : SharedXenoResinHoleSystem
         }
 
         return false;
-    }
-
-    private bool TryGetVehicleForTrap(EntityUid uid, out EntityUid vehicle)
-    {
-        vehicle = default;
-
-        if (HasComp<VehicleComponent>(uid))
-        {
-            vehicle = uid;
-            return true;
-        }
-
-        var current = uid;
-        while (_containers.TryGetContainingContainer(current, out var container))
-        {
-            current = container.Owner;
-            if (!HasComp<VehicleComponent>(current))
-                continue;
-
-            vehicle = current;
-            return true;
-        }
-
-        return false;
-    }
-
-    private static float GetVehicleWheelDamageForTrapLevel(int trapLevel)
-    {
-        // TODO: correct values
-        return trapLevel switch
-        {
-            1 => 36.6f,
-            3 => 63.9f,
-            _ => 42.6f,
-        };
     }
 
     public override void Update(float frameTime)

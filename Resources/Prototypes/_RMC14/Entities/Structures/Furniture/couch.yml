@@ -8,7 +8,6 @@
   placement:
     mode: SnapgridCenter
   components:
-  - type: RMCVehicleSmashable
   - type: Transform
     anchored: true
   - type: Physics
