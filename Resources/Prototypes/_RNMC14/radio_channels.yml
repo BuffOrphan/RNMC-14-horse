@@ -5,7 +5,6 @@
   frequency: 1493
   color: "#4c6e96"
   longRange: true
-  tower: true
 
 - type: radioChannel
   id: RedDawn
@@ -32,4 +31,3 @@
   frequency: 1496
   color: "#32CD32"
   longRange: true
-  tower: true

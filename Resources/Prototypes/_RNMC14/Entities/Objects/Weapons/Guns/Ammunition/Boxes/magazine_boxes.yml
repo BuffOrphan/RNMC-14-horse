@@ -219,3 +219,21 @@
       whitelist:
         tags:
         - RNMCBulletElephant
+
+- type: entity
+  parent: RMCBoxShellsBuckshotEmpty
+  id: RNMCBoxShellsSuperBuckshotEmpty
+  name: shell box (Spc. Buckshot x 100)
+
+- type: entity
+  parent: RMCBoxShellsBuckshot
+  id: RNMCBoxShellsSuperBuckshot
+  suffix: Full
+  components:
+  - type: CMItemSlots
+    startingItem: RNMCShellShotgunSuperBuckshot
+    count: 20
+    slot:
+      whitelist:
+        tags:
+        - RMCShellShotgunBuckshot

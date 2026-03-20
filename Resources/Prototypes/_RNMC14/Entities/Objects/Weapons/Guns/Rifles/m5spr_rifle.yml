@@ -1,0 +1,138 @@
+- type: entity
+  parent: WeaponRifleM4SPR
+  name: M5SPR battle rifle
+  id: RNMCWeaponRifleM5SPRProper
+  description: The M5SPR battle rifle is a modified version of the M4SPR, able to chamber depleted uranium rounds.
+  suffix: Proper
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Rifles/m4spr_custom/desert.rsi
+    layers:
+    - state: bolt-open
+      map: [ "enum.GunVisualLayers.Base" ]
+    - sprite: _RMC14/Objects/Weapons/Guns/Attachments/barrel.rsi
+      state: d_m4spr_custom_barrel
+      offset: 0.65, 0
+      map: [ "barrel" ]
+    - state: mag-0
+      map: [ "enum.GunVisualLayers.Mag" ]
+  - type: Clothing
+    sprite: _RMC14/Objects/Weapons/Guns/Rifles/m4spr_custom/desert.rsi
+  - type: RMCSelectiveFire
+    baseFireModes:
+    - SemiAuto
+  - type: Gun
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_RMC14/Weapons/Guns/Gunshots/gun_m4spr.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: RNMCMagazineRifleM5SPRDepletedUranium
+        insertSound: /Audio/_RMC14/Weapons/Guns/Reload/l42_reload.ogg
+        ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/l42_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - CMMagazineRifleM4SPR
+          - CMMagazineRifleM4SPRAP
+          - CMMagazineRifleM4SPRExt
+          - RMCMagazineRifleM4SPRWP
+          - RMCMagazineRifleM4SPRIncendiary
+          - RMCMagazineRifleM4SPRHEAP
+          - RMCMagazineRifleM5SPRHVP
+          - RMCMagazineRifleM5SPRHVHIP
+  - type: ItemCamouflage
+    camouflageVariations:
+      Jungle: _RMC14/Objects/Weapons/Guns/Rifles/m4spr_custom/jungle.rsi
+      Desert: _RMC14/Objects/Weapons/Guns/Rifles/m4spr_custom/desert.rsi
+      Snow: _RMC14/Objects/Weapons/Guns/Rifles/m4spr_custom/snow.rsi
+      Classic: _RMC14/Objects/Weapons/Guns/Rifles/m4spr_custom/classic.rsi
+      Urban: _RMC14/Objects/Weapons/Guns/Rifles/m4spr_custom/urban.rsi
+    layers:
+      barrel:
+        Jungle: m4spr_custom_barrel
+        Desert: d_m4spr_custom_barrel
+        Snow: s_m4spr_custom_barrel
+        Classic: c_m4spr_custom_barrel
+        Urban: u_m4spr_custom_barrel
+  - type: Tag
+    tags:
+    - RMCWeaponRifleM5SPR
+
+- type: entity
+  parent: CMMagazineRifleM4SPR
+  id: RNMCMagazineRifleM5SPRDepletedUranium
+  name: "M5SPR depleted uranium magazine (10x24mm)"
+  description: "A magazine of depleted uranium 10x24mm rounds for use in the M5SPR battle rifle."
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: True
+    whitelist:
+      tags:
+      - RMCCartridgeRifleM5SPRHVP
+    proto: RNMCCartridgeRifleM5SPRDepletedUranium
+    capacity: 30
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/m4spr.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-1
+      map: [ "enum.GunVisualLayers.Mag" ]
+    - state: ammo_band
+      color: "#7c1829"
+  - type: Tag
+    tags:
+    - CMMagazineRifle
+    - RMCMagazineRifleM5SPRHVP
+
+- type: entity
+  parent: CMBaseCartridgeRifle
+  id: RNMCCartridgeRifleM5SPRDepletedUranium
+  name: cartridge (HV-Piercing)
+  description: A depleted uranium cartridge. Fits in M5SPR custom magazines. Whoever gets hit by this thing is gonna die in 12 years or so.
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - RMCCartridgeRifleM5SPRHVP
+  - type: CartridgeAmmo
+    proto: RNMCBulletRifleM5SPRDepletedUranium
+
+- type: entity
+  parent: RMCBaseBullet
+  id: RNMCBulletRifleM5SPRDepletedUranium
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 60
+  - type: CMArmorPiercing
+    amount: 35
+  - type: RMCProjectileAccuracy
+    accuracy: 105
+    thresholds:
+    - range: 16
+      falloff: 10
+    - range: 4
+      falloff: 10
+      buildup: true
+  - type: RMCProjectileDamageFalloff
+    thresholds:
+    - range: 24
+      falloff: 9999
+      ignoreModifiers: true
+  - type: RMCPenetratingProjectile
+    rangeLossPerHit: 1
+  - type: RMCStunOnHit
+    stuns:
+    - whitelist:
+        minMobSize: VerySmallXeno
+      maxRange: 3
+      stunTime: 1
+      slowTime: 2

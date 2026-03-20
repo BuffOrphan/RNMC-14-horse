@@ -1,0 +1,41 @@
+- type: entity
+  parent: CMShellShotgunBase
+  id: RNMCShellShotgunSuperBuckshot
+  name: handful of special buckshot shells
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Handfuls/shotgun_handfuls.rsi
+    layers:
+    - state: buckshot_shell_1
+      map: [ "base" ]
+  - type: CartridgeAmmo
+    proto: CMPelletShotgunBuckshot
+  - type: Stack
+    count: 5
+    stackType: RMCShellShotgunBuckshot
+    baseLayer: base
+    layerStates:
+    - buckshot_shell_1
+    - buckshot_shell_1
+    - buckshot_shell_2
+    - buckshot_shell_3
+    - buckshot_shell_4
+    - buckshot_shell_5
+  - type: Tag
+    tags:
+    - RMCHandful
+    - Cartridge
+    - RMCShellShotgun
+    - RMCShellShotgunBuckshot
+
+- type: entity
+  parent: RNMCShellShotgunSuperBuckshot
+  id: RNMCShellShotgunSuperBuckshot1
+  suffix: 1
+
+- type: stack
+  id: RNMCShellShotgunSuperBuckshot
+  name: handful of special buckshot shells
+  icon: { sprite: /Textures/_RMC14/Objects/Weapons/Guns/Ammunition/Handfuls/shotgun_handfuls.rsi, state: buckshot_shell_1 }
+  spawn: CMShellShotgunBuckshot
+  maxCount: 5
