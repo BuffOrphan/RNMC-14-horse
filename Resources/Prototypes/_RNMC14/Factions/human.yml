@@ -1,4 +1,0 @@
-- type: npcFaction
-  id: Human
-  hostile:
-  - RMCXeno
