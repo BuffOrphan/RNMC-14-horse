@@ -54,20 +54,20 @@
     noWoundsOnUserPopup: cm-burns-already-treated-self-popup
     noWoundsOnTargetPopup: cm-burns-already-treated-target-popup
   - type: MedicallyUnskilledDoAfter
-    min: 2
+    # min: 2 RNMC
     doAfter: 1
   - type: Stack
     stackType: CMOintment
-    count: 10
+    count: 20 # RNMC
   - type: StackPrice
-    price: 10
+    price: 20 # RNMC
 
 - type: stack
   id: CMOintment
   name: ointment
   icon: { sprite: "/Textures/_RMC14/Objects/Medical/medical.rsi", state: ointment }
   spawn: CMOintment1
-  maxCount: 10
+  maxCount: 20 # RNMC
 
 - type: entity
   id: CMOintment1
@@ -81,11 +81,11 @@
 - type: entity
   id: CMOintment10
   parent: CMOintment
-  suffix: Ten
+  suffix: Twenty # RNMC
   components:
   - type: Stack
     stackType: CMOintment
-    count: 10
+    count: 20 # RNMC
 
 - type: entity
   parent: CMBaseHealingItem
@@ -122,20 +122,20 @@
     noWoundsOnUserPopup: cm-wounds-already-treated-self-popup
     noWoundsOnTargetPopup: cm-wounds-already-treated-target-popup
   - type: MedicallyUnskilledDoAfter
-    min: 2
+    # min: 1 RNMC
     doAfter: 1
   - type: Stack
     stackType: CMGauze
-    count: 10
+    count: 20 # RNMC
   - type: StackPrice
-    price: 10
+    price: 20 # RNMC
 
 - type: stack
   id: CMGauze
   name: gauze
   icon: { sprite: "/Textures/_RMC14/Objects/Medical/medical.rsi", state: gauze }
   spawn: CMGauze1
-  maxCount: 10
+  maxCount: 20 # RNMC
 
 - type: entity
   id: CMGauze1
@@ -146,12 +146,12 @@
     count: 1
 
 - type: entity
-  id: CMGauze10
+  id: CMGauze10 # its 10 because i dont wanna add migration and stuff
   parent: CMGauze
-  suffix: Ten
+  suffix: Twenty
   components:
   - type: Stack
-    count: 10
+    count: 20 # RNMC
 
 - type: entity
   parent: CMBaseHealingItem
