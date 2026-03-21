@@ -1,0 +1,14 @@
+- files: ["railgun_impact.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve/blob/9092037df766dbf782056ad537a27b5df53a4d72/sound/machines/railgun/railgun_impact.ogg"
+
+- files: ["railgun_shoot.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve/blob/9092037df766dbf782056ad537a27b5df53a4d72/sound/machines/railgun/railgun_shoot.ogg"
+
+- files: ["railgun_shoot2.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve/blob/9092037df766dbf782056ad537a27b5df53a4d72/sound/machines/railgun/railgun_shoot2.ogg"

@@ -1,0 +1,5 @@
+- type: soundCollection
+  id: RNMCRoundEndNone
+  files:
+    - /Audio/_RNMC14/RoundEnd/neutral_hopeful2.ogg
+    - /Audio/_RNMC14/RoundEnd/sad_loss1.ogg

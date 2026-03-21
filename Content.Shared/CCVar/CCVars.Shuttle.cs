@@ -1,4 +1,4 @@
-﻿using Content.Shared.Administration;
+using Content.Shared.Administration;
 using Content.Shared.CCVar.CVarAccess;
 using Robust.Shared.Configuration;
 
@@ -86,19 +86,19 @@ public sealed partial class CCVars
     ///     How long a shuttle spends in FTL.
     /// </summary>
     public static readonly CVarDef<float> FTLTravelTime =
-        CVarDef.Create("shuttle.travel_time", 20f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.travel_time", 200f, CVar.SERVERONLY); // RNMC
 
     /// <summary>
     ///     How long the final stage of FTL before arrival should be.
     /// </summary>
     public static readonly CVarDef<float> FTLArrivalTime =
-        CVarDef.Create("shuttle.arrival_time", 5f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.arrival_time", 10f, CVar.SERVERONLY); // RNMC
 
     /// <summary>
     ///     How much time needs to pass before a shuttle can FTL again.
     /// </summary>
     public static readonly CVarDef<float> FTLCooldown =
-        CVarDef.Create("shuttle.cooldown", 10f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.cooldown", 60f, CVar.SERVERONLY); // RNMC
 
     /// <summary>
     ///     The maximum <see cref="PhysicsComponent.Mass"/> a grid can have before it becomes unable to FTL.
@@ -174,7 +174,7 @@ public sealed partial class CCVars
     /// </summary>
     [CVarControl(AdminFlags.Server | AdminFlags.Mapping, min: 0, max: int.MaxValue)]
     public static readonly CVarDef<int> EmergencyShuttleAutoCallTime =
-        CVarDef.Create("shuttle.auto_call_time", 90, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.auto_call_time", 0, CVar.SERVERONLY); // RNMC
 
     /// <summary>
     ///     Time in minutes after the round was extended (by recalling the shuttle) to call
