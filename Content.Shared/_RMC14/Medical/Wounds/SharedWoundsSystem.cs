@@ -1,4 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
+using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 using Content.Shared._RMC14.CCVar;
 using Content.Shared._RMC14.Damage;
@@ -190,7 +190,7 @@ public abstract class SharedWoundsSystem : EntitySystem
         if (treater.Comp.Consumable)
         {
             if (TryComp(treater, out StackComponent? stack))
-                _stacks.Use(treater, 2, stack);
+                _stacks.Use(treater, 1, stack); // RNMC
             else if (_net.IsServer)
                 QueueDel(treater);
         }
@@ -322,7 +322,7 @@ public abstract class SharedWoundsSystem : EntitySystem
         {
             if (treater.Comp.Consumable &&
                 TryComp(treater, out StackComponent? stack) &&
-                _stacks.GetCount(treater, stack) < 2)
+                _stacks.GetCount(treater, stack) < 1) // RNMC
             {
                 _popup.PopupClient(Loc.GetString("cm-wounds-failed-not-enough", ("treater", treater.Owner)), target, user, PopupType.SmallCaution);
                 return false;

@@ -214,4 +214,7 @@ public sealed partial class CMDistressSignalRuleComponent : Component
 
     [DataField]
     public bool RecalculatedPower;
+
+    [DataField]
+    public SoundSpecifier NoneAudio = new SoundCollectionSpecifier("RNMCRoundEndNone"); // RNMC
 }
