@@ -1,5 +1,5 @@
 - type: job
-  parent: CMJobSquadBase
+  parent: CMJobBase
   id: CMRiflemanPVE
   name: cm-job-name-rifleman
   description: cm-job-description-rifleman
@@ -21,6 +21,7 @@
     RMCRankPrivate: []
   accessGroups:
   - Rifleman
+  spawnMenuRoleName: Rifleman (Sun Riders PVE)
   hasIcon: false
   roleWeight: 1
   special:
@@ -49,6 +50,10 @@
       icon:
         sprite: /Textures/_RMC14/Interface/map_blips.rsi
         state: private
+    - type: AssignSquad
+      whitelist:
+        tags:
+        - RMCSquadSunRiders
 
 - type: playTimeTracker
   id: CMJobRiflemanPVE

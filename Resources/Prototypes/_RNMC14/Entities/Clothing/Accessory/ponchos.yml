@@ -1,0 +1,33 @@
+- type: entity
+  parent: RMCPVEArmorPadsBase
+  id: RNMCPVEPonchoGreen
+  name: USCM Poncho
+  description: The standard USCM poncho has variations for every climate. Custom fitted to be attached to standard USCM armor variants it is comfortable, warming or cooling as needed, and well-fit. A marine couldn't ask for more. Affectionately referred to as a "woobie".
+  components:
+  - type: Sprite
+    sprite: _RNMC14/Objects/Clothing/Accessory/Ponchos/green.rsi
+    state: webbing
+  - type: UniformAccessory
+    limit: 1
+    category: Ponchos
+    hasIconSprite: true
+  - type: Appearance
+  - type: Tag
+    tags:
+    - RMCPVEArmorAccessory
+
+- type: entity
+  parent: RNMCPVEPonchoGreen
+  id: RNMCPVEPonchoBlack
+  components:
+  - type: Sprite
+    sprite: _RNMC14/Objects/Clothing/Accessory/Ponchos/black.rsi
+    state: webbing
+
+- type: entity
+  parent: RNMCPVEPonchoGreen
+  id: RNMCPVEPonchoRed
+  components:
+  - type: Sprite
+    sprite: _RNMC14/Objects/Clothing/Accessory/Ponchos/red.rsi
+    state: webbing

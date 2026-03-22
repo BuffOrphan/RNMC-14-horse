@@ -238,3 +238,18 @@
   - type: Construction
     graph: BarricadePlasteelDoorGraph
     node: nodeBarricadePlasteelDoor
+    # rnmc start
+  - type: NPCIgnoreDoor
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.51,-0.51,0.51,-0.25"
+        density: 500
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - BarricadeImpassable
+    # rnmc end

@@ -76,7 +76,7 @@
   - type: Storage
     maxItemSize: Ginormous
     grid:
-    - 0,0,7,1
+    - 0,0,9,1
     whitelist:
       tags:
       - RMCWeaponRifleM5SPR
@@ -86,12 +86,14 @@
       - RMCMagazineRifleM5SPRHVP
   - type: StorageFill
     contents:
-    - id: WeaponRifleM5SPR
-    - id: RMCMagazineRifleM5SPRHVP
-    - id: RMCMagazineRifleM5SPRHVP
-    - id: RMCMagazineRifleM5SPRHVP
-    - id: RMCMagazineRifleM5SPRHVP
-    - id: RMCMagazineRifleM5SPRHVP
+    - id: RNMCWeaponRifleM5SPRProper
+    - id: RNMCMagazineRifleM5SPRDepletedUranium
+    - id: RNMCMagazineRifleM5SPRDepletedUranium
+    - id: RNMCMagazineRifleM5SPRDepletedUranium
+    - id: RNMCMagazineRifleM5SPRDepletedUranium
+    - id: RNMCMagazineRifleM5SPRDepletedUranium
+    - id: RNMCMagazineRifleM5SPRDepletedUranium
+    - id: RNMCMagazineRifleM5SPRDepletedUranium
   - type: ItemMapper
     mapLayers:
       gun:

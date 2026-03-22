@@ -1,0 +1,64 @@
+- files: ["lastmanstanding_clf.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve/blob/0e93e1da8a9b4a1e187f3cb0031f3b79f4c3226e/sound/theme/lastmanstanding_clf.ogg"
+
+- files: ["lastmanstanding_upp.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve/blob/0e93e1da8a9b4a1e187f3cb0031f3b79f4c3226e/sound/theme/lastmanstanding_upp.ogg"
+
+- files: ["lastmanstanding_upp.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve/blob/0e93e1da8a9b4a1e187f3cb0031f3b79f4c3226e/sound/theme/lastmanstanding_wy.ogg"
+
+- files: ["neutral_hopeful1.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve/blob/21e6447cc08aea502f671c819fdbcecbb85e6028/sound/theme/neutral_hopeful1.ogg"
+
+- files: ["neutral_hopeful2.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve/blob/21e6447cc08aea502f671c819fdbcecbb85e6028/sound/theme/neutral_hopeful2.ogg"
+
+- files: ["neutral_melancholy1.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve/blob/21e6447cc08aea502f671c819fdbcecbb85e6028/sound/theme/neutral_melancholy1.ogg"
+
+- files: ["neutral_melancholy2.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve/blob/21e6447cc08aea502f671c819fdbcecbb85e6028/sound/theme/neutral_melancholy2.ogg"
+
+- files: ["nuclear_detonation1.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve/blob/21e6447cc08aea502f671c819fdbcecbb85e6028/sound/theme/nuclear_detonation1.ogg"
+
+- files: ["nuclear_detonation2.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve/blob/21e6447cc08aea502f671c819fdbcecbb85e6028/sound/theme/nuclear_detonation2.ogg"
+
+- files: ["sad_loss1.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve/blob/21e6447cc08aea502f671c819fdbcecbb85e6028/sound/theme/sad_loss1.ogg"
+
+- files: ["sad_loss2.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve/blob/21e6447cc08aea502f671c819fdbcecbb85e6028/sound/theme/sad_loss2.ogg"
+
+- files: ["winning_triumph1.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve/blob/21e6447cc08aea502f671c819fdbcecbb85e6028/sound/theme/winning_triumph1.ogg"
+
+- files: ["winning_triumph2.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from cmss13-pve"
+  source: "https://github.com/cmss13-devs/cmss13-pve/blob/21e6447cc08aea502f671c819fdbcecbb85e6028/sound/theme/winning_triumph2.ogg"

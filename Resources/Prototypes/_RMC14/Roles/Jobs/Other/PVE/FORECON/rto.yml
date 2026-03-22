@@ -19,16 +19,7 @@
       factions:
       - UNMC
     - type: Skills
-      skills:
-        RMCSkillEngineer: 2
-        RMCSkillConstruction: 2
-        RMCSkillFireman: 2
-        RMCSkillPowerLoader: 1
-        RMCSkillVehicles: 1
-        RMCSkillJtac: 3
-        RMCSkillEndurance: 1
-        RMCSkillFirearms: 1
-        RMCSkillCqc: 1
+      preset: RMCSkillPresetPVEForeconRTO
     - type: SquadArmorWearer
     - type: JobPrefix
       prefix: rmc-job-prefix-pve-forecon-rto
@@ -45,7 +36,6 @@
     - type: ScoutWhitelist
     - type: SniperWhitelist
     - type: PyroWhitelist
-  hidden: true
 
 
 - type: entity
@@ -63,9 +53,9 @@
   id: RMCJobFORECONPVERadioTelephoneOperator
   equipment:
     id: CMDogtagRifleman
-    ears: RMCHeadsetMarine
-    jumpsuit: JumpsuitMarine
-    shoes: CMBootsBlackFilled
+    # ears: RMCHeadsetMarine
+    # jumpsuit: JumpsuitMarine RNMC
+    # shoes: CMBootsBlackFilled
 
 - type: playTimeTracker
   id: CMJobFORECONPVERadioTelephoneOperator

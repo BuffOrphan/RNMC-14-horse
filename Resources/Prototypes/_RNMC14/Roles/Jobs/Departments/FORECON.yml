@@ -1,0 +1,15 @@
+- type: department
+  parent: CMDepartmentBase
+  id: CMFORECON
+  name: department-CMFORECON
+  description: cm-department-FORECON
+  color: "#32CD32"
+  roles:
+  - RMCFORECONPVESquadLead
+  - RMCFORECONPVEAssistantSL
+  - RMCFORECONPVESmartgunner
+  - RMCFORECONPVERadioTelephoneOperator
+  - RMCFORECONPVECorpsman
+  - RMCFORECONPVERifleman
+  departmentRadio: FORECON
+  headOfDepartment: CMPlatoonCommanderPVE

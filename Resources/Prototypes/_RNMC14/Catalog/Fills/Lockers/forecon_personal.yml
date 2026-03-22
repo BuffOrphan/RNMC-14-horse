@@ -1,0 +1,7 @@
+- type: entityTable
+  id: RNMCFORECONPersonalFill
+  table: !type:AllSelector
+    children:
+    - id: RMCScoutShoes
+    - id: RMCJumpsuitSunRiders
+    - id: CMHeadsetFORECON

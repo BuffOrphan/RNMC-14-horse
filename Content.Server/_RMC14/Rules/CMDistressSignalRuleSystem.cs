@@ -1024,7 +1024,7 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
 
             var audio = distress.Result switch
             {
-                DistressSignalRuleResult.None => null,
+                DistressSignalRuleResult.None => distress.NoneAudio, // RNMC
                 DistressSignalRuleResult.MajorMarineVictory => distress.MajorMarineAudio,
                 DistressSignalRuleResult.MinorMarineVictory => distress.MinorMarineAudio,
                 DistressSignalRuleResult.MajorXenoVictory => distress.MajorXenoAudio,

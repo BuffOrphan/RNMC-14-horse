@@ -1,0 +1,55 @@
+- type: entity
+  parent: RMCGunRackBase
+  id: RNMCGunRackM890Empty
+  name: M890 gun rack
+  suffix: M890, Empty
+  description: AEGIS-produced gun rack for storage of long guns. While initial model was supposed to be extremely modifiable, UNMC commissioned racks with fixed slots which only fit M890 shotguns. Some say they were cheaper, and some say the main reason was marine's ability to easily break anything more complex than a tungsten ball.
+  components:
+  - type: ContainerContainer
+    containers:
+      item_1: !type:ContainerSlot
+        showEnts: False
+        occludes: True
+        ent: null
+      item_2: !type:ContainerSlot
+        showEnts: False
+        occludes: True
+        ent: null
+  - type: Sprite
+    sprite: _RNMC14/Structures/Machines/GunRacks/m120_rack.rsi
+  - type: ItemSlots
+    slots:
+      item_1:
+        name: M120
+        whitelist:
+          tags:
+          - RNMCWeaponShotgunM890
+      item_2:
+        name: M120
+        whitelist:
+          tags:
+          - RNMCWeaponShotgunM890
+  - type: ItemMapper
+    mapLayers:
+      fill_1:
+        minCount: 1
+        whitelist:
+          tags:
+          - RNMCWeaponShotgunM890
+      fill_2:
+        minCount: 2
+        whitelist:
+          tags:
+          - RNMCWeaponShotgunM890
+
+- type: entity
+  parent: RNMCGunRackM890Empty
+  id: RNMCGunRackM890
+  suffix: M890, Filled
+  components:
+  - type: ContainerFill
+    containers:
+      item_1:
+      - WeaponShotgunM890
+      item_2:
+      - WeaponShotgunM890

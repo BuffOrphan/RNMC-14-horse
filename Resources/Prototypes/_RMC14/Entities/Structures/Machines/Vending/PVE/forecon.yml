@@ -58,11 +58,16 @@
         amount: 5
     - name: Armor #todo m3-r armor
       entries:
-      - id: ArmorHelmetM10
-        amount: 15
-      - id: RMCArmorM3MediumVariants
-        name: Standard M3 Pattern Armor Set
-        amount: 15
+      # RNMC start
+      - id: RMCArmorM3PVE
+        amount: 10
+      - id: RMCPVEArmorBracers
+        amount: 10
+      - id: RMCPVEArmorShinGuard
+        amount: 10
+      - id: RMCPVEArmorKneeGuard
+        amount: 10
+      # RNMC end
     - name: Backpack
       entries:
       - id: CMBackpackMarine
@@ -128,6 +133,17 @@
         amount: 10
     - name: Additional Clothing #todo, ponchos
       entries:
+      # rnmc start
+      - id: RNMCPVEPonchoGreen
+        name: Poncho, Green
+        amount: 10
+      - id: RNMCPVEPonchoRed
+        name: Poncho, Brown
+        amount: 10
+      - id: RNMCPVEPonchoBlack
+        name: Poncho, Black
+        amount: 10
+      # rnmc end
       - id: RMCHeadBeanie
         amount: 5
       - id: RMCHeadBeanieTan

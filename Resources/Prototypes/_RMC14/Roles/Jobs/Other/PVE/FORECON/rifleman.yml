@@ -36,7 +36,6 @@
     - type: ScoutWhitelist
     - type: SniperWhitelist
     - type: PyroWhitelist
-  hidden: true
 
 - type: entity
   parent: CMSpawnPointJobBase
@@ -53,9 +52,9 @@
   id: RMCJobFORECONPVERifleman
   equipment:
     id: CMDogtagRifleman
-    ears: RMCHeadsetMarine
-    jumpsuit: JumpsuitMarine
-    shoes: CMBootsBlackFilled
+    # ears: RMCHeadsetMarine
+    # jumpsuit: JumpsuitMarine RNMC
+    # shoes: CMBootsBlackFilled
 
 - type: playTimeTracker
   id: CMJobFORECONPVERifleman

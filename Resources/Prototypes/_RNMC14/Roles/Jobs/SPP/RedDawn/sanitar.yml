@@ -21,6 +21,7 @@
   supervisors: cm-job-supervisors-sl
   accessGroups:
   - CMSPPSanitarAccess
+  spawnMenuRoleName: Sanitar (Red Dawn PVE)
   overwatchSortPriority: -2
   overwatchRoleName: Sanitar
   roleWeight: 1
@@ -58,6 +59,10 @@
       icon:
         sprite: /Textures/_RMC14/Interface/map_blips.rsi
         state: medic
+    - type: AssignSquad
+      whitelist:
+        tags:
+        - RNMCSquadRedDawn
 
 - type: playTimeTracker
   id: CMJobSPPSanitarPVE

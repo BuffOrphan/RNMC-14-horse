@@ -21,6 +21,7 @@
     RMCRankSPPRyadovoy: []
   accessGroups:
   - CMSPPInfantrymanAccess
+  spawnMenuRoleName: Infantryman (Red Dawn PVE)
   hasIcon: false
   roleWeight: 1
   special:
@@ -52,6 +53,10 @@
       icon:
         sprite: /Textures/_RMC14/Interface/map_blips.rsi
         state: private
+    - type: AssignSquad
+      whitelist:
+        tags:
+        - RNMCSquadRedDawn
 
 - type: playTimeTracker
   id: CMJobSPPInfantrymanPVE

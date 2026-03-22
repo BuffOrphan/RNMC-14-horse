@@ -1,0 +1,10 @@
+- type: entity
+  parent: RMCHeadsetMarine
+  id: CMHeadsetFORECON
+  name: FORECON radio headset
+  description: A robust headset used by the FORECON.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - RNMCEncryptionKeyFORECON
