@@ -18,6 +18,7 @@
   supervisors: cm-job-supervisors-co
   accessGroups:
   - PlatcoAccess
+  spawnMenuRoleName: Platoon Commander (Sun Riders PVE)
   roleWeight: 0.25
   special:
   - !type:AddComponentSpecial

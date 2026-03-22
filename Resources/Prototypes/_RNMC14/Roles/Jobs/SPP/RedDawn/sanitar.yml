@@ -21,6 +21,7 @@
   supervisors: cm-job-supervisors-sl
   accessGroups:
   - CMSPPSanitarAccess
+  spawnMenuRoleName: Sanitar (Red Dawn PVE)
   overwatchSortPriority: -2
   overwatchRoleName: Sanitar
   roleWeight: 1

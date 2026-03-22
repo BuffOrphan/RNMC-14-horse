@@ -13,6 +13,7 @@
   supervisors: cm-job-supervisors-platco
   accessGroups:
   - CMSPPPlatoonSergeantAccess
+  spawnMenuRoleName: Platoon Sergeant (Red Dawn PVE)
   overwatchSortPriority: -6
   overwatchShowName: true
   overwatchRoleName: Squad Leader

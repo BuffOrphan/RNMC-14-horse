@@ -1,13 +1,19 @@
 ﻿- type: gameMap
   id: Breakwater_Strand
   mapName: "Breakwater_Strand"
-  mapPath: /Maps/_RMC14/PVE/Breakwater_Strand.yml
+  mapPath: /Maps/_RNMC14/breakwater_strand.yml # RNMC
   minPlayers: 10
   maxRandomOffset: 0
   randomRotation: false
   stations:
     Breakwater_Strand:
-      stationProto: NanotrasenCentralCommand
+      stationProto: StandardUNMCWarship
       components:
       - type: StationNameSetup
         mapNameTemplate: 'Breakwater Strand'
+      - type: StationJobs
+        availableJobs:
+          RMCCLFStandardPVE: [6, 6]
+          RMCCLFHeavyGunnerPVE: [1, 1]
+          RMCCLFDoctorPVE: [1, 1]
+          RMCCLFCommanderPVE: [1, 1]
