@@ -320,7 +320,7 @@ public abstract class SharedWoundsSystem : EntitySystem
 
         if (untreated || damage != FixedPoint2.Zero)
         {
-            if (treater.Comp.Consumable &&
+            if (treater.Comp.Consumable  &&
                 TryComp(treater, out StackComponent? stack) &&
                 _stacks.GetCount(treater, stack) < 1) // RNMC
             {

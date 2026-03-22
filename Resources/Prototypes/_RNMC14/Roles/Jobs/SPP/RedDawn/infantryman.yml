@@ -21,6 +21,7 @@
     RMCRankSPPRyadovoy: []
   accessGroups:
   - CMSPPInfantrymanAccess
+  spawnMenuRoleName: Infantryman (Red Dawn PVE)
   hasIcon: false
   roleWeight: 1
   special:

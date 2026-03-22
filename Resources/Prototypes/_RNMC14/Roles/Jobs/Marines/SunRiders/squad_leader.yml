@@ -13,6 +13,7 @@
   supervisors: cm-job-supervisors-section-sergeant
   accessGroups:
   - Rifleman
+  spawnMenuRoleName: Squad Leader (Sun Riders PVE)
   overwatchSortPriority: -6
   overwatchShowName: true
   overwatchRoleName: Squad Leader
@@ -44,7 +45,7 @@
       leader: true
     - type: RMCPointing
     - type: JobPrefix
-      prefix: cm-job-prefix-squad-leader
+      prefix: cm-job-prefix-section-sergeant
     - type: TacticalMapIcon
       icon:
         sprite: /Textures/_RMC14/Interface/map_blips.rsi

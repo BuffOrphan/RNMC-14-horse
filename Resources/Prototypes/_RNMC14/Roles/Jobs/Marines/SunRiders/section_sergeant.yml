@@ -13,6 +13,7 @@
   supervisors: cm-job-supervisors-platco
   accessGroups:
   - SquadLeader
+  spawnMenuRoleName: Section Sergeant (Sun Riders PVE)
   overwatchSortPriority: -6
   overwatchShowName: true
   overwatchRoleName: Squad Leader

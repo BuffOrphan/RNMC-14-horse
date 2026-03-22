@@ -21,6 +21,7 @@
   supervisors: cm-job-supervisors-sl
   accessGroups:
   - CMSPPMachinegunnerAccess
+  spawnMenuRoleName: Machinegunner (Red Dawn PVE)
   overwatchSortPriority: -3
   overwatchShowName: true
   overwatchRoleName: Machinegunner

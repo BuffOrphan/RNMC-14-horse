@@ -1,0 +1,13 @@
+- type: department
+  parent: CMDepartmentBase
+  id: CMCLF
+  name: department-CMCLF
+  description: cm-department-CLF
+  color: "#DE3A3A"
+  roles:
+  - RMCCLFStandardPVE
+  - RMCCLFHeavyGunnerPVE
+  - RMCCLFDoctorPVE
+  - RMCCLFCommanderPVE
+  departmentRadio: Colony
+  headOfDepartment: RMCCLFCommanderPVE

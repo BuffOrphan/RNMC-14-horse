@@ -18,6 +18,7 @@
   supervisors: cm-job-supervisors-co
   accessGroups:
   - CMSPPShipmasterAccess
+  spawnMenuRoleName: Platoon Commander (Red Dawn PVE)
   roleWeight: 0.25
   special:
   - !type:AddComponentSpecial

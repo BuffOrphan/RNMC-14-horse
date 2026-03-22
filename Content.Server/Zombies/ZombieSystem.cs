@@ -124,6 +124,11 @@ namespace Content.Server.Zombies
             var query = EntityQueryEnumerator<PendingZombieComponent, DamageableComponent, MobStateComponent>();
             while (query.MoveNext(out var uid, out var comp, out var damage, out var mobState))
             {
+                // rnmc start
+                if (HasComp<ZombieComponent>(uid))
+                    continue;
+                // rnmmc end
+
                 // Process only once per second
                 if (comp.NextTick > curTime)
                     continue;

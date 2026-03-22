@@ -21,6 +21,7 @@
     RMCRankPrivate: []
   accessGroups:
   - Rifleman
+  spawnMenuRoleName: Rifleman (Sun Riders PVE)
   hasIcon: false
   roleWeight: 1
   special:
