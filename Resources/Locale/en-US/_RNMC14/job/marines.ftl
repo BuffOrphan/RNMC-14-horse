@@ -6,8 +6,6 @@ CMJobSectionSergeant = Section Sergeant
 rmc-job-name-weapons-specialist-hunter = Hunter
 rmc-job-prefix-weapons-specialist-hunter = HNTR
 
-cm-job-prefix-section-sergeant = SecSgt.
-
 # SOF
 
 rmc-job-name-marine-raider-smartgun-PVE = Marine Raider Smartgunner
