@@ -46,7 +46,7 @@
             # Requisition
             CMQuartermaster: [1, 1]
             CMCargoTech: [1, 1]
-#            CMMessTech: [1, 1]
+            CMMessTech: [1, 1]
 
             # Marines
             CMSquadLeader: [4, 4]
@@ -62,3 +62,4 @@
 
             # Other
             CMLiaison: [1, 1]
+            RMCJobSynthetic: [1, 1]
