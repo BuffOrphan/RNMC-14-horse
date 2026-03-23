@@ -41,21 +41,7 @@
   - RMCLoadoutGroupPins
 
 - type: roleLoadout
-  id: CMRiflemanPVE
-  points: 20
-  groups:
-  - MarineBackpack
-  - HeadwearRMCPVE
-  - EyewearRMCPVE
-  - MasksRMCPVE
-  - HelmetGarbsRMCPVE
-  - AccessoriesRMCPVE
-  - PlushiesRMC
-  - WeaponsRMC
-  - RMCLoadoutGroupPins
-
-- type: roleLoadout
-  id: JobCMPlatoonCommanderPVE
+  id: JobCMRiflemanPVE
   points: 20
   groups:
   - MarineBackpack
