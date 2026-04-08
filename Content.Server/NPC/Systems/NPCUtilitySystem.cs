@@ -44,6 +44,7 @@ using Microsoft.Extensions.ObjectPool;
 using Robust.Server.Containers;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Content.Shared._RMC14.Stealth; // RNMC14
 
 namespace Content.Server.NPC.Systems;
 
@@ -572,9 +573,21 @@ public sealed class NPCUtilitySystem : EntitySystem
                     foreach (var ent in _npcFaction.GetNearbyHostiles(owner, vision))
                     {
                         entities.Add(ent);
+                            // RNMC start
+                            if (HasComp<EntityActiveInvisibleComponent>(ent))
+                                entities.Remove(ent);
+
+                            var mapPos = _transform.GetMapCoordinates(owner, xform: _xformQuery.GetComponent(owner));
+
+                            foreach (var invis in _lookup.GetEntitiesInRange(mapPos, 2))
+                            {
+                                if (HasComp<EntityActiveInvisibleComponent>(invis))
+                                    entities.Add(invis);
+                            }
+                            // RNMC end
+                        }
+                        // End RMC
                     }
-                    // End RMC
-                }
                 break;
             }
             default:
