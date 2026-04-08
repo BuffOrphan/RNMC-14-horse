@@ -128,6 +128,7 @@ public sealed class ThermalCloakSystem : EntitySystem
         {
             var activeInvisibility = EnsureComp<EntityActiveInvisibleComponent>(user);
             activeInvisibility.Opacity = ent.Comp.Opacity;
+            activeInvisibility.NPCDetectionRange = ent.Comp.NPCDetectionRange; // RNMC14
             Dirty(user, activeInvisibility);
 
             ent.Comp.Enabled = true;

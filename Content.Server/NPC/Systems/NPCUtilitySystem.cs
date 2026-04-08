@@ -572,17 +572,25 @@ public sealed class NPCUtilitySystem : EntitySystem
                 {
                     foreach (var ent in _npcFaction.GetNearbyHostiles(owner, vision))
                     {
-                        entities.Add(ent);
-                            // RNMC start
-                            if (HasComp<EntityActiveInvisibleComponent>(ent))
-                                entities.Remove(ent);
+                            // RNMC14 start
+                            if (!TryComp<EntityActiveInvisibleComponent>(ent, out var invis))
+                            {
+                                entities.Add(ent);
+                                continue;
+                            }
 
+                            var radius = blackboard.GetValueOrDefault<float>(blackboard.GetVisionRadiusKey(EntityManager), EntityManager);
                             var mapPos = _transform.GetMapCoordinates(owner, xform: _xformQuery.GetComponent(owner));
 
-                            foreach (var invis in _lookup.GetEntitiesInRange(mapPos, 2))
+                            foreach (var entity in _lookup.GetEntitiesInRange(mapPos, invis.NPCDetectionRange))
                             {
-                                if (HasComp<EntityActiveInvisibleComponent>(invis))
-                                    entities.Add(invis);
+                                if (entity != ent)
+                                    continue;
+
+                                if (!_examine.InRangeUnOccluded(owner, entity, radius + 0.5f, null))
+                                    continue;
+
+                                entities.Add(entity);
                             }
                             // RNMC end
                         }

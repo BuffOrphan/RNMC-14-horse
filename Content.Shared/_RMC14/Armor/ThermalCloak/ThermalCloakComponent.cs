@@ -62,4 +62,8 @@ public sealed partial class ThermalCloakComponent : Component
 
     [DataField, AutoNetworkedField]
     public EntProtoId UncloakEffect = "RMCEffectUncloak";
+    // RNMC start
+    [DataField, AutoNetworkedField]
+    public float NPCDetectionRange = 6;
+    // RNMC end
 }

@@ -1,4 +1,4 @@
-﻿using Content.Shared.FixedPoint;
+using Content.Shared.FixedPoint;
 using Robust.Shared.GameStates;
 
 namespace Content.Shared._RMC14.Stealth;
@@ -20,4 +20,8 @@ public sealed partial class EntityActiveInvisibleComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public bool DisableMobCollision;
+    // RNMC14 start
+    [DataField, AutoNetworkedField]
+    public float NPCDetectionRange;
+    // RNMC14 end
 }
