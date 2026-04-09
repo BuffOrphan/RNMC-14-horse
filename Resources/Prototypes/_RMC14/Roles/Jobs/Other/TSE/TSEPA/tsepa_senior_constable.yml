@@ -1,17 +1,17 @@
-# TSEPA Senior Constable
+# TWEPA Senior Constable
 - type: job
   parent: CMJobBase
-  id: RMCTSEPASeniorConstable
+  id: RMCTWEPASeniorConstable
   name: rmc-job-name-tsepa-senior-constable
   description: rmc-job-description-tsepa-senior-constable
-  playTimeTracker: RMCJobTSEPASeniorConstable
+  playTimeTracker: RMCJobTWEPASeniorConstable
   ranks:
-    RMCRankTSEPASeniorConstable: []
-  startingGear: RMCGearTSEPASeniorConstable
-  icon: "RMCJobIconTSEPASeniorConstable"
+    RMCRankTWEPASeniorConstable: []
+  startingGear: RMCGearTWEPASeniorConstable
+  icon: "RMCJobIconTWEPASeniorConstable"
   joinNotifyCrew: false
   accessGroups:
-  - ColonistTSEPABrig
+  - ColonistTWEPABrig
   special:
   - !type:AddComponentSpecial
     components:
@@ -19,32 +19,32 @@
       preset: RMCSkillPresetSurvivorMarshal
     - type: NpcFactionMember
       factions:
-      - TSE
+      - TWE
     - type: JobPrefix
       prefix: rmc-job-prefix-tsepa-senior-constable
     - type: RMCTrackable
   hidden: true
 
 - type: startingGear
-  id: RMCGearTSEPASeniorConstable
+  id: RMCGearTWEPASeniorConstable
   equipment:
-    head: RMCHeadBeretTSEPA
-    ears: RMCHeadsetTSEPA
-    jumpsuit: RMCJumpsuitTSEPA
-    outerClothing: RMCCoatTSEPA
+    head: RMCHeadBeretTWEPA
+    ears: RMCHeadsetTWEPA
+    jumpsuit: RMCJumpsuitTWEPA
+    outerClothing: RMCCoatTWEPA
     gloves: RMCHandsVeteran
     shoes: CMBootsBlackFilled
-    id: RMCIDCardTSEPASilverGold
+    id: RMCIDCardTWEPASilverGold
     belt: RMCBeltHolsterRevolverSpearheadFill
-    back: RMCSatchelTSEPA
+    back: RMCSatchelTWEPA
 
 - type: entity
   parent: CMSpawnPointJobBase
-  id: RMCSpawnPointTSEPASeniorConstable
+  id: RMCSpawnPointTWEPASeniorConstable
   name: tsepa senior constable spawn point
   components:
   - type: SpawnPoint
-    job_id: RMCTSEPASeniorConstable
+    job_id: RMCTWEPASeniorConstable
   - type: Sprite
     layers:
     - sprite: Markers/jobs.rsi
@@ -53,12 +53,12 @@
       state: icon
 
 - type: playTimeTracker
-  id: RMCJobTSEPASeniorConstable
+  id: RMCJobTWEPASeniorConstable
   isHumanoid: true
 
 - type: jobIcon
   parent: CMJobIconBase
-  id: RMCJobIconTSEPASeniorConstable
+  id: RMCJobIconTWEPASeniorConstable
   icon:
     sprite: _RMC14/Interface/cm_job_icons.rsi
     state: tse_paseniorconstable

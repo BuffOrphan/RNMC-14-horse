@@ -1,24 +1,24 @@
 ﻿- type: job
   parent: CMSurvivorSecurity
-  id: RMCSurvivorHybrisaTSEPAConstable
+  id: RMCSurvivorHybrisaTWEPAConstable
   name: rmc-job-name-tsepa-constable
   description: cm-job-description-survivor
   ranks:
-    RMCRankTSEPASergeant:
+    RMCRankTWEPASergeant:
     - !type:RoleTimeRequirement
       role: CMJobSurvivorSecurity
       time: 630000 # 175 hours
-    RMCRankTSEPASeniorConstable:
+    RMCRankTWEPASeniorConstable:
     - !type:RoleTimeRequirement
       role: CMJobSurvivorSecurity
       time: 252000 # 70 hours
-    RMCRankTSEPAConstable: []
-  startingGear: RMCGearSurvivorHybrisaTSEPAConstable
+    RMCRankTWEPAConstable: []
+  startingGear: RMCGearSurvivorHybrisaTWEPAConstable
   accessGroups:
   - ColonistAllAccessNoArmory
-  - ColonistTSEPA
-  spawnMenuRoleName: TSEPA Constable (Hybrisa Survivor)
-  icon: "RMCJobIconTSEPAConstable"
+  - ColonistTWEPA
+  spawnMenuRoleName: TWEPA Constable (Hybrisa Survivor)
+  icon: "RMCJobIconTWEPAConstable"
   hasIcon: true
   special:
   - !type:AddComponentSpecial
@@ -31,7 +31,7 @@
     - type: MotionDetectorTracked
     - type: NpcFactionMember
       factions:
-      - TSE
+      - TWE
       - Civilian
     - type: IntelRescueSurvivorObjective
     - type: RMCAllowSuitStorage
@@ -39,15 +39,15 @@
 
 - type: startingGear
   parent: RMCGearSurvivorBase
-  id: RMCGearSurvivorHybrisaTSEPAConstable
+  id: RMCGearSurvivorHybrisaTWEPAConstable
   equipment:
     eyes: RMCGlassesSecurityBlue
-    jumpsuit: RMCJumpsuitTSEPA
-    belt: RMCBeltHolsterPistolTSEFilledL54
+    jumpsuit: RMCJumpsuitTWEPA
+    belt: RMCBeltHolsterPistolTWEFilledL54
     shoes: RMCShoesLaceup
-    id: RMCIDCardTSEPASurvivor
+    id: RMCIDCardTWEPASurvivor
     back: RMCSatchelBlackFillSurvivorConstable
-    ears: RMCHeadsetTSEPA
+    ears: RMCHeadsetTWEPA
 
 - type: entity
   parent: RMCSurvivorPresetSecurity
@@ -58,9 +58,9 @@
   - type: SurvivorPreset
     primaryWeapons: [ ]
     randomOutfits:
-    - [ RMCHeadCapTSEPAPeaked, RMCCoatTSEPA, RMCPouchMagazineFilledMP5, WeaponSMGMP5 ]
-    - [ RMCHeadCapTSEPAPeaked, RMCCoatTSEPAFormal, RMCPouchMagazineFilledMP5, WeaponSMGMP5 ]
-    - [ RMCHeadCapTSEPAPeaked, RMCArmorVestTSEPA, RMCPouchShotgunFilledPolicing, RMCWeaponShotgunHG3712, RMCExplosiveBreachingChargeRubberTSEPA ]
-    - [ RMCHeadCapTSEPAPeaked, RMCCoatTSEPAHighVis, RMCPouchMagazineFilledMP5, WeaponSMGMP5, RMCHandsCombat ]
-    - [ RMCHeadCapTSEPAPeakedGoldSilver, RMCCoatTSEPAHighVisVest, RMCPouchShotgunFilledPolicing, RMCWeaponShotgunHG3712, RMCHandsCombat ]
-    - [ RMCHeadCapTSEPAPeakedGold, RMCCoatTSEPAFormal, RMCPouchShotgunFilledPolicing, RMCHandsCombat ]
+    - [ RMCHeadCapTWEPAPeaked, RMCCoatTWEPA, RMCPouchMagazineFilledMP5, WeaponSMGMP5 ]
+    - [ RMCHeadCapTWEPAPeaked, RMCCoatTWEPAFormal, RMCPouchMagazineFilledMP5, WeaponSMGMP5 ]
+    - [ RMCHeadCapTWEPAPeaked, RMCArmorVestTWEPA, RMCPouchShotgunFilledPolicing, RMCWeaponShotgunHG3712, RMCExplosiveBreachingChargeRubberTWEPA ]
+    - [ RMCHeadCapTWEPAPeaked, RMCCoatTWEPAHighVis, RMCPouchMagazineFilledMP5, WeaponSMGMP5, RMCHandsCombat ]
+    - [ RMCHeadCapTWEPAPeakedGoldSilver, RMCCoatTWEPAHighVisVest, RMCPouchShotgunFilledPolicing, RMCWeaponShotgunHG3712, RMCHandsCombat ]
+    - [ RMCHeadCapTWEPAPeakedGold, RMCCoatTWEPAFormal, RMCPouchShotgunFilledPolicing, RMCHandsCombat ]

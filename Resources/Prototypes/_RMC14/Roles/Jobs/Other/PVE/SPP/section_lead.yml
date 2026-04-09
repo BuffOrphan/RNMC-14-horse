@@ -1,8 +1,8 @@
 - type: job
   parent: CMJobBase
   id: RMCSPPSectionLeadPVE
-  name: rmc-job-name-spp-sectionsergeant
-  description: rmc-job-description-spp-sectionsergeant
+  name: rmc-job-name-upp-sectionsergeant
+  description: rmc-job-description-upp-sectionsergeant
   playTimeTracker: RMCJobSPPSectionLeadPVE
   ranks:
     RMCRankSPPStarshiySerzhant: []
@@ -11,18 +11,18 @@
   joinNotifyCrew: false
   accessGroups:
   - SquadLeader
-  spawnMenuRoleName: SPP Section Sergeant (PVE)
+  spawnMenuRoleName: UPP Section Sergeant (PVE)
   special:
   - !type:AddComponentSpecial
     components:
     - type: NpcFactionMember
       factions:
-      - SPP
+      - UPP
     - type: Skills
       preset: RMCSkillPresetPVESectionSergeant
     - type: SquadArmorWearer
     - type: JobPrefix
-      prefix: rmc-job-prefix-spp-sectionsergeant
+      prefix: rmc-job-prefix-upp-sectionsergeant
     - type: AssignSquad
       whitelist:
         tags:
@@ -40,7 +40,7 @@
 - type: entity
   parent: CMSpawnPointJobBase
   id: RMCSpawnPointSPPSectionLeadPVE
-  name: spp section lead spawn point
+  name: upp section lead spawn point
   suffix: PVE
   components:
   - type: SpawnPoint

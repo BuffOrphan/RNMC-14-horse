@@ -3528,7 +3528,7 @@ entities:
     - type: Transform
       pos: 9.5,6.5
       parent: 1
-- proto: RMCBannerTSE
+- proto: RMCBannerTWE
   entities:
   - uid: 532
     components:
@@ -6293,12 +6293,12 @@ entities:
   - uid: 1207
     components:
     - type: MetaData
-      name: TSE Airbase
+      name: TWE Airbase
     - type: Transform
       pos: 15.5,16.5
       parent: 1
     - type: WarpPoint
-      location: TSE Airbase
+      location: TWE Airbase
 - proto: RMCMechPowerLoader
   entities:
   - uid: 765
@@ -6314,7 +6314,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 2.5,22.5
       parent: 1
-- proto: RMCMRETSE
+- proto: RMCMRETWE
   entities:
   - uid: 111
     components:
@@ -6498,7 +6498,7 @@ entities:
     - type: Transform
       pos: 4.5,23.5
       parent: 1
-- proto: RMCPatchTSE
+- proto: RMCPatchTWE
   entities:
   - uid: 618
     components:
@@ -7064,7 +7064,7 @@ entities:
       id: AirbaseHangarLockdown
     - type: Fixtures
       fixtures: {}
-- proto: RMCPosterTSEPA3
+- proto: RMCPosterTWEPA3
   entities:
   - uid: 410
     components:
@@ -7396,7 +7396,7 @@ entities:
     - type: Transform
       pos: 22.5,4.5
       parent: 1
-- proto: RMCSecureCaseStrappedTSEMRE
+- proto: RMCSecureCaseStrappedTWEMRE
   entities:
   - uid: 933
     components:
@@ -7886,63 +7886,63 @@ entities:
     - type: Transform
       pos: 2.5,6.5
       parent: 1
-- proto: RMCTSEDropshipWall1
+- proto: RMCTWEDropshipWall1
   entities:
   - uid: 942
     components:
     - type: Transform
       pos: 21.5,7.5
       parent: 1
-- proto: RMCTSEDropshipWall12
+- proto: RMCTWEDropshipWall12
   entities:
   - uid: 947
     components:
     - type: Transform
       pos: 25.5,8.5
       parent: 1
-- proto: RMCTSEDropshipWall13
+- proto: RMCTWEDropshipWall13
   entities:
   - uid: 952
     components:
     - type: Transform
       pos: 26.5,8.5
       parent: 1
-- proto: RMCTSEDropshipWall14
+- proto: RMCTWEDropshipWall14
   entities:
   - uid: 953
     components:
     - type: Transform
       pos: 22.5,9.5
       parent: 1
-- proto: RMCTSEDropshipWall15
+- proto: RMCTWEDropshipWall15
   entities:
   - uid: 948
     components:
     - type: Transform
       pos: 23.5,9.5
       parent: 1
-- proto: RMCTSEDropshipWall19
+- proto: RMCTWEDropshipWall19
   entities:
   - uid: 950
     components:
     - type: Transform
       pos: 25.5,9.5
       parent: 1
-- proto: RMCTSEDropshipWall2
+- proto: RMCTWEDropshipWall2
   entities:
   - uid: 940
     components:
     - type: Transform
       pos: 22.5,7.5
       parent: 1
-- proto: RMCTSEDropshipWall20
+- proto: RMCTWEDropshipWall20
   entities:
   - uid: 949
     components:
     - type: Transform
       pos: 26.5,9.5
       parent: 1
-- proto: RMCTSEDropshipWall24
+- proto: RMCTWEDropshipWall24
   entities:
   - uid: 964
     components:
@@ -7954,28 +7954,28 @@ entities:
     - type: Transform
       pos: 21.5,9.5
       parent: 1
-- proto: RMCTSEDropshipWall25
+- proto: RMCTWEDropshipWall25
   entities:
   - uid: 969
     components:
     - type: Transform
       pos: 21.5,10.5
       parent: 1
-- proto: RMCTSEDropshipWall28
+- proto: RMCTWEDropshipWall28
   entities:
   - uid: 963
     components:
     - type: Transform
       pos: 27.5,10.5
       parent: 1
-- proto: RMCTSEDropshipWall3
+- proto: RMCTWEDropshipWall3
   entities:
   - uid: 941
     components:
     - type: Transform
       pos: 23.5,7.5
       parent: 1
-- proto: RMCTSEDropshipWall30
+- proto: RMCTWEDropshipWall30
   entities:
   - uid: 958
     components:
@@ -7987,7 +7987,7 @@ entities:
     - type: Transform
       pos: 22.5,13.5
       parent: 1
-- proto: RMCTSEDropshipWall31
+- proto: RMCTWEDropshipWall31
   entities:
   - uid: 970
     components:
@@ -7999,14 +7999,14 @@ entities:
     - type: Transform
       pos: 26.5,13.5
       parent: 1
-- proto: RMCTSEDropshipWall33
+- proto: RMCTWEDropshipWall33
   entities:
   - uid: 966
     components:
     - type: Transform
       pos: 21.5,11.5
       parent: 1
-- proto: RMCTSEDropshipWall34
+- proto: RMCTWEDropshipWall34
   entities:
   - uid: 954
     components:
@@ -8018,7 +8018,7 @@ entities:
     - type: Transform
       pos: 22.5,11.5
       parent: 1
-- proto: RMCTSEDropshipWall36
+- proto: RMCTWEDropshipWall36
   entities:
   - uid: 956
     components:
@@ -8030,91 +8030,91 @@ entities:
     - type: Transform
       pos: 26.5,11.5
       parent: 1
-- proto: RMCTSEDropshipWall37
+- proto: RMCTWEDropshipWall37
   entities:
   - uid: 967
     components:
     - type: Transform
       pos: 27.5,11.5
       parent: 1
-- proto: RMCTSEDropshipWall38
+- proto: RMCTWEDropshipWall38
   entities:
   - uid: 968
     components:
     - type: Transform
       pos: 21.5,12.5
       parent: 1
-- proto: RMCTSEDropshipWall4
+- proto: RMCTWEDropshipWall4
   entities:
   - uid: 945
     components:
     - type: Transform
       pos: 25.5,7.5
       parent: 1
-- proto: RMCTSEDropshipWall40
+- proto: RMCTWEDropshipWall40
   entities:
   - uid: 976
     components:
     - type: Transform
       pos: 24.5,12.5
       parent: 1
-- proto: RMCTSEDropshipWall42
+- proto: RMCTWEDropshipWall42
   entities:
   - uid: 960
     components:
     - type: Transform
       pos: 27.5,12.5
       parent: 1
-- proto: RMCTSEDropshipWall43
+- proto: RMCTWEDropshipWall43
   entities:
   - uid: 962
     components:
     - type: Transform
       pos: 21.5,13.5
       parent: 1
-- proto: RMCTSEDropshipWall45
+- proto: RMCTWEDropshipWall45
   entities:
   - uid: 977
     components:
     - type: Transform
       pos: 24.5,13.5
       parent: 1
-- proto: RMCTSEDropshipWall47
+- proto: RMCTWEDropshipWall47
   entities:
   - uid: 961
     components:
     - type: Transform
       pos: 27.5,13.5
       parent: 1
-- proto: RMCTSEDropshipWall5
+- proto: RMCTWEDropshipWall5
   entities:
   - uid: 943
     components:
     - type: Transform
       pos: 26.5,7.5
       parent: 1
-- proto: RMCTSEDropshipWall52
+- proto: RMCTWEDropshipWall52
   entities:
   - uid: 978
     components:
     - type: Transform
       pos: 24.5,14.5
       parent: 1
-- proto: RMCTSEDropshipWall6
+- proto: RMCTWEDropshipWall6
   entities:
   - uid: 944
     components:
     - type: Transform
       pos: 27.5,7.5
       parent: 1
-- proto: RMCTSEDropshipWall61
+- proto: RMCTWEDropshipWall61
   entities:
   - uid: 979
     components:
     - type: Transform
       pos: 22.5,16.5
       parent: 1
-- proto: RMCTSEDropshipWall62
+- proto: RMCTWEDropshipWall62
   entities:
   - uid: 980
     components:
@@ -8126,49 +8126,49 @@ entities:
     - type: Transform
       pos: 25.5,16.5
       parent: 1
-- proto: RMCTSEDropshipWall67
+- proto: RMCTWEDropshipWall67
   entities:
   - uid: 975
     components:
     - type: Transform
       pos: 26.5,16.5
       parent: 1
-- proto: RMCTSEDropshipWall7
+- proto: RMCTWEDropshipWall7
   entities:
   - uid: 951
     components:
     - type: Transform
       pos: 22.5,8.5
       parent: 1
-- proto: RMCTSEDropshipWall74
+- proto: RMCTWEDropshipWall74
   entities:
   - uid: 987
     components:
     - type: Transform
       pos: 24.5,18.5
       parent: 1
-- proto: RMCTSEDropshipWall76
+- proto: RMCTWEDropshipWall76
   entities:
   - uid: 986
     components:
     - type: Transform
       pos: 23.5,19.5
       parent: 1
-- proto: RMCTSEDropshipWall77
+- proto: RMCTWEDropshipWall77
   entities:
   - uid: 985
     components:
     - type: Transform
       pos: 24.5,19.5
       parent: 1
-- proto: RMCTSEDropshipWall78
+- proto: RMCTWEDropshipWall78
   entities:
   - uid: 988
     components:
     - type: Transform
       pos: 25.5,19.5
       parent: 1
-- proto: RMCTSEDropshipWall79
+- proto: RMCTWEDropshipWall79
   entities:
   - uid: 972
     components:
@@ -8180,14 +8180,14 @@ entities:
     - type: Transform
       pos: 23.5,17.5
       parent: 1
-- proto: RMCTSEDropshipWall8
+- proto: RMCTWEDropshipWall8
   entities:
   - uid: 946
     components:
     - type: Transform
       pos: 23.5,8.5
       parent: 1
-- proto: RMCTSEDropshipWall80
+- proto: RMCTWEDropshipWall80
   entities:
   - uid: 973
     components:
@@ -8199,14 +8199,14 @@ entities:
     - type: Transform
       pos: 25.5,17.5
       parent: 1
-- proto: RMCTSEDropshipWall81
+- proto: RMCTWEDropshipWall81
   entities:
   - uid: 974
     components:
     - type: Transform
       pos: 23.5,18.5
       parent: 1
-- proto: RMCTSEDropshipWall82
+- proto: RMCTWEDropshipWall82
   entities:
   - uid: 984
     components:

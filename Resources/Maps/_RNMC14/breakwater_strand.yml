@@ -40465,7 +40465,7 @@ entities:
       canCollide: False
     - type: ActionsContainer
     - type: InsideEntityStorage
-- proto: RMCArmorVestTSEPA
+- proto: RMCArmorVestTWEPA
   entities:
   - uid: 27
     components:
@@ -40497,7 +40497,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: RMCArmourM4TSEPA
+- proto: RMCArmourM4TWEPA
   entities:
   - uid: 31
     components:
@@ -55182,7 +55182,7 @@ entities:
     - type: Transform
       pos: -7.5,33.5
       parent: 1
-- proto: RMCVendorSecTSEPA
+- proto: RMCVendorSecTWEPA
   entities:
   - uid: 7912
     components:

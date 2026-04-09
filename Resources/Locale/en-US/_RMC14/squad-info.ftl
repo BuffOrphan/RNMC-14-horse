@@ -58,8 +58,8 @@ rmc-squad-info-LeaderFreelancer = Leader
 
 rmc-squad-info-FORECONCommandingOfficer = Commanding Officer
 
-rmc-squad-info-InspectorTSEPA = TSEPA Inspector
-rmc-squad-info-SeniorConstableTSEPA = TSEPA Senior Constable
+rmc-squad-info-InspectorTWEPA = TWEPA Inspector
+rmc-squad-info-SeniorConstableTWEPA = TWEPA Senior Constable
 
 rmc-squad-info-PrimaryLandingZone = Primary Landing Zone
 

@@ -1,7 +1,7 @@
 ﻿- type: job
   parent: CMJobBase
   id: RMCSPPCommandoMedic
-  name: rmc-job-name-spp-commando-medic
+  name: rmc-job-name-upp-commando-medic
   description: rmc-ghost-role-information-deathsquad-description
   playTimeTracker: CMJobSPPCommmandoMedic
   ranks:
@@ -11,13 +11,13 @@
   joinNotifyCrew: false
   accessGroups:
   - ShipMasterAccess
-  spawnMenuRoleName: SPP Commando Medic (!DEATHSQUAD!)
+  spawnMenuRoleName: UPP Commando Medic (!DEATHSQUAD!)
   special:
   - !type:AddComponentSpecial
     components:
     - type: NpcFactionMember
       factions:
-      - SPP
+      - UPP
     - type: Skills
       skills:
         RMCSkillConstruction: 2
@@ -36,12 +36,12 @@
     - type: SniperWhitelist
     - type: PyroWhitelist
     - type: JobPrefix
-      prefix: rmc-job-prefix-spp-commando-medic
+      prefix: rmc-job-prefix-upp-commando-medic
   hidden: true
 
 - type: entity
   id: RMCRandomHumanoidSPPCommandoMedic
-  name: DEATHSQUAD spp ghost role commando medic
+  name: DEATHSQUAD upp ghost role commando medic
   suffix: Spawner, Player
   components:
   - type: Sprite
@@ -55,9 +55,9 @@
   id: RMCSPPCommandoMedic
   components:
   - type: GhostRole
-    name: rmc-ghost-name-spp-commando-medic
+    name: rmc-ghost-name-upp-commando-medic
     description: rmc-ghost-role-information-deathsquad-description
-    rules: rmc-ghost-role-information-spp-rules
+    rules: rmc-ghost-role-information-upp-rules
     reregister: false
     job: RMCSPPCommandoMedic
     requirements:

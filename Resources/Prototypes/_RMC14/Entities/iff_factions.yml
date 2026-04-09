@@ -49,14 +49,14 @@
     - WEYA
 
 - type: entity
-  id: FactionTSE
+  id: FactionTWE
   categories: [ HideSpawnMenu ]
   components:
   - type: IFFFaction
   - type: FactionFrequencies
     channels:
     - Colony
-    - TSE
+    - TWE
 
 - type: entity
   id: FactionSPP
@@ -65,7 +65,7 @@
   - type: IFFFaction
   - type: FactionFrequencies
     channels:
-    - SPP
+    - UPP
     - SPPCommand
     - SPPEngi
     - SPPMed

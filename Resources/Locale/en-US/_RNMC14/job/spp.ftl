@@ -6,8 +6,8 @@ cm-job-name-machinegunner = Machinegunner
 cm-job-prefix-machinegunner = MCHG
 CMJobSPPMachinegunnerPVE = Machinegunner
 
-cm-job-name-synth-commie = SPP Synthetic
-RMCJobSyntheticCommunist = SPP Synthetic
+cm-job-name-synth-commie = UPP Synthetic
+RMCJobSyntheticCommunist = UPP Synthetic
 
 cm-job-name-platoon-sergeant = Platoon Sergeant
 CMSPPlatoonCommanderPVE = Platoon Sergeant

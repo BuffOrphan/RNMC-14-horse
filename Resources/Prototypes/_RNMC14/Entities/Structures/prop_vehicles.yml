@@ -17,10 +17,10 @@
 
 - type: entity
   parent: RNMCPropVehicleHugeBase
-  id: RNMCPropVehicleAPCUNMC
+  id: RNMCPropVehicleAPCUSCM
   name: m14 armored personnel carrier
   description: A M14 Armored Personnel Carrier. An armored transport with four big wheels, seems to be broken down.
-  suffix: Prop, UNMC
+  suffix: Prop, USCM
   components:
   - type: Sprite
     sprite: _RNMC14/Objects/Vehicles/APC/apc.rsi
@@ -30,10 +30,10 @@
     - state: wheels-idle
 
 - type: entity
-  parent: RNMCPropVehicleAPCUNMC
-  id: RNMCPropVehicleAPCUNMCDamaged
+  parent: RNMCPropVehicleAPCUSCM
+  id: RNMCPropVehicleAPCUSCMDamaged
   description: A M14 Armored Personnel Carrier. An armored transport with four big wheels, seems to be damaged beyond repair.
-  suffix: Prop, UNMC, Destroyed
+  suffix: Prop, USCM, Destroyed
   components:
   - type: Sprite
     sprite: _RNMC14/Objects/Vehicles/APC/apc.rsi
@@ -47,7 +47,7 @@
   id: RNMCPropVehicleAPCHMMC
   name: mark 4 armored personnel carrier
   description: A Mark 4 Armored Personnel Carrier. An armored transport with eight wheels and used by His Majesty's Marine Corps, seems to be broken down.
-  suffix: Prop, UNMC
+  suffix: Prop, USCM
   components:
   - type: Sprite
     sprite: _RNMC14/Objects/Vehicles/APC/hmmc_apc.rsi
@@ -59,7 +59,7 @@
   id: RNMCPropVehicleAPCHMMCDamaged
   name: mark 4 armored personnel carrier
   description: A Mark 4 Armored Personnel Carrier. An armored transport with eight wheels and used by His Majesty's Marine Corps, seems to be damaged beyond repair.
-  suffix: Prop, UNMC, Destroyed
+  suffix: Prop, USCM, Destroyed
   components:
   - type: Sprite
     sprite: _RNMC14/Objects/Vehicles/APC/hmmc_apc.rsi
@@ -67,10 +67,10 @@
 
 - type: entity
   parent: RNMCPropVehicleHugeBase
-  id: RNMCPropVehicleARCUNMC
+  id: RNMCPropVehicleARCUSCM
   name: m13 armored reconnaisance carrier
   description: A m13 Armored Reconnaisance Carrier. A lightly armored reconnaissance and intelligence vehicle, seems to be broken down.
-  suffix: Prop, UNMC
+  suffix: Prop, USCM
   components:
   - type: Fixtures
     fixtures:

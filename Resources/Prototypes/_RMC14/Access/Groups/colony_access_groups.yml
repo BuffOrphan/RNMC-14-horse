@@ -108,31 +108,31 @@
   - CMAccessColonyCommand
 
 - type: accessGroup
-  id: ColonistTSEPA
+  id: ColonistTWEPA
   tags:
   - CMAccessColonyPublic
   - CMAccessColonyBrig
   - CMAccessColonyCommand
-  - RMCAccessTSEPA
+  - RMCAccessTWEPA
 
 - type: accessGroup
-  id: ColonistTSEPABrig
+  id: ColonistTWEPABrig
   tags:
   - CMAccessColonyPublic
   - CMAccessColonyBrig
   - CMAccessColonyCommand
-  - RMCAccessTSEPA
-  - RMCAccessTSEPABrig
+  - RMCAccessTWEPA
+  - RMCAccessTWEPABrig
 
 - type: accessGroup
-  id: ColonistTSEPAInspector
+  id: ColonistTWEPAInspector
   tags:
   - CMAccessColonyPublic
   - CMAccessColonyBrig
   - CMAccessColonyCommand
-  - RMCAccessTSEPA
-  - RMCAccessTSEPABrig
-  - RMCAccessTSEPAInspector
+  - RMCAccessTWEPA
+  - RMCAccessTWEPABrig
+  - RMCAccessTWEPAInspector
 
 # Survivor Synth Access
 - type: accessGroup

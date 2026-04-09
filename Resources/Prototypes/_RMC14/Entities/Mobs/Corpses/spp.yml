@@ -13,7 +13,7 @@
       state: upp_pvt
   - type: NpcFactionMember
     factions:
-    - SPP
+    - UPP
     - Civilian
 
 - type: startingGear

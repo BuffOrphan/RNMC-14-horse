@@ -1,8 +1,8 @@
 ﻿- type: job
   parent: CMJobBase
   id: RMCSPPKommissar
-  name: rmc-job-name-spp-kommissar
-  description: rmc-job-description-spp-kommissar
+  name: rmc-job-name-upp-kommissar
+  description: rmc-job-description-upp-kommissar
   playTimeTracker: RMCJobSPPKommissar
   ranks:
     RMCRankSPPPoliticalKommissar: []
@@ -11,14 +11,14 @@
   joinNotifyCrew: false
   accessGroups:
   - Colonist
-  spawnMenuRoleName: SPP Kommissar
+  spawnMenuRoleName: UPP Kommissar
   special:
   - !type:AddComponentSpecial
     components:
     - type: RMCTrackable
     - type: NpcFactionMember
       factions:
-      - SPP
+      - UPP
     - type: Skills
       skills:
         RMCSkillFirearms: 1
@@ -29,7 +29,7 @@
         RMCSkillPolice: 1
     - type: MarineOrders
     - type: JobPrefix
-      prefix: rmc-job-prefix-spp-kommissar
+      prefix: rmc-job-prefix-upp-kommissar
   hidden: true
 
 - type: entity
@@ -48,9 +48,9 @@
   id: RMCSPPKommissar
   components:
   - type: GhostRole
-    name: rmc-job-name-spp-kommissar
-    description: rmc-ghost-role-information-spp-kommissar-description
-    rules: rmc-ghost-role-information-spp-kommissar-rules
+    name: rmc-job-name-upp-kommissar
+    description: rmc-ghost-role-information-upp-kommissar-description
+    rules: rmc-ghost-role-information-upp-kommissar-rules
     reregister: false
     job: RMCSPPKommissar
     raffle:
@@ -92,8 +92,8 @@
 - type: job
   parent: CMJobBase
   id: RMCSPPBattalionKommissar
-  name: rmc-job-name-spp-battalion-kommissar
-  description: rmc-job-description-spp-battalion-kommissar
+  name: rmc-job-name-upp-battalion-kommissar
+  description: rmc-job-description-upp-battalion-kommissar
   playTimeTracker: RMCJobSPPBattalionKommissar
   ranks:
     RMCRankSPPPoliticalBattalionKommissar: []
@@ -102,14 +102,14 @@
   joinNotifyCrew: false
   accessGroups:
   - Colonist
-  spawnMenuRoleName: SPP Battalion Kommissar
+  spawnMenuRoleName: UPP Battalion Kommissar
   special:
   - !type:AddComponentSpecial
     components:
     - type: RMCTrackable
     - type: NpcFactionMember
       factions:
-      - SPP
+      - UPP
     - type: Skills
       skills:
         RMCSkillFirearms: 1
@@ -120,7 +120,7 @@
         RMCSkillPolice: 1
     - type: MarineOrders
     - type: JobPrefix
-      prefix: rmc-job-prefix-spp-battalion-kommissar
+      prefix: rmc-job-prefix-upp-battalion-kommissar
   hidden: true
 
 - type: entity
@@ -139,9 +139,9 @@
   id: RMCSPPBattalionKommissar
   components:
   - type: GhostRole
-    name: rmc-job-name-spp-battalion-kommissar
-    description: rmc-ghost-role-information-spp-kommissar-description
-    rules: rmc-ghost-role-information-spp-kommissar-rules
+    name: rmc-job-name-upp-battalion-kommissar
+    description: rmc-ghost-role-information-upp-kommissar-description
+    rules: rmc-ghost-role-information-upp-kommissar-rules
     reregister: false
     job: RMCSPPBattalionKommissar
     raffle:
@@ -163,8 +163,8 @@
 - type: job
   parent: CMJobBase
   id: RMCSPPSrBattalionKommissar
-  name: rmc-job-name-spp-sr-battalion-kommissar
-  description: rmc-job-description-spp-sr-battalion-kommissar
+  name: rmc-job-name-upp-sr-battalion-kommissar
+  description: rmc-job-description-upp-sr-battalion-kommissar
   playTimeTracker: RMCJobSPPSrBattalionKommissar
   ranks:
     RMCRankSPPPoliticalSrBattalionKommissar: []
@@ -173,14 +173,14 @@
   joinNotifyCrew: false
   accessGroups:
   - Colonist
-  spawnMenuRoleName: SPP Sr Battalion Kommissar
+  spawnMenuRoleName: UPP Sr Battalion Kommissar
   special:
   - !type:AddComponentSpecial
     components:
     - type: RMCTrackable
     - type: NpcFactionMember
       factions:
-      - SPP
+      - UPP
     - type: Skills
       skills:
         RMCSkillFirearms: 1
@@ -191,7 +191,7 @@
         RMCSkillPolice: 1
     - type: MarineOrders
     - type: JobPrefix
-      prefix: rmc-job-prefix-spp-sr-battalion-kommissar
+      prefix: rmc-job-prefix-upp-sr-battalion-kommissar
   hidden: true
 
 - type: entity
@@ -210,9 +210,9 @@
   id: RMCSPPSrBattalionKommissar
   components:
   - type: GhostRole
-    name: rmc-job-name-spp-sr-battalion-kommissar
-    description: rmc-ghost-role-information-spp-kommissar-description
-    rules: rmc-ghost-role-information-spp-kommissar-rules
+    name: rmc-job-name-upp-sr-battalion-kommissar
+    description: rmc-ghost-role-information-upp-kommissar-description
+    rules: rmc-ghost-role-information-upp-kommissar-rules
     reregister: false
     job: RMCSPPSrBattalionKommissar
     raffle:
@@ -234,8 +234,8 @@
 - type: job
   parent: CMJobBase
   id: RMCSPPRegimentalKommissar
-  name: rmc-job-name-spp-regimental-kommissar
-  description: rmc-job-description-spp-regimental-kommissar
+  name: rmc-job-name-upp-regimental-kommissar
+  description: rmc-job-description-upp-regimental-kommissar
   playTimeTracker: RMCJobSPPRegimentalKommissar
   ranks:
     RMCRankSPPPoliticalRegimentalKommissar: []
@@ -244,14 +244,14 @@
   joinNotifyCrew: false
   accessGroups:
   - Colonist
-  spawnMenuRoleName: SPP Regimental Kommissar
+  spawnMenuRoleName: UPP Regimental Kommissar
   special:
   - !type:AddComponentSpecial
     components:
     - type: RMCTrackable
     - type: NpcFactionMember
       factions:
-      - SPP
+      - UPP
     - type: Skills
       skills:
         RMCSkillFirearms: 1
@@ -262,7 +262,7 @@
         RMCSkillPolice: 1
     - type: MarineOrders
     - type: JobPrefix
-      prefix: rmc-job-prefix-spp-regimental-kommissar
+      prefix: rmc-job-prefix-upp-regimental-kommissar
   hidden: true
 
 - type: entity
@@ -281,9 +281,9 @@
   id: RMCSPPRegimentalKommissar
   components:
   - type: GhostRole
-    name: rmc-job-name-spp-regimental-kommissar
-    description: rmc-ghost-role-information-spp-kommissar-description
-    rules: rmc-ghost-role-information-spp-kommissar-rules
+    name: rmc-job-name-upp-regimental-kommissar
+    description: rmc-ghost-role-information-upp-kommissar-description
+    rules: rmc-ghost-role-information-upp-kommissar-rules
     reregister: false
     job: RMCSPPRegimentalKommissar
     raffle:
@@ -305,8 +305,8 @@
 - type: job
   parent: CMJobBase
   id: RMCSPPBrigadeKommissar
-  name: rmc-job-name-spp-brigade-kommissar
-  description: rmc-job-description-spp-brigade-kommissar
+  name: rmc-job-name-upp-brigade-kommissar
+  description: rmc-job-description-upp-brigade-kommissar
   playTimeTracker: RMCJobSPPBrigadeKommissar
   ranks:
     RMCRankSPPPoliticalBrigadeKommissar: []
@@ -315,14 +315,14 @@
   joinNotifyCrew: false
   accessGroups:
   - Colonist
-  spawnMenuRoleName: SPP Brigade Kommissar
+  spawnMenuRoleName: UPP Brigade Kommissar
   special:
   - !type:AddComponentSpecial
     components:
     - type: RMCTrackable
     - type: NpcFactionMember
       factions:
-      - SPP
+      - UPP
     - type: Skills
       skills:
         RMCSkillFirearms: 1
@@ -333,7 +333,7 @@
         RMCSkillPolice: 1
     - type: MarineOrders
     - type: JobPrefix
-      prefix: rmc-job-prefix-spp-brigade-kommissar
+      prefix: rmc-job-prefix-upp-brigade-kommissar
   hidden: true
 
 - type: entity
@@ -352,9 +352,9 @@
   id: RMCSPPBrigadeKommissar
   components:
   - type: GhostRole
-    name: rmc-job-name-spp-brigade-kommissar
-    description: rmc-ghost-role-information-spp-kommissar-description
-    rules: rmc-ghost-role-information-spp-kommissar-rules
+    name: rmc-job-name-upp-brigade-kommissar
+    description: rmc-ghost-role-information-upp-kommissar-description
+    rules: rmc-ghost-role-information-upp-kommissar-rules
     reregister: false
     job: RMCSPPBrigadeKommissar
     raffle:
@@ -376,8 +376,8 @@
 - type: job
   parent: CMJobBase
   id: RMCSPPDivisionKommissar
-  name: rmc-job-name-spp-division-kommissar
-  description: rmc-job-description-spp-division-kommissar
+  name: rmc-job-name-upp-division-kommissar
+  description: rmc-job-description-upp-division-kommissar
   playTimeTracker: RMCJobSPPDivisionKommissar
   ranks:
     RMCRankSPPPoliticalDivisionKommissar: []
@@ -386,14 +386,14 @@
   joinNotifyCrew: false
   accessGroups:
   - Colonist
-  spawnMenuRoleName: SPP Division Kommissar
+  spawnMenuRoleName: UPP Division Kommissar
   special:
   - !type:AddComponentSpecial
     components:
     - type: RMCTrackable
     - type: NpcFactionMember
       factions:
-      - SPP
+      - UPP
     - type: Skills
       skills:
         RMCSkillFirearms: 2
@@ -407,7 +407,7 @@
         RMCSkillEndurance: 2
     - type: MarineOrders
     - type: JobPrefix
-      prefix: rmc-job-prefix-spp-division-kommissar
+      prefix: rmc-job-prefix-upp-division-kommissar
   hidden: true
 
 - type: playTimeTracker

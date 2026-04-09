@@ -4,7 +4,7 @@
   id: RMCArmorM3PVE
   suffix: PVE, Standard
   name: M3 pattern marine armor
-  description: Standard UNMC issue M3 Pattern Personal Armor. Composite ballistic armor, integral biomonitoring system, and brackets for the IMP system as well as the TNR Shoulder Lamp.
+  description: Standard USCM issue M3 Pattern Personal Armor. Composite ballistic armor, integral biomonitoring system, and brackets for the IMP system as well as the TNR Shoulder Lamp.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/PVE/Marines/standard/jungle.rsi

@@ -1,5 +1,5 @@
 ﻿- type: npcFaction
-  id: UNMC
+  id: USCM
   hostile:
   - RMCXeno
   - CLF
@@ -7,29 +7,29 @@
 - type: npcFaction
   id: RMCXeno
   hostile:
-  - UNMC
-  - SPP
+  - USCM
+  - UPP
   - Halcyon
   - WeYa
   - Civilian
   - CLF
-  - TSE
+  - TWE
   - Human
 
 - type: npcFaction
   id: RMCDumb
   hostile:
-  - UNMC
+  - USCM
   - RMCXeno
-  - SPP
+  - UPP
   - Halcyon
   - WeYa
   - Civilian
   - CLF
-  - TSE
+  - TWE
 
 - type: npcFaction
-  id: SPP
+  id: UPP
   hostile:
   - RMCXeno
 
@@ -42,7 +42,7 @@
   id: CLF
   hostile:
   - RMCXeno
-  - UNMC
+  - USCM
 
 - type: npcFaction
   id: WeYa
@@ -65,6 +65,6 @@
   - RMCXeno
 
 - type: npcFaction
-  id: TSE
+  id: TWE
   hostile:
   - RMCXeno

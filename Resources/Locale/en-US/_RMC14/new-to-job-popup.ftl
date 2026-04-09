@@ -4,7 +4,7 @@ rmc-new-to-job-additional = If you are ever confused on what to do, you can ask 
 rmc-new-to-job-popup-close-button = All ready!
 rmc-new-to-job-popup-close-button-wait = The close button will be enabled after {$time} seconds.
 
-rmc-new-to-job-req-tech = As a requisitions technician, your job is to dispense supplies to the UNMC marines through either working the main lines or helping the logistics officer with supply drops.
+rmc-new-to-job-req-tech = As a requisitions technician, your job is to dispense supplies to the USCM marines through either working the main lines or helping the logistics officer with supply drops.
 
                                              You will find on the left of cargo, the main area you spawn at, two lines with 3 vendors between them. Marines will line up at those lines at the start of the round and ask for supplies. You can find most of them within those three vendors, with any other requests either found in the surplus uniform vendor south of you or by ordering them in the ARSR consoles near to your lines.
 
@@ -93,10 +93,10 @@ rmc-new-to-job-maint-tech = As a Maintenance Technician, your job is to perform 
                                              Perform a rennovation of an area. Make sure to get permission from both the Chief Engineer and the Department Head of the area you wish to rennovate.
 
                                              Deploy to help construct the FOB alongside Bravo squad, your engineering skills could prove invaluable. Make sure to get deployment permission from the Chief Engineer or Commander.
-rmc-new-to-job-cl = You are a Liaison from the Corporate Relations Division of the Weston-Yamada Corporation, sent to make sure both WEYA has their interests maintained while improving and aiding relations with the UNMC. As a Corporate Liaison, you serve as a roleplay role, intended to create interesting and fun roleplay while not having a major effect on the operation. You are subject to Marine Law and are expected not to break it.
+rmc-new-to-job-cl = You are a Liaison from the Corporate Relations Division of the Weyland-Yutani Corporation, sent to make sure both WEYA has their interests maintained while improving and aiding relations with the USCM. As a Corporate Liaison, you serve as a roleplay role, intended to create interesting and fun roleplay while not having a major effect on the operation. You are subject to Marine Law and are expected not to break it.
 
-                                             Your office contains a large amount of RP-relevant supplies, from papers and pens to clothing and cigars. Make sure to familiarize yourself with your office; it's essentially your home base. Use your fax machine to fax Weston-Yamada to report information or make requests. You will oftentimes not receive a response, and this is normal.
+                                             Your office contains a large amount of RP-relevant supplies, from papers and pens to clothing and cigars. Make sure to familiarize yourself with your office; it's essentially your home base. Use your fax machine to fax Weyland-Yutani to report information or make requests. You will oftentimes not receive a response, and this is normal.
 
-                                             You are not an antagonistic role, nor are you a combat role. Do not be antagonistic to other players or take antagonistic action: You are supposed to positively represent Weston-Yamada. Do not deploy to the planet in order to fight xenos. You are not trained to fight, nor are you expected to.
+                                             You are not an antagonistic role, nor are you a combat role. Do not be antagonistic to other players or take antagonistic action: You are supposed to positively represent Weyland-Yutani. Do not deploy to the planet in order to fight xenos. You are not trained to fight, nor are you expected to.
 
                                              If you have any other questions, consult the guidebook's Corporate Liaison page.

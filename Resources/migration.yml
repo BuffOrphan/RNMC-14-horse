@@ -401,7 +401,7 @@ ClothingOuterCoatInspector: ClothingOuterCoatJensen
 # 2024-06-22
 CMSpawnPointSmartGunner: CMSpawnPointSmartGunOperator
 CMFaxUPP: CMFaxSPP
-CMFaxTwE: CMFaxTSE
+CMFaxTwE: CMFaxTWE
 CMBoxMagazineRifleM41A: RMCBoxMagazineRifleM54C
 CMBoxMagazineRifleM41AAP: RMCBoxMagazineRifleM54CAP
 CMBoxMagazineRifleM41AExt: RMCBoxMagazineRifleM54CExt
@@ -1363,7 +1363,7 @@ BoxSyringe: RMCBoxSyringe
 WeaponRifleSSG45: RMCWeaponRifleSSG45
 
 # 2025-08-06
-RMCSmartGun: RMCSmartGunUNMC
+RMCSmartGun: RMCSmartGunUSCM
 
 # 2025-08-07
 RMCAttachmentM42A2WoodenStock: RMCAttachmentM42A2CollapsibleStock
@@ -1421,8 +1421,8 @@ GrilleBroken: RMCGrilleBroken
 RMCTentRoofBase: null
 RMCTentRoofStandard: null
 RMCTentRoofExtended: null
-RMCTentBodyStandard: RMCTentUNMCStandard
-RMCTentBodyExtended: RMCTentUNMCExtended
+RMCTentBodyStandard: RMCTentUSCMStandard
+RMCTentBodyExtended: RMCTentUSCMExtended
 
 # 2025-09-28
 DeskBell: RMCDeskBell
@@ -1474,11 +1474,11 @@ RMCSpawnPointSurvivorSolarisUNPeacekeeper: RMCSpawnPointSurvivorSolarisILRCPeace
 RMCSpawnPointSurvivorUNPeacekeeper: RMCSpawnPointSurvivorILRCPeacekeeper
 
 # 2026-2-1
-CMPosterZSPA1: RMCPosterTSEPA1
-CMPosterZSPA2: RMCPosterTSEPA2
-CMPosterZSPA3: RMCPosterTSEPA3
-RMCSpawnerERTShuttleZSPA: RMCSpawnerERTShuttleTSEPA
-RMCSpawnerShuttleZSPA: RMCSpawnerShuttleTSEPA
+CMPosterZSPA1: RMCPosterTWEPA1
+CMPosterZSPA2: RMCPosterTWEPA2
+CMPosterZSPA3: RMCPosterTWEPA3
+RMCSpawnerERTShuttleZSPA: RMCSpawnerERTShuttleTWEPA
+RMCSpawnerShuttleZSPA: RMCSpawnerShuttleTWEPA
 
 # 2026-02-05
 RMCWeaponSMGP90: RMCWeaponSMGPDW90

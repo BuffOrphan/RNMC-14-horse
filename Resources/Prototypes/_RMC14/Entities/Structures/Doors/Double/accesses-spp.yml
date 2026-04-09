@@ -1,7 +1,7 @@
 - type: entity
   parent: CMDoubleDoorSecurityGlassLocked
   id: RMCDoubleDoorSecuritySPPGlassLocked
-  suffix: SPP, Glass, Locked
+  suffix: UPP, Glass, Locked
   components:
   - type: AccessReader
     access: [ [ "RMCAccessSPPGeneral" ] ]
@@ -9,7 +9,7 @@
 - type: entity
   parent: CMAirlockSecurityLocked
   id: RMCAirlockSecuritySPPLocked
-  suffix: SPP, Solid, Locked
+  suffix: UPP, Solid, Locked
   components:
   - type: AccessReader
     access: [ [ "RMCAccessSPPGeneral" ] ]
@@ -17,7 +17,7 @@
 - type: entity
   parent: CMAirlockSecurityLocked
   id: RMCAirlockSecuritySPPSecLocked
-  suffix: SPP Security, Solid, Locked
+  suffix: UPP Security, Solid, Locked
   components:
   - type: AccessReader
     access: [ [ "RMCAccessSPPSecurity" ] ]
@@ -25,7 +25,7 @@
 - type: entity
   parent: CMAirlockSecure
   id: RMCAirlockSecureSPPSecLocked
-  suffix: SPP Security, Locked
+  suffix: UPP Security, Locked
   components:
   - type: AccessReader
     access: [ [ "RMCAccessSPPSecurity" ] ]

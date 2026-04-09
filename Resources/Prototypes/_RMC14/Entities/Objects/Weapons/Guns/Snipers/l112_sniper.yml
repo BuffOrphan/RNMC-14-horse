@@ -112,7 +112,7 @@
   id: RMCL112SniperRifleSuppressed
   name: L112A1 designated marksman rifle
   suffix: PVE, Suppressed
-  description: The L112A1 DMR, adopted by the TSE's Royal Crown Marines following a recognised need for long-range firepower on reconnaissance and covert operations and developed in tandem with the 7.7x56mmR HESH round.
+  description: The L112A1 DMR, adopted by the TWE's Royal Crown Marines following a recognised need for long-range firepower on reconnaissance and covert operations and developed in tandem with the 7.7x56mmR HESH round.
   components:
   - type: Tag
     tags:

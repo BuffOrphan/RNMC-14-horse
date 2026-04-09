@@ -454,21 +454,21 @@ entities:
     - type: Transform
       pos: 6.5,2.5
       parent: 1
-- proto: RMCERTShuttleWallTSE01
+- proto: RMCERTShuttleWallTWE01
   entities:
   - uid: 5
     components:
     - type: Transform
       pos: 1.5,0.5
       parent: 1
-- proto: RMCERTShuttleWallTSE03
+- proto: RMCERTShuttleWallTWE03
   entities:
   - uid: 47
     components:
     - type: Transform
       pos: 5.5,0.5
       parent: 1
-- proto: RMCERTShuttleWallTSE04
+- proto: RMCERTShuttleWallTWE04
   entities:
   - uid: 22
     components:
@@ -505,7 +505,7 @@ entities:
     - type: Transform
       pos: 2.5,12.5
       parent: 1
-- proto: RMCERTShuttleWallTSE05
+- proto: RMCERTShuttleWallTWE05
   entities:
   - uid: 3
     components:
@@ -547,28 +547,28 @@ entities:
     - type: Transform
       pos: 4.5,12.5
       parent: 1
-- proto: RMCERTShuttleWallTSE06
+- proto: RMCERTShuttleWallTWE06
   entities:
   - uid: 40
     components:
     - type: Transform
       pos: 1.5,3.5
       parent: 1
-- proto: RMCERTShuttleWallTSE07
+- proto: RMCERTShuttleWallTWE07
   entities:
   - uid: 50
     components:
     - type: Transform
       pos: 5.5,3.5
       parent: 1
-- proto: RMCERTShuttleWallTSE08
+- proto: RMCERTShuttleWallTWE08
   entities:
   - uid: 11
     components:
     - type: Transform
       pos: 0.5,4.5
       parent: 1
-- proto: RMCERTShuttleWallTSE09
+- proto: RMCERTShuttleWallTWE09
   entities:
   - uid: 4
     components:
@@ -585,7 +585,7 @@ entities:
     - type: Transform
       pos: 2.5,13.5
       parent: 1
-- proto: RMCERTShuttleWallTSE11
+- proto: RMCERTShuttleWallTWE11
   entities:
   - uid: 27
     components:
@@ -597,7 +597,7 @@ entities:
     - type: Transform
       pos: 1.5,7.5
       parent: 1
-- proto: RMCERTShuttleWallTSE12
+- proto: RMCERTShuttleWallTWE12
   entities:
   - uid: 33
     components:
@@ -609,7 +609,7 @@ entities:
     - type: Transform
       pos: 4.5,11.5
       parent: 1
-- proto: RMCERTShuttleWallTSE13
+- proto: RMCERTShuttleWallTWE13
   entities:
   - uid: 21
     components:
@@ -626,21 +626,21 @@ entities:
     - type: Transform
       pos: 4.5,13.5
       parent: 1
-- proto: RMCERTShuttleWallTSE14
+- proto: RMCERTShuttleWallTWE14
   entities:
   - uid: 45
     components:
     - type: Transform
       pos: 3.5,13.5
       parent: 1
-- proto: RMCERTShuttleWallTSEEngineLeft
+- proto: RMCERTShuttleWallTWEEngineLeft
   entities:
   - uid: 36
     components:
     - type: Transform
       pos: 0.5,3.5
       parent: 1
-- proto: RMCERTShuttleWallTSEEngineRight
+- proto: RMCERTShuttleWallTWEEngineRight
   entities:
   - uid: 37
     components:

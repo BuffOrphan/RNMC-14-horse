@@ -48,11 +48,11 @@
   - type: Sprite
     state: stripped_key
 
-# We-Ya
+# We-Yu
 - type: entity
   parent: CMEncryptionKey
   id: CMEncryptionKeyWEYA
-  name: we-ya encryption key
+  name: we-yu encryption key
   components:
   - type: EncryptionKey
     channels:
@@ -64,7 +64,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: CMEncryptionKeyWEYAColony
-  name: we-ya colony encryption key
+  name: we-yu colony encryption key
   components:
   - type: EncryptionKey
     channels:

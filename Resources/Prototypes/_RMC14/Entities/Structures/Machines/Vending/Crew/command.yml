@@ -55,11 +55,11 @@
         name: Falling Falcons UN shoulder patch
       - id: RMCPatchFallingFalconsLarge
         name: Falling Falcons large chest patch
-      - id: RMCPatchUNMC
+      - id: RMCPatchUSCM
       - id: RMCPatchUnitedNationsSquare
-        name: United Nations flag shoulder patch
+        name: United States flag shoulder patch
       - id: RMCPatchUnitedNations
-        name: United Nations shoulder patch
+        name: United States shoulder patch
     - name: Personal Sidearm
       choices: { CMWeapon: 1 }
       entries:
@@ -67,7 +67,7 @@
         name: MK80 pistol
         recommended: true
       - id: RMCM1984BeltFilled
-        name: M1984 service pistol
+        name: M1911 service pistol
         recommended: true
       - id: RMCM77BeltFilled
         name: M77 pistol
@@ -251,7 +251,7 @@
       takeOne: CMPrimary
       entries:
       - id: RMCM54CMK1CaseAP
-        name: M54C MK1 assault rifle
+        name: M41A MK1 assault rifle
       - id: RMCVendorBundleXOShotgun
     - name: Primary Ammunition
       entries:
@@ -431,7 +431,7 @@
   parent: ColMarTechBase
   id: ColMarTechCommandingOfficerEquipment
   name: ColMarTech Commanding Officer Equipment Rack
-  description: An automated equipment vendor for the Commanding Officer. Contains a prime selection of equipment for only the UNMC's top officers.
+  description: An automated equipment vendor for the Commanding Officer. Contains a prime selection of equipment for only the USCM's top officers.
   components:
   - type: AccessReader
     access:
@@ -537,11 +537,11 @@
         name: Falling Falcons UN shoulder patch
       - id: RMCPatchFallingFalconsLarge
         name: Falling Falcons large chest patch
-      - id: RMCPatchUNMC
+      - id: RMCPatchUSCM
       - id: RMCPatchUnitedNationsSquare
-        name: United Nations flag shoulder patch
+        name: United States flag shoulder patch
       - id: RMCPatchUnitedNations
-        name: United Nations shoulder patch
+        name: United States shoulder patch
 
 
 # Weapon Vend
@@ -549,7 +549,7 @@
   parent: ColMarTechBase
   id: ColMarTechCommandingOfficerWeapon
   name: ColMarTech Commanding Officer Weapon Rack
-  description: An automated weapons rack for the Commanding Officer. It features a robust selection of weaponry meant only for the UNMC's top officers.
+  description: An automated weapons rack for the Commanding Officer. It features a robust selection of weaponry meant only for the USCM's top officers.
   components:
   - type: AccessReader
     access:
@@ -694,12 +694,12 @@
 - type: entity
   parent: CMVendorBundleRiflemanApparel
   id: RMCVendorBundleXOShotgun
-  name: M890 tactical shotgun
-  description: Contains the M890 tactical shotgun and various shells.
+  name: M120 tactical shotgun
+  description: Contains the M120 tactical shotgun and various shells.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Weapons/Guns/Shotguns/m890.rsi
+    sprite: _RMC14/Objects/Weapons/Guns/Shotguns/m120.rsi
     state: icon
   - type: CMVendorBundle
     bundle:
@@ -772,7 +772,7 @@
         name: MK80 pistol
         recommended: true
       - id: RMCM1984BeltFilled
-        name: M1984 service pistol
+        name: M1911 service pistol
       - id: RMCM77BeltFilled
         name: M77 pistol
       - id: RMCM44BeltFilled
@@ -829,11 +829,11 @@
         name: Falling Falcons UN shoulder patch
       - id: RMCPatchFallingFalconsLarge
         name: Falling Falcons large chest patch
-      - id: RMCPatchUNMC
+      - id: RMCPatchUSCM
       - id: RMCPatchUnitedNationsSquare
-        name: United Nations flag shoulder patch
+        name: United States flag shoulder patch
       - id: RMCPatchUnitedNations
-        name: United Nations shoulder patch
+        name: United States shoulder patch
     - name: Pouches
       jobs:
       - CMExecutiveOfficer
@@ -954,11 +954,11 @@
         name: Falling Falcons UN shoulder patch
       - id: RMCPatchFallingFalconsLarge
         name: Falling Falcons large chest patch
-      - id: RMCPatchUNMC
+      - id: RMCPatchUSCM
       - id: RMCPatchUnitedNationsSquare
-        name: United Nations flag shoulder patch
+        name: United States flag shoulder patch
       - id: RMCPatchUnitedNations
-        name: United Nations shoulder patch
+        name: United States shoulder patch
     - name: Pouches
       jobs:
       - CMChiefMP
@@ -1088,11 +1088,11 @@
         name: Falling Falcons UN shoulder patch
       - id: RMCPatchFallingFalconsLarge
         name: Falling Falcons large chest patch
-      - id: RMCPatchUNMC
+      - id: RMCPatchUSCM
       - id: RMCPatchUnitedNationsSquare
-        name: United Nations flag shoulder patch
+        name: United States flag shoulder patch
       - id: RMCPatchUnitedNations
-        name: United Nations shoulder patch
+        name: United States shoulder patch
     - name: Pouches
       jobs:
       - CMChiefEngineer
@@ -1124,7 +1124,7 @@
       choices: { CMWeapon: 1 }
       entries:
       - id: RMCM1984BeltFilled
-        name: M1984 service pistol
+        name: M1911 service pistol
         recommended: true
       - id: RMCM77BeltFilled
         name: M77 pistol
@@ -1186,7 +1186,7 @@
       - id: RMCM42A2ShotgunCase
         name: M42A2 pump shotgun
       - id: RMCM54CMK2Case
-        name: M54C assault rifle MK2
+        name: M41A assault rifle MK2
       - id: RMCCaseFlamer
         name: M34 incinerator unit
     - name: Spare Equipment
@@ -1227,7 +1227,7 @@
       choices: { CMWeapon: 1 }
       entries:
       - id: RMCM1984BeltFilled
-        name: M1984 service pistol
+        name: M1911 service pistol
         recommended: true
       - id: RMCM77BeltFilled
         name: M77 pistol
@@ -1253,11 +1253,11 @@
         name: Falling Falcons UN shoulder patch
       - id: RMCPatchFallingFalconsLarge
         name: Falling Falcons large chest patch
-      - id: RMCPatchUNMC
+      - id: RMCPatchUSCM
       - id: RMCPatchUnitedNationsSquare
-        name: United Nations flag shoulder patch
+        name: United States flag shoulder patch
       - id: RMCPatchUnitedNations
-        name: United Nations shoulder patch
+        name: United States shoulder patch
     - name: Pouches
       jobs:
       - CMQuartermaster
@@ -1375,7 +1375,7 @@
       choices: { CMWeapon: 1 }
       entries:
       - id: RMCM1984BeltFilled
-        name: M1984 service pistol
+        name: M1911 service pistol
       - id: RMCM77BeltFilled
         name: M77 pistol
       - id: RMCM44BeltFilled
@@ -1400,11 +1400,11 @@
         name: Falling Falcons UN shoulder patch
       - id: RMCPatchFallingFalconsLarge
         name: Falling Falcons large chest patch
-      - id: RMCPatchUNMC
+      - id: RMCPatchUSCM
       - id: RMCPatchUnitedNationsSquare
-        name: United Nations flag shoulder patch
+        name: United States flag shoulder patch
       - id: RMCPatchUnitedNations
-        name: United Nations shoulder patch
+        name: United States shoulder patch
     - name: Pouches
       jobs:
       - CMCMO
@@ -1511,7 +1511,7 @@
       choices: { CMWeapon: 1 }
       entries:
       - id: RMCM1984BeltFilled
-        name: M1984 service pistol
+        name: M1911 service pistol
         recommended: true
       - id: RMCM77BeltFilled
         name: M77 pistol
@@ -1551,11 +1551,11 @@
         name: Falling Falcons UN shoulder patch
       - id: RMCPatchFallingFalconsLarge
         name: Falling Falcons large chest patch
-      - id: RMCPatchUNMC
+      - id: RMCPatchUSCM
       - id: RMCPatchUnitedNationsSquare
-        name: United Nations flag shoulder patch
+        name: United States flag shoulder patch
       - id: RMCPatchUnitedNations
-        name: United Nations shoulder patch
+        name: United States shoulder patch
     - name: Pouches
       jobs:
       - CMAuxiliarySupportOfficer

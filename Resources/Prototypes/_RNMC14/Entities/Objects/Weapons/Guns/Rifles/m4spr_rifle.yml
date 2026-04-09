@@ -1,8 +1,8 @@
 - type: entity
   parent: CMMagazineRifleM4SPR
   id: RNMCMagazineRifleM4SPRIncendiary
-  name: M4SPR incendiary magazine (10x24mm)
-  description: "A magazine of incendiary 10x24mm rounds for use in the M4SPR battle rifle."
+  name: M49A incendiary magazine (10x24mm)
+  description: "A magazine of incendiary 10x24mm rounds for use in the M49A battle rifle."
   suffix: Incendiary
   components:
   - type: Tag

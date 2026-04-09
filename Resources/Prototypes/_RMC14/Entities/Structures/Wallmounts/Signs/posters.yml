@@ -126,7 +126,7 @@
   parent: CMPosterBase
   id: CMPosterSilicon2
   name: "Silicon"
-  description: "Hey, Silicons! That's a blast from the past. They got bought out by We-Ya around the time one of their space stations de-orbited and fell into a planet's gravity well after a systems failure."
+  description: "Hey, Silicons! That's a blast from the past. They got bought out by We-Yu around the time one of their space stations de-orbited and fell into a planet's gravity well after a systems failure."
   components:
   - type: Sprite
     state: android
@@ -402,9 +402,9 @@
 
 - type: entity
   parent: CMPosterBase
-  id: CMPosterUNMC
-  name: UNMC Poster
-  description: "An old recruitment poster for the UNMC. Looking at it floods you with a mixture of pride and sincere regret."
+  id: CMPosterUSCM
+  name: USCM Poster
+  description: "An old recruitment poster for the USCM. Looking at it floods you with a mixture of pride and sincere regret."
   components:
   - type: Sprite
     sprite: _RMC14/Structures/decals.rsi
@@ -440,7 +440,7 @@
   parent: CMPosterBase
   id: CMPosterTartarus
   name: "Tartarus Mining co. poster"
-  description: "A simplified version of the Tartarus Mining co. logo. The Tartarus Mining Company is owned by Prospectia, a sub-division of the San Rei Corporation, which is in turn owned by the Weston-Yamada Corporation."
+  description: "A simplified version of the Tartarus Mining co. logo. The Tartarus Mining Company is owned by Prospectia, a sub-division of the San Rei Corporation, which is in turn owned by the Weyland-Yutani Corporation."
   components:
   - type: Sprite
     state: tartarus
@@ -662,12 +662,12 @@
   - type: Sprite
     state: safety_soap
 
-# Weston-Yamada
+# Weyland-Yutani
 - type: entity
   parent: CMPosterBase
   id: RMCPosterWEYA1
-  name: Weston-Yamada poster
-  description: "A Weston-Yamada logo featuring a stylized wireframe planet and the company slogan: The Future is Now."
+  name: Weyland-Yutani poster
+  description: "A Weyland-Yutani logo featuring a stylized wireframe planet and the company slogan: The Future is Now."
   components:
   - type: Sprite
     state: weya_1
@@ -675,7 +675,7 @@
 - type: entity
   parent: RMCPosterWEYA1
   id: RMCPosterWEYA2
-  name: "Weston-Yamada poster"
+  name: "Weyland-Yutani poster"
   description: "You don't have much choice in brand loyalty when there's basically only one brand."
   components:
   - type: Sprite
@@ -691,8 +691,8 @@
 - type: entity
   parent: RMCPosterWEYA1
   id: RMCPosterWEYA4
-  name: "Weston-Yamada propaganda poster"
-  description: "TOGETHER - EXTRASOLAR COLONIZATION - WEAPON - PROTECTION - HIGH TECHNOLOGY - MANUFACTURING SYNTHETICS - FUTURE - SPACE STATION. Weston-Yamada - The Future is Now."
+  name: "Weyland-Yutani propaganda poster"
+  description: "TOGETHER - EXTRASOLAR COLONIZATION - WEAPON - PROTECTION - HIGH TECHNOLOGY - MANUFACTURING SYNTHETICS - FUTURE - SPACE STATION. Weyland-Yutani - The Future is Now."
   components:
   - type: Sprite
     state: weya_4
@@ -700,7 +700,7 @@
 - type: entity
   parent: RMCPosterWEYA1
   id: RMCPosterWEYA5
-  name: "Weston-Yamada propaganda poster"
+  name: "Weyland-Yutani propaganda poster"
   description: "LET'S WORK - TOGETHER WE BUILD A BETTER FUTURE."
   components:
   - type: Sprite
@@ -728,8 +728,8 @@
 - type: entity
   parent: CMPosterDaniel1
   id: CMPosterDaniel3
-  name: "Weston-Yamada - 'Daniel' Model Synthetic poster"
-  description: "A poster depicting a child in the arms of a Weston-Yamada 'Daniel' model Synthetic, Who thought this was a good idea?"
+  name: "Weyland-Yutani - 'Daniel' Model Synthetic poster"
+  description: "A poster depicting a child in the arms of a Weyland-Yutani 'Daniel' model Synthetic, Who thought this was a good idea?"
   components:
   - type: Sprite
     state: daniel_3
@@ -755,8 +755,8 @@
 - type: entity
   parent: CMPosterDaniel1
   id: CMPosterDaniel6
-  name: "Weston-Yamada - 'Daniel' Model Synthetic poster"
-  description: "A poster depicting a child in the arms of a Weston-Yamada 'Daniel' model Synthetic, Who thought this was a good idea?"
+  name: "Weyland-Yutani - 'Daniel' Model Synthetic poster"
+  description: "A poster depicting a child in the arms of a Weyland-Yutani 'Daniel' model Synthetic, Who thought this was a good idea?"
   components:
   - type: Sprite
     state: daniel_6
@@ -764,13 +764,13 @@
 - type: entity
   parent: CMPosterDaniel1
   id: CMPosterDaniel7
-  name: "Weston-Yamada - 'Daniel' Model Synthetic poster"
+  name: "Weyland-Yutani - 'Daniel' Model Synthetic poster"
   description: "All that matters is YOUR comfort. Our Artificial Humans are watching your back."
   components:
   - type: Sprite
     state: daniel_7
 
-# UNMC Marine Corp
+# USCM Marine Corp
 - type: entity
   parent: CMPosterBase
   id: CMPosterMarineCorp1
@@ -811,7 +811,7 @@
   parent: CMPosterMarineCorp1
   id: CMPosterMarineCorp5
   name: "UN marine corp poster"
-  description: "YOU GIVE US WINGS, WINGS OF LIBERTY - United Nations Marine Corp."
+  description: "YOU GIVE US WINGS, WINGS OF LIBERTY - United States Marine Corp."
   components:
   - type: Sprite
     state: marine_corp_5
@@ -820,7 +820,7 @@
   parent: CMPosterMarineCorp1
   id: CMPosterMarineCorp6
   name: "UN marine corp poster"
-  description: "UNMC MARINES - FIRST TO FIGHT."
+  description: "USCM MARINES - FIRST TO FIGHT."
   components:
   - type: Sprite
     state: marine_corp_6
@@ -829,7 +829,7 @@
   parent: CMPosterMarineCorp1
   id: CMPosterMarineCorp7
   name: "UN marine corp poster"
-  description: "No one stands alone with the United Nations Marine Corp - JOIN US!"
+  description: "No one stands alone with the United States Marine Corp - JOIN US!"
   components:
   - type: Sprite
     state: marine_corp_7
@@ -838,45 +838,45 @@
   parent: CMPosterMarineCorp1
   id: CMPosterFORECON
   name: "UN marine corp poster"
-  description: "Join the elite 'Recon Division of the United Nations Marine Corps', and become the unseen force that strikes fear into the hearts of our enemies. Harness your instinct, adaptability, and unwavering focus as you navigate hostile territories on distant planets."
+  description: "Join the elite 'Recon Division of the United States Marine Corps', and become the unseen force that strikes fear into the hearts of our enemies. Harness your instinct, adaptability, and unwavering focus as you navigate hostile territories on distant planets."
   components:
   - type: Sprite
     state: forecon
 
-# TSEPA
+# TWEPA
 - type: entity
   parent: CMPosterBase
-  id: RMCPosterTSEPA1
-  name: "TSEPA poster"
-  description: "A recruitment poster for the TSEPA. Integrity, Justice, Unity. Together, We Keep the Peace."
+  id: RMCPosterTWEPA1
+  name: "TWEPA poster"
+  description: "A recruitment poster for the TWEPA. Integrity, Justice, Unity. Together, We Keep the Peace."
   components:
   - type: Sprite
     state: ZSPA_1
 
 - type: entity
-  parent: RMCPosterTSEPA1
-  id: RMCPosterTSEPA2
-  name: "TSEPA poster"
-  description: "A recruitment poster for the TSEPA. Serve with Honor, Protect with Strength."
+  parent: RMCPosterTWEPA1
+  id: RMCPosterTWEPA2
+  name: "TWEPA poster"
+  description: "A recruitment poster for the TWEPA. Serve with Honor, Protect with Strength."
   components:
   - type: Sprite
     state: ZSPA_2
 
 - type: entity
-  parent: RMCPosterTSEPA1
-  id: RMCPosterTSEPA3
-  name: "TSEPA poster"
-  description: "A recruitment poster for the TSEPA. One Law, One Duty, One Force. Join the TSEPA."
+  parent: RMCPosterTWEPA1
+  id: RMCPosterTWEPA3
+  name: "TWEPA poster"
+  description: "A recruitment poster for the TWEPA. One Law, One Duty, One Force. Join the TWEPA."
   components:
   - type: Sprite
     state: ZSPA_3
 
-# SPP
+# UPP
 - type: entity
   parent: CMPosterBase
   id: CMPosterSPP1
   name: "The Stars Are Ours"
-  description: "A giant man wearing an EVA suit holds fast with a waving flag of the SPP."
+  description: "A giant man wearing an EVA suit holds fast with a waving flag of the UPP."
   components:
   - type: Sprite
     state: SPP_1
@@ -885,7 +885,7 @@
   parent: CMPosterSPP1
   id: CMPosterSPP2
   name: "The Stars Are Ours"
-  description: "A stylized depiction of the SPP home system and the stars"
+  description: "A stylized depiction of the UPP home system and the stars"
   components:
   - type: Sprite
     state: SPP_2
@@ -894,7 +894,7 @@
   parent: CMPosterSPP1
   id: CMPosterSPP3
   name: "Trust In The Strength Of The Union"
-  description: "A stylized depiction of the SPP star."
+  description: "A stylized depiction of the UPP star."
   components:
   - type: Sprite
     state: SPP_3
@@ -903,7 +903,7 @@
   parent: CMPosterSPP1
   id: CMPosterSPP4
   name: "Through The Union Our Power Is Secured"
-  description: "A stylized depiction of the SPP's flag and the words, 'Our Unity is the dream of all Peoples. Trust in the strength of their Union.'"
+  description: "A stylized depiction of the UPP's flag and the words, 'Our Unity is the dream of all Peoples. Trust in the strength of their Union.'"
   components:
   - type: Sprite
     state: SPP_4
@@ -921,7 +921,7 @@
   parent: CMPosterSPP1
   id: CMPosterSPP6
   name: "Our Militaries Secures Our Future"
-  description: "A SPPAC Ground Forces soldier stands, rifle at the ready with a defiant and steel-eyed look on his face. The SPP star is in the background."
+  description: "A SPPAC Ground Forces soldier stands, rifle at the ready with a defiant and steel-eyed look on his face. The UPP star is in the background."
   components:
   - type: Sprite
     state: SPP_6
@@ -948,7 +948,7 @@
   parent: CMPosterSPP1
   id: CMPosterSPP9
   name: "Ever Vigilant Against Capitalist Forces"
-  description: "A warped screaming eagle made to look like a vulture bears its talons over the SPP homeworld which has the SPP roundel super-imposed over it. The poster reads, 'The UN will not break the resolve of the people.'"
+  description: "A warped screaming eagle made to look like a vulture bears its talons over the UPP homeworld which has the UPP roundel super-imposed over it. The poster reads, 'The UN will not break the resolve of the people.'"
   components:
   - type: Sprite
     state: SPP_9
@@ -957,7 +957,7 @@
   parent: CMPosterSPP1
   id: CMPosterSPP10
   name: "Ever Vigilant Against The Stooges of Capitalism and Imperialism"
-  description: "A decrepit and desiccated, near claw-like hand reaches towards a stylized solar star shaped into the SPP star. The poster reads, 'Even in its death throes, we must remain vigilant of the encroachment of capitalist forces.'"
+  description: "A decrepit and desiccated, near claw-like hand reaches towards a stylized solar star shaped into the UPP star. The poster reads, 'Even in its death throes, we must remain vigilant of the encroachment of capitalist forces.'"
   components:
   - type: Sprite
     state: SPP_10
@@ -966,7 +966,7 @@
   parent: CMPosterSPP1
   id: CMPosterSPP11
   name: "The Stars Are Ours"
-  description: "A giant man wearing an EVA suit holds fast with a waving flag of the SPP."
+  description: "A giant man wearing an EVA suit holds fast with a waving flag of the UPP."
   components:
   - type: Sprite
     state: SPP_11
@@ -975,7 +975,7 @@
   parent: CMPosterSPP1
   id: CMPosterSPP12
   name: "The Stars Are Ours"
-  description: "A stylized depiction of the SPP home system and the stars"
+  description: "A stylized depiction of the UPP home system and the stars"
   components:
   - type: Sprite
     state: SPP_12

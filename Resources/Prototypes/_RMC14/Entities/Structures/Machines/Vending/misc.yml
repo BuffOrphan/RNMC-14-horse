@@ -121,11 +121,11 @@
         box: RMCBoxShotgunSlugs
         boxAmount: 4
       - id: RMCBoxBulletsRifle
-        name: rifle ammunition box (10x24mm) (M4SPR)
+        name: rifle ammunition box (10x24mm) (M49A)
         box: CMMagazineRifleM4SPR
         boxSlots: 24 # 600 / 25
       - id: RMCBoxBulletsRifle
-        name: rifle ammunition box (10x24mm) (M54C)
+        name: rifle ammunition box (10x24mm) (M41A)
         box: CMMagazineRifleM54C
         boxSlots: 15 # 600 / 40
       - id: RMCBoxBulletsSMG
@@ -136,10 +136,10 @@
       hasBoxes: true
       entries:
       - id: RMCBoxMagazineRifleM4SPR
-        name: Magazine Box (M4SPR x 16)
+        name: Magazine Box (M49A x 16)
         box: CMMagazineRifleM4SPR
       - id: RMCBoxMagazineRifleM54C
-        name: Magazine Box (M54C x 10)
+        name: Magazine Box (M41A x 10)
         box: CMMagazineRifleM54C
       - id: RMCBoxMagazineSMGM63
         name: Magazine Box (M63 x 12)
@@ -148,7 +148,7 @@
         name: Magazine Box (M44 x 16)
         box: RMCSpeedLoaderM44
       - id: RMCBoxMagazinePistolM1984
-        name: Magazine Box (M1984 x 16)
+        name: Magazine Box (M1911 x 16)
         box: CMMagazinePistolM1984
 #      - name: Magazine Box (M56D x 8)
 #        box: CMMagazineSMGM63

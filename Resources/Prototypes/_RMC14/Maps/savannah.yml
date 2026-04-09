@@ -8,7 +8,7 @@
   randomRotation: false
   stations:
     Savannah:
-      stationProto: StandardUNMCWarship
+      stationProto: StandardUSCMWarship
       components:
         - type: StationNameSetup
           mapNameTemplate: 'LCS-14 Savannah'

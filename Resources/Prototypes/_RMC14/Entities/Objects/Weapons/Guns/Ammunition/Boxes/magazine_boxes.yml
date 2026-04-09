@@ -342,11 +342,11 @@
 
 # -- RIFLE BOXES --
 
-# M54C REG
+# M41A REG
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleM54CEmpty
-  name: magazine box (M54C x 10)
+  name: magazine box (M41A x 10)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -390,11 +390,11 @@
         tags:
         - CMMagazineRifleM54C
 
-# M54C AP
+# M41A AP
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleM54CAPEmpty
-  name: magazine box (AP M54C x 10)
+  name: magazine box (AP M41A x 10)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -438,11 +438,11 @@
         tags:
         - CMMagazineRifleM54CAP
 
-# M54C EXT
+# M41A EXT
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleM54CExtEmpty
-  name: magazine box (Ext M54C x 8)
+  name: magazine box (Ext M41A x 8)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -486,11 +486,11 @@
         tags:
         - CMMagazineRifleM54CExt
 
-# M4SPR REG
+# M49A REG
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleM4SPREmpty
-  name: magazine box (M4SPR x 16)
+  name: magazine box (M49A x 16)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -534,11 +534,11 @@
         tags:
         - CMMagazineRifleM4SPR
 
-# M4SPR AP
+# M49A AP
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleM4SPRAPEmpty
-  name: magazine box (AP M4SPR x 16)
+  name: magazine box (AP M49A x 16)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -582,11 +582,11 @@
         tags:
         - CMMagazineRifleM4SPRAP
 
-# M4SPR EXT
+# M49A EXT
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleM4SPRExtEmpty
-  name: magazine box (Ext M4SPR x 12)
+  name: magazine box (Ext M49A x 12)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -1985,11 +1985,11 @@
 
 # -- PISTOL BOXES --
 
-# M1984 REG
+# M1911 REG
 - type: entity
   parent: RMCBoxMagazinePistolBase
   id: RMCBoxMagazinePistolM1984Empty
-  name: magazine box (M1984 x 16)
+  name: magazine box (M1911 x 16)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -2031,11 +2031,11 @@
         tags:
         - CMMagazinePistolM1984
 
-# M1984 AP
+# M1911 AP
 - type: entity
   parent: RMCBoxMagazinePistolBase
   id: RMCBoxMagazinePistolM1984APEmpty
-  name: magazine box (AP M1984 x 16)
+  name: magazine box (AP M1911 x 16)
   components:
   - type: Construction
     graph: RMCBoxMagazine

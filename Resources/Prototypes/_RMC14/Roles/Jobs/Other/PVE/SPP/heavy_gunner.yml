@@ -1,8 +1,8 @@
 - type: job
   parent: CMJobBase
   id: RMCSPPHeavyGunnerPVE
-  name: rmc-job-name-spp-gunner
-  description: rmc-job-description-spp-gunner-pve
+  name: rmc-job-name-upp-gunner
+  description: rmc-job-description-upp-gunner-pve
   playTimeTracker: RMCJobSPPHeavyGunnerPVE
   ranks:
     RMCRankSPPMladshiySerzhant: []
@@ -11,18 +11,18 @@
   joinNotifyCrew: false
   accessGroups:
   - SmartGunOperator
-  spawnMenuRoleName: SPP Heavy Gunner (PVE)
+  spawnMenuRoleName: UPP Heavy Gunner (PVE)
   special:
   - !type:AddComponentSpecial
     components:
     - type: NpcFactionMember
       factions:
-      - SPP
+      - UPP
     - type: Skills
       preset: RMCSkillPresetPVESGO
     - type: SquadArmorWearer
     - type: JobPrefix
-      prefix: rmc-job-prefix-spp-gunner
+      prefix: rmc-job-prefix-upp-gunner
     - type: AssignSquad
       whitelist:
         tags:
@@ -37,7 +37,7 @@
 - type: entity
   parent: CMSpawnPointJobBase
   id: RMCSpawnPointSPPGunnerPVE
-  name: spp heavy gunner spawn point
+  name: upp heavy gunner spawn point
   suffix: PVE
   components:
   - type: SpawnPoint

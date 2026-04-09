@@ -25,7 +25,7 @@
     - type: RMCAllowSuitStorage
     - type: NpcFactionMember
       factions:
-      - UNMC
+      - USCM
       - Civilian
     - type: TacticalMapIcon
       icon:

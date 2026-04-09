@@ -21,7 +21,7 @@
     capacity: 99999
   - type: NpcFactionMember
     factions:
-    - UNMC
+    - USCM
   - type: MarineIFF
   - type: Damageable
     damageContainer: Inorganic

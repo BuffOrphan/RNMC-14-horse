@@ -2,7 +2,7 @@
   parent: RMCBaseMobSpeciesOrganic
   id: RMCTrainingDummy
   name: training dummy
-  description: A training dummy used by the UNMC to simulate a humanoid body. Feels almost too lifelike.
+  description: A training dummy used by the USCM to simulate a humanoid body. Feels almost too lifelike.
   suffix: RMC14
   components:
   - type: Loadout

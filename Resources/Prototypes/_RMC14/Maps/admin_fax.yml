@@ -1,13 +1,13 @@
 - type: gameMap
   id: RMCAdminFax
-  mapName: We-Ya Office
+  mapName: We-Yu Office
   mapPath: /Maps/_RMC14/admin_fax.yml
   minPlayers: 10
   maxRandomOffset: 0
   randomRotation: false
   stations:
     AdminFax:
-      stationProto: UNMCHighCommand
+      stationProto: USCMHighCommand
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'We-Ya Office'
+          mapNameTemplate: 'We-Yu Office'

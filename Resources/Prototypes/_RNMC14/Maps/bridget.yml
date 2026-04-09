@@ -8,7 +8,7 @@
   randomRotation: false
   stations:
     Bridget:
-      stationProto: StandardUNMCWarship
+      stationProto: StandardUSCMWarship
       components:
       - type: StationNameSetup
         mapNameTemplate: 'UNS Colonel Bridget'

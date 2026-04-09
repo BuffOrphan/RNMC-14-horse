@@ -1,13 +1,13 @@
 ﻿- type: entity
   parent: [ RMCBaseWeaponShotgun, RMCBaseAttachableHolder ]
-  name: M890 tactical shotgun
+  name: M120 tactical shotgun
   id: WeaponShotgunM890
-  description: The Weston-Yamada M890 Shotgun, a semi-automatic shotgun with a quick fire rate.
+  description: The Weyland-Yutani M120 Shotgun, a semi-automatic shotgun with a quick fire rate.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Weapons/Guns/Shotguns/m890.rsi
+    sprite: _RMC14/Objects/Weapons/Guns/Shotguns/m120.rsi
   - type: Clothing
-    sprite: _RMC14/Objects/Weapons/Guns/Shotguns/m890.rsi
+    sprite: _RMC14/Objects/Weapons/Guns/Shotguns/m120.rsi
   - type: Gun
     shotsPerBurst: 1
     fireRate: 2 # RNMC

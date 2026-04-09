@@ -40,7 +40,7 @@
     outerClothing: RMCJacketWindbreakerBrown
     eyes: RMCGlassesAviators
     back: RMCSatchelFlightOperatorFill
-    head: RMCHeadUNMCHeadset
+    head: RMCHeadUSCMHeadset
     shoes: RMCShoesLaceup
 
 - type: entity

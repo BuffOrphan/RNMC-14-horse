@@ -39981,7 +39981,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -23.5,-16.5
       parent: 1
-- proto: RMCArmourM4TSEPA
+- proto: RMCArmourM4TWEPA
   entities:
   - uid: 3890
     components:
@@ -54334,7 +54334,7 @@ entities:
     - type: Transform
       pos: -7.5,33.5
       parent: 1
-- proto: RMCVendorSecTSEPA
+- proto: RMCVendorSecTWEPA
   entities:
   - uid: 3839
     components:

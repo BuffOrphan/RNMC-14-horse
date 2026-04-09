@@ -142,7 +142,7 @@
 - type: entity
   parent: CMIDCardLiaisonColony
   id: RMCIDCardWeYaCorporateSecurity
-  name: we-ya corporate security ID card
+  name: we-yu corporate security ID card
   components:
   - type: PresetIdCard
     job: CMSurvivorGoon

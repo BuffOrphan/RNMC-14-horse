@@ -59034,7 +59034,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 80.5,-4.5
       parent: 1
-- proto: RMCCalendarUNMC
+- proto: RMCCalendarUSCM
   entities:
   - uid: 7917
     components:
@@ -63823,7 +63823,7 @@ entities:
     - type: Transform
       pos: -29.504484,-17.082188
       parent: 1
-- proto: RMCFlagCarriableUNMC
+- proto: RMCFlagCarriableUSCM
   entities:
   - uid: 8700
     components:

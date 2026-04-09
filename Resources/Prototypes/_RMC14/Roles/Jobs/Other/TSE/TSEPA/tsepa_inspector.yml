@@ -1,17 +1,17 @@
-# TSEPA Inspector
+# TWEPA Inspector
 - type: job
   parent: CMJobBase
-  id: RMCTSEPAInspector
+  id: RMCTWEPAInspector
   name: rmc-job-name-tsepa-inspector
   description: rmc-job-description-tsepa-inspector
-  playTimeTracker: RMCJobTSEPAInspector
+  playTimeTracker: RMCJobTWEPAInspector
   ranks:
-    RMCRankTSEPAInspector: []
-  startingGear: RMCGearTSEPAInspector
-  icon: "RMCJobIconTSEPAInspector"
+    RMCRankTWEPAInspector: []
+  startingGear: RMCGearTWEPAInspector
+  icon: "RMCJobIconTWEPAInspector"
   joinNotifyCrew: false
   accessGroups:
-  - ColonistTSEPAInspector
+  - ColonistTWEPAInspector
   special:
   - !type:AddComponentSpecial
     components:
@@ -30,7 +30,7 @@
     - type: MarineOrders
     - type: NpcFactionMember
       factions:
-      - TSE
+      - TWE
     - type: RMCPointing
     - type: CommandAccent
     - type: JobPrefix
@@ -39,24 +39,24 @@
   hidden: true
 
 - type: startingGear
-  id: RMCGearTSEPAInspector
+  id: RMCGearTWEPAInspector
   equipment:
-    head: RMCHeadCapTSEPAPeaked
-    ears: RMCHeadsetTSEPA
-    jumpsuit: RMCJumpsuitTSEPA
+    head: RMCHeadCapTWEPAPeaked
+    ears: RMCHeadsetTWEPA
+    jumpsuit: RMCJumpsuitTWEPA
     gloves: RMCHandsVeteran
     shoes: CMBootsBlackFilled
-    id: RMCIDCardTSEPAGold
+    id: RMCIDCardTWEPAGold
     belt: RMCBeltHolsterRevolverSpearheadFill
-    back: RMCSatchelTSEPA
+    back: RMCSatchelTWEPA
 
 - type: entity
   parent: CMSpawnPointJobBase
-  id: RMCSpawnPointTSEPAInspector
+  id: RMCSpawnPointTWEPAInspector
   name: tsepa inspector spawn point
   components:
   - type: SpawnPoint
-    job_id: RMCTSEPAInspector
+    job_id: RMCTWEPAInspector
   - type: Sprite
     layers:
     - sprite: Markers/jobs.rsi
@@ -65,12 +65,12 @@
       state: icon
 
 - type: playTimeTracker
-  id: RMCJobTSEPAInspector
+  id: RMCJobTWEPAInspector
   isHumanoid: true
 
 - type: jobIcon
   parent: CMJobIconBase
-  id: RMCJobIconTSEPAInspector
+  id: RMCJobIconTWEPAInspector
   icon:
     sprite: _RMC14/Interface/cm_job_icons.rsi
     state: tse_painspector

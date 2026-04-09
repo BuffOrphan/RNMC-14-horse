@@ -42,7 +42,7 @@
     - RMCGuideRoleMaintenanceTechnician
 
 - type: entity
-  parent: RMCHeadsetIconsUNMC
+  parent: RMCHeadsetIconsUSCM
   id: RMCHeadsetShip
   name: marine radio headset
   description: A standard military radio headset. Bulkier than combat models.
@@ -402,7 +402,7 @@
       - RMCEncryptionKeyLiaison
   - type: GrantMarineIcons
     factions:
-    - UNMC
+    - USCM
     - WeYa
   - type: GrantSquadLeaderTracker
     defaultMode: DirectorPmc
@@ -449,7 +449,7 @@
 - type: entity
   parent: RMCHeadsetShip
   id: CMHeadsetHighCommand
-  name: UNMC high command headset
+  name: USCM high command headset
   description: Issued only to high command staff.
   components:
   - type: Sprite
@@ -503,7 +503,7 @@
   parent: CMHeadsetSeniorCommand
   id: RMCHeadsetSynth
   name: marine synth headset
-  description: Issued only to UNMC synthetics.
+  description: Issued only to USCM synthetics.
   components:
   - type: Sprite
     state: ms_headset

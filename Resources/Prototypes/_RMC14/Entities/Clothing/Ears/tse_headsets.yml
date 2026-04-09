@@ -1,5 +1,5 @@
 ﻿- type: radioChannel
-  id: TSE
+  id: TWE
   name: chat-radio-tse
   keycode: "'" # I hate this
   frequency: 1551
@@ -9,55 +9,55 @@
 
 - type: entity
   parent: CMEncryptionKey
-  id: RMCEncryptionKeyTSE
-  name: TSE radio encryption key
+  id: RMCEncryptionKeyTWE
+  name: TWE radio encryption key
   components:
   - type: Sprite
     state: cmp_key
   - type: EncryptionKey
     channels:
-    - TSE
-    defaultChannel: TSE
+    - TWE
+    defaultChannel: TWE
 
 - type: entity
-  parent: RMCEncryptionKeyTSE
-  id: RMCEncryptionKeyTSEPA
-  name: TSEPA radio encryption key
+  parent: RMCEncryptionKeyTWE
+  id: RMCEncryptionKeyTWEPA
+  name: TWEPA radio encryption key
   components:
   - type: EncryptionKey
     channels:
-    - TSE
+    - TWE
     - Colony
-    defaultChannel: TSE
+    defaultChannel: TWE
 
 - type: entity
   abstract: true
-  parent: RMCHeadsetIconsTSE
-  id: RMCHeadsetTSEAbstract
+  parent: RMCHeadsetIconsTWE
+  id: RMCHeadsetTWEAbstract
   components:
   - type: GrantSquadLeaderTracker
-    defaultMode: InspectorTSEPA
+    defaultMode: InspectorTWEPA
     trackerModes:
-    - InspectorTSEPA
-    - SeniorConstableTSEPA
+    - InspectorTWEPA
+    - SeniorConstableTWEPA
   - type: GrantTacMapAlert
 
 - type: entity
-  parent: RMCHeadsetTSEAbstract
-  id: RMCHeadsetTSE
-  name: TSE headset
+  parent: RMCHeadsetTWEAbstract
+  id: RMCHeadsetTWE
+  name: TWE headset
   components:
   - type: ContainerFill
     containers:
       key_slots:
-      - RMCEncryptionKeyTSE
+      - RMCEncryptionKeyTWE
 
 - type: entity
-  parent: RMCHeadsetTSEAbstract
-  id: RMCHeadsetTSEPA
-  name: TSEPA headset
+  parent: RMCHeadsetTWEAbstract
+  id: RMCHeadsetTWEPA
+  name: TWEPA headset
   components:
   - type: ContainerFill
     containers:
       key_slots:
-      - RMCEncryptionKeyTSEPA
+      - RMCEncryptionKeyTWEPA

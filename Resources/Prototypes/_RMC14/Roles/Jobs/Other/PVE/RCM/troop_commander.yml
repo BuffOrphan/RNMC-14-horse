@@ -9,7 +9,7 @@
       role: CMJobExecutiveOfficer
       time: 10800 # 3 hours
   ranks:
-    RMCRankTSESecondLieutenant: [ ]
+    RMCRankTWESecondLieutenant: [ ]
   startingGear: RMCGearRoyalTroopCommanderPVE
   icon: "RMCJobIconRoyalTroopCommanderPVE"
   joinNotifyCrew: false
@@ -23,7 +23,7 @@
     - type: NpcFactionMember
       factions:
       - RoyalMarines
-      - TSE
+      - TWE
     - type: Skills
       skills:
         RMCSkillConstruction: 1

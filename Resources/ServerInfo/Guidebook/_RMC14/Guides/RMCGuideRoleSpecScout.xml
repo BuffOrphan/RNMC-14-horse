@@ -4,8 +4,8 @@
   ## Eyes on the Enemy, Precision Fire
   Difficulty: [color=#FF8C00]Hard[/color]
 
-  The Scout Specialist serves as the UNMC’s silent edge, adept at penetrating enemy lines, gathering critical battlefield intelligence, and executing precise takedowns of high-value targets.
-  Utilizing the advanced M68 Thermal Cloak for stealth and the versatile M4SPR Custom Battle Rifle for decisive engagements, the Scout provides unparalleled reconnaissance and surgical strike capabilities.
+  The Scout Specialist serves as the USCM’s silent edge, adept at penetrating enemy lines, gathering critical battlefield intelligence, and executing precise takedowns of high-value targets.
+  Utilizing the advanced M68 Thermal Cloak for stealth and the versatile M49A Custom Battle Rifle for decisive engagements, the Scout provides unparalleled reconnaissance and surgical strike capabilities.
 
   ## Standard Issue Kit
   The Scout deploys equipped with the following important equipment:
@@ -27,16 +27,16 @@
   - You [bold]can perform melee actions[/bold] (e.g stabbing with your combat knife) on critically wounded Xenonids while cloaked.
   - You [bold]can laze targets[/bold] for Close Air Support (CAS) or Orbital Bombardment (OB).
 
-  ### M4SPR Custom Battle Rifle: The Surgical Tool
+  ### M49A Custom Battle Rifle: The Surgical Tool
   <GuideEntityEmbed Entity="WeaponRifleM4SPRCustom" HorizontalAlignment="Left"/>
-  While not necessarily the highest raw damage dealer, the M4SPR Custom Battle Rifle is prized for its accuracy, versatility, and crippling effects. Its unique ammo and attachment compatibility allow for tailored performance.
+  While not necessarily the highest raw damage dealer, the M49A Custom Battle Rifle is prized for its accuracy, versatility, and crippling effects. Its unique ammo and attachment compatibility allow for tailored performance.
 
   <Box>[bold]Ammunition Types[/bold]:</Box>
   <Box>[bold]HV Standard [/bold]: [color=#ADD8E6]Most accurate[/color], with high Armor Piercing capability, for general precision work and consistent damage.</Box>
   <Box>[bold]HV Impact [/bold]: [color=#FFFF00]Knocks down targets[/color] (effective up to Tier 2 Xenonids), excellent for disruption, halting charges, and creating follow-up opportunities.</Box>
   <Box>[bold]HV Incendiary [/bold]: [color=#FFA500]Ignites targets[/color], causing damage over time, useful for securing kills on fleeing targets or forcing enemies to disengage/relocate. [italic]Ineffective against flame-immune targets like Queens/Ravagers[/italic].</Box>
-  -   [bold]Crippling Shots[/bold]: Hits from the M4SPR tend to severely damage targets. This makes it exceptionally effective against agile or dangerous foes, even if it doesn't kill them outright in one shot. [color=#FFD700]Mind your fire discipline; friendly fire with this weapon is devastating.[/color]
-  -   [bold]Ammunition Economy[/bold]: Specialized M4SPR ammunition is scarce and costly. Reserve it for targets where its unique effects are most impactful (e.g. high-priority Xenos, dangerous enemy specialists). Use your secondary for lesser threats.
+  -   [bold]Crippling Shots[/bold]: Hits from the M49A tend to severely damage targets. This makes it exceptionally effective against agile or dangerous foes, even if it doesn't kill them outright in one shot. [color=#FFD700]Mind your fire discipline; friendly fire with this weapon is devastating.[/color]
+  -   [bold]Ammunition Economy[/bold]: Specialized M49A ammunition is scarce and costly. Reserve it for targets where its unique effects are most impactful (e.g. high-priority Xenos, dangerous enemy specialists). Use your secondary for lesser threats.
 
   ## Gameplay: The Art of Recon
 
@@ -60,7 +60,7 @@
 
   <Box>Tag, You're It, and On Fire!</Box>
   This isn't about instant kills, but about being an absolute persistent nuisance, especially to lone Xenos or small, vulnerable groups.
-   - Make sure you've got those HV Incendiary rounds ready. A suppressor on your M4SPR is your best friend here.
+   - Make sure you've got those HV Incendiary rounds ready. A suppressor on your M49A is your best friend here.
    - Cloak, get close (but not *too* close) to an isolated Xeno or a small group that's a bit separated. De-cloak just long enough to pop one or two incendiary rounds into a target, then immediately re-cloak and *move* Don't stick around to admire your handiwork from that spot.
    - The Xeno is now on fire, taking damage over time, and probably a bit panicked. They might try to roll, or they might just be annoyed and easier for your frontline to deal with.
    - Find a new angle, a new target, or even the same target if they haven't learned their lesson. The key is to be unpredictable and not give them a consistent spot to hunt you down. This tactic is great for softening up patrols or making lone flankers regret their life choices without you having to commit to a full-on firefight. It's psychological warfare with a fiery bonus.
@@ -78,8 +78,8 @@
   -   [color=#00FF00] Before any risky maneuver, identify multiple escape routes. What's Plan B if a Crusher decides to say hello? Mentally rehearse what you'll do if discovered. Your agility and cloak are for survival, not just infiltration.[/color]
 
   <Box>[bold]Shooting Flies with a Cannon (Ammo Mismanagement)[/bold]:</Box>
-  -   [color=#FF0000]Dumping your precious Impact or Incendiary rounds from the M4SPR into a lone, already-dying Drone[/color]
-  -   [color=#00FF00] Treat your M4SPR ammo as a precious resource. Use it for HVTs, targets requiring specific debuffs, or when its precision is absolutely necessary. Rely on your secondary for lesser engagements.[/color]
+  -   [color=#FF0000]Dumping your precious Impact or Incendiary rounds from the M49A into a lone, already-dying Drone[/color]
+  -   [color=#00FF00] Treat your M49A ammo as a precious resource. Use it for HVTs, targets requiring specific debuffs, or when its precision is absolutely necessary. Rely on your secondary for lesser engagements.[/color]
 
   <Box>[bold]The Silent Treatment (But Not in a Good Way)[/bold]:</Box>
   -   [color=#FF0000]You spot the Queen, three Crushers, and a party bus full of Warriors heading for the FOB... and you tell no one. Or you call in an OB right on top of your buddies.[/color]

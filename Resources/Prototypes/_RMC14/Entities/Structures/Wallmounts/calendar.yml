@@ -45,11 +45,11 @@
 
 - type: entity
   parent: RMCCalendarBase
-  id: RMCCalendarUNMC
-  suffix: UNMC
+  id: RMCCalendarUSCM
+  suffix: USCM
   components:
   - type: Sprite
-    state: calendar_unmc
+    state: calendar_uscm
 
 - type: entity
   parent: RMCCalendarBase
@@ -62,7 +62,7 @@
 - type: entity
   parent: RMCCalendarBase
   id: RMCCalendarSPP
-  suffix: SPP
+  suffix: UPP
   components:
   - type: Sprite
     state: calendar_spp

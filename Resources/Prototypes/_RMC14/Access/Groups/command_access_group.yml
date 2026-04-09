@@ -38,9 +38,9 @@
   - CMAccessSpecPrep # weapons specialist
   - CMAccessSquadLeaderPrep # squad leader access
   - CMAccessMarineRifleman # this access is used for the basic vendor, which only the rifleman can use.
-  - RMCAccessTSEPAInspector # tsepa inspector
-  - RMCAccessTSEPABrig # tsepa brig / senior constables
-  - RMCAccessTSEPA # tsepa
+  - RMCAccessTWEPAInspector # tsepa inspector
+  - RMCAccessTWEPABrig # tsepa brig / senior constables
+  - RMCAccessTWEPA # tsepa
   - RMCAccessDatabase
   - RMCAccessSeniorCommand
 
@@ -84,9 +84,9 @@
   - CMAccessSpecPrep # weapons specialist
   - CMAccessSquadLeaderPrep # squad leader access
   - CMAccessMarineRifleman # this access is used for the basic vendor, which only the rifleman can use.
-  - RMCAccessTSEPAInspector # tsepa inspector
-  - RMCAccessTSEPABrig # tsepa brig / senior constables
-  - RMCAccessTSEPA # tsepa
+  - RMCAccessTWEPAInspector # tsepa inspector
+  - RMCAccessTWEPABrig # tsepa brig / senior constables
+  - RMCAccessTWEPA # tsepa
   - RMCAccessDatabase
   - RMCAccessSeniorCommand
 
@@ -193,7 +193,7 @@
   tags:
   - CMAccessCorp
 
-# UNMC Synth access
+# USCM Synth access
 - type: accessGroup
   id: Synth
   parent: RMCBaseMiscellaneousJob

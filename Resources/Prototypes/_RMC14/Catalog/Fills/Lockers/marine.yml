@@ -29,8 +29,8 @@
     - id: RMCScabbardMacheteSGFilled
 
 - type: entityTable
-  id: RMCClosetTSEPAFill
+  id: RMCClosetTWEPAFill
   table: !type:AllSelector
     children:
-    - id: RMCCoatTSEPAHighVis
-    - id: RMCCoatTSEPAHighVisVest
+    - id: RMCCoatTWEPAHighVis
+    - id: RMCCoatTWEPAHighVisVest

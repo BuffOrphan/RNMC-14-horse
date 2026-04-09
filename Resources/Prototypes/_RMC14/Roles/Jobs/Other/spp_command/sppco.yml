@@ -1,8 +1,8 @@
 ﻿- type: job
   parent: CMJobBase
   id: RMCSPPCO
-  name: rmc-job-name-spp-co
-  description: rmc-job-description-spp-co
+  name: rmc-job-name-upp-co
+  description: rmc-job-description-upp-co
   playTimeTracker: CMJobSPPCO
   ranks:
     RMCRankSPPMayjor: []
@@ -13,14 +13,14 @@
   - Colonist
   - HospitalCorpsman
   - CombatTech
-  spawnMenuRoleName: SPP CO
+  spawnMenuRoleName: UPP CO
   special:
   - !type:AddComponentSpecial
     components:
     - type: RMCTrackable
     - type: NpcFactionMember
       factions:
-      - SPP
+      - UPP
   - !type:AddComponentSpecial
     components:
     - type: Skills
@@ -48,7 +48,7 @@
     - type: CommandAccent
     - type: InnateCommandSpeech
     - type: JobPrefix
-      prefix: rmc-job-prefix-spp-co
+      prefix: rmc-job-prefix-upp-co
   hidden: true
 
 - type: startingGear

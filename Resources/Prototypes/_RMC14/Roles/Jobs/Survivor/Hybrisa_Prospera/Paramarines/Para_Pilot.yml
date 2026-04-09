@@ -13,7 +13,7 @@
         - type: NpcFactionMember
           factions:
             - RoyalMarines
-            - TSE
+            - TWE
         - type: RMCAllowSuitStorage
         - type: IntelRescueSurvivorObjective
         - type: MotionDetectorTracked
@@ -41,7 +41,7 @@
     head: RMCHeadRoyalFlightHelmet
     jumpsuit: RMCJumpsuitMarineParaPDW90
     outerClothing: RMCArmorParaVest
-    suitstorage: RMCWeaponSMGPDW90TSE
+    suitstorage: RMCWeaponSMGPDW90TWE
 
 - type: entity
   parent: CMSpawnPointJobBase

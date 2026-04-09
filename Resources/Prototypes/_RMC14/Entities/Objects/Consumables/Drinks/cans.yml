@@ -259,7 +259,7 @@
   parent: CMDrinkCanBase
   id: CMDrinkCanFruitBeer
   name: fruit-beer
-  description: In theory, Mango flavored root beer sounds like a pretty good idea. We-Ya has disproved yet another theory with its latest line of cola. Canned by the We-Ya Corporation.
+  description: In theory, Mango flavored root beer sounds like a pretty good idea. We-Yu has disproved yet another theory with its latest line of cola. Canned by the We-Yu Corporation.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/fruit_beer.rsi
@@ -276,8 +276,8 @@
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanBeerLite
-  name: We-Ya Lite
-  description: Beer. You've dialed in your target. Time to fire for effect. Canned by the Weston-Yamada Corporation
+  name: We-Yu Lite
+  description: Beer. You've dialed in your target. Time to fire for effect. Canned by the Weyland-Yutani Corporation
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/beer.rsi
@@ -294,8 +294,8 @@
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanAle
-  name: We-Ya IPA
-  description: Beer's misunderstood cousin. Canned by the Weston-Yamada Corporation.
+  name: We-Yu IPA
+  description: Beer's misunderstood cousin. Canned by the Weyland-Yutani Corporation.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/ale.rsi
@@ -369,8 +369,8 @@
 - type: entity
   parent: CMDrinkCanBase
   id: RMCDrinkCanSequoiaBeer
-  name: Weston-Yamada sequoia beer
-  description: "Pretty good when you get past the fact that it tastes like piss. Canned by the Weston-Yamada Corporation."
+  name: Weyland-Yutani sequoia beer
+  description: "Pretty good when you get past the fact that it tastes like piss. Canned by the Weyland-Yutani Corporation."
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/beer_pack.rsi

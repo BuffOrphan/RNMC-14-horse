@@ -5,12 +5,12 @@ cm-job-prefix-correspondent = PRESS
 CMJobCorrespondent = Correspondent
 
 cm-job-name-liaison = Corporate Liaison
-cm-job-description-liaison = Be the direct line of communication between the Almayer and We-Ya by sending faxes. Make sure the interests of the We-Ya are retained.
+cm-job-description-liaison = Be the direct line of communication between the Almayer and We-Yu by sending faxes. Make sure the interests of the We-Yu are retained.
 cm-job-prefix-liaison = CL
 CMJobLiaison = Corporate Liaison
 
-rmc-job-name-synth = UNMC Synthetic
-rmc-job-description-synth = Support and assist the UNMC Departments and Personnel.
+rmc-job-name-synth = USCM Synthetic
+rmc-job-description-synth = Support and assist the USCM Departments and Personnel.
 rmc-job-prefix-synth = SYN
 RMCJobSynthetic = Synthetic
 
@@ -29,4 +29,4 @@ rmc-job-name-hybrisa-civilian = Hybrisa Prospera Colonist
 rmc-job-description-hybrisa-civilian = Live out your life within Hybrisa Prospera.
 
 rmc-job-name-corp-synthetic = Corporate Synthetic
-rmc-job-description-corp-synthetic = Support Weston-Yamada interests and personnel wherever needed.
+rmc-job-description-corp-synthetic = Support Weyland-Yutani interests and personnel wherever needed.

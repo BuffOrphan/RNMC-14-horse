@@ -59,7 +59,7 @@
 - type: entity
   parent: RMCHeadsetHvHWeYaPMC
   id: RMCHeadsetHvHWeYaPMCCommando
-  name: We-Ya Commando headset
+  name: We-Yu Commando headset
   suffix: WeYa, PMC Commando, HvH
   description: A special headset used by unidentified operatives.
   components:

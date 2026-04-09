@@ -4,73 +4,73 @@
 
 - type: accessGroup
   id: RMCBaseHidden
-  name: protobaseaccess UNMC Hidden
+  name: protobaseaccess USCM Hidden
   faction: FactionMarine
-  accessGroup: UNMC Hidden
+  accessGroup: USCM Hidden
   hidden: true
   tags:
   - RMCMarineDefaultAccess
 
 - type: accessGroup
   id: RMCBaseCommandJob
-  name: protobaseaccess UNMC Command
+  name: protobaseaccess USCM Command
   faction: FactionMarine
-  accessGroup: UNMC Command
+  accessGroup: USCM Command
   tags:
   - RMCMarineDefaultAccess
 
 - type: accessGroup
   id: RMCBaseAuxiliaryJob
-  name: protobaseaccess UNMC Auxiliary
+  name: protobaseaccess USCM Auxiliary
   faction: FactionMarine
-  accessGroup: UNMC Auxiliary
+  accessGroup: USCM Auxiliary
   tags:
   - RMCMarineDefaultAccess
 
 - type: accessGroup
   id: RMCBaseMiscellaneousJob
-  name: protobaseaccess UNMC Miscellaneous
+  name: protobaseaccess USCM Miscellaneous
   faction: FactionMarine
-  accessGroup: UNMC Miscellaneous
+  accessGroup: USCM Miscellaneous
   tags:
   - RMCMarineDefaultAccess
 
 - type: accessGroup
   id: RMCBaseMPJob
-  name: protobaseaccess UNMC Military Police
+  name: protobaseaccess USCM Military Police
   faction: FactionMarine
-  accessGroup: UNMC Military Police
+  accessGroup: USCM Military Police
   tags:
   - RMCMarineDefaultAccess
 
 - type: accessGroup
   id: RMCBaseEngineeringJob
-  name: protobaseaccess UNMC Engineering
+  name: protobaseaccess USCM Engineering
   faction: FactionMarine
-  accessGroup: UNMC Engineering
+  accessGroup: USCM Engineering
   tags:
   - RMCMarineDefaultAccess
 
 - type: accessGroup
   id: RMCBaseRequisitionsJob
-  name: protobaseaccess UNMC Requisitions
+  name: protobaseaccess USCM Requisitions
   faction: FactionMarine
-  accessGroup: UNMC Requisitions
+  accessGroup: USCM Requisitions
   tags:
   - RMCMarineDefaultAccess
 
 - type: accessGroup
   id: RMCBaseMedicalJob
-  name: protobaseaccess UNMC Medical
+  name: protobaseaccess USCM Medical
   faction: FactionMarine
-  accessGroup: UNMC Medical
+  accessGroup: USCM Medical
   tags:
   - RMCMarineDefaultAccess
 
 - type: accessGroup
   id: RMCBaseMarinesJob
-  name: protobaseaccess UNMC Marines
+  name: protobaseaccess USCM Marines
   faction: FactionMarine
-  accessGroup: UNMC Marines
+  accessGroup: USCM Marines
   tags:
   - RMCMarineDefaultAccess

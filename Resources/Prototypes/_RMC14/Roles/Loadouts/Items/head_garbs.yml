@@ -217,11 +217,11 @@
     - RMCHelmetGarbTerraTekFlair
 
 - type: loadout
-  id: UNMCFlairRMC
+  id: USCMFlairRMC
   cost: 1
   storage:
     back:
-    - RMCHelmetGarbUNMCFlair
+    - RMCHelmetGarbUSCMFlair
 
 - type: loadout
   id: MovieTicketRMC

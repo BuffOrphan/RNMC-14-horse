@@ -1,13 +1,13 @@
 - type: job
   parent: CMJobBase
-  id: CMUNMCAdjutant
-  name: rmc-job-name-unmc-adjutant
-  description: rmc-job-description-unmc-adjutant
-  playTimeTracker: CMJobUNMCAdjutant
+  id: CMUSCMAdjutant
+  name: rmc-job-name-uscm-adjutant
+  description: rmc-job-description-uscm-adjutant
+  playTimeTracker: CMJobUSCMAdjutant
   ranks:
     RMCRankFirstLT: []
-  startingGear: RMCGearUNMCAdjutant
-  icon: "RMCJobIconUNMCAdjutant"
+  startingGear: RMCGearUSCMAdjutant
+  icon: "RMCJobIconUSCMAdjutant"
   joinNotifyCrew: false
   supervisors: cm-job-supervisors-staff
   accessGroups:
@@ -33,13 +33,13 @@
   hidden: true
 
 - type: startingGear
-  id: RMCGearUNMCAdjutant
+  id: RMCGearUSCMAdjutant
   equipment:
     jumpsuit: CMJumpsuitBO
     outerClothing: CMCoatXOFormal
     shoes: RMCShoesLaceup
     head: CMHeadCapPeakedService
-    id: RMCIDCardUNMCAdjutant
+    id: RMCIDCardUSCMAdjutant
     ears: CMHeadsetHighCommand
     eyes: RMCSunglasses
     back: CMSatchel
@@ -52,8 +52,8 @@
 
 - type: entity
   parent: CMIDCardGold
-  id: RMCIDCardUNMCAdjutant
-  name: UNMC Adjutant ID card
+  id: RMCIDCardUSCMAdjutant
+  name: USCM Adjutant ID card
   description: A fancy ID card. Issued to the adjutants of high command.
   components:
   - type: Sprite
@@ -72,11 +72,11 @@
     - CMAccessHighCommand
 
 - type: playTimeTracker
-  id: CMJobUNMCAdjutant
+  id: CMJobUSCMAdjutant
 
 - type: jobIcon
   parent: CMJobIconBase
-  id: RMCJobIconUNMCAdjutant
+  id: RMCJobIconUSCMAdjutant
   icon:
     sprite: _RMC14/Interface/cm_job_icons.rsi
     state: rmc_adjutant

@@ -295,7 +295,7 @@
   parent: RMCBaseJacket
   id: RMCQuartermasterJacket
   name: Logistics Officer jacket
-  description: A green jacket worn by UNMC personnel. The back has the flag of the United Nations on it.
+  description: A green jacket worn by USCM personnel. The back has the flag of the United States on it.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/qm.rsi
@@ -417,7 +417,7 @@
   parent: RMCBaseJacket
   id: CMCoatCO
   name: marine officer dress jacket
-  description: Dress Jacket worn by Commanding Officers of the UNMC.
+  description: Dress Jacket worn by Commanding Officers of the USCM.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/CO/jacket.rsi
@@ -606,7 +606,7 @@
   parent: [CMCoatOfficer, RMCBaseJacketButtonable]
   id: RMCCoatService
   name: marine service jacket
-  description: A service jacket typically worn by officers of the UNMC.
+  description: A service jacket typically worn by officers of the USCM.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/service/jungle.rsi
@@ -627,7 +627,7 @@
   parent: [RMCBaseJacketButtonableOpened, RMCCoatService]
   id: RMCCoatServiceFolded
   name: marine service jacket
-  description: A service jacket typically worn by officers of the UNMC.
+  description: A service jacket typically worn by officers of the USCM.
   suffix: Unbuttoned
 
 - type: entity
@@ -720,7 +720,7 @@
   parent: RMCBaseJacket
   id: CMUtilityVestSynth
   name: synthetic utility vest
-  description: A leather utility vest worn by synthetic UNMC personnel. The vest is rather lightweight but has a few pockets for carrying small items. It is not very protective, but it is a good choice for the Synthetics who want to look stylish while working.
+  description: A leather utility vest worn by synthetic USCM personnel. The vest is rather lightweight but has a few pockets for carrying small items. It is not very protective, but it is a good choice for the Synthetics who want to look stylish while working.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Synthetic/synth_utility.rsi
@@ -1072,7 +1072,7 @@
   parent: RMCCoatSnow
   id: RMCCoatSnowSoviet
   name: soviet snowcoat
-  description: A winter coat made in some desolate snowplanet. This wintercoat was made from the fur of local wildlife which donated their fur for the greater good of SPP!
+  description: A winter coat made in some desolate snowplanet. This wintercoat was made from the fur of local wildlife which donated their fur for the greater good of UPP!
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/Snowsuits/soviet.rsi
@@ -1088,7 +1088,7 @@
   parent: RMCCoatSnow
   id: RMCCoatSnowLiaison
   name: liaison's wintercoat
-  description: A Weston-Yamada winter coat. Only the best comfort for the liaison in a cold environment.
+  description: A Weyland-Yutani winter coat. Only the best comfort for the liaison in a cold environment.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/Snowsuits/liaison.rsi

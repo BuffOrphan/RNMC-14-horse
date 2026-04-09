@@ -132,7 +132,7 @@
   parent: CMBackpack
   id: CMBackpackMarine
   name: lightweight IMP backpack
-  description: The standard-issue pack of the UNMC forces. Designed to lug gear into the battlefield.
+  description: The standard-issue pack of the USCM forces. Designed to lug gear into the battlefield.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/Marines/standard/jungle-desert-classic.rsi
@@ -147,8 +147,8 @@
 - type: entity
   parent: CMBackpackMarine
   id: CMBackpackMarineMedic
-  name: UNMC corpsman backpack
-  description: A standard-issue backpack worn by UNMC medics.
+  name: USCM corpsman backpack
+  description: A standard-issue backpack worn by USCM medics.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/Marines/medic/jungle-desert-classic.rsi
@@ -163,8 +163,8 @@
 - type: entity
   parent: CMBackpackMarine
   id: CMBackpackMarineTech
-  name: UNMC technician backpack
-  description: A standard-issue backpack worn by UNMC technicians.
+  name: USCM technician backpack
+  description: A standard-issue backpack worn by USCM technicians.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/Marines/tech/jungle-desert-classic.rsi
@@ -180,7 +180,7 @@
 - type: entity
   parent: CMBackpack
   id: CMBackpackMortar
-  name: UNMC mortar shell backpack
+  name: USCM mortar shell backpack
   description: A backpack specifically designed to hold ammunition for the M402 mortar.
   components:
   - type: Sprite
@@ -204,8 +204,8 @@
 - type: entity
   parent: CMBackpack
   id: CMBackpackWelder
-  name: UNMC technician welderpack
-  description: A specialized backpack worn by UNMC technicians. It carries a fueltank for quick welder refueling and use.
+  name: USCM technician welderpack
+  description: A specialized backpack worn by USCM technicians. It carries a fueltank for quick welder refueling and use.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/Marines/welder/jungle-desert-classic.rsi
@@ -256,7 +256,7 @@
   parent: CMBackpack
   id: RMCBackpackAmmo
   name: IMP ammo rack
-  description: A bare IMP frame with buckles designed to hold multiple ammo cans, but can fit any cumbersome box thanks to UNMC ingenuity. Helps you lug around extra rounds or supplies.
+  description: A bare IMP frame with buckles designed to hold multiple ammo cans, but can fit any cumbersome box thanks to USCM ingenuity. Helps you lug around extra rounds or supplies.
   components:
   - type: Item
     size: Huge
@@ -311,7 +311,7 @@
   parent: CMBackpackWelder
   id: RMCBackpackWelderPMC
   name: pmc technician welderpack
-  description: Ergonomic, protected, high capacity backpack, designed for Weston-Yamada PMCs. Features a small fueltank for quick blowtorch refueling.
+  description: Ergonomic, protected, high capacity backpack, designed for Weyland-Yutani PMCs. Features a small fueltank for quick blowtorch refueling.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/PMC/welder.rsi
@@ -326,8 +326,8 @@
 - type: entity
   parent: RMCSatchelPMC
   id: RMCSatchelPMCCommando
-  name: We-Ya Commando combat backpack
-  description: Ergonomic, protected, high capacity backpack, designed for Weston-Yamada Commandos.
+  name: We-Yu Commando combat backpack
+  description: Ergonomic, protected, high capacity backpack, designed for Weyland-Yutani Commandos.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/PMC/commando.rsi
@@ -338,7 +338,7 @@
   parent: CMPersonalStorageBase
   id: RMCBackpackRCMSmall
   name: lightweight RCM backpack
-  description: "A TSE military light-carry RCM combat pack MK3."
+  description: "A TWE military light-carry RCM combat pack MK3."
   suffix: PVE, RCM
   components:
   - type: Sprite
@@ -371,7 +371,7 @@
   parent: CMPersonalStorageBase
   id: RMCBackpackRCMMedium
   name: standard RCM backpack
-  description: "A TSE military standard-carry RCM combat pack MK3."
+  description: "A TWE military standard-carry RCM combat pack MK3."
   suffix: PVE, RCM
   components:
   - type: Sprite
@@ -439,7 +439,7 @@
   parent: RMCSatchelWelder
   id: RMCBackpackRCMTechnician
   name: RCM engineering backpack
-  description: "A TSE military standard-carry RCM combat pack MK3. Modified by ingenious Royal Engineers to better fit their requirements."
+  description: "A TWE military standard-carry RCM combat pack MK3. Modified by ingenious Royal Engineers to better fit their requirements."
   suffix: PVE, RCM
   components:
   - type: Sprite
@@ -462,7 +462,7 @@
   parent: CMPersonalStorageBase
   id: RMCBackpackRCMMedic
   name: RCM medical backpack
-  description: "A TSE military standard-carry RCM combat pack MK3. Modified by Medical Assistants to fit their needs better."
+  description: "A TWE military standard-carry RCM combat pack MK3. Modified by Medical Assistants to fit their needs better."
   suffix: PVE, RCM
   components:
   - type: Sprite

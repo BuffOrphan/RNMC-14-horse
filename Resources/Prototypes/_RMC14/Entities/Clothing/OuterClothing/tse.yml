@@ -1,13 +1,13 @@
 - type: entity
   parent: RMCArmorVest
-  id: RMCArmorVestTSEPA
-  name: TSEPA armored vest
-  description: An TSEPA armored vest that protects against some damage.
+  id: RMCArmorVestTWEPA
+  name: TWEPA armored vest
+  description: An TWEPA armored vest that protects against some damage.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/tsepa_police_vest.rsi
+    sprite: _RMC14/Objects/Clothing/OuterClothing/TWE/TWEPA/tsepa_police_vest.rsi
   - type: Clothing
-    sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/tsepa_police_vest.rsi
+    sprite: _RMC14/Objects/Clothing/OuterClothing/TWE/TWEPA/tsepa_police_vest.rsi
   - type: CMArmor
     melee: 15
     bullet: 20
@@ -15,7 +15,7 @@
     explosionArmor: 10
 
 - type: entity
-  id: RMCBaseTSEArmor
+  id: RMCBaseTWEArmor
   abstract: true
   components:
   - type: ClothingRequireEquipped
@@ -23,16 +23,16 @@
     denyReason: rmc-armor-not-tse-jumpsuit
     whitelist:
       tags:
-      - RMCUniformTSE
+      - RMCUniformTWE
 
 - type: entity
-  parent: [RMCBaseTSEArmor, RMCBaseMarineArmorLight]
-  id: RMCArmourM4TSEPA
-  name: M4 pattern light TSEPA armour
-  description: A modified variant of the M4R armor, stripped of additional riot plating for civilian officer use. A 'TSEPA' badge is sewn into the chestplate.
+  parent: [RMCBaseTWEArmor, RMCBaseMarineArmorLight]
+  id: RMCArmourM4TWEPA
+  name: M4 pattern light TWEPA armour
+  description: A modified variant of the M4R armor, stripped of additional riot plating for civilian officer use. A 'TWEPA' badge is sewn into the chestplate.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/standard.rsi
+    sprite: _RMC14/Objects/Clothing/OuterClothing/TWE/TWEPA/standard.rsi
   - type: CMArmor
     melee: 15
     bullet: 20
@@ -43,13 +43,13 @@
     sprintModifier: 0.897
 
 - type: entity
-  parent: [RMCBaseTSEArmor, RMCBaseMarineArmorLight]
-  id: RMCArmourM4TSEPAChief
-  name: M4 pattern inspector TSEPA armour
-  description: A modified variant of the M4 TSEPA armour to have the additional riot plating returned, featuring a golden insignia on the chestplate.
+  parent: [RMCBaseTWEArmor, RMCBaseMarineArmorLight]
+  id: RMCArmourM4TWEPAChief
+  name: M4 pattern inspector TWEPA armour
+  description: A modified variant of the M4 TWEPA armour to have the additional riot plating returned, featuring a golden insignia on the chestplate.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/marshal.rsi
+    sprite: _RMC14/Objects/Clothing/OuterClothing/TWE/TWEPA/marshal.rsi
   - type: CMArmor
     melee: 20
     bullet: 20
@@ -71,7 +71,7 @@
   description: A rugged, all-weather combat jacket issued to the RCM's Paramarine regiments. Designed for versatility, it serves as both a field garment and a lightweight layer of protection. Reinforced with ballistic fibers and treated for weather resistance, it offers limited defense against shrapnel and small arms fire while keeping Paramarines comfortable in harsh conditions. Its deep green color and durable fabric make it a staple for both active deployment and off-duty wear.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/para.rsi
+    sprite: _RMC14/Objects/Clothing/OuterClothing/TWE/para.rsi
     layers:
     - state: icon
       map: [ "unfoldedLayer" ]
@@ -80,7 +80,7 @@
       map: ["foldedLayer"]
       visible: false
   - type: Clothing
-    sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/para.rsi
+    sprite: _RMC14/Objects/Clothing/OuterClothing/TWE/para.rsi
   - type: CMArmor
     melee: 15
     bullet: 15
@@ -95,9 +95,9 @@
   suffix: Survivor, Paramarine, CO
   components:
     - type: Sprite
-      sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/para_co.rsi
+      sprite: _RMC14/Objects/Clothing/OuterClothing/TWE/para_co.rsi
     - type: Clothing
-      sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/para_co.rsi
+      sprite: _RMC14/Objects/Clothing/OuterClothing/TWE/para_co.rsi
     - type: CMArmor
       melee: 10
       bullet: 10
@@ -110,9 +110,9 @@
   suffix: Survivor, Paramarine, CO alt
   components:
     - type: Sprite
-      sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/para_co_alt.rsi
+      sprite: _RMC14/Objects/Clothing/OuterClothing/TWE/para_co_alt.rsi
     - type: Clothing
-      sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/para_co_alt.rsi
+      sprite: _RMC14/Objects/Clothing/OuterClothing/TWE/para_co_alt.rsi
       
 - type: entity
   parent: RMCJacketParaCOJacket

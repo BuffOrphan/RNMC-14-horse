@@ -19,7 +19,7 @@
     components:
     - type: NpcFactionMember
       factions:
-      - UNMC
+      - USCM
     - type: Skills
       skills:
         RMCSkillFirearms: 1
@@ -54,7 +54,7 @@
     components:
     - type: NpcFactionMember
       factions:
-      - UNMC
+      - USCM
     - type: Skills
       skills:
         RMCSkillFirearms: 1

@@ -100,7 +100,7 @@
   parent: CMSatchel
   id: RMCBackpackScout
   name: M68 thermal cloak
-  description: The lightweight thermal dampeners and optical camouflage provided by this cloak are weaker than those found in standard UNMC ghillie suits. In exchange, the cloak can be worn over combat armor and offers the wearer high maneuverability and adaptability to many environments.
+  description: The lightweight thermal dampeners and optical camouflage provided by this cloak are weaker than those found in standard USCM ghillie suits. In exchange, the cloak can be worn over combat armor and offers the wearer high maneuverability and adaptability to many environments.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/Marines/scout_cloak.rsi
@@ -140,10 +140,10 @@
   parent: RMCBackpackScout
   id: RMCBackpackSPPCommando
   name: V86 thermal cloak
-  description: A thermo-optic camouflage cloak commonly used by SPP commando units.
+  description: A thermo-optic camouflage cloak commonly used by UPP commando units.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/Back/Backpacks/SPP/scout_cloak.rsi
+    sprite: _RMC14/Objects/Clothing/Back/Backpacks/UPP/scout_cloak.rsi
 
 - type: entity
   parent: CMSatchel
@@ -351,8 +351,8 @@
 - type: entity
   parent: CMSatchel
   id: CMSatchelMarine
-  name: UNMC satchel
-  description: A heavy-duty satchel carried by some UNMC soldiers and support personnel.
+  name: USCM satchel
+  description: A heavy-duty satchel carried by some USCM soldiers and support personnel.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Satchels/Marines/standard/jungle-desert-classic.rsi
@@ -367,7 +367,7 @@
 - type: entity
   parent: CMSatchelMarine
   id: CMSatchelMarineIntel
-  name: UNMC lightweight expedition pack
+  name: USCM lightweight expedition pack
   description: A heavy-duty IMP based backpack that can be slung around the front or to the side, and can quickly be accessed with only one hand. Usually issued to Marine intelligence officers.
   components:
   - type: Sprite
@@ -386,8 +386,8 @@
 - type: entity
   parent: CMSatchelMarineIntel
   id: RMCSatchelMarineIntelChestrig
-  name: UNMC expedition chestrig
-  description: A heavy-duty IMP based chestrig, can quickly be accessed with only one hand. Usually issued to UNMC intelligence officers.
+  name: USCM expedition chestrig
+  description: A heavy-duty IMP based chestrig, can quickly be accessed with only one hand. Usually issued to USCM intelligence officers.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Chestrigs/intel/desert.rsi
@@ -402,7 +402,7 @@
 - type: entity
   parent: CMSatchelMarine
   id: RMCSatchelMarineChestrigPVE # Reskin for PVE
-  name: UNMC IMP chestrig
+  name: USCM IMP chestrig
   description: A heavy-duty IMP based chestrig, can quickly be accessed with only one hand.
   suffix: PVE
   components:
@@ -419,8 +419,8 @@
 - type: entity
   parent: CMSatchelMarineIntel
   id: RMCSatchelMarineIntelSatchel
-  name: UNMC lightweight expedition satchel
-  description: A heavy-duty IMP based satchel, reinforced with kevlar so it doesn't rip. Can quickly be accessed with only one hand. Usually issued to UNMC intelligence officers.
+  name: USCM lightweight expedition satchel
+  description: A heavy-duty IMP based satchel, reinforced with kevlar so it doesn't rip. Can quickly be accessed with only one hand. Usually issued to USCM intelligence officers.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Satchels/Marines/intel.rsi
@@ -430,7 +430,7 @@
 - type: entity
   parent: CMSatchelMarineIntel # Reskin for FORECON
   id: RMCSatchelMarineLogisticsBig
-  name: UNMC logistics IMP backpack
+  name: USCM logistics IMP backpack
   description: A standard-issue backpack worn by logistics personnel. It is occasionally issued to combat personnel for longer term expeditions and deep space incursions.
 
 - type: entity
@@ -488,7 +488,7 @@
 - type: entity
   parent: CMSatchel
   id: RMCSatchelGrenadeSpec
-  name: UNMC IMP M63A1 grenade satchel
+  name: USCM IMP M63A1 grenade satchel
   description: A satchel specially designed to maximize grenade carrying capacity while minimizing the risks of secondary ignition.
   components:
   # TODO ID locking feature + make lights green when unlocked.
@@ -508,8 +508,8 @@
 - type: entity
   parent: CMSatchel
   id: RMCSatchelWelder
-  name: UNMC technician welder-satchel
-  description: A specialized satchel worn by UNMC technicians and engineers. It carries two small fuel tanks for quick welder refueling and use.
+  name: USCM technician welder-satchel
+  description: A specialized satchel worn by USCM technicians and engineers. It carries two small fuel tanks for quick welder refueling and use.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Satchels/Marines/welder.rsi
@@ -562,8 +562,8 @@
 - type: entity
   parent: CMSatchel
   id: RMCSatchelDemoSpec
-  name: UNMC IMP M22 rocket bags
-  description: A specially-designed backpack that fits to the IMP mounting frame on standard UNMC infantry armor. It's made of two easily-accessible, waterproofed reinforced tubes and one smaller satchel slung at the bottom. The two silos are for rockets, but no one is stopping you from cramming other things in there.
+  name: USCM IMP M22 rocket bags
+  description: A specially-designed backpack that fits to the IMP mounting frame on standard USCM infantry armor. It's made of two easily-accessible, waterproofed reinforced tubes and one smaller satchel slung at the bottom. The two silos are for rockets, but no one is stopping you from cramming other things in there.
   components:
   - type: ExplosionResistance
     damageCoefficient: 0
@@ -605,7 +605,7 @@
 - type: entity
   parent: CMSatchel
   id: RMCBackpackRTO
-  name: UNMC radio telephone pack
+  name: USCM radio telephone pack
   description: A heavy-duty pack, used for telecommunications between central command. Commonly carried by RTOs.
   components:
   - type: Sprite
@@ -657,8 +657,8 @@
 - type: entity
   parent: CMSatchel
   id: RMCBackpackRTOPMCBroken
-  name: broken We-Ya radio telephone pack
-  description: A heavy-duty extended-pack, used for telecommunications between central command. Commonly carried by RTOs. This one bears the logo of Weston-Yamada and internal systems seem to be completely fried and broken.
+  name: broken We-Yu radio telephone pack
+  description: A heavy-duty extended-pack, used for telecommunications between central command. Commonly carried by RTOs. This one bears the logo of Weyland-Yutani and internal systems seem to be completely fried and broken.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/PMC/rto.rsi
@@ -676,8 +676,8 @@
 - type: entity
   parent: RMCBackpackRTO
   id: RMCBackpackRTOPMC
-  name: We-Ya radio telephone pack
-  description: A heavy-duty extended-pack, used for telecommunications between central command. Commonly carried by RTOs. This one bears the logo of Weston-Yamada.
+  name: We-Yu radio telephone pack
+  description: A heavy-duty extended-pack, used for telecommunications between central command. Commonly carried by RTOs. This one bears the logo of Weyland-Yutani.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/PMC/rto.rsi
@@ -685,18 +685,18 @@
     grid:
     - 0,0,19,1 # 20
   - type: RotaryPhone
-    category: Weston-Yamada
+    category: Weyland-Yutani
   - type: ItemCamouflage
     camouflageVariations: {}
 
 - type: entity
   parent: RMCBackpackRTO
   id: RMCBackpackRTOSPP
-  name: SPP radio telephone pack
+  name: UPP radio telephone pack
   description: A heavy-duty extended-pack, used for telecommunications between central command. Commonly carried by RTOs. This one bears the Socialist Progressive People's insignia.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/Back/Backpacks/SPP/rto.rsi
+    sprite: _RMC14/Objects/Clothing/Back/Backpacks/UPP/rto.rsi
   - type: Storage
     grid:
     - 0,0,19,1 # 20
@@ -707,8 +707,8 @@
 
 - type: entity
   parent: RMCBackpackRTO
-  id: RMCBackpackRTOTSE
-  name: TSE radio telephone pack
+  id: RMCBackpackRTOTWE
+  name: TWE radio telephone pack
   description: A heavy-duty extended-pack, used for telecommunications between central command. Commonly carried by RTOs. This one bears the Three Suns Empire's insignia.
   components:
   - type: Sprite
@@ -828,7 +828,7 @@
     - id: RMCSyringeCase
     - id: CMPortableSurgicalBedSpawnFolded
     - id: RMCTacticalPrybar
-    - id: RMCMRETSE
+    - id: RMCMRETWE
 
 - type: entity
   parent: RMCSatchelLightpack
@@ -931,8 +931,8 @@
 - type: entity
   parent: CMSatchel
   id: RMCSatchelLightpackWeYa
-  name: We-Ya combat pack
-  description: A small, lightweight pack for expeditions and short-range operations, designed for Weston-Yamada security and private military personnel.
+  name: We-Yu combat pack
+  description: A small, lightweight pack for expeditions and short-range operations, designed for Weyland-Yutani security and private military personnel.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Satchels/PMC/corporate.rsi
@@ -941,7 +941,7 @@
   parent: RMCSatchelLightpack
   id: RMCSatchelPMC
   name: PMC combat backpack
-  description: A Weston-Yamada field tested backpack, featuring multiple pouches and compartments for ease of access, preventing slowdown from operatives in the field.
+  description: A Weyland-Yutani field tested backpack, featuring multiple pouches and compartments for ease of access, preventing slowdown from operatives in the field.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/PMC/standard.rsi
@@ -950,7 +950,7 @@
   parent: [RMCSatchelPMC, RMCSatchelWelder]
   id: RMCSatchelWelderPMC
   name: pmc technician welderpack
-  description: Ergonomic, protected, high capacity backpack, designed for Weston-Yamada PMCs. Features a small fueltank for quick blowtorch refueling.
+  description: Ergonomic, protected, high capacity backpack, designed for Weyland-Yutani PMCs. Features a small fueltank for quick blowtorch refueling.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/PMC/welder.rsi
@@ -968,10 +968,10 @@
   parent: CMSatchel
   id: RMCSatchelSPP
   name: UCP3 combat pack
-  description: An SPP military standard-issue Union Combat Pack MK3.
+  description: An UPP military standard-issue Union Combat Pack MK3.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/Back/Satchels/SPP/standard.rsi
+    sprite: _RMC14/Objects/Clothing/Back/Satchels/UPP/standard.rsi
 
 - type: entity
   parent: RMCSatchelSPP
@@ -1001,10 +1001,10 @@
   parent: RMCSatchelWelder
   id: RMCSatchelSPPWelder
   name: UCP3-E technician welderpack
-  description: A special version of the Union Combat Pack MK3 featuring a small fueltank for quick blowtorch refueling. Used by SPP Sappers.
+  description: A special version of the Union Combat Pack MK3 featuring a small fueltank for quick blowtorch refueling. Used by UPP Sappers.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/Back/Satchels/SPP/welder.rsi
+    sprite: _RMC14/Objects/Clothing/Back/Satchels/UPP/welder.rsi
 
 - type: entity
   parent: RMCSatchelSPPWelder
@@ -1029,15 +1029,15 @@
 
 - type: entity
   parent: CMSatchel
-  id: RMCSatchelTSEPA
+  id: RMCSatchelTWEPA
   name: TSP-4 police pack
-  description: A TSEPA standard-issue Three Suns Pack MK4.
+  description: A TWEPA standard-issue Three Suns Pack MK4.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/Back/Satchels/TSE/tsepa_standard.rsi
+    sprite: _RMC14/Objects/Clothing/Back/Satchels/TWE/tsepa_standard.rsi
 
 - type: entity
-  parent: RMCSatchelTSEPA
+  parent: RMCSatchelTWEPA
   id: RMCSatchelCorporateSynthetic
   suffix: Filled, Corporate Synthetic
   components:
@@ -1051,8 +1051,8 @@
 - type: entity
   parent: CMSatchel
   id: RMCSatchelMARSOC
-  name: UNMC SOF combat pack
-  description: A streamlined combat pack for UNMC SOF Raiders.
+  name: USCM SOF combat pack
+  description: A streamlined combat pack for USCM SOF Raiders.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/Back/Satchels/TSE/tsepa_standard.rsi
+    sprite: _RMC14/Objects/Clothing/Back/Satchels/TWE/tsepa_standard.rsi

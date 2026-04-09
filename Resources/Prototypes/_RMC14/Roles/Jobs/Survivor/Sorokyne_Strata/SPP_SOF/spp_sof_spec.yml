@@ -6,13 +6,13 @@
   ranks:
     RMCRankSPPSerzhant: []
   icon: "RMCJobIconSPPSpecialist"
-  spawnMenuRoleName: SPP SOF Specialist (Survivor)
+  spawnMenuRoleName: UPP SOF Specialist (Survivor)
   special:
   - !type:AddComponentSpecial
     components:
     - type: NpcFactionMember
       factions:
-      - SPP
+      - UPP
     - type: Skills
       skills:
         RMCSkillCqc: 1
@@ -46,7 +46,7 @@
 - type: entity
   parent: CMSpawnPointJobBase
   id: CMSpawnPointSPPSOFSpec
-  name: special survivor spp sof specialist spawn point
+  name: special survivor upp sof specialist spawn point
   components:
   - type: SpawnPoint
     job_id: RMCSurvivorSPPSOFSL

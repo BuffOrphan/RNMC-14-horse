@@ -1,8 +1,8 @@
-# SPP Soldier
+# UPP Soldier
 - type: entity
   parent: RMCSpawnerCorpse
   id: RMCSpawnerCorpseSPPSoldier
-  name: Corpse Spawner - SPP Soldier
+  name: Corpse Spawner - UPP Soldier
   components:
   - type: CorpseSpawner
     spawn: RMCCorpseSPPSoldier

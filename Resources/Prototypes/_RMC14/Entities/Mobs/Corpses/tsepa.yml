@@ -1,95 +1,95 @@
 - type: randomHumanoidSettings
   parent: RMCCorpse
-  id: RMCCorpseTSE
+  id: RMCCorpseTWE
   abstract: true
   components:
   - type: NpcFactionMember
     factions:
-    - TSE
+    - TWE
 
 # Constable
 - type: randomHumanoidSettings
-  parent: RMCCorpseTSE
-  id: RMCCorpseTSEPAConstable
+  parent: RMCCorpseTWE
+  id: RMCCorpseTWEPAConstable
   components:
   - type: Loadout
     prototypes:
-    - RMCGearCorpseTSEPAConstableOne
-    - RMCGearCorpseTSEPAConstableTwo
-    - RMCGearCorpseTSEPAConstableThree
-    - RMCGearCorpseTSEPAConstableFour
-    - RMCGearCorpseTSEPAConstableFive
-    - RMCGearCorpseTSEPAConstableSix
+    - RMCGearCorpseTWEPAConstableOne
+    - RMCGearCorpseTWEPAConstableTwo
+    - RMCGearCorpseTWEPAConstableThree
+    - RMCGearCorpseTWEPAConstableFour
+    - RMCGearCorpseTWEPAConstableFive
+    - RMCGearCorpseTWEPAConstableSix
   - type: Rank
-    rank: RMCRankTSEPAConstable
+    rank: RMCRankTWEPAConstable
   - type: Marine
     icon:
       sprite: _RMC14/Interface/cm_job_icons.rsi
       state: tse_paconstable
 
 - type: randomHumanoidSettings
-  parent: RMCCorpseTSEPAConstable
-  id: RMCCorpseTSEPAConstableBurst
+  parent: RMCCorpseTWEPAConstable
+  id: RMCCorpseTWEPAConstableBurst
   components:
   - type: VictimBurst
 
 - type: startingGear
-  id: RMCGearCorpseTSEPAConstableBase
+  id: RMCGearCorpseTWEPAConstableBase
   equipment:
     eyes: RMCGlassesSecurityBlue
-    jumpsuit: RMCJumpsuitTSEPA
-    belt: RMCBeltHolsterPistolTSEFilledL54
+    jumpsuit: RMCJumpsuitTWEPA
+    belt: RMCBeltHolsterPistolTWEFilledL54
     shoes: RMCShoesLaceup
     id: RMCIDCardConstableCorpse
     back: RMCSatchelBlack
-    ears: RMCHeadsetTSEPA
+    ears: RMCHeadsetTWEPA
   storage:
     back:
     - RMCHandcuffs
 
 - type: startingGear
-  parent: RMCGearCorpseTSEPAConstableBase
-  id: RMCGearCorpseTSEPAConstableOne
+  parent: RMCGearCorpseTWEPAConstableBase
+  id: RMCGearCorpseTWEPAConstableOne
   equipment:
-    head: RMCHeadCapTSEPAPeaked
-    outerClothing: RMCCoatTSEPA
+    head: RMCHeadCapTWEPAPeaked
+    outerClothing: RMCCoatTWEPA
 
 - type: startingGear
-  parent: RMCGearCorpseTSEPAConstableOne
-  id: RMCGearCorpseTSEPAConstableTwo
+  parent: RMCGearCorpseTWEPAConstableOne
+  id: RMCGearCorpseTWEPAConstableTwo
   equipment:
-    outerClothing: RMCCoatTSEPAFormal
+    outerClothing: RMCCoatTWEPAFormal
 
 - type: startingGear
-  parent: RMCGearCorpseTSEPAConstableOne
-  id: RMCGearCorpseTSEPAConstableThree
+  parent: RMCGearCorpseTWEPAConstableOne
+  id: RMCGearCorpseTWEPAConstableThree
   equipment:
-    outerClothing: RMCArmorVestTSEPA
+    outerClothing: RMCArmorVestTWEPA
     suitstorage: RMCWeaponShotgunHG3712
     pocket1: RMCPouchShotgunFilledPolicing
   storage:
     back:
     - RMCHandcuffs
-    - RMCExplosiveBreachingChargeRubberTSEPA
+    - RMCExplosiveBreachingChargeRubberTWEPA
 
 - type: startingGear
-  parent: RMCGearCorpseTSEPAConstableOne
-  id: RMCGearCorpseTSEPAConstableFour
+  parent: RMCGearCorpseTWEPAConstableOne
+  id: RMCGearCorpseTWEPAConstableFour
   equipment:
-    outerClothing: RMCCoatTSEPAHighVis
+    outerClothing: RMCCoatTWEPAHighVis
     gloves: RMCHandsCombat
 
 - type: startingGear
-  parent: RMCGearCorpseTSEPAConstableOne
-  id: RMCGearCorpseTSEPAConstableFive
+  parent: RMCGearCorpseTWEPAConstableOne
+  id: RMCGearCorpseTWEPAConstableFive
   equipment:
-    head: RMCHeadCapTSEPAPeakedGoldSilver
-    outerClothing: RMCCoatTSEPAHighVisVest
+    head: RMCHeadCapTWEPAPeakedGoldSilver
+    outerClothing: RMCCoatTWEPAHighVisVest
     gloves: RMCHandsCombat
 
 - type: startingGear
-  parent: RMCGearCorpseTSEPAConstableTwo
-  id: RMCGearCorpseTSEPAConstableSix
+  parent: RMCGearCorpseTWEPAConstableTwo
+  id: RMCGearCorpseTWEPAConstableSix
   equipment:
-    head: RMCHeadCapTSEPAPeakedGold
+    head: RMCHeadCapTWEPAPeakedGold
     gloves: RMCHandsCombat

@@ -28,10 +28,10 @@ rmc-job-prefix-forecon-co = Cmdr.
 cm-job-name-high-command = High Command
 
 # Admin only brig gen.
-rmc-job-name-unmc-brigadier-general = High Command
-rmc-job-description-unmc-brigadier-general = "High Command. Congrats, you're a Brigadier General!"
+rmc-job-name-uscm-brigadier-general = High Command
+rmc-job-description-uscm-brigadier-general = "High Command. Congrats, you're a Brigadier General!"
 
 # admin spawn only high comm Adjutant
-rmc-job-name-unmc-adjutant = High Command Adjutant
-rmc-job-description-unmc-adjutant = "You're the Adjutant to a high ranked officer. They must be important!"
-rmc-job-prefix-unmc-adjutant = ADJ
+rmc-job-name-uscm-adjutant = High Command Adjutant
+rmc-job-description-uscm-adjutant = "You're the Adjutant to a high ranked officer. They must be important!"
+rmc-job-prefix-uscm-adjutant = ADJ

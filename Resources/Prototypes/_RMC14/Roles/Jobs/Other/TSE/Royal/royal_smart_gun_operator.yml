@@ -5,7 +5,7 @@
   description: rmc-ghost-role-information-rcm-description
   playTimeTracker: RMCJobRoyalSmartGunOperator
   ranks:
-    RMCRankTSELanceCorporal: [ ]
+    RMCRankTWELanceCorporal: [ ]
   startingGear: RMCGearRoyalSmartGunOperator
   icon: RMCJobIconRoyalSmartGunOperator
   joinNotifyCrew: false
@@ -17,7 +17,7 @@
     - type: NpcFactionMember
       factions:
       - RoyalMarines
-      - TSE
+      - TWE
     - type: Skills
       skills:
         RMCSkillCqc: 2

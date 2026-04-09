@@ -4,7 +4,7 @@
   name: rmc-job-name-pmc-leader
   ranks:
     RMCRankWeYaTeamLeader: []
-  supervisors: cm-job-supervisors-we-ya
+  supervisors: cm-job-supervisors-we-yu
   accessGroups:
   - ColonistPMC
   startingGear: RMCGearSurvivorPMCLeader

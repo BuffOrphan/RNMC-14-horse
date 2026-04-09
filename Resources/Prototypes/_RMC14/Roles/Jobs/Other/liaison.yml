@@ -26,7 +26,7 @@
   startingGear: CMGearLiaison
   icon: "CMJobIconLiaison"
   joinNotifyCrew: false
-  supervisors: cm-job-supervisors-we-ya
+  supervisors: cm-job-supervisors-we-yu
   accessGroups:
   - RMCWeYaExecColony
   roleWeight: 0.25
@@ -37,7 +37,7 @@
     - type: NpcFactionMember
       factions:
       - WeYa
-      - UNMC
+      - USCM
     - type: Skills
       skills:
         RMCSkillFirearms: 0
@@ -81,7 +81,7 @@
 - type: entity
   parent: CMGuidebookRole
   id: CMGuidebookRoleLiaisonYou
-  name: A Typical Weston-Yamada Liaison
+  name: A Typical Weyland-Yutani Liaison
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite

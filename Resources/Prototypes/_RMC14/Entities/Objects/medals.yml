@@ -35,7 +35,7 @@
   parent: RMCMedalBronze
   id: RMCMedalBronzeDistinguishedConduct
   name: distinguished conduct medal
-  description: A bronze medal awarded for distinguished conduct. Whilst a great honor, this is the most basic award given by the UNMC.
+  description: A bronze medal awarded for distinguished conduct. Whilst a great honor, this is the most basic award given by the USCM.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medals/bronze.rsi
@@ -63,7 +63,7 @@
   parent: RMCMedalBronze
   id: RMCMedalBronzeService
   name: bronze service medal
-  description: A bronze medal awarded for a marine's service within the UNMC. While the most common of medals, it signifies someone's first few steps into their respective positions.
+  description: A bronze medal awarded for a marine's service within the USCM. While the most common of medals, it signifies someone's first few steps into their respective positions.
 
 - type: entity
   parent: RMCMedalBase
@@ -97,7 +97,7 @@
   parent: RMCMedalSilver
   id: RMCMedalSilverService
   name: silver service medal
-  description: A shiny silver medal awarded for a marine's service within the UNMC. While somewhat common, it signifies someone's growing expertise and time invested into their department and skills.
+  description: A shiny silver medal awarded for a marine's service within the USCM. While somewhat common, it signifies someone's growing expertise and time invested into their department and skills.
 
 - type: entity
   parent: RMCMedalBase
@@ -117,7 +117,7 @@
   parent: RMCMedalGold
   id: RMCMedalGoldExceptionalHeroism
   name: medal of exceptional heroism
-  description: An extremely rare golden medal awarded only by the UNMC. To receive such a medal is the highest honor and as such, very few exist.
+  description: An extremely rare golden medal awarded only by the USCM. To receive such a medal is the highest honor and as such, very few exist.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medals/gold.rsi
@@ -130,8 +130,8 @@
 - type: entity
   parent: RMCMedalGold
   id: RMCMedalHighCommandHonor
-  name: UNMC High Command Medal of honor
-  description: A star-shaped golden medal bestowed solely by UNMC High Command. It is not earned through valor alone, but granted by command authority for deeds that transcend recognized heroism. As the UNMC’s ultimate distinction, it eclipses every other commendation. Its recipients are known to history, not statistics.
+  name: USCM High Command Medal of honor
+  description: A star-shaped golden medal bestowed solely by USCM High Command. It is not earned through valor alone, but granted by command authority for deeds that transcend recognized heroism. As the USCM’s ultimate distinction, it eclipses every other commendation. Its recipients are known to history, not statistics.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medals/gold_star.rsi
@@ -145,7 +145,7 @@
   parent: RMCMedalGold
   id: RMCMedalGoldService
   name: gold service medal
-  description: A reflective gold medal awarded for a marine's service within the UNMC. It represents the first major step of many a marine takes in becoming highly qualified in their positions.
+  description: A reflective gold medal awarded for a marine's service within the USCM. It represents the first major step of many a marine takes in becoming highly qualified in their positions.
 
 - type: entity
   parent: RMCMedalBase
@@ -165,7 +165,7 @@
   parent: RMCMedalPlatinum
   id: RMCMedalPlatinumService
   name: platinum service medal
-  description: A dark blue medal awarded for a marine's service within the UNMC. These medals are issued to those who have shown a clear passion for their position and its success.
+  description: A dark blue medal awarded for a marine's service within the USCM. These medals are issued to those who have shown a clear passion for their position and its success.
 
 - type: entity
   parent: RMCMedalBase
@@ -185,7 +185,7 @@
   parent: RMCMedalRuby
   id: RMCMedalRubyService
   name: ruby service medal
-  description: A deep crimson colored medal awarded for a marine's consistent service within the UNMC. This medal represent true dedication to one department and position.
+  description: A deep crimson colored medal awarded for a marine's consistent service within the USCM. This medal represent true dedication to one department and position.
 
 - type: entity
   parent: RMCMedalBase
@@ -205,7 +205,7 @@
   parent: RMCMedalAmethyst
   id: RMCMedalAmethystService
   name: amethyst service medal
-  description: A pale violet colored medal awarded for a marine's service within the UNMC. This medal and those after represent someone who has weathered countless long and difficult deployments but conquered and learned from them.
+  description: A pale violet colored medal awarded for a marine's service within the USCM. This medal and those after represent someone who has weathered countless long and difficult deployments but conquered and learned from them.
 
 - type: entity
   parent: RMCMedalBase
@@ -225,7 +225,7 @@
   parent: RMCMedalEmerald
   id: RMCMedalEmeraldService
   name: emerald service medal
-  description: A bright emerald medal awarded for a marine's service within the UNMC. Emerald medals are awarded to represent a marine's multiple years of effort to grow and learn in their position, it is one of the final awards representing a marine's career through service medals.
+  description: A bright emerald medal awarded for a marine's service within the USCM. Emerald medals are awarded to represent a marine's multiple years of effort to grow and learn in their position, it is one of the final awards representing a marine's career through service medals.
 
 - type: entity
   parent: RMCMedalBase
@@ -245,7 +245,7 @@
   parent: RMCMedalPrismatic
   id: RMCMedalPrismaticService
   name: prismatic service medal
-  description: A multi-colored prismatic medal awarded for a marine's service within the UNMC. Prismatic medals are traditionally awarded to those who have spent countless years of service in their position. Medals like these are generally issued directly by adjutants or staff representing members of UNMC Command as the final possible service medal.
+  description: A multi-colored prismatic medal awarded for a marine's service within the USCM. Prismatic medals are traditionally awarded to those who have spent countless years of service in their position. Medals like these are generally issued directly by adjutants or staff representing members of USCM Command as the final possible service medal.
 
 # Civilian Ribbons
 
@@ -267,7 +267,7 @@
   parent: RMCMedalRibbonBronze
   id: RMCMedalRibbonBronzeService
   name: bronze award ribbon
-  description: A bronze ribbon awarded to civilians for participation in a UNMC-sponsored event. It is a very common award, and is typically the first award a civilian would receive.
+  description: A bronze ribbon awarded to civilians for participation in a USCM-sponsored event. It is a very common award, and is typically the first award a civilian would receive.
 
 - type: entity
   parent: RMCMedalBase
@@ -287,7 +287,7 @@
   parent: RMCMedalRibbonWhite
   id: RMCMedalRibbonWhiteService
   name: white award ribbon
-  description: A white ribbon awarded to civilians for participation in a UNMC-sponsored event. It is a somewhat common award, signifying their dedication and support for the organization.
+  description: A white ribbon awarded to civilians for participation in a USCM-sponsored event. It is a somewhat common award, signifying their dedication and support for the organization.
 
 - type: entity
   parent: RMCMedalBase
@@ -307,7 +307,7 @@
   parent: RMCMedalRibbonYellow
   id: RMCMedalRibbonYellowService
   name: yellow award ribbon
-  description: A bright yellow ribbon awarded to civilians for participation in a UNMC-sponsored event. It is a rare award, signifying their dedication and support for the organization.
+  description: A bright yellow ribbon awarded to civilians for participation in a USCM-sponsored event. It is a rare award, signifying their dedication and support for the organization.
 
 - type: entity
   parent: RMCMedalBase
@@ -327,7 +327,7 @@
   parent: RMCMedalRibbonBlue
   id: RMCMedalRibbonBlueService
   name: blue award ribbon
-  description: A prestigious blue ribbon awarded to civilians for participation in a UNMC-sponsored event. Such awards require significant amounts of time and dedication to the organization to achieve.
+  description: A prestigious blue ribbon awarded to civilians for participation in a USCM-sponsored event. Such awards require significant amounts of time and dedication to the organization to achieve.
 
 - type: entity
   parent: RMCMedalBase
@@ -347,7 +347,7 @@
   parent: RMCMedalRibbonRed
   id: RMCMedalRibbonRedService
   name: red award ribbon
-  description: A vibrant red ribbon awarded to civilians for going above and beyond in UNMC-sponsored events. Such awards require excessive amounts of time and dedication to the organization to achieve.
+  description: A vibrant red ribbon awarded to civilians for going above and beyond in USCM-sponsored events. Such awards require excessive amounts of time and dedication to the organization to achieve.
 
 - type: entity
   parent: RMCMedalBase
@@ -367,7 +367,7 @@
   parent: RMCMedalRibbonEmerald
   id: RMCMedalRibbonEmeraldService
   name: emerald award ribbon
-  description: A revered emerald ribbon awarded to civilians for going above and beyond in UNMC-sponsored events. Such awards require exorbitant amounts of time and dedication to the organization to achieve.
+  description: A revered emerald ribbon awarded to civilians for going above and beyond in USCM-sponsored events. Such awards require exorbitant amounts of time and dedication to the organization to achieve.
 
 - type: entity
   parent: RMCMedalBase
@@ -387,7 +387,7 @@
   parent: RMCMedalRibbonAmethyst
   id: RMCMedalRibbonAmethystService
   name: amethyst award ribbon
-  description: A mythical amethyst ribbon awarded to civilians for going far above and beyond in UNMC-sponsored events. Such awards require unreasonable amounts of time and dedication to the organization to achieve.
+  description: A mythical amethyst ribbon awarded to civilians for going far above and beyond in USCM-sponsored events. Such awards require unreasonable amounts of time and dedication to the organization to achieve.
 
 - type: entity
   parent: RMCMedalBase
@@ -449,7 +449,7 @@
   parent: RMCMedalSilverNametag
   id: RMCMedalSilverNametagService
   name: executive name badge
-  description: An engraved bright silver badge, containing the wearer's name, rank, and department. This one is given to those who have proven their worth to Weston-Yamada as a valuable employee.
+  description: An engraved bright silver badge, containing the wearer's name, rank, and department. This one is given to those who have proven their worth to Weyland-Yutani as a valuable employee.
 
 - type: entity
   parent: RMCMedalBase
@@ -489,6 +489,6 @@
   parent: RMCMedalPlatinumNametag
   id: RMCMedalPlatinumNametagService
   name: executive specialist name badge
-  description: An engraved gold-and-black badge, containing the wearer's name, rank, and department. The highest rank most executives can reach within their lifetimes, it signifies ones influence, skill, and importance to the Weston-Yamada Corporation.
+  description: An engraved gold-and-black badge, containing the wearer's name, rank, and department. The highest rank most executives can reach within their lifetimes, it signifies ones influence, skill, and importance to the Weyland-Yutani Corporation.
 
 

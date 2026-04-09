@@ -512,35 +512,35 @@
 
 - type: entity
   parent: RMCCabinet
-  id: RMCCabinetTSEPAInspector
+  id: RMCCabinetTWEPAInspector
   name: inspector's cabinet
   components:
   - type: AccessReader
-    access: [["RMCAccessTSEPAInspector"]]
+    access: [["RMCAccessTWEPAInspector"]]
 
 - type: entity
   parent: CMLockerBase
-  id: RMCLockerTSEPASeniorConstable
+  id: RMCLockerTWEPASeniorConstable
   name: senior constable's locker
   components:
   - type: AccessReader
-    access: [["RMCAccessTSEPABrig"]]
+    access: [["RMCAccessTWEPABrig"]]
   - type: EntityTableContainerFill
     containers:
       entity_storage: !type:NestedSelector
-        tableId: RMCClosetTSEPAFill
+        tableId: RMCClosetTWEPAFill
 
 - type: entity
   parent: CMLockerPolice
-  id: RMCLockerTSEPA
+  id: RMCLockerTWEPA
   name: constable's locker
   components:
   - type: AccessReader
-    access: [["RMCAccessTSEPA"]]
+    access: [["RMCAccessTWEPA"]]
   - type: EntityTableContainerFill
     containers:
       entity_storage: !type:NestedSelector
-        tableId: RMCClosetTSEPAFill
+        tableId: RMCClosetTWEPAFill
 
 - type: entity
   parent: CMLockerBase
@@ -553,7 +553,7 @@
     containers:
       entity_storage: !type:NestedSelector
         tableId: RMCClosetGoldenArrowPlatoonCommanderFill
-# SPP
+# UPP
 - type: entity
   parent: RMCLockerSquadLeader
   id: RMCLockerSquadLeaderSPP

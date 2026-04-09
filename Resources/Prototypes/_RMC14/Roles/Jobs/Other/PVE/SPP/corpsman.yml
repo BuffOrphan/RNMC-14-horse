@@ -1,8 +1,8 @@
 - type: job
   parent: CMJobBase
   id: RMCSPPCorpsmanPVE
-  name: rmc-job-name-spp-corpsman
-  description: rmc-job-description-spp-corpsman-pve
+  name: rmc-job-name-upp-corpsman
+  description: rmc-job-description-upp-corpsman-pve
   playTimeTracker: RMCJobSPPCorpsmanPVE
   requirements:
   - !type:TotalJobsTimeRequirement
@@ -15,13 +15,13 @@
   joinNotifyCrew: false
   accessGroups:
   - HospitalCorpsman
-  spawnMenuRoleName: SPP Corpsman (PVE)
+  spawnMenuRoleName: UPP Corpsman (PVE)
   special:
   - !type:AddComponentSpecial
     components:
     - type: NpcFactionMember
       factions:
-      - SPP
+      - UPP
     - type: Skills
       preset: RMCSkillPresetPVECorpsman
     - type: CMVendorUser
@@ -31,7 +31,7 @@
         Chemicals: 120
     - type: SquadArmorWearer
     - type: JobPrefix
-      prefix: rmc-job-prefix-spp-corpsman
+      prefix: rmc-job-prefix-upp-corpsman
     - type: AssignSquad
       whitelist:
         tags:
@@ -46,7 +46,7 @@
 - type: entity
   parent: CMSpawnPointJobBase
   id: RMCSpawnPointSPPCorpsmanPVE
-  name: spp corpsman spawn point
+  name: upp corpsman spawn point
   suffix: PVE
   components:
   - type: SpawnPoint

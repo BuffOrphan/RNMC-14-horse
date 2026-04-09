@@ -10,7 +10,7 @@
   fallback: true
   stations:
     Almayer:
-      stationProto: StandardUNMCWarship
+      stationProto: StandardUSCMWarship
       components:
       - type: StationNameSetup
         mapNameTemplate: 'UNS Almayer'

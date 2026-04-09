@@ -1,7 +1,7 @@
 ﻿- type: entity
   abstract: true
   parent: CMBaseWallInvincible
-  id: RMCBaseTSEDropshipWall
+  id: RMCBaseTWEDropshipWall
   name: UD4-UK wall
   components:
   - type: Corrodible
@@ -13,8 +13,8 @@
   - type: Clickable
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall1
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall1
   components:
   - type: Sprite
     state: 1
@@ -22,8 +22,8 @@
     state: 1
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall2
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall2
   components:
   - type: Sprite
     state: 2
@@ -31,8 +31,8 @@
     state: 2
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall3
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall3
   components:
   - type: Sprite
     state: 3
@@ -40,8 +40,8 @@
     state: 3
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall4
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall4
   components:
   - type: Sprite
     state: 4
@@ -49,8 +49,8 @@
     state: 4
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall5
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall5
   components:
   - type: Sprite
     state: 5
@@ -58,8 +58,8 @@
     state: 5
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall6
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall6
   components:
   - type: Sprite
     state: 6
@@ -67,8 +67,8 @@
     state: 6
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall7
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall7
   components:
   - type: Sprite
     state: 7
@@ -76,8 +76,8 @@
     state: 7
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall8
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall8
   components:
   - type: Sprite
     state: 8
@@ -85,8 +85,8 @@
     state: 8
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall9
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall9
   components:
   - type: Sprite
     state: 9
@@ -94,8 +94,8 @@
     state: 9
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall10
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall10
   components:
   - type: Sprite
     state: 10
@@ -103,8 +103,8 @@
     state: 10
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall11
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall11
   components:
   - type: Sprite
     state: 11
@@ -112,8 +112,8 @@
     state: 11
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall12
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall12
   components:
   - type: Sprite
     state: 12
@@ -121,8 +121,8 @@
     state: 12
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall13
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall13
   components:
   - type: Sprite
     state: 13
@@ -130,8 +130,8 @@
     state: 13
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall14
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall14
   components:
   - type: Sprite
     state: 14
@@ -139,8 +139,8 @@
     state: 14
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall15
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall15
   components:
   - type: Sprite
     state: 15
@@ -148,8 +148,8 @@
     state: 15
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall16
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall16
   components:
   - type: Sprite
     state: 16
@@ -157,8 +157,8 @@
     state: 16
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall17
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall17
   components:
   - type: Sprite
     state: 17
@@ -166,8 +166,8 @@
     state: 17
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall18
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall18
   components:
   - type: Sprite
     state: 18
@@ -175,8 +175,8 @@
     state: 18
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall19
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall19
   components:
   - type: Sprite
     state: 19
@@ -184,8 +184,8 @@
     state: 19
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall20
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall20
   components:
   - type: Sprite
     state: 20
@@ -193,8 +193,8 @@
     state: 20
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall21
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall21
   components:
   - type: Sprite
     state: 21
@@ -202,8 +202,8 @@
     state: 21
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall22
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall22
   components:
   - type: Sprite
     state: 22
@@ -211,8 +211,8 @@
     state: 22
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall23
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall23
   components:
   - type: Sprite
     state: 23
@@ -220,8 +220,8 @@
     state: 23
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall24
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall24
   components:
     - type: Sprite
       state: 24
@@ -229,8 +229,8 @@
       state: 24
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall25
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall25
   components:
     - type: Sprite
       state: 25
@@ -238,8 +238,8 @@
       state: 25
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall26
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall26
   components:
     - type: Sprite
       state: 26
@@ -247,8 +247,8 @@
       state: 26
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall27
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall27
   components:
     - type: Sprite
       state: 27
@@ -256,8 +256,8 @@
       state: 27
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall28
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall28
   components:
     - type: Sprite
       state: 28
@@ -265,8 +265,8 @@
       state: 28
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall29
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall29
   components:
     - type: Sprite
       state: 29
@@ -274,8 +274,8 @@
       state: 29
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall30
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall30
   components:
     - type: Sprite
       state: 30
@@ -283,8 +283,8 @@
       state: 30
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall31
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall31
   components:
     - type: Sprite
       state: 31
@@ -292,8 +292,8 @@
       state: 31
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall32
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall32
   components:
     - type: Sprite
       state: 32
@@ -301,8 +301,8 @@
       state: 32
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall33
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall33
   components:
     - type: Sprite
       state: 33
@@ -310,8 +310,8 @@
       state: 33
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall34
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall34
   components:
     - type: Sprite
       state: 34
@@ -319,8 +319,8 @@
       state: 34
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall35
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall35
   components:
     - type: Sprite
       state: 35
@@ -328,8 +328,8 @@
       state: 35
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall36
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall36
   components:
     - type: Sprite
       state: 36
@@ -337,8 +337,8 @@
       state: 36
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall37
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall37
   components:
     - type: Sprite
       state: 37
@@ -346,8 +346,8 @@
       state: 37
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall38
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall38
   components:
     - type: Sprite
       state: 38
@@ -355,8 +355,8 @@
       state: 38
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall39
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall39
   components:
     - type: Sprite
       state: 39
@@ -364,8 +364,8 @@
       state: 39
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall40
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall40
   components:
     - type: Sprite
       state: 40
@@ -373,8 +373,8 @@
       state: 40
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall41
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall41
   components:
     - type: Sprite
       state: 41
@@ -382,8 +382,8 @@
       state: 41
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall42
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall42
   components:
     - type: Sprite
       state: 42
@@ -391,8 +391,8 @@
       state: 42
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall43
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall43
   components:
     - type: Sprite
       state: 43
@@ -400,8 +400,8 @@
       state: 43
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall44
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall44
   components:
     - type: Sprite
       state: 44
@@ -409,8 +409,8 @@
       state: 44
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall45
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall45
   components:
     - type: Sprite
       state: 45
@@ -418,8 +418,8 @@
       state: 45
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall46
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall46
   components:
     - type: Sprite
       state: 46
@@ -427,8 +427,8 @@
       state: 46
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall47
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall47
   components:
     - type: Sprite
       state: 47
@@ -436,8 +436,8 @@
       state: 47
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall48
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall48
   components:
     - type: Sprite
       state: 48
@@ -445,8 +445,8 @@
       state: 48
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall49
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall49
   components:
     - type: Sprite
       state: 49
@@ -454,8 +454,8 @@
       state: 49
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall50
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall50
   components:
     - type: Sprite
       state: 50
@@ -463,8 +463,8 @@
       state: 50
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall51
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall51
   components:
     - type: Sprite
       state: 51
@@ -472,8 +472,8 @@
       state: 51
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall52
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall52
   components:
     - type: Sprite
       state: 52
@@ -481,8 +481,8 @@
       state: 52
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall53
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall53
   components:
     - type: Sprite
       state: 53
@@ -490,8 +490,8 @@
       state: 53
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall54
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall54
   components:
     - type: Sprite
       state: 54
@@ -499,8 +499,8 @@
       state: 54
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall55
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall55
   components:
     - type: Sprite
       state: 55
@@ -508,8 +508,8 @@
       state: 55
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall56
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall56
   components:
     - type: Sprite
       state: 56
@@ -517,8 +517,8 @@
       state: 56
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall57
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall57
   components:
     - type: Sprite
       state: 57
@@ -526,8 +526,8 @@
       state: 57
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall58
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall58
   components:
     - type: Sprite
       state: 58
@@ -535,8 +535,8 @@
       state: 58
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall59
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall59
   components:
     - type: Sprite
       state: 59
@@ -544,8 +544,8 @@
       state: 59
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall60
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall60
   components:
     - type: Sprite
       state: 60
@@ -553,8 +553,8 @@
       state: 60
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall61
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall61
   components:
     - type: Sprite
       state: 61
@@ -562,8 +562,8 @@
       state: 61
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall62
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall62
   components:
     - type: Sprite
       state: 62
@@ -571,8 +571,8 @@
       state: 62
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall63
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall63
   components:
     - type: Sprite
       state: 63
@@ -582,8 +582,8 @@
       enabled: false
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall64
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall64
   components:
     - type: Sprite
       state: 64
@@ -591,8 +591,8 @@
       state: 64
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall65
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall65
   components:
     - type: Sprite
       state: 65
@@ -600,8 +600,8 @@
       state: 65
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall66
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall66
   components:
     - type: Sprite
       state: 66
@@ -609,8 +609,8 @@
       state: 66
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall67
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall67
   components:
     - type: Sprite
       state: 67
@@ -618,8 +618,8 @@
       state: 67
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall68
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall68
   components:
     - type: Sprite
       state: 68
@@ -627,8 +627,8 @@
       state: 68
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall69
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall69
   components:
     - type: Sprite
       state: 69
@@ -636,8 +636,8 @@
       state: 69
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall70
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall70
   components:
     - type: Sprite
       state: 70
@@ -645,8 +645,8 @@
       state: 70
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall71
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall71
   components:
     - type: Sprite
       state: 71
@@ -654,8 +654,8 @@
       state: 71
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall72
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall72
   components:
     - type: Sprite
       state: 72
@@ -663,8 +663,8 @@
       state: 72
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall73
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall73
   components:
     - type: Sprite
       state: 73
@@ -672,8 +672,8 @@
       state: 73
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall74
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall74
   components:
     - type: Sprite
       state: 74
@@ -683,8 +683,8 @@
       enabled: false
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall75
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall75
   components:
     - type: Sprite
       state: 75
@@ -692,8 +692,8 @@
       state: 75
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall76
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall76
   components:
     - type: Sprite
       state: 76
@@ -703,8 +703,8 @@
       enabled: false
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall77
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall77
   components:
     - type: Sprite
       state: 77
@@ -714,8 +714,8 @@
       enabled: false
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall78
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall78
   components:
     - type: Sprite
       state: 78
@@ -723,8 +723,8 @@
       state: 78
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall79
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall79
   components:
     - type: Sprite
       state: 79
@@ -734,8 +734,8 @@
       enabled: false
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall80
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall80
   components:
     - type: Sprite
       state: 80
@@ -745,8 +745,8 @@
       enabled: false
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall81
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall81
   components:
     - type: Sprite
       state: 81
@@ -754,8 +754,8 @@
       state: 81
 
 - type: entity
-  parent: RMCBaseTSEDropshipWall
-  id: RMCTSEDropshipWall82
+  parent: RMCBaseTWEDropshipWall
+  id: RMCTWEDropshipWall82
   components:
     - type: Sprite
       state: 82

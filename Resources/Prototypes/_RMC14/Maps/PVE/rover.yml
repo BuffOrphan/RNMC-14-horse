@@ -7,7 +7,7 @@
   randomRotation: false
   stations:
     Rover:
-      stationProto: StandardUNMCWarship
+      stationProto: StandardUSCMWarship
       components:
         - type: StationNameSetup
           mapNameTemplate: 'UNS Rover'

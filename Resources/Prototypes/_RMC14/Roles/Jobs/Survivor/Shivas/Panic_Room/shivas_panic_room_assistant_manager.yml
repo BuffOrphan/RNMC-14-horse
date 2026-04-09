@@ -5,7 +5,7 @@
   description: rmc-job-description-survivor
   ranks:
     RMCRankWeYaAssistantManager: []
-  supervisors: cm-job-supervisors-we-ya
+  supervisors: cm-job-supervisors-we-yu
   accessGroups:
   - ColonistCorporate
   startingGear: RMCGearSurvivorShivasAssistantManager

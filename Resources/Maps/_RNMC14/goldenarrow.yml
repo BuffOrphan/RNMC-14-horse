@@ -683,47 +683,47 @@ entities:
             1252: 71,70
         - node:
             color: '#FFFFFFFF'
-            id: CMDecalUNMC1
+            id: CMDecalUSCM1
           decals:
             1446: 80,49
         - node:
             color: '#FFFFFFFF'
-            id: CMDecalUNMC2
+            id: CMDecalUSCM2
           decals:
             1444: 81,49
         - node:
             color: '#FFFFFFFF'
-            id: CMDecalUNMC3
+            id: CMDecalUSCM3
           decals:
             1445: 82,49
         - node:
             color: '#FFFFFFFF'
-            id: CMDecalUNMC4
+            id: CMDecalUSCM4
           decals:
             1439: 80,48
         - node:
             color: '#FFFFFFFF'
-            id: CMDecalUNMC5
+            id: CMDecalUSCM5
           decals:
             1438: 81,48
         - node:
             color: '#FFFFFFFF'
-            id: CMDecalUNMC6
+            id: CMDecalUSCM6
           decals:
             1440: 82,48
         - node:
             color: '#FFFFFFFF'
-            id: CMDecalUNMC7
+            id: CMDecalUSCM7
           decals:
             1441: 80,47
         - node:
             color: '#FFFFFFFF'
-            id: CMDecalUNMC8
+            id: CMDecalUSCM8
           decals:
             1442: 81,47
         - node:
             color: '#FFFFFFFF'
-            id: CMDecalUNMC9
+            id: CMDecalUSCM9
           decals:
             1443: 82,47
         - node:

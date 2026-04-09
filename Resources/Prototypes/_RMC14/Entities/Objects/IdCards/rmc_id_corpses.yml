@@ -66,9 +66,9 @@
     job: CMSurvivorFiorinaRiotOfficer
 
 - type: entity
-  parent: RMCIDCardTSEPA
+  parent: RMCIDCardTWEPA
   id: RMCIDCardConstableCorpse
   categories: [ HideSpawnMenu ]
   components:
   - type: PresetIdCard
-    job: RMCSurvivorHybrisaTSEPAConstable
+    job: RMCSurvivorHybrisaTWEPAConstable

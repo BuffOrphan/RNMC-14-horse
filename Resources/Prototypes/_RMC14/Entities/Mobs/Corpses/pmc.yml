@@ -1,4 +1,4 @@
-# We-Ya PMC
+# We-Yu PMC
 - type: randomHumanoidSettings
   parent: RMCCorpse
   id: RMCCorpseWeYa
@@ -53,7 +53,7 @@
   components:
   - type: VictimBurst
 
-# We-Ya Goon
+# We-Yu Goon
 - type: randomHumanoidSettings
   parent: RMCCorpseWeYaPMCStandard
   id: RMCCorpseWeYaGoon

@@ -177,17 +177,17 @@
 - type: entity
   parent: CMStampLiaison
   id: CMStampWeYa
-  name: Weston-Yamada rubber stamp
+  name: Weyland-Yutani rubber stamp
   suffix: Admin
   components:
   - type: Stamp
-    stampedName: stamp-component-stamped-name-cm-we-ya
+    stampedName: stamp-component-stamped-name-cm-we-yu
 
 - type: entity
   parent: CMStampBase
   id: CMStampMarine
   name: marine rubber stamp
-  suffix: Admin, UNMC
+  suffix: Admin, USCM
   components:
   - type: Sprite
     state: stamp-marine
@@ -239,20 +239,20 @@
   parent: CMStampBase
   id: RMCStampSPP
   name: socialist progressive peoples rubber stamp
-  suffix: Admin, SPP
+  suffix: Admin, UPP
   components:
   - type: Sprite
-    state: stamp-spp
+    state: stamp-upp
   - type: Stamp
-    stampedName: stamp-component-stamped-name-cm-spp
+    stampedName: stamp-component-stamped-name-cm-upp
     stampedColor: "#A70707"
-    stampState: "paper_stamp-spp"
+    stampState: "paper_stamp-upp"
 
 - type: entity
   parent: CMStampBase
-  id: RMCStampTSE
+  id: RMCStampTWE
   name: three suns empire rubber stamp
-  suffix: Admin, TSE
+  suffix: Admin, TWE
   components:
   - type: Sprite
     state: stamp-tse

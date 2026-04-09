@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCSecureCase
   id: RMCSecureCaseM54CMK1Mag
-  name: M54C MK1 magazine case (x20)
-  description: An ammunition case containing 20 M54C MK1 magazines.
+  name: M41A MK1 magazine case (x20)
+  description: An ammunition case containing 20 M41A MK1 magazines.
   components:
   - type: CrateOpenable
     spawn:

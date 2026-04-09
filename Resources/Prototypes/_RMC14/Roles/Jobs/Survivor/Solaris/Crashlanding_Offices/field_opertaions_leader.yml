@@ -5,7 +5,7 @@
   whitelistParent: CMCommandingOfficer
   ranks:
     RMCRankWeYaFieldOperaionsLeader: []
-  supervisors: cm-job-supervisors-we-ya
+  supervisors: cm-job-supervisors-we-yu
   accessGroups:
   - ColonistPMC
   startingGear: RMCGearSurvivorPMCCommander

@@ -1,24 +1,24 @@
 - type: entity
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  name: M54C assault rifle MK2
+  name: M41A assault rifle MK2
   id: RMCWeaponRifleM54C
   description: The standard issue rifle of the Marines. Commonly carried by most combat personnel. Uses 10x24mm caseless ammunition.
   components:
   - type: Sprite
-    sprite: _RNMC14/Objects/Weapons/Guns/Rifles/m54c/desert.rsi # RNMC-14, resprited.
+    sprite: _RNMC14/Objects/Weapons/Guns/Rifles/m41a/desert.rsi # RNMC-14, resprited.
     layers:
     - state: base
       map: [ "enum.GunVisualLayers.Base" ]
     - state: mag-0
       map: [ "enum.GunVisualLayers.Mag" ]
   - type: Clothing
-    sprite: _RNMC14/Objects/Weapons/Guns/Rifles/m54c/desert.rsi # RNMC-14, resprited.
+    sprite: _RNMC14/Objects/Weapons/Guns/Rifles/m41a/desert.rsi # RNMC-14, resprited.
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
   - type: RMCLoreExaminable
-    content: rmc-lore-examinable-m54c-mk2
+    content: rmc-lore-examinable-m41a-mk2
   - type: Gun
     selectedMode: FullAuto
     availableModes:
@@ -104,11 +104,11 @@
       rmc-aslot-underbarrel: 0.349, -0.375 # RNMC-14.
   - type: ItemCamouflage
     camouflageVariations:
-      Jungle: _RNMC14/Objects/Weapons/Guns/Rifles/m54c/jungle.rsi # RNMC-14, resprited.
-      Desert: _RNMC14/Objects/Weapons/Guns/Rifles/m54c/desert.rsi # RNMC-14, resprited.
-      Snow: _RNMC14/Objects/Weapons/Guns/Rifles/m54c/snow.rsi # RNMC-14, resprited.
-      Classic: _RNMC14/Objects/Weapons/Guns/Rifles/m54c/classic.rsi # RNMC-14, resprited.
-      Urban: _RNMC14/Objects/Weapons/Guns/Rifles/m54c/urban.rsi # RNMC-14, resprited.
+      Jungle: _RNMC14/Objects/Weapons/Guns/Rifles/m41a/jungle.rsi # RNMC-14, resprited.
+      Desert: _RNMC14/Objects/Weapons/Guns/Rifles/m41a/desert.rsi # RNMC-14, resprited.
+      Snow: _RNMC14/Objects/Weapons/Guns/Rifles/m41a/snow.rsi # RNMC-14, resprited.
+      Classic: _RNMC14/Objects/Weapons/Guns/Rifles/m41a/classic.rsi # RNMC-14, resprited.
+      Urban: _RNMC14/Objects/Weapons/Guns/Rifles/m41a/urban.rsi # RNMC-14, resprited.
   - type: Tag
     tags:
     - RMCWeaponRifleM54CMK2
@@ -252,18 +252,18 @@
 - type: entity
   parent: RMCWeaponRifleM54CSemiStripped
   id: RMCWeaponRifleM54CWhiteNoLock
-  description: A M54C Mk2 with a Weston-Yamada logo imprinted on the reciever. Used primarily by Weston-Yamada's corporate security forces, and comes equipped with a drab corproate white paint job.
+  description: A M41A Mk2 with a Weyland-Yutani logo imprinted on the reciever. Used primarily by Weyland-Yutani's corporate security forces, and comes equipped with a drab corproate white paint job.
   suffix: Corporate, No UGL, No ID lock
   components:
   - type: Sprite
-    sprite: _RNMC14/Objects/Weapons/Guns/Rifles/m54c/snow.rsi # RNMC-14, resprited.
+    sprite: _RNMC14/Objects/Weapons/Guns/Rifles/m41a/snow.rsi # RNMC-14, resprited.
     layers:
     - state: base
       map: [ "enum.GunVisualLayers.Base" ]
     - state: mag-0
       map: [ "enum.GunVisualLayers.Mag" ]
   - type: Clothing
-    sprite: _RNMC14/Objects/Weapons/Guns/Rifles/m54c/snow.rsi # RNMC-14, resprited.
+    sprite: _RNMC14/Objects/Weapons/Guns/Rifles/m41a/snow.rsi # RNMC-14, resprited.
   - type: ItemCamouflage
     camouflageVariations: { }
   - type: AttachableHolder
@@ -307,7 +307,7 @@
 - type: entity
   parent: RMCWeaponRifleM54CWhite
   id: RMCWeaponRifleM54CWhiteCommando
-  description: A Weston-Yamada creation, this M54C MK2 comes equipped in corporate white. Uses 10x24mm caseless ammunition.
+  description: A Weyland-Yutani creation, this M41A MK2 comes equipped in corporate white. Uses 10x24mm caseless ammunition.
   suffix: Commando
   components:
   - type: ItemSlots
@@ -375,7 +375,7 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: CMMagazineRifleM54C
-  name: "M54C magazine (10x24mm)"
+  name: "M41A magazine (10x24mm)"
   components:
   - type: Tag
     tags:
@@ -389,7 +389,7 @@
     proto: CMCartridgeRifle10x24mm
     capacity: 40
   - type: Sprite
-    sprite: _RNMC14/Objects/Weapons/Guns/Ammunition/Magazines/m54c.rsi # RNMC-14, resprited to use new RMC-14 sprites.
+    sprite: _RNMC14/Objects/Weapons/Guns/Ammunition/Magazines/m41a.rsi # RNMC-14, resprited to use new RMC-14 sprites.
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -402,7 +402,7 @@
 - type: entity
   parent: CMMagazineRifleM54C
   id: CMMagazineRifleM54CAP
-  name: "M54C AP magazine (10x24mm)"
+  name: "M41A AP magazine (10x24mm)"
   suffix: AP
   components:
   - type: Tag
@@ -415,7 +415,7 @@
       - CMCartridgeRifle10x24mmAP
     proto: CMCartridgeRifle10x24mmAP
   - type: Sprite
-    sprite: _RNMC14/Objects/Weapons/Guns/Ammunition/Magazines/m54c.rsi # RNMC-14, resprited to use new RMC-14 sprites.
+    sprite: _RNMC14/Objects/Weapons/Guns/Ammunition/Magazines/m41a.rsi # RNMC-14, resprited to use new RMC-14 sprites.
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -426,12 +426,12 @@
   - type: RefillableByBulletBox
     bulletType: RMCBoxBulletsRifleAP
   - type: RMCLoreExaminable
-    content: rmc-lore-examinable-m54c-ap-magazine
+    content: rmc-lore-examinable-m41a-ap-magazine
 
 - type: entity
   parent: CMMagazineRifleM54C
   id: RMCMagazineRifleM54CIncendiary
-  name: "M54C Incendiary magazine (10x24mm)"
+  name: "M41A Incendiary magazine (10x24mm)"
   suffix: Incendiary
   components:
   - type: Tag
@@ -444,7 +444,7 @@
       - RMCCartridgeRifle10x24mmIncendiary
     proto: RMCCartridgeRifle10x24mmIncendiary
   - type: Sprite
-    sprite: _RNMC14/Objects/Weapons/Guns/Ammunition/Magazines/m54c.rsi # RNMC-14, resprited to use new RMC-14 sprites.
+    sprite: _RNMC14/Objects/Weapons/Guns/Ammunition/Magazines/m41a.rsi # RNMC-14, resprited to use new RMC-14 sprites.
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -458,7 +458,7 @@
 - type: entity
   parent: CMMagazineRifleM54C
   id: RMCMagazineRifleM54CHEAP
-  name: "M54C HEAP magazine (10x24mm)"
+  name: "M41A HEAP magazine (10x24mm)"
   suffix: HEAP
   components:
   - type: Tag
@@ -471,7 +471,7 @@
       - RMCCartridgeRifle10x24mmHEAP
     proto: RMCCartridgeRifle10x24mmHEAP
   - type: Sprite
-    sprite: _RNMC14/Objects/Weapons/Guns/Ammunition/Magazines/m54c.rsi # RNMC-14, resprited to use new RMC-14 sprites.
+    sprite: _RNMC14/Objects/Weapons/Guns/Ammunition/Magazines/m41a.rsi # RNMC-14, resprited to use new RMC-14 sprites.
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -493,7 +493,7 @@
 - type: entity
   parent: CMMagazineRifleM54C
   id: RMCMagazineRifleM54CWP
-  name: "M54C WP magazine (10x24mm)"
+  name: "M41A WP magazine (10x24mm)"
   suffix: WP
   components:
   - type: Tag
@@ -506,7 +506,7 @@
       - RMCCartridgeRifle10x24mmWP
     proto: RMCCartridgeRifle10x24mmWP
   - type: Sprite
-    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/m54c.rsi
+    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/m41a.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -520,7 +520,7 @@
 - type: entity
   parent: CMMagazineRifleM54C
   id: CMMagazineRifleM54CExt
-  name: "M54C extended magazine (10x24mm)"
+  name: "M41A extended magazine (10x24mm)"
   components:
   - type: Tag
     tags:

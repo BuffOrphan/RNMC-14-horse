@@ -7,7 +7,7 @@
   randomRotation: false
   stations:
     OCP-583:
-      stationProto: UNMCHighCommand
+      stationProto: USCMHighCommand
       components:
         - type: StationNameSetup
           mapNameTemplate: 'OCP-583'

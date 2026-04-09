@@ -1,80 +1,80 @@
 - type: decal
-  id: CMDecalUNMC1
+  id: CMDecalUSCM1
   parent: CMDecalBase
   tags: ["station"]
   defaultCustomColor: true
   sprite:
-    sprite: _RNMC14/Decals/unmc.rsi # RNMC-14 - Sprites changed.
-    state: unmc1
+    sprite: _RNMC14/Decals/uscm.rsi # RNMC-14 - Sprites changed.
+    state: uscm1
 
 - type: decal
-  id: CMDecalUNMC2
+  id: CMDecalUSCM2
   parent: CMDecalBase
   tags: ["station"]
   defaultCustomColor: true
   sprite:
-    sprite: _RNMC14/Decals/unmc.rsi # RNMC-14 - Sprites changed.
-    state: unmc2
+    sprite: _RNMC14/Decals/uscm.rsi # RNMC-14 - Sprites changed.
+    state: uscm2
 
 - type: decal
-  id: CMDecalUNMC3
+  id: CMDecalUSCM3
   parent: CMDecalBase
   tags: ["station"]
   defaultCustomColor: true
   sprite:
-    sprite: _RNMC14/Decals/unmc.rsi # RNMC-14 - Sprites changed.
-    state: unmc3
+    sprite: _RNMC14/Decals/uscm.rsi # RNMC-14 - Sprites changed.
+    state: uscm3
 
 - type: decal
-  id: CMDecalUNMC4
+  id: CMDecalUSCM4
   parent: CMDecalBase
   tags: ["station"]
   defaultCustomColor: true
   sprite:
-    sprite: _RNMC14/Decals/unmc.rsi # RNMC-14 - Sprites changed.
-    state: unmc4
+    sprite: _RNMC14/Decals/uscm.rsi # RNMC-14 - Sprites changed.
+    state: uscm4
 
 - type: decal
-  id: CMDecalUNMC5
+  id: CMDecalUSCM5
   parent: CMDecalBase
   tags: ["station"]
   defaultCustomColor: true
   sprite:
-    sprite: _RNMC14/Decals/unmc.rsi # RNMC-14 - Sprites changed.
-    state: unmc5
+    sprite: _RNMC14/Decals/uscm.rsi # RNMC-14 - Sprites changed.
+    state: uscm5
 
 - type: decal
-  id: CMDecalUNMC6
+  id: CMDecalUSCM6
   parent: CMDecalBase
   tags: ["station"]
   defaultCustomColor: true
   sprite:
-    sprite: _RNMC14/Decals/unmc.rsi # RNMC-14 - Sprites changed.
-    state: unmc6
+    sprite: _RNMC14/Decals/uscm.rsi # RNMC-14 - Sprites changed.
+    state: uscm6
 
 - type: decal
-  id: CMDecalUNMC7
+  id: CMDecalUSCM7
   parent: CMDecalBase
   tags: ["station"]
   defaultCustomColor: true
   sprite:
-    sprite: _RNMC14/Decals/unmc.rsi # RNMC-14 - Sprites changed.
-    state: unmc7
+    sprite: _RNMC14/Decals/uscm.rsi # RNMC-14 - Sprites changed.
+    state: uscm7
 
 - type: decal
-  id: CMDecalUNMC8
+  id: CMDecalUSCM8
   parent: CMDecalBase
   tags: ["station"]
   defaultCustomColor: true
   sprite:
-    sprite: _RNMC14/Decals/unmc.rsi # RNMC-14 - Sprites changed.
-    state: unmc8
+    sprite: _RNMC14/Decals/uscm.rsi # RNMC-14 - Sprites changed.
+    state: uscm8
 
 - type: decal
-  id: CMDecalUNMC9
+  id: CMDecalUSCM9
   parent: CMDecalBase
   tags: ["station"]
   defaultCustomColor: true
   sprite:
-    sprite: _RNMC14/Decals/unmc.rsi # RNMC-14 - Sprites changed.
-    state: unmc9
+    sprite: _RNMC14/Decals/uscm.rsi # RNMC-14 - Sprites changed.
+    state: uscm9

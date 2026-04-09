@@ -4,12 +4,12 @@
   abstract: true
   components:
   - type: UniformAccessoryHolder
-    startingAccessories: [ RMCPatchUNMC ]
+    startingAccessories: [ RMCPatchUSCM ]
 
 - type: entity
   parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
   id: JumpsuitMarine
-  name: UNMC uniform
+  name: USCM uniform
   description: Standard-issue Marine uniform. They have shards of light Kevlar to help protect against stabbing weapons and bullets.
   components:
   - type: Sprite
@@ -41,7 +41,7 @@
 - type: entity
   parent: JumpsuitMarine
   id: CMJumpsuitMarineEngineer
-  name: UNMC ComTech uniform
+  name: USCM ComTech uniform
   description: Standard-issue Marine combat technician fatigues. They have shards of light Kevlar to help protect against stabbing weapons and bullets.
   components:
   - type: Sprite
@@ -63,7 +63,7 @@
 - type: entity
   parent: JumpsuitMarine
   id: CMJumpsuitMarineMedic
-  name: UNMC corpsman uniform
+  name: USCM corpsman uniform
   description: Standard-issue Marine hospital corpsman fatigues. They have shards of light Kevlar to help protect against stabbing weapons and bullets.
   components:
   - type: Sprite
@@ -85,7 +85,7 @@
 - type: entity
   parent: JumpsuitMarine
   id: CMJumpsuitMarineRTO
-  name: UNMC radio telephone operator uniform
+  name: USCM radio telephone operator uniform
   description: Standard-issue RTO fatigues. They have shards of light Kevlar to help protect against stabbing weapons and bullets.
   components:
   - type: Sprite
@@ -107,13 +107,13 @@
 - type: entity
   parent: JumpsuitMarine
   id: CMJumpsuitMarineSniper
-  name: UNMC sniper uniform
+  name: USCM sniper uniform
 
 # Tanker
 - type: entity
   parent: RMCMarineUniformBase
   id: CMJumpsuitMarineTanker
-  name: UNMC tanker uniform
+  name: USCM tanker uniform
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Marine/tanker/jungle.rsi
@@ -172,7 +172,7 @@
 - type: entity
   parent: RMCMarineUniformBase
   id: CMJumpsuitMessTech
-  name: UNMC Mess Technician uniform
+  name: USCM Mess Technician uniform
   description: Standard-issue Mess Technician uniform. It has shards of light Kevlar to help protect against stabbing weapons and bullets.
   components:
   - type: Sprite
@@ -278,8 +278,8 @@
 - type: entity
   parent: CMJumpsuitCO
   id: RMCJumpsuitCOUniform
-  name: UNMC officer uniform
-  description: The well-ironed utility uniform of a UNMC officer. Even looking at it the wrong way could result in being court-martialed. It has shards of light Kevlar to help protect against stabbing weapons and bullets.
+  name: USCM officer uniform
+  description: The well-ironed utility uniform of a USCM officer. Even looking at it the wrong way could result in being court-martialed. It has shards of light Kevlar to help protect against stabbing weapons and bullets.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Command/CO/jumpsuit.rsi
@@ -290,7 +290,7 @@
   parent: CMJumpsuitCO
   id: RMCJumpsuitCOUniformGray
   name: Commanding Officer's gray formal uniform
-  description: A well-ironed UNMC officer uniform  intended for parades or hot weather. Wear this with pride.
+  description: A well-ironed USCM officer uniform  intended for parades or hot weather. Wear this with pride.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Command/CO/grey_jumpsuit.rsi
@@ -303,7 +303,7 @@
   parent: [RMCMarineUniformBase, RMCFoldableUniformBase]
   id: CMJumpsuitXOFormal
   name: marine formal service uniform
-  description: A formal service uniform typically worn by marines of the UNMC. Still practicable while still being more formal than the standard service uniform.
+  description: A formal service uniform typically worn by marines of the USCM. Still practicable while still being more formal than the standard service uniform.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Command/formal_service.rsi
@@ -369,7 +369,7 @@
   parent: [RMCMarineUniformBase, RMCFoldableUniformBase]
   id: CMJumpsuitBO
   name: marine service uniform
-  description: A service uniform worn by members of the UNMC. Do the corps proud. It has shards of light Kevlar to help protect against stabbing weapons and bullets.
+  description: A service uniform worn by members of the USCM. Do the corps proud. It has shards of light Kevlar to help protect against stabbing weapons and bullets.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Command/bo.rsi
@@ -381,7 +381,7 @@
   parent: CMJumpsuitBO
   id: CMJumpsuitOperations
   name: marine operations uniform
-  description: An operations uniform worn by members of the UNMC. Do the corps proud. It has shards of light Kevlar to help protect against stabbing weapons and bullets.
+  description: An operations uniform worn by members of the USCM. Do the corps proud. It has shards of light Kevlar to help protect against stabbing weapons and bullets.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/boiler/jungle.rsi
@@ -441,7 +441,7 @@
   parent: [RMCMarineUniformBase, RMCFoldableUniformBase]
   id: RMCJumpsuitPilotAlt
   name: tactical pilot officer flightsuit
-  description: A flightsuit worn by pilot officers of the UNMC, with plenty of leather straps, pouches, and other essential gear you will never use. Looks badass.
+  description: A flightsuit worn by pilot officers of the USCM, with plenty of leather straps, pouches, and other essential gear you will never use. Looks badass.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Auxiliary/pilot_alt.rsi
@@ -451,7 +451,7 @@
   parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
   id: CMJumpsuitDCC
   name: dropship crew chief bodysuit
-  description: A bodysuit worn by dropship crew chiefs of the UNMC, and is meant for survival in inhospitable conditions. It has shards of light Kevlar to help protect against stabbing weapons and bullets.
+  description: A bodysuit worn by dropship crew chiefs of the USCM, and is meant for survival in inhospitable conditions. It has shards of light Kevlar to help protect against stabbing weapons and bullets.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Auxiliary/crewchief.rsi
@@ -500,7 +500,7 @@
 - type: entity
   parent: [RMCMarineUniformBase, RMCFoldableUniformBase]
   id: CMJumpsuitSurvivorMarine
-  name: UNMC uniform
+  name: USCM uniform
   description: Torn, Burned and blood stained. This uniform has seen much more than you could possibly imagine.
   suffix: FORECON, Survivor
   components:
@@ -519,7 +519,7 @@
     startingWebbing: RMCWebbingPouchForecon
   - type: UniformAccessoryHolder
     startingAccessories:
-    - RMCPatchUNMC
+    - RMCPatchUSCM
     - RMCPatchFORECON
 
 # High Command
@@ -538,8 +538,8 @@
 - type: entity
   parent: [RMCMarineUniformBase, RMCFoldableUniformBase]
   id: CMJumpsuitSyntheticPristine
-  name: UNMC pristine support uniform
-  description: A simple uniform made for synthetic crew members, this one is in Weston-Yamada's signature black and orange color scheme.
+  name: USCM pristine support uniform
+  description: A simple uniform made for synthetic crew members, this one is in Weyland-Yutani's signature black and orange color scheme.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Synthetic/pristine.rsi
@@ -560,7 +560,7 @@
   parent: RMCMarineUniformBase
   id: CMJumpsuitSyntheticOutdated
   name: outdated synthetic support uniform
-  description: An outdated version of the UNMC synthetic support uniform. Despite the age, it is still very stylish and practical.
+  description: An outdated version of the USCM synthetic support uniform. Despite the age, it is still very stylish and practical.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Synthetic/outdated_synth.rsi
@@ -568,7 +568,7 @@
 - type: entity
   parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
   id: RMCJumpsuitSynthetic
-  name: UNMC Support Uniform
+  name: USCM Support Uniform
   description: A simple uniform made for Synthetic crewmembers
   components:
   - type: Sprite

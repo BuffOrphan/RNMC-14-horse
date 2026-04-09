@@ -17,11 +17,11 @@
 - type: entity
   abstract: true
   parent: RMCHeadsetIcons
-  id: RMCHeadsetIconsUNMC
+  id: RMCHeadsetIconsUSCM
   components:
   - type: GrantMarineIcons
     factions:
-    - UNMC
+    - USCM
 
 - type: entity
   abstract: true
@@ -30,28 +30,28 @@
   components:
   - type: GrantMarineIcons
     factions:
-    - SPP
+    - UPP
 
 - type: entity
   abstract: true
   parent: RMCHeadsetIcons
-  id: RMCHeadsetIconsTSE
+  id: RMCHeadsetIconsTWE
   components:
   - type: GrantMarineIcons
     factions:
     - RoyalMarines
-    - TSE
+    - TWE
 
 - type: entity
   abstract: true
-  parent: RMCHeadsetIconsTSE
+  parent: RMCHeadsetIconsTWE
   id: RMCHeadsetIconsPara
   components:
     - type: GrantMarineIcons
       factions:
         - RoyalMarines
-        - TSE
-        - UNMC
+        - TWE
+        - USCM
 
 - type: entity
   abstract: true
@@ -70,4 +70,4 @@
   - type: GrantMarineIcons
     factions:
     - Bureau
-    - UNMC
+    - USCM

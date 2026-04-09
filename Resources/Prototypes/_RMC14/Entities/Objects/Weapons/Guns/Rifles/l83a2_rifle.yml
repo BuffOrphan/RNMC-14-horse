@@ -2,7 +2,7 @@
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
   id: RMCWeaponRifleL83A2
   name: L83A2 rifle
-  description: A civilian grade caseless rifle utilised by TSEPA officers.
+  description: A civilian grade caseless rifle utilised by TWEPA officers.
   suffix: Filled
   components:
   - type: Sprite

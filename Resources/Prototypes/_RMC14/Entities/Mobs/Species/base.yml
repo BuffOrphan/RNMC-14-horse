@@ -244,7 +244,7 @@
     thresholds: [ ]
   - type: NpcFactionMember
     factions:
-    - UNMC
+    - USCM
   - type: RMCNightVisionVisible
   - type: CrashLandable
   - type: StunShakeable

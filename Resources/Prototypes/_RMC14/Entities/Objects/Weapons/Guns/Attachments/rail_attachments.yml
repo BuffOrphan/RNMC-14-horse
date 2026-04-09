@@ -444,7 +444,7 @@
   parent: RMCAttachmentS42xTelescopicMiniscope
   id: RMCAttachmentB8SmartScope
   name: B8 smart-scope
-  description: An experimental B8 Smart-Scope. Based on the technologies used in the Smart Gun by AEGIS, this sight has integrated IFF systems. It can only attach to the M4SPR Battle Rifle and the M44 Combat Revolver.
+  description: An experimental B8 Smart-Scope. Based on the technologies used in the Smart Gun by AEGIS, this sight has integrated IFF systems. It can only attach to the M49A Battle Rifle and the M44 Combat Revolver.
   components:
   - type: Sprite
     state: iffbarrel
@@ -642,7 +642,7 @@
   parent: RMCAttachmentScopeBase
   id: RMCAttachmentSASOS
   name: L91O1 SASOS
-  description: The TSE-produced Small Arms Smart Optical Sight, or SASOS, is an experimental, next-gen IFF-enabling optic designed for use as part of the L91 Support Weapon System.
+  description: The TWE-produced Small Arms Smart Optical Sight, or SASOS, is an experimental, next-gen IFF-enabling optic designed for use as part of the L91 Support Weapon System.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/rmc_rail.rsi

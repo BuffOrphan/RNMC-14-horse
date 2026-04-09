@@ -1,39 +1,39 @@
 ﻿- type: accessLevel
   id: RMCAccessSPPGeneral
-  name: rmc-access-spp-general
+  name: rmc-access-upp-general
 
 - type: accessLevel
   id: RMCAccessSPPMedical
-  name: rmc-access-spp-medical
+  name: rmc-access-upp-medical
 
 - type: accessLevel
   id: RMCAccessSPPEngineering
-  name: rmc-access-spp-engineering
+  name: rmc-access-upp-engineering
 
 - type: accessLevel
   id: RMCAccessSPPSecurity
-  name: rmc-access-spp-security
+  name: rmc-access-upp-security
 
 - type: accessLevel
   id: RMCAccessSPPArmory
-  name: rmc-access-spp-armory
+  name: rmc-access-upp-armory
 
 - type: accessLevel
   id: RMCAccessSPPflight
-  name: rmc-access-spp-flight
+  name: rmc-access-upp-flight
 
 - type: accessLevel
   id: RMCAccessSPPResearch
-  name: rmc-access-spp-research
+  name: rmc-access-upp-research
 
 - type: accessLevel
   id: RMCAccessSPPCommando
-  name: rmc-access-spp-commando
+  name: rmc-access-upp-commando
 
 - type: accessLevel
   id: RMCAccessSPPLeadership
-  name: rmc-access-spp-leadership
+  name: rmc-access-upp-leadership
 
 - type: accessLevel
   id: RMCAccessSPPSeniorLead
-  name: rmc-access-spp-senior-lead
+  name: rmc-access-upp-senior-lead

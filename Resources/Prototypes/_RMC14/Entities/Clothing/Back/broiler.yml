@@ -2,7 +2,7 @@
   parent: [ Clothing, ClothingSlotBase ]
   id: RMCBackpackBroiler
   name: Broiler-T flexible refueling system
-  description: A specialized back harness that carries the Broiler-T flexible refueling system. Designed by and for UNMC Pyrotechnicians.
+  description: A specialized back harness that carries the Broiler-T flexible refueling system. Designed by and for USCM Pyrotechnicians.
   components:
   - type: Corrodible
     isCorrodible: false

@@ -37,13 +37,13 @@
 
 # PVE Hybrisa Exclusive
 - type: accessLevel
-  id: RMCAccessTSEPA
+  id: RMCAccessTWEPA
   name: rmc-access-tsepa
 
 - type: accessLevel
-  id: RMCAccessTSEPABrig
+  id: RMCAccessTWEPABrig
   name: rmc-access-tsepa-brig
 
 - type: accessLevel
-  id: RMCAccessTSEPAInspector
+  id: RMCAccessTWEPAInspector
   name: rmc-access-tsepa-inspector

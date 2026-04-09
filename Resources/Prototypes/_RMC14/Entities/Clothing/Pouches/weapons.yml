@@ -45,7 +45,7 @@
       state: _m77
       map: [ "_m77_fill" ]
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
-      state: m1984
+      state: m1911
       map: [ "m1984_fill" ]
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: m13

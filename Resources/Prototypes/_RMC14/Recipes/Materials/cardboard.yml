@@ -151,37 +151,37 @@
 - type: rmcConstruction
   parent: RMCCardboardBuildBase
   id: RMCBoxMagazineRifleM54CEmptyBuild
-  name: M54C magazine box
+  name: M41A magazine box
   prototype: RMCBoxMagazineRifleM54CEmpty
 
 - type: rmcConstruction
   parent: RMCCardboardBuildBase
   id: RMCBoxMagazineRifleM54CAPEmptyBuild
-  name: M54C magazine box (AP)
+  name: M41A magazine box (AP)
   prototype: RMCBoxMagazineRifleM54CAPEmpty
 
 - type: rmcConstruction
   parent: RMCCardboardBuildBase
   id: RMCBoxMagazineRifleM54CExtEmptyBuild
-  name: M54C magazine box (Ext)
+  name: M41A magazine box (Ext)
   prototype: RMCBoxMagazineRifleM54CExtEmpty
 
 - type: rmcConstruction
   parent: RMCCardboardBuildBase
   id: RMCBoxMagazineRifleM4SPREmptyBuild
-  name: M4SPR magazine box
+  name: M49A magazine box
   prototype: RMCBoxMagazineRifleM4SPREmpty
 
 - type: rmcConstruction
   parent: RMCCardboardBuildBase
   id: RMCBoxMagazineRifleM4SPRAPEmptyBuild
-  name: M4SPR magazine box (AP)
+  name: M49A magazine box (AP)
   prototype: RMCBoxMagazineRifleM4SPRAPEmpty
 
 - type: rmcConstruction
   parent: RMCCardboardBuildBase
   id: RMCBoxMagazineRifleM4SPRExtEmptyBuild
-  name: M4SPR magazine box (Ext)
+  name: M49A magazine box (Ext)
   prototype: RMCBoxMagazineRifleM4SPRExtEmpty
 
 - type: rmcConstruction
@@ -272,13 +272,13 @@
 - type: rmcConstruction
   parent: RMCCardboardBuildBase
   id: RMCBoxMagazinePistolM1984EmptyBuild
-  name: M1984 magazine box
+  name: M1911 magazine box
   prototype: RMCBoxMagazinePistolM1984Empty
 
 - type: rmcConstruction
   parent: RMCCardboardBuildBase
   id: RMCBoxMagazinePistolM1984APEmptyBuild
-  name: M1984 magazine box (AP)
+  name: M1911 magazine box (AP)
   prototype: RMCBoxMagazinePistolM1984APEmpty
 
 - type: rmcConstruction

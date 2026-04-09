@@ -62,11 +62,11 @@
     skills:
       RMCSkillPolice: 1
 
-# TSEPA variant
+# TWEPA variant
 - type: entity
   parent: RMCExplosiveBreachingChargeRubber
-  id: RMCExplosiveBreachingChargeRubberTSEPA
-  name: TSEPA X17 riot charge
+  id: RMCExplosiveBreachingChargeRubberTWEPA
+  name: TWEPA X17 riot charge
   components:
   - type: RequiresSkill
     skills:

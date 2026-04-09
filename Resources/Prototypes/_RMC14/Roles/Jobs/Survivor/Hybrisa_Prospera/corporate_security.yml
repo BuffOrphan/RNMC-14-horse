@@ -4,7 +4,7 @@
   name: rmc-job-name-pmc-corporate-goon
   description: cm-job-description-survivor
   startingGear: RMCGearSurvivorHybrisaCorporateSecurity
-  spawnMenuRoleName: We-Ya Goon (Hybrisa Survivor)
+  spawnMenuRoleName: We-Yu Goon (Hybrisa Survivor)
   hasIcon: true
   special:
   - !type:AddComponentSpecial

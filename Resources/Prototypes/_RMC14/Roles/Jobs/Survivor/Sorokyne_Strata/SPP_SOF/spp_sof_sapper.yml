@@ -6,13 +6,13 @@
   ranks:
     RMCRankSPPMladshiySerzhant: []
   icon: "RMCJobIconSPPEngineer"
-  spawnMenuRoleName: SPP SOF Sapper (Survivor)
+  spawnMenuRoleName: UPP SOF Sapper (Survivor)
   special:
   - !type:AddComponentSpecial
     components:
     - type: NpcFactionMember
       factions:
-      - SPP
+      - UPP
     - type: Skills
       skills:
         RMCSkillEngineer: 3
@@ -43,7 +43,7 @@
 - type: entity
   parent: CMSpawnPointJobBase
   id: CMSpawnPointSPPSOFSapper
-  name: special survivor spp sof sapper spawn point
+  name: special survivor upp sof sapper spawn point
   components:
   - type: SpawnPoint
     job_id: RMCSurvivorSPPSOFSapper

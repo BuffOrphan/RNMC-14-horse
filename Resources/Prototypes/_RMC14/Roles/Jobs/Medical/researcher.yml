@@ -48,7 +48,7 @@
     - type: NpcFactionMember
       factions:
       - WeYa
-      - UNMC
+      - USCM
     - type: JobPrefix
       prefix: rmc-job-prefix-researcher
     - type: ViewIntelObjectives

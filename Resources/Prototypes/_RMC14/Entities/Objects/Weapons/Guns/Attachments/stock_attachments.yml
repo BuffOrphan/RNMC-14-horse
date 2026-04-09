@@ -334,8 +334,8 @@
 - type: entity
   parent: RMCStockAttachmentBase
   id: RMCAttachmentM890Stock
-  name: M890 Tactical Stock
-  description: Standard Stock for the M890 tactical shotgun.
+  name: M120 Tactical Stock
+  description: Standard Stock for the M120 tactical shotgun.
   components:
   - type: Sprite
     state: tactical_stock_221
@@ -423,12 +423,12 @@
 - type: entity
   parent: RMCStockAttachmentBase
   id: RMCAttachmentM54CStockSolid
-  name: M54C solid stock
-  description: A rare stock distributed in small numbers to UNMC forces. Compatible with the M54C, this stock reduces recoil and scatter, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle.
+  name: M41A solid stock
+  description: A rare stock distributed in small numbers to USCM forces. Compatible with the M41A, this stock reduces recoil and scatter, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle.
   components:
   - type: Sprite
     sprite: _RNMC14/Objects/Weapons/Guns/Attachments/m54_stocks/desert.rsi # RNMC-14 - resprited.
-    state: m54c-solid
+    state: m41a-solid
   - type: Tag
     tags:
     - RMCAttachmentStock
@@ -472,8 +472,8 @@
 - type: entity
   parent: RMCAttachmentM54CStockSolid
   id: RMCAttachmentM54CStockSolidMarksman
-  name: M54C marksman stock
-  description: A rare stock distributed in small numbers to UNMC forces. Compatible with the M54C, this stock reduces recoil and scatter, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle.
+  name: M41A marksman stock
+  description: A rare stock distributed in small numbers to USCM forces. Compatible with the M41A, this stock reduces recoil and scatter, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/stock.rsi
@@ -490,12 +490,12 @@
 - type: entity
   parent: RMCStockAttachmentCollapsibleBase
   id: RMCAttachmentM54CStockCollapsible
-  name: M54C folding stock
-  description: The standard back end of any gun starting with M54. Compatible with the M54C series, this stock reduces recoil and scatter, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle.
+  name: M41A folding stock
+  description: The standard back end of any gun starting with M54. Compatible with the M41A series, this stock reduces recoil and scatter, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle.
   components:
   - type: Sprite
     sprite: _RNMC14/Objects/Weapons/Guns/Attachments/m54_stocks/desert.rsi # RNMC-14 - resprited.
-    state: m54c-col
+    state: m41a-col
   - type: Tag
     tags:
     - RMCAttachmentStock
@@ -505,11 +505,11 @@
     doAfter: 0.5
     icon:
       sprite: _RNMC14/Objects/Weapons/Guns/Attachments/m54_stocks/desert.rsi # RNMC-14 - resprited.
-      state: m54c-col
+      state: m41a-col
     iconActive:
       sprite: _RNMC14/Objects/Weapons/Guns/Attachments/m54_stocks/desert.rsi # RNMC-14 - resprited.
-      state: m54c-col-on
-    actionName: Toggle M54C Folding Stock
+      state: m41a-col-on
+    actionName: Toggle M41A Folding Stock
   - type: AttachableSizeMods
     modifiers:
       - size: 1
@@ -556,7 +556,7 @@
   parent: RMCAttachmentM54CStockCollapsible
   id: RMCAttachmentM54CMK1StockCollapsible
   suffix: Desert Camo
-  description: The standard back end of any gun starting with M54. Compatible with the M54C series, this stock reduces recoil and scatter, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle. Painted in a lovely desert camo.
+  description: The standard back end of any gun starting with M54. Compatible with the M41A series, this stock reduces recoil and scatter, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle. Painted in a lovely desert camo.
   components:
   - type: ItemCamouflage
     camouflageVariations: { }
@@ -565,45 +565,45 @@
   parent: RMCAttachmentM54CStockCollapsible
   id: RMCAttachmentM54C2StockCollapsible
   suffix: PMC
-  description: The standard back end of any gun starting with M54. Compatible with the M54C series, this stock reduces recoil and scatter, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle. Painted in a lovely corporate black camo.
+  description: The standard back end of any gun starting with M54. Compatible with the M41A series, this stock reduces recoil and scatter, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle. Painted in a lovely corporate black camo.
   components:
   - type: ItemCamouflage
     camouflageVariations: { }
   - type: Sprite
     sprite: _RNMC14/Objects/Weapons/Guns/Attachments/m54c2_stocks.rsi # RNMC-14 - Resprited.
-    state: m54c-col
+    state: m41a-col
   - type: AttachableToggleable
     doAfterBreakOnMove: false
     doAfter: 0.5
     icon:
       sprite: _RNMC14/Objects/Weapons/Guns/Attachments/m54c2_stocks.rsi # RNMC-14 - Resprited.
-      state: m54c-col
+      state: m41a-col
     iconActive:
       sprite: _RNMC14/Objects/Weapons/Guns/Attachments/m54c2_stocks.rsi # RNMC-14 - Resprited.
-      state: m54c-col-on
-    actionName: Toggle M54C Folding Stock
+      state: m41a-col-on
+    actionName: Toggle M41A Folding Stock
 
 - type: entity
   parent: RMCAttachmentM54CStockCollapsible
   id: RMCAttachmentM54CStockCollapsibleWhite
   suffix: White Camo
-  description: The standard back end of any gun starting with M54. Compatible with the M54C series, this stock reduces recoil and scatter, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle. Painted in a lovely corporate white camo.
+  description: The standard back end of any gun starting with M54. Compatible with the M41A series, this stock reduces recoil and scatter, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle. Painted in a lovely corporate white camo.
   components:
   - type: ItemCamouflage
     camouflageVariations: { }
   - type: Sprite
     sprite: _RNMC14/Objects/Weapons/Guns/Attachments/m54_stocks/snow.rsi # RNMC-14 - resprited.
-    state: m54c-col
+    state: m41a-col
   - type: AttachableToggleable
     doAfterBreakOnMove: false
     doAfter: 0.5
     icon:
       sprite: _RNMC14/Objects/Weapons/Guns/Attachments/m54_stocks/snow.rsi # RNMC-14 - resprited.
-      state: m54c-col
+      state: m41a-col
     iconActive:
       sprite: _RNMC14/Objects/Weapons/Guns/Attachments/m54_stocks/snow.rsi # RNMC-14 - resprited.
-      state: m54c-col-on
-    actionName: Toggle M54C Folding Stock
+      state: m41a-col-on
+    actionName: Toggle M41A Folding Stock
 
 - type: entity
   parent: RMCStockAttachmentCollapsibleBase
@@ -805,7 +805,7 @@
   parent: RMCStockAttachmentBase
   id: RMCAttachmentM63Stock
   name: submachinegun solid stock
-  description: A rare AEGIS stock distributed in small numbers to UNMC forces. Compatible with the M63, this stock reduces recoil and scatter, but at a reduction to handling and agility. Seemingly a bit more effective in a brawl.
+  description: A rare AEGIS stock distributed in small numbers to USCM forces. Compatible with the M63, this stock reduces recoil and scatter, but at a reduction to handling and agility. Seemingly a bit more effective in a brawl.
   components:
   - type: Sprite
     state: smgstock
@@ -843,7 +843,7 @@
   parent: RMCStockAttachmentCollapsibleBase
   id: RMCAttachmentM63StockCollapsible
   name: submachinegun folding stock
-  description: A Kirchner brand K2 M63 folding stock, standard issue in the UNMC. The stock, when extended, reduces recoil and scatter, but at a reduction to handling and agility. Seemingly a bit more effective in a brawl. This stock can collapse in, removing all positive and negative effects.
+  description: A Kirchner brand K2 M63 folding stock, standard issue in the USCM. The stock, when extended, reduces recoil and scatter, but at a reduction to handling and agility. Seemingly a bit more effective in a brawl. This stock can collapse in, removing all positive and negative effects.
   components:
   - type: Sprite
     state: smgstockcol

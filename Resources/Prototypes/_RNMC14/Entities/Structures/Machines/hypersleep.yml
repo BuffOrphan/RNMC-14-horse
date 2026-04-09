@@ -46,7 +46,7 @@
   - type: SquadSpawner
     squad: SquadSunRiders
 
-# SPP
+# UPP
 
 - type: entity
   parent: CMHyperSleepChamber

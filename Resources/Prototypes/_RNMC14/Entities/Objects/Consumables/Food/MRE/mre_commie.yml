@@ -1,7 +1,7 @@
 - type: entity
   parent: CMMRE
   id: CMMRESPP
-  name: SPP IRP ration pack
+  name: UPP IRP ration pack
   description: An Individual Meal Ration, mainly composed of a selection of canned food, despite being heavier, it has proven to be a lot more reliable.
   components:
   - type: Sprite

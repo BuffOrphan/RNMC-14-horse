@@ -61,7 +61,7 @@
         random:
           - RMCAttachmentExtendedBarrel
           - RMCAttachmentSuppressor
-          - RMCM5Bayonet # Replace with SPP Bayonet when that is added
+          - RMCM5Bayonet # Replace with UPP Bayonet when that is added
       rmc-aslot-rail:
         whitelist:
           tags:

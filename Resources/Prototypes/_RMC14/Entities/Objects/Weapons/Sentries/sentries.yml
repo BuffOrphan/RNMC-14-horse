@@ -85,8 +85,8 @@
     - RMCGuideRoleCombatTechnician
   - type: SentryTargeting
     friendlyFactions:
-    - UNMC
-    originalFaction: UNMC
+    - USCM
+    originalFaction: USCM
     targetedFactions:
     - RMCXeno
     - CLF
@@ -95,7 +95,7 @@
     state: normal_uac_sentry_handheld
   - type: NpcFactionMember
     factions:
-    - UNMC
+    - USCM
   - type: UserIFF
     factions:
     - FactionMarine
@@ -125,7 +125,7 @@
   parent: RMCSentry
   id: RMCSentryMini
   name: UN 512-M mini sentry
-  description: A compact version of the UNMC defenses. Designed for quick deployment of the associated type in the field.
+  description: A compact version of the USCM defenses. Designed for quick deployment of the associated type in the field.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Sentries/sentry.rsi
@@ -187,8 +187,8 @@
 - type: entity
   parent: RMCSentryMini
   id: RMCSentryMiniWeYa
-  name: We-Ya 512-M mini sentry
-  description: A compact version of the UNMC defenses. Designed for quick deployment of the associated type in the field. This one has been modified for use by the mercenaries employed by Weston-Yamada.
+  name: We-Yu 512-M mini sentry
+  description: A compact version of the USCM defenses. Designed for quick deployment of the associated type in the field. This one has been modified for use by the mercenaries employed by Weyland-Yutani.
   components:
   - type: SentryTargeting
     friendlyFactions:
@@ -207,16 +207,16 @@
 - type: entity
   parent: RMCSentryMini
   id: RMCSentryMiniSPP # TODO RMC14: Replace with the real one.
-  name: SPP SDS-R8 light sentry
-  description: A compact version of the SPP defense sentry SDS-R7. Designed for deployment in the field.
+  name: UPP SDS-R8 light sentry
+  description: A compact version of the UPP defense sentry SDS-R7. Designed for deployment in the field.
   components:
   - type: SentryTargeting
     friendlyFactions:
-    - SPP
-    originalFaction: SPP
+    - UPP
+    originalFaction: UPP
   - type: NpcFactionMember
     factions:
-    - SPP
+    - UPP
   - type: UserIFF
     factions:
     - FactionSPP
@@ -517,7 +517,7 @@
           On: { state: normal_uac_flamer_on }
   - type: NpcFactionMember
     factions:
-    - UNMC
+    - USCM
   - type: UserIFF
     factions:
     - FactionMarine

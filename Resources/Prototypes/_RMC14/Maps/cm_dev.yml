@@ -7,7 +7,7 @@
   randomRotation: false
   stations:
     Dev:
-      stationProto: StandardUNMCWarship
+      stationProto: StandardUSCMWarship
       components:
       - type: StationNameSetup
         mapNameTemplate: "Dev"

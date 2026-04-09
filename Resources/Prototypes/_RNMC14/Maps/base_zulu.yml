@@ -7,7 +7,7 @@
   randomRotation: false
   stations:
     Zulu:
-      stationProto: StandardUNMCWarship
+      stationProto: StandardUSCMWarship
       components:
         - type: StationNameSetup
           mapNameTemplate: 'Base Zulu'

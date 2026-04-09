@@ -15,7 +15,7 @@
     explosionArmor: 20
   - type: Insulated
 
-# SPP
+# UPP
 - type: entity
   parent: RMCHandsVeteran
   id: RMCHandsVeteranSPP
@@ -42,7 +42,7 @@
   parent: RMCHandsVeteran
   id: RMCHandsVeteranPMC
   name: WeYa PMC gloves
-  description: Standard issue kevlon fiber gloves manufactured for and by Weston-Yamada PMC dispatch division. They are insulated against electrical shock.
+  description: Standard issue kevlon fiber gloves manufactured for and by Weyland-Yutani PMC dispatch division. They are insulated against electrical shock.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/pmc.rsi
@@ -53,8 +53,8 @@
 - type: entity
   parent: RMCHandsVeteranPMC
   id: RMCHandsVeteranPMCCommandoSurvivor
-  name: We-Ya Commando gloves
-  description: Standard issue kevlon fiber gloves manufactured for and by Weston-Yamada Commandos. They are insulated against electrical shock.
+  name: We-Yu Commando gloves
+  description: Standard issue kevlon fiber gloves manufactured for and by Weyland-Yutani Commandos. They are insulated against electrical shock.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/gauntlets.rsi

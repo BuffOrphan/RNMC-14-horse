@@ -1,8 +1,8 @@
 - type: entity
   parent: WeaponRifleM4SPR
-  name: M5SPR battle rifle
+  name: M49A6 battle rifle
   id: RNMCWeaponRifleM5SPRProper
-  description: The M5SPR battle rifle is a modified version of the M4SPR, able to chamber depleted uranium rounds.
+  description: The M49A6 battle rifle is a modified version of the M49A, able to chamber depleted uranium rounds.
   suffix: Proper
   components:
   - type: Sprite
@@ -66,8 +66,8 @@
 - type: entity
   parent: CMMagazineRifleM4SPR
   id: RNMCMagazineRifleM5SPRDepletedUranium
-  name: "M5SPR depleted uranium magazine (10x24mm)"
-  description: "A magazine of depleted uranium 10x24mm rounds for use in the M5SPR battle rifle."
+  name: "M49A6 depleted uranium magazine (10x24mm)"
+  description: "A magazine of depleted uranium 10x24mm rounds for use in the M49A6 battle rifle."
   components:
   - type: BallisticAmmoProvider
     mayTransfer: True
@@ -77,7 +77,7 @@
     proto: RNMCCartridgeRifleM5SPRDepletedUranium
     capacity: 30
   - type: Sprite
-    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/m4spr.rsi
+    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/m49a.rsi
     layers:
     - state: base
       map: [ "enum.GunVisualLayers.Base" ]
@@ -94,7 +94,7 @@
   parent: CMBaseCartridgeRifle
   id: RNMCCartridgeRifleM5SPRDepletedUranium
   name: cartridge (HV-Piercing)
-  description: A depleted uranium cartridge. Fits in M5SPR custom magazines. Whoever gets hit by this thing is gonna die in 12 years or so.
+  description: A depleted uranium cartridge. Fits in M49A6 custom magazines. Whoever gets hit by this thing is gonna die in 12 years or so.
   components:
   - type: Tag
     tags:

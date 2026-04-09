@@ -13,7 +13,7 @@
   parent: [ RMCVisorBase, RMCPowerCellSlotUnremovableSuper ]
   id: RMCVisorNightVision
   name: night vision optic
-  description: An insertable visor HUD into a standard UNMC helmet. This type gives a form of night vision and is standard issue in units with regular funding. It can be inserted into a recharger to recharge its internal battery.
+  description: An insertable visor HUD into a standard USCM helmet. This type gives a form of night vision and is standard issue in units with regular funding. It can be inserted into a recharger to recharge its internal battery.
   components:
   - type: Sprite
     state: nvg_sight
@@ -42,7 +42,7 @@
   parent: RMCVisorBase
   id: RMCVisorMedical
   name: basic medical optic
-  description: An insertable visor HUD into a standard UNMC helmet. This type gives a heads-up display that shows data about nearby humanoids health status.
+  description: An insertable visor HUD into a standard USCM helmet. This type gives a heads-up display that shows data about nearby humanoids health status.
   components:
   - type: Sprite
     state: med_sight
@@ -67,7 +67,7 @@
   parent: RMCVisorMedical
   id: RMCVisorMedicalAdvanced
   name: advanced medical optic
-  description: An insertable visor HUD into a standard UNMC helmet. This type gives a heads-up display that shows data about nearby humanoids health status and research notes.
+  description: An insertable visor HUD into a standard USCM helmet. This type gives a heads-up display that shows data about nearby humanoids health status and research notes.
   components:
   - type: Sprite
     state: med_adv_sight
@@ -95,7 +95,7 @@
   parent: RMCVisorBase
   id: RMCVisorWelding
   name: welding visor
-  description: An insertable visor HUD into a standard UNMC helmet. This type protects the eyes from welders.
+  description: An insertable visor HUD into a standard USCM helmet. This type protects the eyes from welders.
   components:
   - type: Sprite
     state: sight_empty
@@ -121,7 +121,7 @@
   parent: RMCVisorBase
   id: RMCVisorSquad
   name: squad optic
-  description: An insertable visor HUD into a standard UNMC helmet. This type gives a heads-up display of marine squads.
+  description: An insertable visor HUD into a standard USCM helmet. This type gives a heads-up display of marine squads.
   components:
   - type: Sprite
     state: hud_sight
@@ -151,7 +151,7 @@
   parent: RMCVisorBase
   id: RMCVisorPilotBlack
   name: MK30 black flight visor
-  description: A standard issue snap-on visor used by UNMC dropship pilots. Polarized to reduce glare and protect the eyes during atmospheric re-entry and orbital deployment.
+  description: A standard issue snap-on visor used by USCM dropship pilots. Polarized to reduce glare and protect the eyes during atmospheric re-entry and orbital deployment.
   components:
   - type: Sprite
     state: po_visor

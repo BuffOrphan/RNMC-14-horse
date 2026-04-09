@@ -7,13 +7,13 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/OuterClothing/EVA/unmc.rsi
+    sprite: _RMC14/Objects/Clothing/OuterClothing/EVA/uscm.rsi
   - type: Clothing
-    sprite: _RMC14/Objects/Clothing/OuterClothing/EVA/unmc.rsi
+    sprite: _RMC14/Objects/Clothing/OuterClothing/EVA/uscm.rsi
     equipDelay: 2
     unequipDelay: 2
   - type: ToggleableClothing
-    clothingPrototype: RMCHelmetEVAUNMC
+    clothingPrototype: RMCHelmetEVAUSCM
   - type: Tag
     tags:
     - Hardsuit
@@ -40,9 +40,9 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/Head/Helmets/EVA/unmc.rsi
+    sprite: _RMC14/Objects/Clothing/Head/Helmets/EVA/uscm.rsi
   - type: Clothing
-    sprite: _RMC14/Objects/Clothing/Head/Helmets/EVA/unmc.rsi
+    sprite: _RMC14/Objects/Clothing/Head/Helmets/EVA/uscm.rsi
     equipSound: /Audio/Mecha/mechmove03.ogg
     unequipSound: /Audio/Mecha/mechmove03.ogg
   - type: HideLayerClothing
@@ -85,21 +85,21 @@
   - type: ClothingBlockBackpack
   - type: SmartGunArmor
 
-# UNMC
+# USCM
 - type: entity
   parent: RMCSuitEVABase
-  id: RMCSuitEVAUNMC
-  name: UNMC MK.35 pressure suit
-  description: A heavy and bulky military-grade space suit utilized by the United Nations Marine Corps and a few other UN organizations.
+  id: RMCSuitEVAUSCM
+  name: USCM MK.35 pressure suit
+  description: A heavy and bulky military-grade space suit utilized by the United States Marine Corps and a few other UN organizations.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/OuterClothing/EVA/unmc.rsi
+    sprite: _RMC14/Objects/Clothing/OuterClothing/EVA/uscm.rsi
   - type: Clothing
-    sprite: _RMC14/Objects/Clothing/OuterClothing/EVA/unmc.rsi
+    sprite: _RMC14/Objects/Clothing/OuterClothing/EVA/uscm.rsi
     equipDelay: 2
     unequipDelay: 2
   - type: ToggleableClothing
-    clothingPrototype: RMCHelmetEVAUNMC
+    clothingPrototype: RMCHelmetEVAUSCM
   - type: ClothingRequireEquipped
     denyReason: rmc-armor-not-marine-jumpsuit
     whitelist:
@@ -108,9 +108,9 @@
 
 - type: entity
   parent: RMCSuitEVASGO
-  id: RMCSuitEVAUNMCSGO
-  name: UNMC MK.35 ML66A compatable pressure suit
-  description: A heavy and bulky military-grade space suit utilized by the United Nations Marine Corps and a few other UN organizations. Seems this suit has the required fittings to be compatable with an ML66A Smart Gun.
+  id: RMCSuitEVAUSCMSGO
+  name: USCM MK.35 ML66A compatable pressure suit
+  description: A heavy and bulky military-grade space suit utilized by the United States Marine Corps and a few other UN organizations. Seems this suit has the required fittings to be compatable with an ML66A Smart Gun.
   components:
   - type: ClothingRequireEquipped
     denyReason: rmc-armor-not-marine-jumpsuit
@@ -120,15 +120,15 @@
 
 - type: entity
   parent: RMCHelmetEVABase
-  id: RMCHelmetEVAUNMC
+  id: RMCHelmetEVAUSCM
   categories: [ HideSpawnMenu ]
-  name: UNMC MK.35 pressure helmet
-  description: A heavy space helmet, designed to be coupled with the MK.35 pressure suit utilized by the United Nations Marine Corps and a few other UN organizations.
+  name: USCM MK.35 pressure helmet
+  description: A heavy space helmet, designed to be coupled with the MK.35 pressure suit utilized by the United States Marine Corps and a few other UN organizations.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/Head/Helmets/EVA/unmc.rsi
+    sprite: _RMC14/Objects/Clothing/Head/Helmets/EVA/uscm.rsi
   - type: Clothing
-    sprite: _RMC14/Objects/Clothing/Head/Helmets/EVA/unmc.rsi
+    sprite: _RMC14/Objects/Clothing/Head/Helmets/EVA/uscm.rsi
     equipSound: /Audio/Mecha/mechmove03.ogg
     unequipSound: /Audio/Mecha/mechmove03.ogg
   - type: ClothingRequireEquipped
@@ -137,23 +137,23 @@
       tags:
       - RMCUniformMarine
 
-# SPP
+# UPP
 - type: entity
   parent: RMCSuitEVABase
   id: RMCSuitEVASPP
-  name: SPP Type 2 pressure suit
-  description: A heavy and bulky military-grade space suit utilized by the Socialist Progressive People and a few other SPP organizations.
+  name: UPP Type 2 pressure suit
+  description: A heavy and bulky military-grade space suit utilized by the Socialist Progressive People and a few other UPP organizations.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/OuterClothing/EVA/spp.rsi
+    sprite: _RMC14/Objects/Clothing/OuterClothing/EVA/upp.rsi
   - type: Clothing
-    sprite: _RMC14/Objects/Clothing/OuterClothing/EVA/spp.rsi
+    sprite: _RMC14/Objects/Clothing/OuterClothing/EVA/upp.rsi
     equipDelay: 2
     unequipDelay: 2
   - type: ToggleableClothing
     clothingPrototype: RMCHelmetEVASPP
   - type: ClothingRequireEquipped
-    denyReason: rmc-armor-not-spp-jumpsuit
+    denyReason: rmc-armor-not-upp-jumpsuit
     whitelist:
       tags:
       - RMCUniformSPP
@@ -162,17 +162,17 @@
   parent: RMCHelmetEVABase
   id: RMCHelmetEVASPP
   categories: [ HideSpawnMenu ]
-  name: SPP Type 2 pressure helmet
-  description: A heavy space helmet, designed to be coupled with the Type 2 pressure suit utilized by the Socialist Progressive People and a few other SPP organizations.
+  name: UPP Type 2 pressure helmet
+  description: A heavy space helmet, designed to be coupled with the Type 2 pressure suit utilized by the Socialist Progressive People and a few other UPP organizations.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/Head/Helmets/EVA/spp.rsi
+    sprite: _RMC14/Objects/Clothing/Head/Helmets/EVA/upp.rsi
   - type: Clothing
-    sprite: _RMC14/Objects/Clothing/Head/Helmets/EVA/spp.rsi
+    sprite: _RMC14/Objects/Clothing/Head/Helmets/EVA/upp.rsi
     equipSound: /Audio/Mecha/mechmove03.ogg
     unequipSound: /Audio/Mecha/mechmove03.ogg
   - type: ClothingRequireEquipped
-    denyReason: rmc-armor-not-spp-jumpsuit
+    denyReason: rmc-armor-not-upp-jumpsuit
     whitelist:
       tags:
       - RMCUniformSPP

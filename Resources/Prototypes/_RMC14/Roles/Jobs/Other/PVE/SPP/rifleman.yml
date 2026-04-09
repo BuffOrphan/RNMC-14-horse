@@ -1,8 +1,8 @@
 - type: job
   parent: CMJobBase
   id: RMCSPPRiflemanPVE
-  name: rmc-job-name-spp-rifleman
-  description: rmc-job-description-spp-rifleman-pve
+  name: rmc-job-name-upp-rifleman
+  description: rmc-job-description-upp-rifleman-pve
   playTimeTracker: RMCJobSPPRiflemanPVE
   ranks:
    RMCRankSPPRyadovoy: []
@@ -11,18 +11,18 @@
   joinNotifyCrew: false
   accessGroups:
   - Rifleman
-  spawnMenuRoleName: SPP Rifleman (PVE)
+  spawnMenuRoleName: UPP Rifleman (PVE)
   special:
   - !type:AddComponentSpecial
     components:
     - type: NpcFactionMember
       factions:
-      - SPP
+      - UPP
     - type: Skills
       preset: RMCSkillPresetPVERifleman
     - type: SquadArmorWearer
     - type: JobPrefix
-      prefix: rmc-job-prefix-spp-rifleman-pve
+      prefix: rmc-job-prefix-upp-rifleman-pve
     - type: AssignSquad
       whitelist:
         tags:
@@ -38,7 +38,7 @@
 - type: entity
   parent: CMSpawnPointJobBase
   id: RMCSpawnPointSPPRiflemanPVE
-  name: spp rifleman spawn point
+  name: upp rifleman spawn point
   suffix: PVE
   components:
   - type: Sprite

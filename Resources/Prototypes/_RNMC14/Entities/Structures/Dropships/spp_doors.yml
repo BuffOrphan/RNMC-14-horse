@@ -44,7 +44,7 @@
   suffix: Cockpit
   components:
   - type: Sprite
-    sprite: _RNMC14/Structures/Dropships/spp.rsi
+    sprite: _RNMC14/Structures/Dropships/upp.rsi
     layers:
     - state: door_closed
       map: [ "enum.DoorVisualLayers.Base" ]

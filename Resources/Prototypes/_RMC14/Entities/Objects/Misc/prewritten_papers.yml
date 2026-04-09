@@ -13,7 +13,7 @@
                              [color=goldenrod][head=1] Execution Order[/head][/color]
                                                      [color=#383838]✧✧✦✧✧[/color]
                          [bolditalic]By order of the Chief of Military Police
-            IN COMPLIANCE WITH UNITED NATIONS MARINE LAW[/bolditalic]
+            IN COMPLIANCE WITH UNITED STATES MARINE LAW[/bolditalic]
       [color=#134975]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
          [bold]This is a written order [bolditalic][color=green]AUTHORIZING[/color] the execution of[/bolditalic]
                                             [head=2][form][/head]
@@ -39,7 +39,7 @@
       [bullet]The prisoner may request a blindfold if one is available.
       [bullet]The prisoner may request up to three people to witness the execution.
       [bullet]The prisoner is to be afforded the chance to give their final words.
-      [color=#ff0000]Use of this document inconsistent with UCMJ regulations and UNMC Policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
+      [color=#ff0000]Use of this document inconsistent with UCMJ regulations and USCM Policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
 
 - type: entity
   parent: CMPaper
@@ -81,7 +81,7 @@
       Approved by,
       [color=#1b67a5][italic][signature][/italic][/color]
       [color=#AAAAAA]===================================================[/color]
-      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and UNMC policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
+      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and USCM policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
 
 - type: entity
   parent: CMPaper
@@ -125,7 +125,7 @@
       [color=#AAAAAA]===================================================[/color]
       [italic]I certify that the above information is accurate and complete to the best of my knowledge.
       I understand that any falsification or omission of information may result in charges brought against me.[/italic]
-      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and UNMC policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
+      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and USCM policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
 
 - type: entity
   parent: CMPaper
@@ -162,7 +162,7 @@
 
       [italic][bold][color=#134975]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color][/bold][/italic]
       [italic][color=#AAAAAA]This document is to be kept on physical record for a minimum period of five (5) years, and digital record permanently.[/color][/italic]
-      [italic][color=#ff0000]Use of this document inconsistent with UCMJ regulations and UNMC policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
+      [italic][color=#ff0000]Use of this document inconsistent with UCMJ regulations and USCM policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
 
 - type: entity
   parent: CMPaper
@@ -187,7 +187,7 @@
       [bold]Signed,[/bold]
       [color=#134975][italic][signature][/italic][/color]
       [color=#570202][italic]==================================================[/italic][/color]
-      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and UNMC policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
+      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and USCM policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
 
 - type: entity
   parent: CMPaper
@@ -206,10 +206,10 @@
       [color=#134975][bold]Description:[/bold][/color] [form]
 
       [color=#134975]Arrested is considered ([italic]Mark with a[/italic] ✔ [italic]as applicable[/italic]):[/color]
-      [ [check] ] UNMC Personnel
-      [ [check] ] Non-UNMC Personnel
+      [ [check] ] USCM Personnel
+      [ [check] ] Non-USCM Personnel
       [ [check] ] Civilian
-      [color=#134975]If the above named is a member of the UNMC, please specify their: [/color]
+      [color=#134975]If the above named is a member of the USCM, please specify their: [/color]
       [bold]Rank:[/bold] [form]
       [bold]Role:[/bold] [form]
       [bold]Squad:[/bold] [form]
@@ -224,7 +224,7 @@
       [color=#134975][italic][signature][/italic][/color]
       [bold][color=#cb0000]Military Police[/color][/bold] | [italic]Arresting Officer[/italic]
       [color=#570202][italic]==================================================[/italic][/color]
-      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and UNMC policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
+      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and USCM policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
 
 - type: entity
   parent: CMPaper
@@ -251,7 +251,7 @@
       [color=#AAAAAA]===================================================
       [italic]I certify that the above information is accurate and complete to the best of my knowledge.
       I understand that any falsification or omission of information may result in charges brought against me.[/italic][/color]
-      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and UNMC policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
+      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and USCM policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
 
 - type: entity
   parent: CMPaper
@@ -280,7 +280,7 @@
       [italic]All signatories agree that the above is true.
       This document shall be kept in records until such a time that the appropriate legal steps have been taken to investigate the above documented incident.
       After such proceedings have occurred, the results of said proceedings will determine how long this record is to remain on file, dependent upon the outcome of the investigation.[/italic]
-      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and UNMC policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
+      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and USCM policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
 
 - type: entity
   parent: CMPaper
@@ -298,7 +298,7 @@
 
       [bold]Name of Person:[/bold] [form]
       [bold]Description: [/bold] [form]
-      [italic]If Person is member of UNMC Marine Corps[/italic]:
+      [italic]If Person is member of USCM Marine Corps[/italic]:
       [bold]Rank:[/bold] [form]
       [bold]Role:[/bold] [form]
       [bold]Squad:[/bold] [form]
@@ -319,7 +319,7 @@
                          [bold]Note for the Provost Marshal Office[/bold]
       [form]
       [italic][bold][color=#134975]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color][/bold][/italic]
-      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and UNMC policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
+      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and USCM policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
 
 - type: entity
   parent: CMPaper
@@ -334,37 +334,37 @@
       [color=#8c0000]▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄[/color]
       [color=#383838]▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀[/color]
                                  [head=1][color=#ff0000]Arrest Warrant[/color][/head]
-      [bold]THE UNITED NATIONS MARINE CORP[/bold]
+      [bold]THE UNITED STATES MARINE CORP[/bold]
       [bold]To any enlisted personnel[/bold]
 
       [bold]Defendant(s):[/bold] [italic][form][/italic]
       [bold]Description:[/bold] [form]
       [bolditalic]The defendant(s) listed above is charged with the crime(s) specified below.
       You are ordered forthwith to arrest the above named defendant(s) and bring them before me.
-      All UNMC laws are to be followed during this arrest.[/bolditalic]
+      All USCM laws are to be followed during this arrest.[/bolditalic]
 
       [bold]Crimes charged:[/bold]
       [bullet] [form]
       [bullet] [form]
 
       [bold]Defendant(s) is considered:[/bold]
-      [ [check] ] Non-UNMC
+      [ [check] ] Non-USCM
       [ [check] ] Not Hostile
       [ [check] ] Hostile
       [ [check] ] Unarmed
       [ [check] ] Armed
       [italic][bold][color=#134975]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color][/bold][/italic]
-      [bullet]I certify that this order is lawful and true in accordance with UNMC laws and standards.
+      [bullet]I certify that this order is lawful and true in accordance with USCM laws and standards.
       [bullet]I affirm that the above is true to the best of my knowledge, and that the complaint filed on oath has legal grounds for an arrest.
       [bullet]In the event of an unlawfully ordered or unjustified arrest, I bear responsibility for the consequences of such an order.
       [bullet]I understand that the charges of such an order may include, but not limited to: Prevarication, and/or Illegal Confinement.
-      [bullet]In the event of a breach of law, I accept any judgment passed by UNMC High Command.
+      [bullet]In the event of a breach of law, I accept any judgment passed by USCM High Command.
 
       [bold]Signed,[/bold]
       [color=#AA8760][italic][signature][/italic][/color]
       Chief Military Police, [italic]UNS Almayer[/italic]
       [italic][bold][color=#134975]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color][/bold][/italic]
-      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and UNMC policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
+      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and USCM policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
 
 - type: entity
   parent: CMPaper
@@ -397,7 +397,7 @@
       [italic][signature][/italic]
       [color=#1b67a5]Chief Military Police[/color]
       [italic][bold][color=#134975]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color][/bold][/italic]
-      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and UNMC policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
+      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and USCM policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
 
 - type: entity
   parent: CMPaper
@@ -443,7 +443,7 @@
       [color=#134975][italic][signature][/italic][/color]
       [bold]Reporting Officer[/bold]
       [italic][bold][color=#134975]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color][/bold][/italic]
-      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and UNMC policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
+      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and USCM policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
 
 - type: entity
   parent: CMPaper
@@ -504,7 +504,7 @@
       [bolditalic][form][/bolditalic]
 
       [color=#AAAAAA]===================================================[/color]
-      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and UNMC policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
+      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and USCM policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
 
 - type: entity
   parent: CMPaper
@@ -574,7 +574,7 @@
       [bullet] Survivors may NOT retain weapons, armor or munitions aboard the vessel.
 
       [color=#AAAAAA]===================================================[/color]
-      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and UNMC policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
+      [italic][color=#E41B1B]Use of this document inconsistent with UCMJ regulations and USCM policy MIL-891 is a violation of federal law and will result in prosecution.[/color][/italic]
 
 - type: entity
   parent: CMPaper

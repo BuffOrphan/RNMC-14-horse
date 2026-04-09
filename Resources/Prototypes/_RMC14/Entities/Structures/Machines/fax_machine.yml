@@ -45,11 +45,11 @@
 - type: entity
   parent: CMFax
   id: CMFaxWY
-  name: we-ya fax machine
+  name: we-yu fax machine
   suffix: WEYA
   components:
   - type: FaxMachine
-    name: "We-Ya"
+    name: "We-Yu"
     notifyAdmins: true
 
 - type: entity
@@ -92,7 +92,7 @@
 - type: entity
   parent: CMFax
   id: CMFaxSPP
-  suffix: SPP
+  suffix: UPP
   components:
   - type: FaxMachine
     name: "Socialist Progressive Peoples"
@@ -100,8 +100,8 @@
 
 - type: entity
   parent: CMFax
-  id: CMFaxTSE
-  suffix: TSE
+  id: CMFaxTWE
+  suffix: TWE
   components:
   - type: FaxMachine
     name: "Three Suns Empire"
@@ -119,7 +119,7 @@
 
 - type: entity
   parent: CMFax
-  id: RMCFaxColony #todo for RMC: Colony Fax machine that can only fax We-Ya and cannot be faxed by Marines.
+  id: RMCFaxColony #todo for RMC: Colony Fax machine that can only fax We-Yu and cannot be faxed by Marines.
   suffix: Colony, Unusable
   description: This won't be much help to anyone.
   components:

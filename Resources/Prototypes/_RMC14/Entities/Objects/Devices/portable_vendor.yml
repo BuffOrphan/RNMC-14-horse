@@ -24,8 +24,8 @@
 - type: entity
   parent: RMCPortableVendor
   id: RMCPortableVendorCorporate
-  name: Weston-Yamada automated storage briefcase
-  description: A suitcase-sized automated storage and retrieval system. Designed to efficiently store and selectively dispense small items. This one has the Weston-Yamada logo stamped on its side.
+  name: Weyland-Yutani automated storage briefcase
+  description: A suitcase-sized automated storage and retrieval system. Designed to efficiently store and selectively dispense small items. This one has the Weyland-Yutani logo stamped on its side.
   components:
   - type: CMAutomatedVendor
     jobs:
@@ -84,7 +84,7 @@
       - id: CMPaper
         points: 1
       - id: RMCPaperWeYaLiaison
-        name: We-Ya paper
+        name: We-Yu paper
         points: 1
       #- id: Carbon paper
       #  points: 1

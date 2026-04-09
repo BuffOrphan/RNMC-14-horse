@@ -4,7 +4,7 @@
   name: rmc-job-name-pmc-medic
   ranks:
     RMCRankWeYaMedicalSpecialist: []
-  supervisors: cm-job-supervisors-we-ya
+  supervisors: cm-job-supervisors-we-yu
   accessGroups:
   - ColonistPMC
   startingGear: RMCGearSurvivorPMCMedic

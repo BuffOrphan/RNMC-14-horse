@@ -10,7 +10,7 @@
       - type: NpcFactionMember
         factions:
           - RoyalMarines
-          - TSE
+          - TWE
       - type: RMCAllowSuitStorage
       - type: IntelRescueSurvivorObjective
       - type: MotionDetectorTracked

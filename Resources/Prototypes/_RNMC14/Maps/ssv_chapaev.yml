@@ -7,7 +7,7 @@
   randomRotation: false
   stations:
     Chapaev:
-      stationProto: StandardUNMCWarship
+      stationProto: StandardUSCMWarship
       components:
         - type: StationNameSetup
           mapNameTemplate: 'SSV Chapaev'

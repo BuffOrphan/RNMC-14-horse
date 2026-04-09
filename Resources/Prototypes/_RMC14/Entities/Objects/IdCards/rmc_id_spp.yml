@@ -7,7 +7,7 @@
 - type: entity
   parent: CMIDCardStandardDogtag
   id: RMCIDSPP
-  name: SPP dog tag
+  name: UPP dog tag
   description: A soldier dog tag.
   components:
   - type: ItemIFF
@@ -17,15 +17,15 @@
 - type: entity
   parent: CMIDCardBase
   id: RMCIDSPPCard
-  name: SPP ID Card
-  description: A SPP officer's ID card.
+  name: UPP ID Card
+  description: A UPP officer's ID card.
   components:
   - type: ItemIFF
     factions:
     - FactionSPP
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/spp_id.rsi
-    state: spp
+    state: upp
   - type: Clothing
     sprite: _RMC14/Objects/CMIDs/spp_id.rsi
 
@@ -50,7 +50,7 @@
   parent: CMIDCardLanyard
   id: RMCIDCardPaP
   name: PaP identification holo-badge
-  description: A standard-issue holo-badge for personnel within the SPP's People's Armed Police. It displays the officer's rank and affiliation.
+  description: A standard-issue holo-badge for personnel within the UPP's People's Armed Police. It displays the officer's rank and affiliation.
   components:
   - type: PresetIdCard
     job: CMSurvivor

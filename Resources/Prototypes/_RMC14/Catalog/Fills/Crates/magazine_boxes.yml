@@ -1,8 +1,8 @@
-﻿# m54c
+﻿# m41a
 - type: entity
   parent: RMCCrateAmmo
   id: RMCCrateBoxMagazineRifleM54C
-  name: Magazine box (M54C, 10x regular mags)
+  name: Magazine box (M41A, 10x regular mags)
   components:
   - type: StorageFill
     contents:
@@ -11,7 +11,7 @@
 - type: entity
   parent: RMCCrateAmmo
   id: RMCCrateBoxMagazineRifleM54CAP
-  name: Magazine box (M54C, 10x AP mags)
+  name: Magazine box (M41A, 10x AP mags)
   components:
   - type: StorageFill
     contents:
@@ -20,7 +20,7 @@
 - type: entity
   parent: RMCCrateAmmo
   id: RMCCrateBoxMagazineRifleM54CExt
-  name: Magazine box (M54C, 8x extended mags)
+  name: Magazine box (M41A, 8x extended mags)
   components:
   - type: StorageFill
     contents:
@@ -47,11 +47,11 @@
     - id: CMMagazineRifleM54CE2HT
     - id: CMMagazineRifleM54CE2HT
 
-# m4spr
+# m49a
 - type: entity
   parent: RMCCrateAmmo
   id: RMCCrateBoxMagazineRifleM4SPR
-  name: Magazine box (M4SPR, 16x regular mags)
+  name: Magazine box (M49A, 16x regular mags)
   components:
   - type: StorageFill
     contents:
@@ -60,7 +60,7 @@
 - type: entity
   parent: RMCCrateAmmo
   id: RMCCrateBoxMagazineRifleM4SPRAP
-  name: Magazine box (M4SPR, 16x AP mags)
+  name: Magazine box (M49A, 16x AP mags)
   components:
   - type: StorageFill
     contents:
@@ -69,7 +69,7 @@
 - type: entity
   parent: RMCCrateAmmo
   id: RMCCrateBoxMagazineRifleM4SPRExt
-  name: Magazine box (M4SPR, 12x extended mags)
+  name: Magazine box (M49A, 12x extended mags)
   components:
   - type: StorageFill
     contents:
@@ -103,11 +103,11 @@
     contents:
     - id: RMCBoxMagazineSMGM63Ext
 
-# m1984
+# m1911
 - type: entity
   parent: RMCCrateAmmo
   id: RMCCrateBoxMagazinePistolM1984
-  name: Magazine box (M1984, 16x regular mags)
+  name: Magazine box (M1911, 16x regular mags)
   components:
   - type: StorageFill
     contents:
@@ -116,7 +116,7 @@
 - type: entity
   parent: RMCCrateAmmo
   id: RMCCrateBoxMagazinePistolM1984AP
-  name: Magazine box (M1984, 16x AP mags)
+  name: Magazine box (M1911, 16x AP mags)
   components:
   - type: StorageFill
     contents:

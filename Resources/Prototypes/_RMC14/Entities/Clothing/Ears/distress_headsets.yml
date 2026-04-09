@@ -149,7 +149,7 @@
 - type: entity
   parent: RMCHeadsetDistressWeYa
   id: RMCHeadsetDistressGoon
-  name: We-Ya headset
+  name: We-Yu headset
   description: A special headset used by corporate personnel.
   components:
   - type: ContainerFill
@@ -181,7 +181,7 @@
 - type: entity
   parent: RMCHeadsetDistressWeYa
   id: RMCHeadsetDistressLawyerWeYa
-  name: We-Ya headset
+  name: We-Yu headset
   description: A special headset used by corporate personnel.
   suffix: Director
   components:
@@ -229,8 +229,8 @@
 - type: entity
   parent: RMCHeadsetMarine
   id: RMCHeadsetForecon
-  name: UNMC SOF headset
-  description: Issued exclusively to Marine Raiders and members of the UNMC's Force Reconnaissance.
+  name: USCM SOF headset
+  description: Issued exclusively to Marine Raiders and members of the USCM's Force Reconnaissance.
   suffix: Survivor
   components:
   - type: Sprite
@@ -301,12 +301,12 @@
     - type: GrantSquadLeaderTracker
       defaultMode: ParaTeamLeader
 
-#for UNMC personnel
+#for USCM personnel
 - type: entity
   parent: RMCHeadsetMarine
   id: RMCHeadsetMarineDistress
-  name: UNMC headset
-  description: A standard issue UNMC headset. This one is used by marines on colonial protection duties, and only comes equipped with civilian channels.
+  name: USCM headset
+  description: A standard issue USCM headset. This one is used by marines on colonial protection duties, and only comes equipped with civilian channels.
   components:
   - type: ContainerFill
     containers:
@@ -318,8 +318,8 @@
 - type: entity
   parent: RMCHeadsetForecon
   id: RMCHeadsetMARSOC
-  name: UNMC SOF headset
-  description: Issued exclusively to Marine Raiders and members of the UNMC's Force Reconnaissance.
+  name: USCM SOF headset
+  description: Issued exclusively to Marine Raiders and members of the USCM's Force Reconnaissance.
   suffix: ERT
   components:
   - type: ContainerFill

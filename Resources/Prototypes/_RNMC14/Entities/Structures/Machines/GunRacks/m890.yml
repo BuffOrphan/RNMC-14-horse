@@ -1,9 +1,9 @@
 - type: entity
   parent: RMCGunRackBase
   id: RNMCGunRackM890Empty
-  name: M890 gun rack
-  suffix: M890, Empty
-  description: AEGIS-produced gun rack for storage of long guns. While initial model was supposed to be extremely modifiable, UNMC commissioned racks with fixed slots which only fit M890 shotguns. Some say they were cheaper, and some say the main reason was marine's ability to easily break anything more complex than a tungsten ball.
+  name: M120 gun rack
+  suffix: M120, Empty
+  description: AEGIS-produced gun rack for storage of long guns. While initial model was supposed to be extremely modifiable, USCM commissioned racks with fixed slots which only fit M120 shotguns. Some say they were cheaper, and some say the main reason was marine's ability to easily break anything more complex than a tungsten ball.
   components:
   - type: ContainerContainer
     containers:
@@ -45,7 +45,7 @@
 - type: entity
   parent: RNMCGunRackM890Empty
   id: RNMCGunRackM890
-  suffix: M890, Filled
+  suffix: M120, Filled
   components:
   - type: ContainerFill
     containers:

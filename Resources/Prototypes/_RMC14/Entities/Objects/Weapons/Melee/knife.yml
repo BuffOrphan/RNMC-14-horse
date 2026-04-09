@@ -73,7 +73,7 @@
   parent: RMCM5Bayonet
   id: RMCCombatUtilityKnifeA
   name: "'Druzhina' combat utility knife"
-  description: A heavy combat knife, designed for SPP special forces. Its heft and durability makes it popular for various uses in the field.
+  description: A heavy combat knife, designed for UPP special forces. Its heft and durability makes it popular for various uses in the field.
   components:
   - type: Clothing
     slots:
@@ -95,7 +95,7 @@
   parent: RMCM5Bayonet
   id: RMCCombatUtilityKnifeB
   name: "'Druzhina' combat utility knife"
-  description: A heavy combat knife, designed for SPP special forces. Its heft and durability makes it popular for various uses in the field.
+  description: A heavy combat knife, designed for UPP special forces. Its heft and durability makes it popular for various uses in the field.
   components:
   - type: Clothing
     slots:
@@ -296,7 +296,7 @@
   parent: CMM2132Machete
   id: RMCM2100Machete
   name: M2100 "Ngájhe" machete
-  description: An older issue UNMC machete, never left testing. Designed in the Central African Republic. The notching made it hard to clean, and as such the UNMC refused to adopt it - despite the superior bludgeoning power offered.
+  description: An older issue USCM machete, never left testing. Designed in the Central African Republic. The notching made it hard to clean, and as such the USCM refused to adopt it - despite the superior bludgeoning power offered.
   components:
   - type: Tag
     tags:

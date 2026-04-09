@@ -50,11 +50,11 @@
 
 - type: entity
   parent: CMWindoorSecure
-  id: RMCWindoorSecureTSEPABrig
-  suffix: TSEPA, Brig, Locked
+  id: RMCWindoorSecureTWEPABrig
+  suffix: TWEPA, Brig, Locked
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessTSEPABrig" ] ]
+    access: [ [ "RMCAccessTWEPABrig" ] ]
 
 # Misc secure
 - type: entity

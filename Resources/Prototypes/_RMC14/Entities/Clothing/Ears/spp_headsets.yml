@@ -1,6 +1,6 @@
 ﻿- type: radioChannel
-  id: SPP
-  name: chat-radio-spp
+  id: UPP
+  name: chat-radio-upp
   keycode: "y"
   frequency: 1251
   color: "#9b0612"
@@ -8,7 +8,7 @@
 
 - type: radioChannel
   id: SPPCommand
-  name: chat-radio-spp-command
+  name: chat-radio-upp-command
   keycode: "="
   frequency: 1252
   color: "#9b0612"
@@ -16,7 +16,7 @@
 
 - type: radioChannel
   id: SPPEngi
-  name: chat-radio-spp-engi
+  name: chat-radio-upp-engi
   keycode: "s"
   frequency: 1253
   color: "#9b0612"
@@ -24,7 +24,7 @@
 
 - type: radioChannel
   id: SPPMed
-  name: chat-radio-spp-med
+  name: chat-radio-upp-med
   keycode: "i"
   frequency: 1254
   color: "#9b0612"
@@ -32,7 +32,7 @@
 
 - type: radioChannel
   id: SPPCCT
-  name: chat-radio-spp-cct
+  name: chat-radio-upp-cct
   keycode: "x"
   frequency: 1255
   color: "#9b0612"
@@ -50,52 +50,52 @@
 - type: entity
   parent: CMEncryptionKey
   id: RMCEncryptionKeySPP
-  name: SPP radio encryption key
+  name: UPP radio encryption key
   components:
   - type: Sprite
     state: upp_key
   - type: EncryptionKey
     channels:
-    - SPP
-    defaultChannel: SPP
+    - UPP
+    defaultChannel: UPP
 
 - type: entity
   parent: RMCEncryptionKeySPP
   id: RMCEncryptionKeySPPCommand
-  name: SPP command radio encryption key
+  name: UPP command radio encryption key
   components:
   - type: EncryptionKey
     channels:
-    - SPP
+    - UPP
     - SPPCommand
     - SPPEngi
     - SPPMed
     - SPPCCT
-    defaultChannel: SPP
+    defaultChannel: UPP
 
 - type: entity
   parent: RMCEncryptionKeySPP
   id: RMCEncryptionKeySPPEngineer
-  name: SPP engineering radio encryption key
+  name: UPP engineering radio encryption key
   components:
   - type: EncryptionKey
     channels:
-    - SPP
+    - UPP
     - SPPEngi
     - SPPCCT
-    defaultChannel: SPP
+    defaultChannel: UPP
 
 - type: entity
   parent: RMCEncryptionKeySPP
   id: RMCEncryptionKeySPPMedic
-  name: SPP medic radio encryption key
+  name: UPP medic radio encryption key
   components:
   - type: EncryptionKey
     channels:
-    - SPP
+    - UPP
     - SPPEngi
     - SPPMed
-    defaultChannel: SPP
+    defaultChannel: UPP
 
 - type: entity
   parent: CMEncryptionKey
@@ -123,7 +123,7 @@
 - type: entity
   parent: RMCHeadsetSPPAbstract
   id: RMCHeadsetSPP
-  name: SPP headset
+  name: UPP headset
   components:
   - type: ContainerFill
     containers:
@@ -133,7 +133,7 @@
 - type: entity
   parent: RMCHeadsetSPPAbstract
   id: RMCHeadsetSPPCommand
-  name: SPP-CMD headset
+  name: UPP-CMD headset
   components:
   - type: ContainerFill
     containers:
@@ -143,7 +143,7 @@
 - type: entity
   parent: RMCHeadsetSPPAbstract
   id: RMCHeadsetSPPEngineer
-  name: SPP-CCT headset
+  name: UPP-CCT headset
   components:
   - type: ContainerFill
     containers:
@@ -153,7 +153,7 @@
 - type: entity
   parent: RMCHeadsetSPPAbstract
   id: RMCHeadsetSPPMedic
-  name: SPP-MED headset
+  name: UPP-MED headset
   components:
   - type: ContainerFill
     containers:
@@ -163,8 +163,8 @@
 - type: entity
   parent: RMCHeadsetSPPAbstract
   id: RMCHeadsetSPPCommando
-  name: SPP-KdoC headset
-  description: A specialist headset used by SPP kommandos.
+  name: UPP-KdoC headset
+  description: A specialist headset used by UPP kommandos.
   components:
   - type: ContainerFill
     containers:
@@ -175,7 +175,7 @@
 - type: entity
   parent: RMCHeadsetIconsSPP
   id: RMCHeadsetDistressSPP
-  name: SPP colony headset
+  name: UPP colony headset
   components:
   - type: ContainerFill
     containers:
@@ -185,8 +185,8 @@
 - type: entity
   parent: RMCHeadsetDistressSPP
   id: RMCHeadsetSPPPaP
-  name: SPP PaP headset
-  description: A special headset used by the People's Armed Police of the SPP.
+  name: UPP PaP headset
+  description: A special headset used by the People's Armed Police of the UPP.
   components:
   - type: ContainerFill
     containers:

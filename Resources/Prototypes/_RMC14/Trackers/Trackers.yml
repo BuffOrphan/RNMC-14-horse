@@ -139,12 +139,12 @@
   job: CMFreelancerLeader
 
 - type: trackerMode
-  id: SeniorConstableTSEPA
-  job: RMCTSEPASeniorConstable
+  id: SeniorConstableTWEPA
+  job: RMCTWEPASeniorConstable
 
 - type: trackerMode
-  id: InspectorTSEPA
-  job: RMCTSEPAInspector
+  id: InspectorTWEPA
+  job: RMCTWEPAInspector
 
 - type: trackerMode
   id: FORECONCommandingOfficer
