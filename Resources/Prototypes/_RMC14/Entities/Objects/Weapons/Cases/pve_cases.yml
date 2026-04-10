@@ -68,8 +68,8 @@
 - type: entity
   parent: RMCBasePVEEquipmentCase
   id: RMCPVECaseM5SPR
-  name: M49A6 battle rifle case
-  description: A large case for storing an M49A6, a modified USCM battle rifle equipped with HV-P Rounds.
+  name: M5SPR battle rifle case
+  description: A large case for storing an M5SPR, a modified UNMC battle rifle equipped with HV-P Rounds.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/PVE_Cases/rifle.rsi
@@ -105,7 +105,7 @@
   parent: RMCPVECaseM42A2
   id: RMCPVECaseType23
   name: Type 23 shotgun case
-  description: A heavy case for storing a type 23 pump-action shotgun, a UPP semi-automatic shotgun.
+  description: A heavy case for storing a type 23 pump-action shotgun, a SPP semi-automatic shotgun.
   components:
   - type: Storage
     maxItemSize: Ginormous
@@ -134,7 +134,7 @@
   parent: RMCPVECaseM5SPR
   id: RMCPVECaseM5SPR2
   name: M5SPR2 battle rifle case
-  description: A large case for storing an M5SPR2, a modified We-Yu PMC battle rifle equipped with HV-P Rounds.
+  description: A large case for storing an M5SPR2, a modified We-Ya PMC battle rifle equipped with HV-P Rounds.
   components:
   - type: Storage
     whitelist:
@@ -312,8 +312,8 @@
 - type: entity
   parent: RMCPVECaseSentry
   id: RMCPVECaseSentrySPP
-  name: UPP SDS-R8 Sentry Gun case
-  description: A gun case containing the UPP SDS-R8 unit and a spare drum.
+  name: SPP SDS-R8 Sentry Gun case
+  description: A gun case containing the SPP SDS-R8 unit and a spare drum.
   components:
   - type: StorageFill
     contents:
@@ -324,8 +324,8 @@
 - type: entity
   parent: RMCPVECaseSentry
   id: RMCPVECaseSentryPMC
-  name: We-Yu 512-M mini sentry case
-  description: A gun case containing the We-Yu 512-M mini sentry and a spare drum.
+  name: We-Ya 512-M mini sentry case
+  description: A gun case containing the We-Ya 512-M mini sentry and a spare drum.
   components:
   - type: Storage
     whitelist:

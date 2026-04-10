@@ -177,7 +177,7 @@
 
 - type: entity
   parent: MarkerBase
-  id: RMCSpawnerRandomUSCMGuns
+  id: RMCSpawnerRandomUNMCGuns
   name: random crate loot spawner
   description: This is a random crate loot spawner
   categories: [ HideSpawnMenu ]
@@ -325,44 +325,44 @@
 # Black market end
 
 - type: entity
-  parent: RMCCrateLarge # TDLR (randomized spawn does not work with crateopenable spawn a object that uses Spawnonterminate for it) Part of USCM Guns Crate
-  id: RMCCrateUSCMGunsDecoyObject
-  name: Decoy Object USCM firearms crate (x3)
+  parent: RMCCrateLarge # TDLR (randomized spawn does not work with crateopenable spawn a object that uses Spawnonterminate for it) Part of UNMC Guns Crate
+  id: RMCCrateUNMCGunsDecoyObject
+  name: Decoy Object UNMC firearms crate (x3)
   description: Decoy Object.
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
     lifetime: 0.005
   - type: SpawnOnTerminate
-    spawn: RMCSpawnerRandomUSCMGuns
+    spawn: RMCSpawnerRandomUNMCGuns
 
 - type: entity
-  parent: RMCCrateLarge # USCM Guns Crate
-  id: RMCCrateUSCMGuns
-  name: USCM firearms crate (x3)
-  description: A supply crate containing 3 firearms used by USCM forces.
+  parent: RMCCrateLarge # UNMC Guns Crate
+  id: RMCCrateUNMCGuns
+  name: UNMC firearms crate (x3)
+  description: A supply crate containing 3 firearms used by UNMC forces.
   components:
   - type: CrateOpenable
     spawn:
-    - id: RMCCrateUSCMGunsDecoyObject
+    - id: RMCCrateUNMCGunsDecoyObject
       amount: 3
   - type: SpawnOnTerminate
-    spawn: RMCSpawnerRandomUSCMGuns #Basicly does nothing but is needed to avoid base crate loot
+    spawn: RMCSpawnerRandomUNMCGuns #Basicly does nothing but is needed to avoid base crate loot
 
 - type: entity
-  parent: RMCCrateLarge # USCM Guns Crate
-  id: RMCCrateUSCMGunsSingle
-  name: USCM firearms crate
-  description: A supply crate containing firearms used by USCM forces.
+  parent: RMCCrateLarge # UNMC Guns Crate
+  id: RMCCrateUNMCGunsSingle
+  name: UNMC firearms crate
+  description: A supply crate containing firearms used by UNMC forces.
   components:
   - type: SpawnOnTerminate
-    spawn: RMCSpawnerRandomUSCMGuns
+    spawn: RMCSpawnerRandomUNMCGuns
 
 - type: entity
   parent: RMCSecureCaseMedicalBig #Medical Vendor Crate
   id: RMCCrateMedicalVendor
-  name: We-Yu-Med Plus crate
-  description: A crate containing one We-Yu-Med Plus vendor.
+  name: We-Ya-Med Plus crate
+  description: A crate containing one We-Ya-Med Plus vendor.
   components:
   - type: SpawnOnTerminate
     spawn: CMVendorMedicalAllAccess
@@ -415,8 +415,8 @@
 - type: entity
   parent: RMCSecureCaseStrapped #Water Bottles
   id: RMCCrateBottledWaterX50
-  name: We-Yu Bottled Water crate (x50)
-  description: A crate containing fifty We-Yu Bottled Spring Water bottles.
+  name: We-Ya Bottled Water crate (x50)
+  description: A crate containing fifty We-Ya Bottled Spring Water bottles.
   components:
   - type: CrateOpenable
     spawn:

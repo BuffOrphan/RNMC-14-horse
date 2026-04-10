@@ -343,7 +343,7 @@ entities:
     - type: Transform
       pos: 4.5,-4.5
       parent: 2
-- proto: RMCERTShuttleWallTWE04
+- proto: RMCERTShuttleWallTSE04
   entities:
   - uid: 10
     components:
@@ -380,7 +380,7 @@ entities:
     - type: Transform
       pos: 0.5,3.5
       parent: 2
-- proto: RMCERTShuttleWallTWE05
+- proto: RMCERTShuttleWallTSE05
   entities:
   - uid: 11
     components:
@@ -422,28 +422,28 @@ entities:
     - type: Transform
       pos: 2.5,4.5
       parent: 2
-- proto: RMCERTShuttleWallTWE06
+- proto: RMCERTShuttleWallTSE06
   entities:
   - uid: 37
     components:
     - type: Transform
       pos: -0.5,-3.5
       parent: 2
-- proto: RMCERTShuttleWallTWE07
+- proto: RMCERTShuttleWallTSE07
   entities:
   - uid: 38
     components:
     - type: Transform
       pos: 3.5,-3.5
       parent: 2
-- proto: RMCERTShuttleWallTWE08
+- proto: RMCERTShuttleWallTSE08
   entities:
   - uid: 26
     components:
     - type: Transform
       pos: -1.5,-2.5
       parent: 2
-- proto: RMCERTShuttleWallTWE09
+- proto: RMCERTShuttleWallTSE09
   entities:
   - uid: 74
     components:
@@ -460,7 +460,7 @@ entities:
     - type: Transform
       pos: -1.5,0.5
       parent: 2
-- proto: RMCERTShuttleWallTWE10
+- proto: RMCERTShuttleWallTSE10
   entities:
   - uid: 39
     components:
@@ -472,21 +472,21 @@ entities:
     - type: Transform
       pos: 2.5,2.5
       parent: 2
-- proto: RMCERTShuttleWallTWE11
+- proto: RMCERTShuttleWallTSE11
   entities:
   - uid: 41
     components:
     - type: Transform
       pos: -0.5,0.5
       parent: 2
-- proto: RMCERTShuttleWallTWE12
+- proto: RMCERTShuttleWallTSE12
   entities:
   - uid: 42
     components:
     - type: Transform
       pos: 3.5,0.5
       parent: 2
-- proto: RMCERTShuttleWallTWE13
+- proto: RMCERTShuttleWallTSE13
   entities:
   - uid: 76
     components:
@@ -503,28 +503,28 @@ entities:
     - type: Transform
       pos: 4.5,0.5
       parent: 2
-- proto: RMCERTShuttleWallTWE14
+- proto: RMCERTShuttleWallTSE14
   entities:
   - uid: 43
     components:
     - type: Transform
       pos: 1.5,5.5
       parent: 2
-- proto: RMCERTShuttleWallTWEEngineLeft
+- proto: RMCERTShuttleWallTSEEngineLeft
   entities:
   - uid: 44
     components:
     - type: Transform
       pos: -1.5,-3.5
       parent: 2
-- proto: RMCERTShuttleWallTWEEngineRight
+- proto: RMCERTShuttleWallTSEEngineRight
   entities:
   - uid: 45
     components:
     - type: Transform
       pos: 4.5,-3.5
       parent: 2
-- proto: RMCHeadCapTWEPA
+- proto: RMCHeadCapTSEPA
   entities:
   - uid: 86
     components:

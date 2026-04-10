@@ -2,7 +2,7 @@
   parent: CMBaseStructure
   id: RMCIDComputer
   name: Identification Computer
-  description: Terminal for programming USCM employee ID card access.
+  description: Terminal for programming UNMC employee ID card access.
   components:
   - type: IdModificationConsole
     jobList:

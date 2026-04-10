@@ -342,47 +342,47 @@ entities:
             1188: 32,89
         - node:
             color: '#FFFFFFFF'
-            id: CMDecalUSCM1
+            id: CMDecalUNMC1
           decals:
             390: 60,-15
         - node:
             color: '#FFFFFFFF'
-            id: CMDecalUSCM2
+            id: CMDecalUNMC2
           decals:
             391: 61,-15
         - node:
             color: '#FFFFFFFF'
-            id: CMDecalUSCM3
+            id: CMDecalUNMC3
           decals:
             392: 62,-15
         - node:
             color: '#FFFFFFFF'
-            id: CMDecalUSCM4
+            id: CMDecalUNMC4
           decals:
             393: 60,-16
         - node:
             color: '#FFFFFFFF'
-            id: CMDecalUSCM5
+            id: CMDecalUNMC5
           decals:
             394: 61,-16
         - node:
             color: '#FFFFFFFF'
-            id: CMDecalUSCM6
+            id: CMDecalUNMC6
           decals:
             395: 62,-16
         - node:
             color: '#FFFFFFFF'
-            id: CMDecalUSCM7
+            id: CMDecalUNMC7
           decals:
             396: 60,-17
         - node:
             color: '#FFFFFFFF'
-            id: CMDecalUSCM8
+            id: CMDecalUNMC8
           decals:
             397: 61,-17
         - node:
             color: '#FFFFFFFF'
-            id: CMDecalUSCM9
+            id: CMDecalUNMC9
           decals:
             398: 62,-17
         - node:
@@ -21374,7 +21374,7 @@ entities:
   - uid: 4337
     components:
     - type: MetaData
-      desc: This is the artificial intelligence system for the Golden Arrow. Like many other military-grade AI systems, this one was manufactured by We-Yu.
+      desc: This is the artificial intelligence system for the Golden Arrow. Like many other military-grade AI systems, this one was manufactured by We-Ya.
       name: HERMES v3.2.
     - type: Transform
       pos: 27.5,105.5

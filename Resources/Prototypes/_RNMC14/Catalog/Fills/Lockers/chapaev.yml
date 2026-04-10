@@ -11,7 +11,7 @@
   id: RMCLockerSPPRedDawn
   name: personal locker
   description: Despite being called a personal locker, everyone can access this locker. You can see a note on the side that says, 'Why comrade need personal locker? Comrade have ownership?'. Ha-ha. Very fucking funny.
-  suffix: Chapaev, UPP
+  suffix: Chapaev, SPP
   components:
   - type: AccessReader
     access: [["RMCAccessSPPGeneral"]]

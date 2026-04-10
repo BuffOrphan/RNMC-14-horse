@@ -41,7 +41,7 @@
   parent: RMCBaseFigurinePatron
   id: RMCFigurinePatronFritzVohlkson
   name: Fritz Vohlkson figurine
-  description: "A member of the Colony Liaison's security detail. A tacky reward given by We-Yu for 20 years of service."
+  description: "A member of the Colony Liaison's security detail. A tacky reward given by We-Ya for 20 years of service."
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -283,7 +283,7 @@
   parent: RMCBaseFigurinePatron
   id: RMCFigurinePatronBites-The-Dust
   name: Bites-The-Dust figurine
-  description: One of the best smart gun operators within the USCM, though, they seem to get hurt a lot...
+  description: One of the best smart gun operators within the UNMC, though, they seem to get hurt a lot...
   components:
   - type: Sprite
     state: bites-the-dust
@@ -656,7 +656,7 @@
   id: RMCFigurinePatronBeatriceBeaBootes
   name: Beatrice 'Bea' Bootes figurine
   categories: [ HideSpawnMenu ]
-  description: "Adopted and raised in Madawaska, Maine, this lesbian felinid tries her best. She'd go on to join the USCM and become a sergeant made of platinum and tungsten. She lost her wife to a horrific accident and sunk to rock bottom, but she prevailed. She's a social democrat whose a leading member of The Doves.
+  description: "Adopted and raised in Madawaska, Maine, this lesbian felinid tries her best. She'd go on to join the UNMC and become a sergeant made of platinum and tungsten. She lost her wife to a horrific accident and sunk to rock bottom, but she prevailed. She's a social democrat whose a leading member of The Doves.
     She works hard to ensure that her grunts all embrace in victory, alive and happy. She's also open to feedback. She's been accused of a war crime and even eating human organs, but we don't talk about that.:3"
   components:
   - type: Sprite
@@ -698,7 +698,7 @@
   parent: RMCBaseFigurinePatron
   id: RMCFigurinePatronFlynnWendigoSuziko
   name: Flynn 'Wendigo' Suziko figurine
-  description: "A figurine of Flynn 'Wendigo' Suziko, a middle-aged felinid girl serving in the USCM to support her daughter, Evelyn Suziko. Gained the nickname of 'wendigo' at a young age due to having mannerisms similar to that of one. Despite her specialization in stealth, she seems to always end up as a rifleman."
+  description: "A figurine of Flynn 'Wendigo' Suziko, a middle-aged felinid girl serving in the UNMC to support her daughter, Evelyn Suziko. Gained the nickname of 'wendigo' at a young age due to having mannerisms similar to that of one. Despite her specialization in stealth, she seems to always end up as a rifleman."
   components:
   - type: Sprite
     state: flynn_wendigo_suziko
@@ -720,7 +720,7 @@
   parent: RMCBaseFigurinePatron
   id: RMCFigurinePatronAlecProtagBuchanan
   name: Alec 'Protag' Buchanan figurine
-  description: "Here stands the Fireteam Lord, a Delta Marine's best friend. Known for his bravery and being the heaviest drinker in the USCM. The figurine smells vaguely of Alcohol and imminent Death."
+  description: "Here stands the Fireteam Lord, a Delta Marine's best friend. Known for his bravery and being the heaviest drinker in the UNMC. The figurine smells vaguely of Alcohol and imminent Death."
   components:
   - type: Sprite
     state: alec_protag_buchanan
@@ -894,7 +894,7 @@
   parent: RMCBaseFigurinePatron
   id: RMCFigurinePatronCarlosMiguel
   name: Carlos Miguel figurine
-  description: "Ex Sergeant of the Portuguese Army. Now serving the USCM, always protecting his comrades and his booze."
+  description: "Ex Sergeant of the Portuguese Army. Now serving the UNMC, always protecting his comrades and his booze."
   components:
   - type: Sprite
     state: carlos_miguel
@@ -1575,7 +1575,7 @@
   parent: RMCBaseFigurinePatron
   id: RMCFigurinePatronAtlasWolfySnowlight
   name: Katerina AW Dragunov figurine
-  description: "A short figure depicting one of the poster child of the success of the Artificial Womb program. Katerina ability to inspire her fellow marines and fear in the enemies of the UN resulted in WE-YU making her into a figure, despite her objections. As many have learn to their dismay her bite is stronger than her bark. It smells like strawberries."
+  description: "A short figure depicting one of the poster child of the success of the Artificial Womb program. Katerina ability to inspire her fellow marines and fear in the enemies of the UN resulted in WE-YA making her into a figure, despite her objections. As many have learn to their dismay her bite is stronger than her bark. It smells like strawberries."
   components:
   - type: Sprite
     state: katerina_aw_dragunov
@@ -1986,7 +1986,7 @@
   parent: RMCBaseFigurinePatron
   id: RMCFigurinePatronKaizerDeathwishValentine
   name: Kaizer 'Deathwish' Valentine figurine
-  description: "This high-quality figurine depicts Kaizer 'Deathwish' Valentine, an elite USCM medic known for his perfectionist attitude towards treatment and his reckless disregard for his own safety when recovering the fallen.  Sculpted with exceptional precision, the figure shows his pristine, meticulously arranged medical tools contrasted against his battle-worn armor, reflecting both his discipline and the danger he constantly throws himself into.  His focused expression peers through a cracked visor, one hand gripping a compact scanner while the other reaches toward a debris-strewn base featuring shattered concrete and a partially exposed USCM emblem.  Premium paintwork, layered shading, and fine weathering give the entire piece a cinematic realism befitting a tribute to a medic who refuses to lose a patient—even at his own expense."
+  description: "This high-quality figurine depicts Kaizer 'Deathwish' Valentine, an elite UNMC medic known for his perfectionist attitude towards treatment and his reckless disregard for his own safety when recovering the fallen.  Sculpted with exceptional precision, the figure shows his pristine, meticulously arranged medical tools contrasted against his battle-worn armor, reflecting both his discipline and the danger he constantly throws himself into.  His focused expression peers through a cracked visor, one hand gripping a compact scanner while the other reaches toward a debris-strewn base featuring shattered concrete and a partially exposed UNMC emblem.  Premium paintwork, layered shading, and fine weathering give the entire piece a cinematic realism befitting a tribute to a medic who refuses to lose a patient—even at his own expense."
   components:
   - type: Sprite
     state: kaizer_deathwish_valentine

@@ -44,8 +44,8 @@
 - type: entity
   parent: RMCArmorVest
   id: RMCArmorVestWeYa
-  name: We-Yu security armor vest
-  description: An armored vest that protects against some damage. This one has a Weyland-Yutani corporate badge.
+  name: We-Ya security armor vest
+  description: An armored vest that protects against some damage. This one has a Weston-Yamada corporate badge.
 
 - type: entity
   parent: RMCArmorVestWeYa
@@ -224,7 +224,7 @@
   parent: RMCArmorVestXLBase
   id: RMCArmorVestSquad
   name: M3-XL pattern marine armor vest
-  description: A type of M3-XL body armor, standard issue for USCM marines. The shoulder pads have been taken off for ease of movement. Not recommended for direct combat or for deployment use against hostiles.
+  description: A type of M3-XL body armor, standard issue for UNMC marines. The shoulder pads have been taken off for ease of movement. Not recommended for direct combat or for deployment use against hostiles.
   components:
   - type: CMArmor
     melee: 0

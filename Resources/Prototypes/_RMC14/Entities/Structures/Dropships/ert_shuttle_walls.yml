@@ -596,18 +596,18 @@
   - type: Occluder
     enabled: false
 
-#UPP ERT Shuttle
+#SPP ERT Shuttle
 
 - type: entity
   abstract: true
   parent: RMCBaseERTShuttleWall
   id: RMCERTShuttleWallSPP
-  name: UPP Shuttle Wall
+  name: SPP Shuttle Wall
 
 - type: entity
   parent: RMCERTShuttleWallSPP
   id: RMCERTShuttleWallSPPEngineLeft
-  name: UPP Shuttle Engine
+  name: SPP Shuttle Engine
   suffix: Left
   components:
   - type: Sprite
@@ -618,7 +618,7 @@
 - type: entity
   parent: RMCERTShuttleWallSPP
   id: RMCERTShuttleWallSPPEngineRight
-  name: UPP Shuttle Engine
+  name: SPP Shuttle Engine
   suffix: Right
   components:
   - type: Sprite
@@ -768,18 +768,18 @@
   - type: Occluder
     enabled: false
 
-#TWE ERT Shuttle
+#TSE ERT Shuttle
 
 - type: entity
   abstract: true
   parent: RMCBaseERTShuttleWall
-  id: RMCERTShuttleWallTWE
-  name: TWE Shuttle Wall
+  id: RMCERTShuttleWallTSE
+  name: TSE Shuttle Wall
 
 - type: entity
-  parent: RMCERTShuttleWallTWE
-  id: RMCERTShuttleWallTWEEngineLeft
-  name: TWE Shuttle Engine
+  parent: RMCERTShuttleWallTSE
+  id: RMCERTShuttleWallTSEEngineLeft
+  name: TSE Shuttle Engine
   suffix: Left
   components:
   - type: Sprite
@@ -788,9 +788,9 @@
     state: tse_left_engine
 
 - type: entity
-  parent: RMCERTShuttleWallTWE
-  id: RMCERTShuttleWallTWEEngineRight
-  name: TWE Shuttle Engine
+  parent: RMCERTShuttleWallTSE
+  id: RMCERTShuttleWallTSEEngineRight
+  name: TSE Shuttle Engine
   suffix: Right
   components:
   - type: Sprite
@@ -799,8 +799,8 @@
     state: tse_right_engine
 
 - type: entity
-  parent: RMCERTShuttleWallTWE
-  id: RMCERTShuttleWallTWE01
+  parent: RMCERTShuttleWallTSE
+  id: RMCERTShuttleWallTSE01
   suffix: 01
   components:
   - type: Sprite
@@ -809,8 +809,8 @@
     state: tse_wall_01
 
 - type: entity
-  parent: RMCERTShuttleWallTWE
-  id: RMCERTShuttleWallTWE02
+  parent: RMCERTShuttleWallTSE
+  id: RMCERTShuttleWallTSE02
   suffix: 02
   components:
   - type: Sprite
@@ -819,8 +819,8 @@
     state: tse_wall_02
 
 - type: entity
-  parent: RMCERTShuttleWallTWE
-  id: RMCERTShuttleWallTWE03
+  parent: RMCERTShuttleWallTSE
+  id: RMCERTShuttleWallTSE03
   suffix: 03
   components:
   - type: Sprite
@@ -829,8 +829,8 @@
     state: tse_wall_03
 
 - type: entity
-  parent: RMCERTShuttleWallTWE
-  id: RMCERTShuttleWallTWE04
+  parent: RMCERTShuttleWallTSE
+  id: RMCERTShuttleWallTSE04
   suffix: 04
   components:
   - type: Sprite
@@ -839,8 +839,8 @@
     state: tse_wall_04
 
 - type: entity
-  parent: RMCERTShuttleWallTWE
-  id: RMCERTShuttleWallTWE05
+  parent: RMCERTShuttleWallTSE
+  id: RMCERTShuttleWallTSE05
   suffix: 05
   components:
   - type: Sprite
@@ -849,8 +849,8 @@
     state: tse_wall_05
 
 - type: entity
-  parent: RMCERTShuttleWallTWE
-  id: RMCERTShuttleWallTWE06
+  parent: RMCERTShuttleWallTSE
+  id: RMCERTShuttleWallTSE06
   suffix: 06
   components:
   - type: Sprite
@@ -859,8 +859,8 @@
     state: tse_wall_08
 
 - type: entity
-  parent: RMCERTShuttleWallTWE
-  id: RMCERTShuttleWallTWE07
+  parent: RMCERTShuttleWallTSE
+  id: RMCERTShuttleWallTSE07
   suffix: 07
   components:
   - type: Sprite
@@ -869,8 +869,8 @@
     state: tse_wall_09
 
 - type: entity
-  parent: RMCERTShuttleWallTWE
-  id: RMCERTShuttleWallTWE08
+  parent: RMCERTShuttleWallTSE
+  id: RMCERTShuttleWallTSE08
   suffix: 08
   components:
   - type: Sprite
@@ -879,8 +879,8 @@
     state: tse_wall_16
 
 - type: entity
-  parent: RMCERTShuttleWallTWE
-  id: RMCERTShuttleWallTWE09
+  parent: RMCERTShuttleWallTSE
+  id: RMCERTShuttleWallTSE09
   suffix: 09
   components:
   - type: Sprite
@@ -889,8 +889,8 @@
     state: tse_wall_20
 
 - type: entity
-  parent: RMCERTShuttleWallTWE
-  id: RMCERTShuttleWallTWE10
+  parent: RMCERTShuttleWallTSE
+  id: RMCERTShuttleWallTSE10
   suffix: 10
   components:
   - type: Sprite
@@ -899,8 +899,8 @@
     state: tse_wall_21
 
 - type: entity
-  parent: RMCERTShuttleWallTWE
-  id: RMCERTShuttleWallTWE11
+  parent: RMCERTShuttleWallTSE
+  id: RMCERTShuttleWallTSE11
   suffix: 11
   components:
   - type: Sprite
@@ -909,8 +909,8 @@
     state: tse_wall_22
 
 - type: entity
-  parent: RMCERTShuttleWallTWE
-  id: RMCERTShuttleWallTWE12
+  parent: RMCERTShuttleWallTSE
+  id: RMCERTShuttleWallTSE12
   suffix: 12
   components:
   - type: Sprite
@@ -919,8 +919,8 @@
     state: tse_wall_23
 
 - type: entity
-  parent: RMCERTShuttleWallTWE
-  id: RMCERTShuttleWallTWE13
+  parent: RMCERTShuttleWallTSE
+  id: RMCERTShuttleWallTSE13
   suffix: 13
   components:
   - type: Sprite
@@ -929,8 +929,8 @@
     state: tse_wall_25
 
 - type: entity
-  parent: RMCERTShuttleWallTWE
-  id: RMCERTShuttleWallTWE14
+  parent: RMCERTShuttleWallTSE
+  id: RMCERTShuttleWallTSE14
   suffix: 14
   components:
   - type: Sprite
@@ -940,18 +940,18 @@
   - type: Occluder
     enabled: false
 
-#Nightmare UPP Shuttle
+#Nightmare SPP Shuttle
 
 - type: entity
   abstract: true
   parent: RMCBaseERTShuttleWall
   id: RMCERTShuttleWallNightmareSPP
-  name: Nightmare UPP Shuttle Wall
+  name: Nightmare SPP Shuttle Wall
 
 - type: entity
   parent: RMCERTShuttleWallNightmareSPP
   id: RMCERTShuttleWallNightmareSPPEngineLeft01
-  name: Nightmare UPP Shuttle Engine
+  name: Nightmare SPP Shuttle Engine
   suffix: Left 01
   components:
   - type: Sprite
@@ -962,7 +962,7 @@
 - type: entity
   parent: RMCERTShuttleWallNightmareSPP
   id: RMCERTShuttleWallNightmareSPPEngineLeft02
-  name: Nightmare UPP Shuttle Engine
+  name: Nightmare SPP Shuttle Engine
   suffix: Left 02
   components:
   - type: Sprite
@@ -973,7 +973,7 @@
 - type: entity
   parent: RMCERTShuttleWallNightmareSPP
   id: RMCERTShuttleWallNightmareSPPEngineRight01
-  name: Nightmare UPP Shuttle Engine
+  name: Nightmare SPP Shuttle Engine
   suffix: Right 01
   components:
   - type: Sprite
@@ -984,7 +984,7 @@
 - type: entity
   parent: RMCERTShuttleWallNightmareSPP
   id: RMCERTShuttleWallNightmareSPPEngineRight02
-  name: Nightmare UPP Shuttle Engine
+  name: Nightmare SPP Shuttle Engine
   suffix: Right 02
   components:
   - type: Sprite

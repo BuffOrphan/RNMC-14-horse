@@ -1,7 +1,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleM54CMK1Empty
-  name: magazine box (M41A MK1 x 10)
+  name: magazine box (M54C MK1 x 10)
   components:
   - type: Sprite
     layers:
@@ -47,7 +47,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleM54CMK1APEmpty
-  name: magazine box (M41A MK1 AP x 10)
+  name: magazine box (M54C MK1 AP x 10)
   components:
   - type: Sprite
     layers:
@@ -93,7 +93,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleM54CMK1HEAPEmpty
-  name: magazine box (M41A MK1 HEAP x 10)
+  name: magazine box (M54C MK1 HEAP x 10)
   components:
   - type: Sprite
     layers:
@@ -139,7 +139,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleM54CMK1IncendiaryEmpty
-  name: magazine box (M41A MK1 Incendiary x 10)
+  name: magazine box (M54C MK1 Incendiary x 10)
   components:
   - type: Sprite
     layers:

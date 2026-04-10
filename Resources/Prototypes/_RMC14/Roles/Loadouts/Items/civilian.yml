@@ -24,10 +24,10 @@
     - RMCPatchWeYaFury161
 
 - type: loadout
-  id: PatchTWERMC
+  id: PatchTSERMC
   cost: 1
   inhand:
-    - RMCPatchTWE
+    - RMCPatchTSE
 
 - type: loadout
   id: PatchMSCRMC

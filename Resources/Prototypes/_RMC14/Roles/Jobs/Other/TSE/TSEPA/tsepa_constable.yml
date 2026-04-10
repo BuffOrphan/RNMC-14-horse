@@ -1,17 +1,17 @@
-# TWEPA Constable
+# TSEPA Constable
 - type: job
   parent: CMJobBase
-  id: RMCTWEPAConstable
+  id: RMCTSEPAConstable
   name: rmc-job-name-tsepa-constable
   description: rmc-job-description-tsepa-Ccnstable
-  playTimeTracker: RMCJobTWEPAConstable
+  playTimeTracker: RMCJobTSEPAConstable
   ranks:
-    RMCRankTWEPAConstable: []
-  startingGear: RMCGearTWEPAConstable
-  icon: "RMCJobIconTWEPAConstable"
+    RMCRankTSEPAConstable: []
+  startingGear: RMCGearTSEPAConstable
+  icon: "RMCJobIconTSEPAConstable"
   joinNotifyCrew: false
   accessGroups:
-  - ColonistTWEPA
+  - ColonistTSEPA
   special:
   - !type:AddComponentSpecial
     components:
@@ -19,31 +19,31 @@
       preset: RMCSkillPresetSurvivorMarshal
     - type: NpcFactionMember
       factions:
-      - TWE
+      - TSE
     - type: JobPrefix
       prefix: rmc-job-prefix-tsepa-constable
   hidden: true
 
 - type: startingGear
-  id: RMCGearTWEPAConstable
+  id: RMCGearTSEPAConstable
   equipment:
-    head: RMCHeadCapTWEPA
-    ears: RMCHeadsetTWEPA
-    jumpsuit: RMCJumpsuitTWEPA
-    outerClothing: RMCCoatTWEPAHighVisVest
+    head: RMCHeadCapTSEPA
+    ears: RMCHeadsetTSEPA
+    jumpsuit: RMCJumpsuitTSEPA
+    outerClothing: RMCCoatTSEPAHighVisVest
     gloves: RMCHandsVeteran
     shoes: CMBootsBlackFilled
-    id: RMCIDCardTWEPA
-    belt: RMCBeltHolsterPistolTWEFilledL54
-    back: RMCSatchelTWEPA
+    id: RMCIDCardTSEPA
+    belt: RMCBeltHolsterPistolTSEFilledL54
+    back: RMCSatchelTSEPA
 
 - type: entity
   parent: CMSpawnPointJobBase
-  id: RMCSpawnPointTWEPAConstable
+  id: RMCSpawnPointTSEPAConstable
   name: tsepa constable spawn point
   components:
   - type: SpawnPoint
-    job_id: RMCTWEPAConstable
+    job_id: RMCTSEPAConstable
   - type: Sprite
     layers:
     - sprite: Markers/jobs.rsi
@@ -52,12 +52,12 @@
       state: icon
 
 - type: playTimeTracker
-  id: RMCJobTWEPAConstable
+  id: RMCJobTSEPAConstable
   isHumanoid: true
 
 - type: jobIcon
   parent: CMJobIconBase
-  id: RMCJobIconTWEPAConstable
+  id: RMCJobIconTSEPAConstable
   icon:
     sprite: _RMC14/Interface/cm_job_icons.rsi
     state: tse_paconstable

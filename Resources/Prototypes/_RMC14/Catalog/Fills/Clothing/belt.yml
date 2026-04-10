@@ -304,9 +304,9 @@
       amount: 5
 
 - type: entity
-  parent: RMCBeltHolsterPistolTWE
-  id: RMCBeltHolsterPistolTWEFilledL54
-  suffix: TWE, Filled, L54
+  parent: RMCBeltHolsterPistolTSE
+  id: RMCBeltHolsterPistolTSEFilledL54
+  suffix: TSE, Filled, L54
   components:
   - type: StorageFill
     contents:
@@ -355,7 +355,7 @@
     - id: CMStunbaton
     - id: RMCHandcuffs
 #    - id: Pepperspray # TODO RMC14
-#    - id: # TODO RMC14 UPP shrapnel revolver magazine
+#    - id: # TODO RMC14 SPP shrapnel revolver magazine
 
 - type: entity
   parent: CMBeltSecurityMarshal

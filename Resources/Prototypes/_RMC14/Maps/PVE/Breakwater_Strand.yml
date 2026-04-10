@@ -7,7 +7,7 @@
   randomRotation: false
   stations:
     Breakwater_Strand:
-      stationProto: StandardUSCMWarship
+      stationProto: StandardUNMCWarship
       components:
       - type: StationNameSetup
         mapNameTemplate: 'Breakwater Strand'

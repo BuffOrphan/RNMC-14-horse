@@ -20179,7 +20179,7 @@ entities:
   - uid: 1376
     components:
     - type: MetaData
-      desc: This is the artificial intelligence system for the SSV Deyneka. This one was produced by Volker-Bauer, a state-owned UPP enterprise.
+      desc: This is the artificial intelligence system for the SSV Deyneka. This one was produced by Volker-Bauer, a state-owned SPP enterprise.
       name: COSSUS v4.3.
     - type: Transform
       pos: -7.5,-11.5
@@ -43617,7 +43617,7 @@ entities:
   - uid: 5535
     components:
     - type: MetaData
-      desc: The Advanced Universal Subspace Mapping computer Type 13 is a advanced system able to render planetside data at high-speeds. Similar to the CMPS system used by the UN, utilized by the UPP for recon operations.
+      desc: The Advanced Universal Subspace Mapping computer Type 13 is a advanced system able to render planetside data at high-speeds. Similar to the CMPS system used by the UN, utilized by the SPP for recon operations.
       name: AUSM-13 computer
     - type: Transform
       pos: 11.5,98.5

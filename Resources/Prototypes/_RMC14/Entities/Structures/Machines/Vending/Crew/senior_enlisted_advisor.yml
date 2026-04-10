@@ -103,11 +103,11 @@
         name: Falling Falcons UN shoulder patch
       - id: RMCPatchFallingFalconsLarge
         name: Falling Falcons large chest patch
-      - id: RMCPatchUSCM
+      - id: RMCPatchUNMC
       - id: RMCPatchUnitedNationsSquare
-        name: United States flag shoulder patch
+        name: United Nations flag shoulder patch
       - id: RMCPatchUnitedNations
-        name: United States shoulder patch
+        name: United Nations shoulder patch
       - id: RMCPatchSEA
 
 - type: entity

@@ -5,7 +5,7 @@
   description: rmc-ghost-role-information-rcm-description
   playTimeTracker: RMCJobRoyalRiflemanPVE
   ranks:
-    RMCRankTWEMarine: [ ]
+    RMCRankTSEMarine: [ ]
   startingGear: RMCGearRoyalRiflemanPVE
   icon: "RMCJobIconRoyalRiflemanPVE"
   joinNotifyCrew: false
@@ -17,7 +17,7 @@
     - type: NpcFactionMember
       factions:
       - RoyalMarines
-      - TWE
+      - TSE
     - type: Skills
       skills:
         RMCSkillConstruction: 1

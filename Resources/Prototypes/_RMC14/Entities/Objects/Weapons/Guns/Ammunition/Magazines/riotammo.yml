@@ -3,8 +3,8 @@
 - type: entity
   parent: CMMagazineRifleM54C
   id: RMCMagazineRifleM54CRubber
-  name: "M41A rubber magazine (10x24mm)"
-  description: "A magazine of less-lethal rubber 10x24mm rounds for use in the M41A battle rifle."
+  name: "M54C rubber magazine (10x24mm)"
+  description: "A magazine of less-lethal rubber 10x24mm rounds for use in the M54C battle rifle."
   components:
   - type: Tag
     tags:
@@ -34,8 +34,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineRifleM4SPRRubber
-  name: "M49A rubber magazine (10x24mm)"
-  description: "A magazine of less-lethal rubber 10x24mm rounds for use in the M49A battle rifle."
+  name: "M4SPR rubber magazine (10x24mm)"
+  description: "A magazine of less-lethal rubber 10x24mm rounds for use in the M4SPR battle rifle."
   components:
   - type: Tag
     tags:
@@ -146,7 +146,7 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: RMCMagazinePistolM1984Rubber
-  name: M1911 rubber magazine (9mm)
+  name: M1984 rubber magazine (9mm)
   components:
   - type: Tag
     tags:

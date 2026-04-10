@@ -5,7 +5,7 @@
   description: rmc-job-description-survivor
   ranks:
     RMCRankWeYaCommando: []
-  supervisors: cm-job-supervisors-we-yu
+  supervisors: cm-job-supervisors-we-ya
   accessGroups:
   - ColonistPMC
   startingGear: RMCGearSurvivorShivasCommando
@@ -15,7 +15,7 @@
   camouflageStartingGear: null
   greeting: rmc-job-greeting-shivas-commando
   playTimeTracker: CMJobSurvivorSecurity
-  spawnMenuRoleName: Survivor - We-Yu Commando (Shivas)
+  spawnMenuRoleName: Survivor - We-Ya Commando (Shivas)
   special:
   - !type:AddComponentSpecial
     components:

@@ -2921,7 +2921,7 @@ entities:
   - uid: 1644
     components:
     - type: MetaData
-      name: TWE Communications Office
+      name: TSE Communications Office
     - type: Transform
       pos: 21.5,-29.5
       parent: 2
@@ -3412,7 +3412,7 @@ entities:
   - uid: 80
     components:
     - type: MetaData
-      name: UPP Base Entrance
+      name: SPP Base Entrance
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 1.5,-37.5
@@ -3420,7 +3420,7 @@ entities:
   - uid: 81
     components:
     - type: MetaData
-      name: UPP Base Entrance
+      name: SPP Base Entrance
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 0.5,-37.5
@@ -3430,7 +3430,7 @@ entities:
   - uid: 462
     components:
     - type: MetaData
-      name: USCM-HC Communications Office
+      name: UNMC-HC Communications Office
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -0.5,-15.5
@@ -3438,7 +3438,7 @@ entities:
   - uid: 464
     components:
     - type: MetaData
-      name: USCM-HC Communications Office
+      name: UNMC-HC Communications Office
     - type: Transform
       pos: -0.5,-14.5
       parent: 2
@@ -3447,7 +3447,7 @@ entities:
   - uid: 593
     components:
     - type: MetaData
-      name: USCM-HC Offices
+      name: UNMC-HC Offices
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -2.5,-5.5
@@ -3455,7 +3455,7 @@ entities:
   - uid: 594
     components:
     - type: MetaData
-      name: USCM-HC Offices
+      name: UNMC-HC Offices
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -3.5,-5.5
@@ -3511,7 +3511,7 @@ entities:
   - uid: 767
     components:
     - type: MetaData
-      name: USCM-MP Offices
+      name: UNMC-MP Offices
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 13.5,-5.5
@@ -3519,7 +3519,7 @@ entities:
   - uid: 768
     components:
     - type: MetaData
-      name: USCM-MP Offices
+      name: UNMC-MP Offices
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 14.5,-5.5
@@ -3582,7 +3582,7 @@ entities:
     - type: Transform
       pos: 5.5,-37.5
       parent: 2
-- proto: CMFaxTWE
+- proto: CMFaxTSE
   entities:
   - uid: 1699
     components:
@@ -9796,7 +9796,7 @@ entities:
   - uid: 104
     components:
     - type: MetaData
-      name: UPP Communications Office
+      name: SPP Communications Office
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 3.5,-35.5
@@ -9811,7 +9811,7 @@ entities:
   - uid: 231
     components:
     - type: MetaData
-      name: UPP Office
+      name: SPP Office
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 3.5,-31.5
@@ -10002,7 +10002,7 @@ entities:
     - type: Transform
       pos: 22.961037,-24.530527
       parent: 2
-- proto: RMCCalendarUSCM
+- proto: RMCCalendarUNMC
   entities:
   - uid: 1405
     components:
@@ -10766,7 +10766,7 @@ entities:
       pos: 17.5,-36.5
       parent: 2
     - type: Ladder
-      id: Fax_TWE
+      id: Fax_TSE
     - type: Fixtures
       fixtures: {}
   - uid: 1892
@@ -10803,7 +10803,7 @@ entities:
   - uid: 772
     components:
     - type: MetaData
-      name: We-Yu
+      name: We-Ya
     - type: Transform
       pos: 25.5,-21.5
       parent: 2
@@ -10847,18 +10847,18 @@ entities:
   - uid: 951
     components:
     - type: MetaData
-      name: TWE
+      name: TSE
     - type: Transform
       pos: 13.5,-21.5
       parent: 2
     - type: Ladder
-      id: Fax_TWE
+      id: Fax_TSE
     - type: Fixtures
       fixtures: {}
   - uid: 1540
     components:
     - type: MetaData
-      name: UPP
+      name: SPP
     - type: Transform
       pos: 1.5,-21.5
       parent: 2
@@ -10869,7 +10869,7 @@ entities:
   - uid: 1541
     components:
     - type: MetaData
-      name: USCM HC
+      name: UNMC HC
     - type: Transform
       pos: 1.5,-20.5
       parent: 2
@@ -12349,7 +12349,7 @@ entities:
       pos: 18.123684,-36.278374
       parent: 2
     - type: RMCDoorButton
-      id: Fax_Door_TWE
+      id: Fax_Door_TSE
     - type: Fixtures
       fixtures: {}
   - uid: 1893
@@ -12428,7 +12428,7 @@ entities:
       pos: 17.5,-35.5
       parent: 2
     - type: RMCPodDoor
-      id: Fax_Door_TWE
+      id: Fax_Door_TSE
   - uid: 1788
     components:
     - type: MetaData
@@ -12538,7 +12538,7 @@ entities:
   - uid: 141
     components:
     - type: MetaData
-      name: UPP Communications Office
+      name: SPP Communications Office
     - type: Transform
       pos: 6.952858,-37.11934
       parent: 2
@@ -12547,7 +12547,7 @@ entities:
   - uid: 493
     components:
     - type: MetaData
-      name: USCM-HC Communications Office
+      name: UNMC-HC Communications Office
     - type: Transform
       pos: 3.001381,-16.039557
       parent: 2
@@ -12583,7 +12583,7 @@ entities:
   - uid: 1700
     components:
     - type: MetaData
-      name: TWE Communications Office
+      name: TSE Communications Office
     - type: Transform
       pos: 23.30077,-28.107748
       parent: 2
@@ -12592,7 +12592,7 @@ entities:
   - uid: 1908
     components:
     - type: MetaData
-      name: We-Yu Communications Office
+      name: We-Ya Communications Office
     - type: Transform
       pos: 34.997738,-25.30221
       parent: 2
@@ -12718,7 +12718,7 @@ entities:
     - type: Transform
       pos: 8.120754,-37.49063
       parent: 2
-- proto: RMCStampTWE
+- proto: RMCStampTSE
   entities:
   - uid: 1707
     components:

@@ -212,7 +212,7 @@
     - RMCEngineerKitRCMPVEFilled
     - RMCPouchToolsSocRCMPVEAssaultEngi
     - RMCToolWebbingSmallFilledRCMPVEAssaultEngi
-    - RMCTeslaTWE
+    - RMCTeslaTSE
 
 - type: entity
   parent: CMVendorBundleRiflemanApparel

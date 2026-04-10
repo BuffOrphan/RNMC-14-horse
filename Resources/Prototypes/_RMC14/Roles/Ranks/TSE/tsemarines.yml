@@ -1,107 +1,107 @@
 - type: rank
-  id: RMCRankTWEMarine
+  id: RMCRankTSEMarine
   name: Marine
   prefix: Mne.
   paygrade: E1
 
 - type: rank
-  id: RMCRankTWELanceCorporal
+  id: RMCRankTSELanceCorporal
   name: Lance Corporal
   prefix: LCpl.
   paygrade: E2
 
 - type: rank
-  id: RMCRankTWECorporal
+  id: RMCRankTSECorporal
   name: Corporal
   prefix: Cpl.
   paygrade: E3
 
 - type: rank
-  id: RMCRankTWESergeant
+  id: RMCRankTSESergeant
   name: Sergeant
   prefix: Sgt.
   paygrade: E4
 
 - type: rank
-  id: RMCRankTWEColourSergeant
+  id: RMCRankTSEColourSergeant
   name: Colour Sergeant
   prefix: CSgt.
   paygrade: E5
 
 - type: rank
-  id: RMCRankTWEWarrantOfficer1
+  id: RMCRankTSEWarrantOfficer1
   name: Warrant Officer Class 1
   prefix: WO1.
   paygrade: E6
 
 - type: rank
-  id: RMCRankTWEWarrantOfficer2
+  id: RMCRankTSEWarrantOfficer2
   name: Warrant Officer Class 2
   prefix: WO2.
   paygrade: E7
 
 - type: rank
-  id: RMCRankTWESecondLieutenant
+  id: RMCRankTSESecondLieutenant
   name: Second Lieutenant
   prefix: 2nd LT
   paygrade: O1
 
 - type: rank
-  id: RMCRankTWELieutenant
+  id: RMCRankTSELieutenant
   name: Lieutenant
   prefix: Lt.
   paygrade: O2
 
 - type: rank
-  id: RMCRankTWECaptain
+  id: RMCRankTSECaptain
   name: Captain
   prefix: Capt.
   paygrade: O3
 
 - type: rank
-  id: RMCRankTWEMajor
+  id: RMCRankTSEMajor
   name: Major
   prefix: Maj.
   paygrade: O4
 
 - type: rank
-  id: RMCRankTWELieutenantColonel
+  id: RMCRankTSELieutenantColonel
   name: Lieutenant Colonel
   prefix: Lt.Col.
   paygrade: O5
 
 - type: rank
-  id: RMCRankTWEColonel
+  id: RMCRankTSEColonel
   name: Colonel
   prefix: Col.
   paygrade: O6
 
 - type: rank
-  id: RMCRankTWEBrigadier
+  id: RMCRankTSEBrigadier
   name: Brigadier
   prefix: Brig.
   paygrade: O7
 
 - type: rank
-  id: RMCRankTWEMajorGeneral
+  id: RMCRankTSEMajorGeneral
   name: Major General
   prefix: Maj Gen.
   paygrade: O8
 
 - type: rank
-  id: RMCRankTWELieutenantGeneral
+  id: RMCRankTSELieutenantGeneral
   name: Lieutenant General
   prefix: Lt Gen.
   paygrade: O9
 
 - type: rank
-  id: RMCRankTWEGeneral
+  id: RMCRankTSEGeneral
   name: General
   prefix: Gen.
   paygrade: O10
   
 - type: rank
-  id: RMCRankTWEEmpress
+  id: RMCRankTSEEmpress
   name: Empress # This needs to be changed to allow it to change dynamically for genders
   prefix: HRM.
 

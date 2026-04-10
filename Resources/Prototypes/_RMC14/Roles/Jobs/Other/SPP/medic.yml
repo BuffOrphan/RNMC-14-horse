@@ -1,8 +1,8 @@
 ﻿- type: job
   parent: CMJobBase
   id: RMCSPPMedic
-  name: rmc-job-name-upp-medic
-  description: rmc-job-description-upp-medic
+  name: rmc-job-name-spp-medic
+  description: rmc-job-description-spp-medic
   playTimeTracker: CMJobSPPMedic
   ranks:
     RMCRankSPPMladshiySerzhant: []
@@ -12,13 +12,13 @@
   accessGroups:
   - Colonist
   - HospitalCorpsman
-  spawnMenuRoleName: UPP Medic
+  spawnMenuRoleName: SPP Medic
   special:
   - !type:AddComponentSpecial
     components:
     - type: NpcFactionMember
       factions:
-      - UPP
+      - SPP
     - type: Skills
       skills:
         RMCSkillEndurance: 1
@@ -29,12 +29,12 @@
         RMCSkillSurgery: 1
     - type: SquadArmorWearer
     - type: JobPrefix
-      prefix: rmc-job-prefix-upp-medic
+      prefix: rmc-job-prefix-spp-medic
   hidden: true
 
 - type: entity
   id: RMCRandomHumanoidSPPMedicHostile
-  name: upp ghost role medic
+  name: spp ghost role medic
   suffix: Spawner, Player, Hostile
   components:
   - type: Sprite
@@ -45,7 +45,7 @@
 
 - type: entity
   id: RMCRandomHumanoidSPPMedicFriendly
-  name: upp ghost role medic
+  name: spp ghost role medic
   suffix: Spawner, Player, Friendly
   components:
   - type: Sprite
@@ -59,9 +59,9 @@
   id: RMCSPPMedic
   components:
   - type: GhostRole
-    name: rmc-ghost-name-upp-hostile-medic
-    description: rmc-ghost-role-information-upp-hostile-description
-    rules: rmc-ghost-role-information-upp-rules
+    name: rmc-ghost-name-spp-hostile-medic
+    description: rmc-ghost-role-information-spp-hostile-description
+    rules: rmc-ghost-role-information-spp-rules
     reregister: false
     job: RMCSPPMedic
     raffle:
@@ -78,9 +78,9 @@
   id: RMCSPPMedicFriendly
   components:
   - type: GhostRole
-    name: rmc-ghost-name-upp-friendly-medic
-    description: rmc-ghost-role-information-upp-friendly-description
-    rules: rmc-ghost-role-information-upp-rules
+    name: rmc-ghost-name-spp-friendly-medic
+    description: rmc-ghost-role-information-spp-friendly-description
+    rules: rmc-ghost-role-information-spp-rules
     reregister: false
     job: RMCSPPMedic
     raffle:

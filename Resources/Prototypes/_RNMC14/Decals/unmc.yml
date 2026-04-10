@@ -1,80 +1,80 @@
 - type: decal
-  id: RNMCDecalUSCMTiled1
+  id: RNMCDecalUNMCTiled1
   parent: CMDecalBase
   tags: ["station"]
   defaultCustomColor: true
   sprite:
-    sprite: _RNMC14/Decals/uscm_tiled.rsi
-    state: uscm1
+    sprite: _RNMC14/Decals/unmc_tiled.rsi
+    state: unmc1
 
 - type: decal
-  id: RNMCDecalUSCMTiled2
+  id: RNMCDecalUNMCTiled2
   parent: CMDecalBase
   tags: ["station"]
   defaultCustomColor: true
   sprite:
-    sprite: _RNMC14/Decals/uscm_tiled.rsi
-    state: uscm2
+    sprite: _RNMC14/Decals/unmc_tiled.rsi
+    state: unmc2
 
 - type: decal
-  id: RNMCDecalUSCMTiled3
+  id: RNMCDecalUNMCTiled3
   parent: CMDecalBase
   tags: ["station"]
   defaultCustomColor: true
   sprite:
-    sprite: _RNMC14/Decals/uscm_tiled.rsi
-    state: uscm3
+    sprite: _RNMC14/Decals/unmc_tiled.rsi
+    state: unmc3
 
 - type: decal
-  id: RNMCDecalUSCMTiled4
+  id: RNMCDecalUNMCTiled4
   parent: CMDecalBase
   tags: ["station"]
   defaultCustomColor: true
   sprite:
-    sprite: _RNMC14/Decals/uscm_tiled.rsi
-    state: uscm4
+    sprite: _RNMC14/Decals/unmc_tiled.rsi
+    state: unmc4
 
 - type: decal
-  id: RNMCDecalUSCMTiled5
+  id: RNMCDecalUNMCTiled5
   parent: CMDecalBase
   tags: ["station"]
   defaultCustomColor: true
   sprite:
-    sprite: _RNMC14/Decals/uscm_tiled.rsi
-    state: uscm5
+    sprite: _RNMC14/Decals/unmc_tiled.rsi
+    state: unmc5
 
 - type: decal
-  id: RNMCDecalUSCMTiled6
+  id: RNMCDecalUNMCTiled6
   parent: CMDecalBase
   tags: ["station"]
   defaultCustomColor: true
   sprite:
-    sprite: _RNMC14/Decals/uscm_tiled.rsi
-    state: uscm6
+    sprite: _RNMC14/Decals/unmc_tiled.rsi
+    state: unmc6
 
 - type: decal
-  id: RNMCDecalUSCMTiled7
+  id: RNMCDecalUNMCTiled7
   parent: CMDecalBase
   tags: ["station"]
   defaultCustomColor: true
   sprite:
-    sprite: _RNMC14/Decals/uscm_tiled.rsi
-    state: uscm7
+    sprite: _RNMC14/Decals/unmc_tiled.rsi
+    state: unmc7
 
 - type: decal
-  id: RNMCDecalUSCMTiled8
+  id: RNMCDecalUNMCTiled8
   parent: CMDecalBase
   tags: ["station"]
   defaultCustomColor: true
   sprite:
-    sprite: _RNMC14/Decals/uscm_tiled.rsi
-    state: uscm8
+    sprite: _RNMC14/Decals/unmc_tiled.rsi
+    state: unmc8
 
 - type: decal
-  id: RNMCDecalUSCMTiled9
+  id: RNMCDecalUNMCTiled9
   parent: CMDecalBase
   tags: ["station"]
   defaultCustomColor: true
   sprite:
-    sprite: _RNMC14/Decals/uscm_tiled.rsi
-    state: uscm9
+    sprite: _RNMC14/Decals/unmc_tiled.rsi
+    state: unmc9

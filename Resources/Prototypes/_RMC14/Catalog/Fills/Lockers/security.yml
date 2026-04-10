@@ -67,7 +67,7 @@
 - type: entity
   id: RMCArmoryLockerRedM4SPRFilled
   parent: RMCLockerGunRed
-  suffix: Filled M49A
+  suffix: Filled M4SPR
   components:
   - type: StorageFill
     contents:
@@ -91,7 +91,7 @@
 - type: entity
   parent: RMCLockerGunRed
   id: RMCArmoryLockerRedM54CMK1AP
-  suffix: Filled M41A MK1 AP
+  suffix: Filled M54C MK1 AP
   components:
   - type: StorageFill
     contents:
@@ -101,7 +101,7 @@
 - type: entity
   parent: RMCLockerGunRed
   id: RMCArmoryLockerRedM1984
-  suffix: Filled M1911
+  suffix: Filled M1984
   components:
   - type: StorageFill
     contents:

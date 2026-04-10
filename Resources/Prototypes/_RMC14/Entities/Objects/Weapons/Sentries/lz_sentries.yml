@@ -82,7 +82,7 @@
     isCorrodible: false
   - type: NpcFactionMember
     factions:
-    - USCM
+    - UNMC
   - type: HTN
     rootTask:
       task: RMCTurretCompoundLZ

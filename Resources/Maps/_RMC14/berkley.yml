@@ -26274,7 +26274,7 @@ entities:
     - type: Transform
       pos: 7.5,-0.5
       parent: 1
-- proto: RMCTentUSCMBigFolded
+- proto: RMCTentUNMCBigFolded
   entities:
   - uid: 3674
     components:
@@ -26282,7 +26282,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 51.46948,-8.449015
       parent: 1
-- proto: RMCTentUSCMExtendedFolded
+- proto: RMCTentUNMCExtendedFolded
   entities:
   - uid: 3675
     components:
@@ -26290,35 +26290,35 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 51.8134,-8.438599
       parent: 1
-- proto: RMCTentUSCMExtendedMessFolded
+- proto: RMCTentUNMCExtendedMessFolded
   entities:
   - uid: 3676
     components:
     - type: Transform
       pos: 49.45934,7.768915
       parent: 1
-- proto: RMCTentUSCMExtendedMPFolded
+- proto: RMCTentUNMCExtendedMPFolded
   entities:
   - uid: 3677
     components:
     - type: Transform
       pos: -37.540604,-8.611199
       parent: 1
-- proto: RMCTentUSCMExtendedReqFolded
+- proto: RMCTentUNMCExtendedReqFolded
   entities:
   - uid: 3678
     components:
     - type: Transform
       pos: 25.36534,3.8047302
       parent: 1
-- proto: RMCTentUSCMStandardCommandFolded
+- proto: RMCTentUNMCStandardCommandFolded
   entities:
   - uid: 3679
     components:
     - type: Transform
       pos: 3.3857548,3.8409448
       parent: 1
-- proto: RMCTentUSCMStandardFolded
+- proto: RMCTentUNMCStandardFolded
   entities:
   - uid: 3680
     components:
@@ -26326,7 +26326,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 51.17767,-8.428183
       parent: 1
-- proto: RMCTentUSCMStandardMedicalFolded
+- proto: RMCTentUNMCStandardMedicalFolded
   entities:
   - uid: 3681
     components:

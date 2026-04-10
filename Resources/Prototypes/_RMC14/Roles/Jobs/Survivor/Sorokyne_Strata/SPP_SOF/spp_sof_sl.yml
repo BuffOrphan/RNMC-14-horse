@@ -6,13 +6,13 @@
   ranks:
     RMCRankSPPStarshiySerzhant: []
   icon: "RMCJobIconSPPLeader"
-  spawnMenuRoleName: UPP SOF Squad Leader (Survivor)
+  spawnMenuRoleName: SPP SOF Squad Leader (Survivor)
   special:
   - !type:AddComponentSpecial
     components:
     - type: NpcFactionMember
       factions:
-      - UPP
+      - SPP
     - type: Skills
       skills:
         RMCSkillCqc: 1
@@ -36,7 +36,7 @@
         sprite: _RMC14/Interface/cm_job_icons.rsi
         state: upp_sl_a
     - type: RMCTrackable
-    #- type: SPPSpecWhitelist TODO RMC14: UPP special weapons whitelist
+    #- type: SPPSpecWhitelist TODO RMC14: SPP special weapons whitelist
   hidden: true
 
 - type: startingGear
@@ -57,7 +57,7 @@
 - type: entity
   parent: CMSpawnPointJobBase
   id: CMSpawnPointSPPSOFSL
-  name: special survivor upp sof squad leader spawn point
+  name: special survivor spp sof squad leader spawn point
   components:
   - type: SpawnPoint
     job_id: RMCSurvivorSPPSOFSL

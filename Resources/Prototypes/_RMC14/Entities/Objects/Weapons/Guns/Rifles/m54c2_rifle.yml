@@ -1,8 +1,8 @@
 ﻿- type: entity
   parent: RMCWeaponRifleM54C
   id: RMCWeaponRifleM54C2
-  name: M41A/2 assault rifle MK2
-  description: A modified version M41A assault rifle MK2, re-engineered for better weight, handling and accuracy. Fires precise two-round bursts. Given only to elite units.
+  name: M54C/2 assault rifle MK2
+  description: A modified version M54C assault rifle MK2, re-engineered for better weight, handling and accuracy. Fires precise two-round bursts. Given only to elite units.
   components:
   - type: Sprite
     sprite: _RNMC14/Objects/Weapons/Guns/Rifles/m54c2.rsi # RNMC-14 - Resprited.

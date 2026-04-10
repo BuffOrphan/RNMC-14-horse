@@ -1,39 +1,39 @@
 # construction ui entries
 
-# M41A
+# M54C
 - type: construction
   parent: RMC
-  name: Magazine Box (M41A Reg)
+  name: Magazine Box (M54C Reg)
   id: RMCBoxMagazineRifleM54C
   graph: RMCBoxMagazine
   startNode: start
   targetNode: RMCBoxMagazineRifleM54CEmpty
   category: construction-category-cm-box-magazine
-  description: A magazine box that can contain regular M41A mags.
+  description: A magazine box that can contain regular M54C mags.
   iconColor: "#7b8246"
   objectType: Item
 
 - type: construction
   parent: RMC
-  name: Magazine Box (M41A AP)
+  name: Magazine Box (M54C AP)
   id: RMCBoxMagazineRifleM54CAP
   graph: RMCBoxMagazine
   startNode: start
   targetNode: RMCBoxMagazineRifleM54CAPEmpty
   category: construction-category-cm-box-magazine
-  description: A magazine box that can contain armor piercing M41A mags.
+  description: A magazine box that can contain armor piercing M54C mags.
   iconColor: "#7b8246"
   objectType: Item
 
 - type: construction
   parent: RMC
-  name: Magazine Box (M41A Ext)
+  name: Magazine Box (M54C Ext)
   id: RMCBoxMagazineRifleM54CExt
   graph: RMCBoxMagazine
   startNode: start
   targetNode: RMCBoxMagazineRifleM54CExtEmpty
   category: construction-category-cm-box-magazine
-  description: A magazine box that can contain extended M41A mags.
+  description: A magazine box that can contain extended M54C mags.
   iconColor: "#7b8246"
   objectType: Item
 
@@ -45,7 +45,7 @@
   startNode: start
   targetNode: RMCBoxBulletsRifleEmpty
   category: construction-category-cm-box-magazine
-  description: A 10x24mm ammunition box. Used to refill M41A MK1, MK2, M49A and M54CE2 HAR magazines. It comes with a leather strap allowing to wear it on the back.
+  description: A 10x24mm ammunition box. Used to refill M54C MK1, MK2, M4SPR and M54CE2 HAR magazines. It comes with a leather strap allowing to wear it on the back.
   iconColor: "#7b8246"
   objectType: Item
 
@@ -57,7 +57,7 @@
   startNode: start
   targetNode: RMCBoxBulletsRifleAPEmpty
   category: construction-category-cm-box-magazine
-  description: A 10x24mm armor-piercing ammunition box. Used to refill M41A MK2, and M49A AP magazines. It comes with a leather strap allowing to wear it on the back.
+  description: A 10x24mm armor-piercing ammunition box. Used to refill M54C MK2, and M4SPR AP magazines. It comes with a leather strap allowing to wear it on the back.
   iconColor: "#7b8246"
   objectType: Item
 
@@ -122,40 +122,40 @@
   iconColor: "#727e90"
   objectType: Item
 
-# M49A
+# M4SPR
 - type: construction
   parent: RMC
-  name: Magazine Box (M49A Reg)
+  name: Magazine Box (M4SPR Reg)
   id: RMCBoxMagazineRifleM4SPR
   graph: RMCBoxMagazine
   startNode: start
   targetNode: RMCBoxMagazineRifleM4SPREmpty
   category: construction-category-cm-box-magazine
-  description: A magazine box that can contain regular M49A mags.
+  description: A magazine box that can contain regular M4SPR mags.
   iconColor: "#695d42"
   objectType: Item
 
 - type: construction
   parent: RMC
-  name: Magazine Box (M49A AP)
+  name: Magazine Box (M4SPR AP)
   id: RMCBoxMagazineRifleM4SPRAP
   graph: RMCBoxMagazine
   startNode: start
   targetNode: RMCBoxMagazineRifleM4SPRAPEmpty
   category: construction-category-cm-box-magazine
-  description: A magazine box that can contain armor piercing M49A mags.
+  description: A magazine box that can contain armor piercing M4SPR mags.
   iconColor: "#695d42"
   objectType: Item
 
 - type: construction
   parent: RMC
-  name: Magazine Box (M49A Ext)
+  name: Magazine Box (M4SPR Ext)
   id: RMCBoxMagazineRifleM4SPRExt
   graph: RMCBoxMagazine
   startNode: start
   targetNode: RMCBoxMagazineRifleM4SPRExtEmpty
   category: construction-category-cm-box-magazine
-  description: A magazine box that can contain extended M49A mags.
+  description: A magazine box that can contain extended M4SPR mags.
   iconColor: "#695d42"
   objectType: Item
 
@@ -172,28 +172,28 @@
   iconColor: "#695d42"
   objectType: Item
 
-# M1911
+# M1984
 - type: construction
   parent: RMC
-  name: Magazine Box (M1911 Reg)
+  name: Magazine Box (M1984 Reg)
   id: RMCBoxMagazinePistolM1984
   graph: RMCBoxMagazine
   startNode: start
   targetNode: RMCBoxMagazinePistolM1984Empty
   category: construction-category-cm-box-magazine
-  description: A magazine box that can contain regular M1911 mags.
+  description: A magazine box that can contain regular M1984 mags.
   iconColor: "#b2976e"
   objectType: Item
 
 - type: construction
   parent: RMC
-  name: Magazine Box (M1911 AP)
+  name: Magazine Box (M1984 AP)
   id: RMCBoxMagazinePistolM1984AP
   graph: RMCBoxMagazine
   startNode: start
   targetNode: RMCBoxMagazinePistolM1984APEmpty
   category: construction-category-cm-box-magazine
-  description: A magazine box that can contain armor piercing M1911 mags.
+  description: A magazine box that can contain armor piercing M1984 mags.
   iconColor: "#b2976e"
   objectType: Item
 
@@ -540,7 +540,7 @@
   - node: start
     edges:
 
-    # M41A
+    # M54C
     - to: RMCBoxMagazineRifleM54CEmpty
       steps:
       - material: RMCSheetCardboard
@@ -614,7 +614,7 @@
         amount: 1
         doAfter: 0.25
 
-    # M49A
+    # M4SPR
     - to: RMCBoxMagazineRifleM4SPREmpty
       steps:
       - material: RMCSheetCardboard
@@ -696,7 +696,7 @@
         amount: 1
         doAfter: 0.25
 
-    # M1911
+    # M1984
     - to: RMCBoxMagazinePistolM1984Empty
       steps:
       - material: RMCSheetCardboard
@@ -829,7 +829,7 @@
 
   # Why the fuck do you even need these nodes???
 
-  # M41A
+  # M54C
   - node: RMCBoxMagazineRifleM54CEmpty
     entity: RMCBoxMagazineRifleM54CEmpty
   - node: RMCBoxMagazineRifleM54CAPEmpty
@@ -863,7 +863,7 @@
   - node: RMCBoxBulletsSMGAPEmpty
     entity: RMCBoxBulletsSMGAPEmpty
 
-  # M49A
+  # M4SPR
   - node: RMCBoxMagazineRifleM4SPREmpty
     entity: RMCBoxMagazineRifleM4SPREmpty
   - node: RMCBoxMagazineRifleM4SPRAPEmpty
@@ -897,7 +897,7 @@
   - node: RMCBoxMagazineRifleM16Empty
     entity: RMCBoxMagazineRifleM16Empty
 
-  # M1911
+  # M1984
   - node: RMCBoxMagazinePistolM1984Empty
     entity: RMCBoxMagazinePistolM1984Empty
   - node: RMCBoxMagazinePistolM1984APEmpty

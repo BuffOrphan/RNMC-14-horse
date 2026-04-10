@@ -418,7 +418,7 @@
     - RMCPacketGrenadeSmokeFilled
     # TODO Foam grenade packet
     # TODO phosphorus grenades packet
-    # TODO phosphorus grenades packet UPP
+    # TODO phosphorus grenades packet SPP
     - CMPacketGrenadeFragOldFilled
     - RMCPacketGrenadeM74AGMFFilled
     - RMCPacketGrenadeM74AGMIFilled

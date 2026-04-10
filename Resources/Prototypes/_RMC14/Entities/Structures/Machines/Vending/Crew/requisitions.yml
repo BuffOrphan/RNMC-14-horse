@@ -475,37 +475,37 @@
         name: Magazine Box (Ext M63 x 10)
         box: CMMagazineSMGM63Ext
       - id: RMCBoxMagazineRifleM54C
-        name: Magazine Box (M41A x 10)
+        name: Magazine Box (M54C x 10)
         box: CMMagazineRifleM54C
       - id: RMCBoxMagazineRifleM54CAP
-        name: Magazine Box (AP M41A x 10)
+        name: Magazine Box (AP M54C x 10)
         box: CMMagazineRifleM54CAP
       - id: RMCBoxMagazineRifleM54CExt
-        name: Magazine Box (Ext M41A x 8)
+        name: Magazine Box (Ext M54C x 8)
         box: CMMagazineRifleM54CExt
       - id: RMCBoxMagazinePistolM1984
-        name: Magazine Box (M1911 x 16)
+        name: Magazine Box (M1984 x 16)
         box: CMMagazinePistolM1984
-#      - name: Magazine Box (AP M1911 x 16)
+#      - name: Magazine Box (AP M1984 x 16)
 #        box: CMMagazinePistolM1984AP
-#      - name: Magazine Box (HP M1911 x 16)
+#      - name: Magazine Box (HP M1984 x 16)
 #        box: CMMagazineSMGM63
       - id: RMCBoxMagazineRifleM4SPR
-        name: Magazine Box (M49A x 16)
+        name: Magazine Box (M4SPR x 16)
         box: CMMagazineRifleM4SPR
       - id: RMCBoxMagazineRifleM4SPRAP
-        name: Magazine Box (AP M49A x 16)
+        name: Magazine Box (AP M4SPR x 16)
         box: CMMagazineRifleM4SPRAP
       - id: RMCBoxMagazineRifleM4SPRExt
-        name: Magazine Box (Ext M49A x 16)
+        name: Magazine Box (Ext M4SPR x 16)
         box: CMMagazineRifleM4SPRExt
 #      - name: Magazine Box (M54CE2 x 8)
 #        box: RMCCrateMagazineRifleM54CE2
 #      - name: Magazine Box (M54CE2 Holo-Target x 8)
 #        box: CMMagazineSMGM63
-#      - name: Magazine Box (M41A MK1 x 8)
+#      - name: Magazine Box (M54C MK1 x 8)
 #        box: CMMagazineSMGM63
-#      - name: Magazine Box (M41A MK1 AP x 8)
+#      - name: Magazine Box (M54C MK1 AP x 8)
 #        box: CMMagazineSMGM63
       - id: RMCBoxShellsBuckshot
         name: Magazine Box (Buckshot x 100)
@@ -564,19 +564,19 @@
         box: CMMagazineSMGM63AP
         boxSlots: 13 # 600 / 48, yes we lose half a mag to the void
       - id: RMCBoxBulletsRifle
-        name: rifle ammunition box (10x24mm) (M49A)
+        name: rifle ammunition box (10x24mm) (M4SPR)
         box: CMMagazineRifleM4SPR
         boxSlots: 24 # 600 / 25
       - id: RMCBoxBulletsRifleAP
-        name: rifle ammunition box (10x24mm AP) (M49A)
+        name: rifle ammunition box (10x24mm AP) (M4SPR)
         box: CMMagazineRifleM4SPRAP
         boxSlots: 24 # 600 / 25
       - id: RMCBoxBulletsRifle
-        name: rifle ammunition box (10x24mm) (M41A)
+        name: rifle ammunition box (10x24mm) (M54C)
         box: CMMagazineRifleM54C
         boxSlots: 15 # 600 / 40
       - id: RMCBoxBulletsRifleAP
-        name: rifle ammunition box (10x24mm AP) (M41A)
+        name: rifle ammunition box (10x24mm AP) (M54C)
         box: CMMagazineRifleM54CAP
         boxSlots: 15 # 600 / 40
 
@@ -824,14 +824,14 @@
       - id: RMCPatchFallingFalconsLarge
         name: Falling Falcons large chest patch
         amount: 15
-      - id: RMCPatchUSCM
-        name: USCM shoulder patch
+      - id: RMCPatchUNMC
+        name: UNMC shoulder patch
         amount: 15
       - id: RMCPatchUnitedNations
-        name: United States shoulder patch
+        name: United Nations shoulder patch
         amount: 15
       - id: RMCPatchUnitedNationsSquare
-        name: United States flag shoulder patch
+        name: United Nations flag shoulder patch
         amount: 15
     - name: Books
       entries:

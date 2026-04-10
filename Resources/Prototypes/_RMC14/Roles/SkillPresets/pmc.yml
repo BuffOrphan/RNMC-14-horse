@@ -2,7 +2,7 @@
 # Survivor Skills
 - type: entity
   id: RMCSkillPresetPMCCommando
-  name: Survivor We-Yu Commando
+  name: Survivor We-Ya Commando
   categories: [ HideSpawnMenu ]
   components:
   - type: SkillPreset

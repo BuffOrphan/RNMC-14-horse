@@ -1,5 +1,5 @@
 ﻿- type: entity
-  parent: RMCHeadsetIconsTWE
+  parent: RMCHeadsetIconsTSE
   id: RMCHeadsetRoyalMarine
   name: royal marine headset
   description: A sleek headset used by the Royal Crown Marines. Low profile enough to fit under their unique helmets.

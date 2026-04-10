@@ -128,7 +128,7 @@
 
   <GuideEntityEmbed Entity="WeaponShotgunM890"/>
 
-  The M120 is a highly robust shotgun capable of holding eight shells in the tube, not requiring pumping. A marine may be familiar with this shotgun as the code red armory shotguns on the Almayer. The M120 sports a superior fire rate to the M42A2 pump shotgun, making it extremely effective in a brawl. This is effectively a linear upgrade to the pump shotguns and a competitor to the custom shotgun.
+  The M890 is a highly robust shotgun capable of holding eight shells in the tube, not requiring pumping. A marine may be familiar with this shotgun as the code red armory shotguns on the Almayer. The M890 sports a superior fire rate to the M42A2 pump shotgun, making it extremely effective in a brawl. This is effectively a linear upgrade to the pump shotguns and a competitor to the custom shotgun.
 
 
   [bold]Rifles are highly effective options, however many of the survivor exclusive rifles are not very useful unless used in a specific manner.[/bold]
@@ -143,7 +143,7 @@
 
   <GuideEntityEmbed Entity="RMCWeaponRifleM54C"/> <GuideEntityEmbed Entity="RMCWeaponRifleM54CMK1"/> <GuideEntityEmbed Entity="WeaponRifleM4SPRCustom"/>
 
-  Highly standardized marine weapons. Ammo for these weapons is best conserved for bigger fights and the holding phase, however they are incredibly useful for brawling if used properly. The M49A allows full movement speed while wielded, the MK2 has high DPS, and the MK1 is like the MK2 but slighly better overall. Use these as you would as a marine but more conservatively. You cannot call requisitions for a supply drop... usually.
+  Highly standardized marine weapons. Ammo for these weapons is best conserved for bigger fights and the holding phase, however they are incredibly useful for brawling if used properly. The M4SPR allows full movement speed while wielded, the MK2 has high DPS, and the MK1 is like the MK2 but slighly better overall. Use these as you would as a marine but more conservatively. You cannot call requisitions for a supply drop... usually.
 
   <GuideEntityEmbed Entity="WeaponRifleMAR40"/>
 

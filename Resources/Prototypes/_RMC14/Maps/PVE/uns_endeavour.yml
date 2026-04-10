@@ -7,7 +7,7 @@
   randomRotation: false
   stations:
     UNSEndeavour:
-      stationProto: StandardUSCMWarship
+      stationProto: StandardUNMCWarship
       components:
         - type: StationNameSetup
           mapNameTemplate: 'UNS Endeavour'

@@ -7,7 +7,7 @@
   randomRotation: false
   stations:
     SSVDeyneka:
-      stationProto: StandardUSCMWarship
+      stationProto: StandardUNMCWarship
       components:
         - type: StationNameSetup
           mapNameTemplate: 'SSV Deyneka'

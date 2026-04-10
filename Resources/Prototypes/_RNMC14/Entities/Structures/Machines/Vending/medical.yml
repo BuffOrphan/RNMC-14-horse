@@ -1,8 +1,8 @@
 - type: entity
   parent: ColMarTechBaseAnchorable
   id: CMVendorMedicalMARSOC
-  name: We-Yu-Med Plus Plus
-  description: Medical pharmaceutical dispenser. Provided by We-Yu Pharmaceuticals Division(TM). Specifically designed to hold way more than the normal version, just for you.
+  name: We-Ya-Med Plus Plus
+  description: Medical pharmaceutical dispenser. Provided by We-Ya Pharmaceuticals Division(TM). Specifically designed to hold way more than the normal version, just for you.
   suffix: MARSOC, no item limits
   components:
   - type: Sprite

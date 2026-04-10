@@ -1,11 +1,11 @@
 - type: job
   parent: RMCJobSyntheticColony
-  id: RMCSyntheticColonyHybrisaTWEPA
-  startingGear: RMCGearSyntheticColonistHybrisaTWEPA
-  spawnMenuRoleName: TWEPA Support Synth (Hybrisa Survivor)
+  id: RMCSyntheticColonyHybrisaTSEPA
+  startingGear: RMCGearSyntheticColonistHybrisaTSEPA
+  spawnMenuRoleName: TSEPA Support Synth (Hybrisa Survivor)
   ranks:
-    RMCRankTWEPAConstable: [ ]
-  icon: "RMCJobIconTWEPASynth"
+    RMCRankTSEPAConstable: [ ]
+  icon: "RMCJobIconTSEPASynth"
   special:
   - !type:AddComponentSpecial
     components:
@@ -39,7 +39,7 @@
         state: synth
     - type: NpcFactionMember
       factions:
-      - TWE
+      - TSE
       - Civilian
     - type: IntelRescueSurvivorObjective
     - type: RMCSurvivor
@@ -57,30 +57,30 @@
         types:
           Blunt: 35
     - type: EquipSurvivorPreset
-      preset: RMCSurvivorPresetHybrisaSynthTWEPA
+      preset: RMCSurvivorPresetHybrisaSynthTSEPA
     - type: Synth
       generation: rmc-species-synth-generation-second
   useLoadoutOfJob: RMCJobSyntheticColony # for inheritance
 
 - type: startingGear
   parent: RMCGearSyntheticColonistHybrisaCivilian
-  id: RMCGearSyntheticColonistHybrisaTWEPA
+  id: RMCGearSyntheticColonistHybrisaTSEPA
   equipment:
-    ears: RMCHeadsetTWEPA
+    ears: RMCHeadsetTSEPA
     eyes: RMCGlassesSecurityBlue
-    jumpsuit: RMCJumpsuitTWEPA
+    jumpsuit: RMCJumpsuitTSEPA
     gloves: RMCHandsVeteran
     shoes: CMBootsBlackFilled
-    id: RMCIDCardTWEPASilverGold
+    id: RMCIDCardTSEPASilverGold
     back: RMCSatchelBlackFillSurvivorConstable
 
 - type: entity
-  id: RMCSurvivorPresetHybrisaSynthTWEPA
+  id: RMCSurvivorPresetHybrisaSynthTSEPA
   name: survivor synth hybrisa tsepa colonist preset
   categories: [ HideSpawnMenu ]
   components:
   - type: SurvivorPreset
     randomOutfits:
-    - [ RMCCoatTWEPAHighVisVest, RMCHeadCapTWEPA ]
-    - [ RMCCoatTWEPAHighVis, RMCHeadBeretTWEPA ]
-    - [ RMCCoatTWEPA, RMCHeadCapTWEPAPeaked ]
+    - [ RMCCoatTSEPAHighVisVest, RMCHeadCapTSEPA ]
+    - [ RMCCoatTSEPAHighVis, RMCHeadBeretTSEPA ]
+    - [ RMCCoatTSEPA, RMCHeadCapTSEPAPeaked ]

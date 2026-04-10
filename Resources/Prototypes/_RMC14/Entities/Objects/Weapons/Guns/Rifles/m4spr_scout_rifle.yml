@@ -1,8 +1,8 @@
 - type: entity
   parent: WeaponRifleM4SPR
-  name: M49A custom battle rifle
+  name: M4SPR custom battle rifle
   id: WeaponRifleM4SPRCustom
-  description: An improvement over the already great M49A. Able to take A19 rounds, as well as having better control and accuracy at the cost of being harder to use. Can take traditional M49A mags, at lower damage.
+  description: An improvement over the already great M4SPR. Able to take A19 rounds, as well as having better control and accuracy at the cost of being harder to use. Can take traditional M4SPR mags, at lower damage.
   components:
   - type: GuideHelp
     guides:
@@ -37,7 +37,7 @@
   - type: RMCWeaponAccuracy
     accuracyMultiplier: 1.1
   - type: GunDamageModifier
-    multiplier: 1.1 # Lower to allow for normal M49A mags to have lower damage. A19 mags do more damage to compensate.
+    multiplier: 1.1 # Lower to allow for normal M4SPR mags to have lower damage. A19 mags do more damage to compensate.
   - type: WieldableSpeedModifiers
     base: 0.725
     light: 1
@@ -126,7 +126,7 @@
   parent: CMMagazineRifleBase
   id: RMCMagazineRifleM4SPRA19
   name: "A19 HV magazine (10x24mm)"
-  description: "A magazine of A19 high velocity rounds for use in the M49A custom battle rifle. The M49A custom battle rifle is the only gun that can chamber these rounds."
+  description: "A magazine of A19 high velocity rounds for use in the M4SPR custom battle rifle. The M4SPR custom battle rifle is the only gun that can chamber these rounds."
   components:
   - type: Tag
     tags:
@@ -151,7 +151,7 @@
   parent: RMCMagazineRifleM4SPRA19
   id: RMCMagazineRifleM4SPRA19Impact
   name: "A19 HV high impact magazine (10x24mm)"
-  description: "A magazine of A19 HV high impact rounds for use in the M49A custom battle rifle. The M49A custom battle rifle is the only gun that can chamber these rounds."
+  description: "A magazine of A19 HV high impact rounds for use in the M4SPR custom battle rifle. The M4SPR custom battle rifle is the only gun that can chamber these rounds."
   components:
   - type: Tag
     tags:
@@ -176,7 +176,7 @@
   parent: RMCMagazineRifleM4SPRA19
   id: RMCMagazineRifleM4SPRA19Incendiary
   name: "A19 HV incendiary magazine (10x24mm)"
-  description: "A magazine of A19 HV incendiary rounds for use in the M49A custom battle rifle. The M49A custom battle rifle is the only gun that can chamber these rounds."
+  description: "A magazine of A19 HV incendiary rounds for use in the M4SPR custom battle rifle. The M4SPR custom battle rifle is the only gun that can chamber these rounds."
   components:
   - type: Tag
     tags:
@@ -201,7 +201,7 @@
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifleM4SPRA19
   name: cartridge (A19 high-velocity)
-  description: A high-velocity A19 cartridge. Fits in M49A custom magazines.
+  description: A high-velocity A19 cartridge. Fits in M4SPR custom magazines.
   components:
   - type: Tag
     tags:
@@ -214,7 +214,7 @@
   parent: RMCCartridgeRifleM4SPRA19
   id: RMCCartridgeRifleM4SPRA19Impact
   name: cartridge (A19 high-velocity high impact)
-  description: A high-velocity high impact A19 cartridge. Fits in M49A custom magazines.
+  description: A high-velocity high impact A19 cartridge. Fits in M4SPR custom magazines.
   components:
   - type: Tag
     tags:
@@ -227,7 +227,7 @@
   parent: RMCCartridgeRifleM4SPRA19
   id: RMCCartridgeRifleM4SPRA19Incendiary
   name: cartridge (A19 high-velocity incendiary)
-  description: A high-velocity incendiary A19 cartridge. Fits in M49A custom magazines.
+  description: A high-velocity incendiary A19 cartridge. Fits in M4SPR custom magazines.
   components:
   - type: Tag
     tags:

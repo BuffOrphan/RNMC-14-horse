@@ -5,7 +5,7 @@
   description: rmc-ghost-role-information-rcm-description
   playTimeTracker: RMCJobRoyalTroopSargePVE
   ranks:
-    RMCRankTWEColourSergeant: [ ]
+    RMCRankTSEColourSergeant: [ ]
   startingGear: RMCGearRoyalTroopSargePVE
   icon: "RMCJobIconRoyalTroopSargePVE"
   joinNotifyCrew: false
@@ -19,7 +19,7 @@
     - type: NpcFactionMember
       factions:
       - RoyalMarines
-      - TWE
+      - TSE
     - type: Skills
       skills:
         RMCSkillConstruction: 1

@@ -142,7 +142,7 @@
   parent: RMCMechBase
   id: RMCMechPowerLoader
   name: LU-50 Power loader
-  description: An old Fujin design refurbished by Weyland-Yutani used in warehouses, constructions and military ships everywhere. # TODO RMC14 BETTER DESCRIPTION
+  description: An old Fujin design refurbished by Weston-Yamada used in warehouses, constructions and military ships everywhere. # TODO RMC14 BETTER DESCRIPTION
   components:
   - type: RMCAllowStrapMovement
   - type: PowerLoader

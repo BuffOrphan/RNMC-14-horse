@@ -3,7 +3,7 @@
   parent: RMCBaseMarineArmorLight
   id: CMArmorM3Medium
   name: M3 pattern marine armor
-  description: A standard USCM M3 Pattern Chestplate. Protects the chest from ballistic rounds, bladed objects and accidents. It has a small leather pouch strapped to it for limited storage.
+  description: A standard UNMC M3 Pattern Chestplate. Protects the chest from ballistic rounds, bladed objects and accidents. It has a small leather pouch strapped to it for limited storage.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/m3/standard/padded/jungle.rsi
@@ -31,7 +31,7 @@
 - type: entity
   id: RMCArmorM3MediumVariants
   name: M3 pattern marine armor
-  description: A standard USCM M3 Pattern Chestplate. Protects the chest from ballistic rounds, bladed objects and accidents. It has a small leather pouch strapped to it for limited storage.
+  description: A standard UNMC M3 Pattern Chestplate. Protects the chest from ballistic rounds, bladed objects and accidents. It has a small leather pouch strapped to it for limited storage.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -769,7 +769,7 @@
   parent: CMArmorM3Medium
   id: CMArmorM35
   name: M35 pyrotechnician armor
-  description: A custom set of M35 armor designed for use by USCM Pyrotechnicians.
+  description: A custom set of M35 armor designed for use by UNMC Pyrotechnicians.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/m35/jungle.rsi
@@ -805,7 +805,7 @@
   parent: CMArmorM3Medium
   id: CMArmorM45
   name: M45 pattern ghillie armor # TODO id lock
-  description: A lightweight ghillie camouflage suit, used by USCM snipers on recon missions. Very lightweight, but doesn't protect much.
+  description: A lightweight ghillie camouflage suit, used by UNMC snipers on recon missions. Very lightweight, but doesn't protect much.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/ghillie/jungle.rsi
@@ -844,7 +844,7 @@
   parent: CMArmorM45
   id: RMCArmorUDEPForecon
   name: UDEP thermal poncho # TODO id lock
-  description: UDEP or the Ultra Diffusive Environmental Poncho is a camouflaged rain-cover worn to protect against the elements and chemical spills. It's commonly treated with an infrared absorbing coating, making a marine almost invisible in the rain. Favoured by USCM specialists for its comfort and practicality.
+  description: UDEP or the Ultra Diffusive Environmental Poncho is a camouflaged rain-cover worn to protect against the elements and chemical spills. It's commonly treated with an infrared absorbing coating, making a marine almost invisible in the rain. Favoured by UNMC specialists for its comfort and practicality.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/ghillie/forecon.rsi
@@ -886,7 +886,7 @@
   parent: [ RMCAllowSuitStorageClothingArmorMP, CMArmorM3Medium ]
   id: CMArmorM2MP
   name: M2 pattern mp armor
-  description: A standard USCM M2 Pattern Chestplate. Protects the chest from ballistic rounds, bladed objects and accidents. It has a small leather pouch strapped to it for limited storage.
+  description: A standard UNMC M2 Pattern Chestplate. Protects the chest from ballistic rounds, bladed objects and accidents. It has a small leather pouch strapped to it for limited storage.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/m2/mp/jungle.rsi

@@ -1,8 +1,8 @@
 ﻿- type: entity
   parent: WeaponShotgunM890
-  name: M120 riot shotgun
+  name: M890 riot shotgun
   id: RMCWeaponShotgunM890Riot
-  description: The Weyland-Yutani M120 Shotgun, a semi-automatic shotgun with a quick fire rate. Equipped with a steel blue finish to signify use in riot control. It has been modified to only fire 20G beanbags.
+  description: The Weston-Yamada M890 Shotgun, a semi-automatic shotgun with a quick fire rate. Equipped with a steel blue finish to signify use in riot control. It has been modified to only fire 20G beanbags.
   suffix: Riot, Beanbags
   components:
   - type: Sprite

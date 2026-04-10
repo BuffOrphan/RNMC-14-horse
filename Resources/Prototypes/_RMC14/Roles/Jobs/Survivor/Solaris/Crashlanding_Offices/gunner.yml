@@ -5,7 +5,7 @@
   description: rmc-job-description-survivor
   ranks:
     RMCRankOperator: []
-  supervisors: cm-job-supervisors-we-yu
+  supervisors: cm-job-supervisors-we-ya
   accessGroups:
   - ColonistPMC
   startingGear: RMCGearSurvivorPMCGunner

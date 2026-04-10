@@ -408,7 +408,7 @@
 - type: entity
   parent: RMCColMarTechMedicalEquipmentPVE
   id: RMCPMCMedicalEquipmentPVE
-  name: We-Yu squad medical equipment rack
+  name: We-Ya squad medical equipment rack
   description: An automated rack hooked up to a colossal storage of corporate medic standard-issue equipment.
   suffix: PVE, PMC
   components:
@@ -466,8 +466,8 @@
   parent: RMCColMarTechMedicalEquipmentPVE
   id: RMCSPPMedicalEquipmentPVE
   name: H-Tech squad medical equipment rack
-  description: An automated rack hooked up to a colossal storage of UPP corpsman standard-issue equipment.
-  suffix: PVE, UPP
+  description: An automated rack hooked up to a colossal storage of SPP corpsman standard-issue equipment.
+  suffix: PVE, SPP
   components:
   - type: CMAutomatedVendor
     sections:
@@ -480,8 +480,8 @@
     - name: Backpack
       choices: { CMBackpack: 1 }
       entries:
-      - id: CMBackpackMarine # RMC14 TODO: UPP Medic Backpack
-      - id: RMCSatchelSPP # RMC14 TODO: UPP Medic Satchel
+      - id: CMBackpackMarine # RMC14 TODO: SPP Medic Backpack
+      - id: RMCSatchelSPP # RMC14 TODO: SPP Medic Satchel
         recommended: true
     - name: Belt
       choices: { CMBelt: 1 }
@@ -489,7 +489,7 @@
       - id: RMCBeltMedicBagSPPFilled
         name: Type 41 pattern lifesaver bag (Full)
       - id: CMBeltMedicalFilled
-        name: M276 medical storage rig (Full) # RMC14 TODO: UPP Medical Storage Rig
+        name: M276 medical storage rig (Full) # RMC14 TODO: SPP Medical Storage Rig
     - name: Pouches
       choices: { RMCPouch: 2 }
       entries:
@@ -574,7 +574,7 @@
   parent: ColMarTechMedicalChemicalPVE
   id: RMCRCMMedicalChemicalPVE
   suffix: PVE, RCM
-  name: We-Yu section medical chemical rack
+  name: We-Ya section medical chemical rack
   description: An automated gear rack for specialized chemicals for the medical assistants.
   components:
   - type: CMAutomatedVendor

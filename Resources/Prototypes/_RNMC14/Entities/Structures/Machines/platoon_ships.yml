@@ -1,7 +1,7 @@
 - type: entity
   parent: RMCSpawnerERTShuttle
   id: RNMCSpawnerShuttleSPP
-  suffix: UPP, Platoon
+  suffix: SPP, Platoon
   components:
   - type: GridSpawner
     spawn: "/Maps/_RNMC14/Shuttles/akademia_nauk.yml"
@@ -9,7 +9,7 @@
 - type: entity
   parent: RMCSpawnerERTShuttle
   id: RNMCSpawnerShuttleGoldenArrow
-  suffix: USCM, Platoon
+  suffix: UNMC, Platoon
   components:
   - type: GridSpawner
     spawn: "/Maps/_RNMC14/Shuttles/midway.yml"

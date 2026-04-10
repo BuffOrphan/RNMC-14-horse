@@ -19,19 +19,19 @@ chat-radio-marine-foxtrot = Foxtrot
 chat-radio-marine-sof = SOF
 
 chat-radio-colony = Colony
-chat-radio-WY = We-Yu
+chat-radio-WY = We-Ya
 chat-radio-CMB = CMB
 chat-radio-provost = Provost
 
-chat-radio-upp-command = UPP Command
-chat-radio-upp = UPP
-chat-radio-upp-engi = UPP Engi
-chat-radio-upp-med = UPP Med
-chat-radio-upp-cct = UPP CCT
+chat-radio-spp-command = SPP Command
+chat-radio-spp = SPP
+chat-radio-spp-engi = SPP Engi
+chat-radio-spp-med = SPP Med
+chat-radio-spp-cct = SPP CCT
 chat-radio-halcyon = Halcyon Dynamics
 
 chat-radio-royal-marine = Royal Marine
-chat-radio-tse = TWE
+chat-radio-tse = TSE
 
 chat-radio-hivemind = Hivemind
 

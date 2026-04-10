@@ -217,7 +217,7 @@
   parent: CMVendorSnack
   id: RMCVendorSnackSPP
   name: Surplus Ration Vendor
-  description: A vending machine full of surplus rations, viewed as the luxury of ready-avaliable UPP rations.
+  description: A vending machine full of surplus rations, viewed as the luxury of ready-avaliable SPP rations.
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/spp_snack.rsi
@@ -297,7 +297,7 @@
   parent: CMVendorCola
   id: RMCVendorColaSPP
   name: Xuanshi Drinks
-  description: A drinks vendors from a long forgotten branch of the UPP, selling rationed water mixed with thrice diluted 5% flavourments.
+  description: A drinks vendors from a long forgotten branch of the SPP, selling rationed water mixed with thrice diluted 5% flavourments.
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/spp_cola.rsi
@@ -306,7 +306,7 @@
   parent: RMCVendorColaSPP
   id: RMCVendorNutriCoDrinkSPP
   name: drink dispenser
-  suffix: UPP
+  suffix: SPP
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/NutriCo/drink.rsi
@@ -316,7 +316,7 @@
   parent: CMVendor
   id: RMCVendorSoda
   name: Cold Drinks machine
-  description: A vending machine that contains cold drinks. This one appears to be produced by Tsumetai-Umi, a subsidairy of Neterai Foods International, which itself is subsidiary of Weyland-Yutani.
+  description: A vending machine that contains cold drinks. This one appears to be produced by Tsumetai-Umi, a subsidairy of Neterai Foods International, which itself is subsidiary of Weston-Yamada.
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/sodavend.rsi
@@ -426,8 +426,8 @@
 - type: entity
   parent: CMVendorCigs
   id: RMCVendorCigsWeYa
-  name: Weyland-Yutani Brand Cigarette Machine
-  description: A Weyland-Yutani Brand cigarette vending machine, looks like a We-Yu Gold pack. Comes with Emerald Greens, We-Yu Golds of course, Arcturian Aces, and some Three Suns Empire brand you've barely heard of. Executive Selects are still out of stock due to shipping issues...
+  name: Weston-Yamada Brand Cigarette Machine
+  description: A Weston-Yamada Brand cigarette vending machine, looks like a We-Ya Gold pack. Comes with Emerald Greens, We-Ya Golds of course, Arcturian Aces, and some Three Suns Empire brand you've barely heard of. Executive Selects are still out of stock due to shipping issues...
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/weya_cigs.rsi
@@ -908,8 +908,8 @@
 
 - type: entity
   parent: CMVendorSec
-  id: RMCVendorSecTWEPA
-  suffix: TWEPA
+  id: RMCVendorSecTSEPA
+  suffix: TSEPA
   components:
   - type: AccessReader
-    access: [["RMCAccessTWEPA"]]
+    access: [["RMCAccessTSEPA"]]

@@ -44,7 +44,7 @@
   description: A protective vest worn by Iron Bears mercenaries.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/OuterClothing/UPP/bear.rsi
+    sprite: _RMC14/Objects/Clothing/OuterClothing/SPP/bear.rsi
   - type: CMArmor
     melee: 20
     bullet: 25
@@ -103,7 +103,7 @@
   parent: RMCArmorSPP
   id: CMArmorFreelancer
   name: freelancer cuirass
-  description: An armored protective chestplate scrapped together from various plates. It keeps up remarkably well, as the craftsmanship is solid, and the design mirrors such armors in the UPP and the USCM. The many skilled craftsmen in the freelancers ranks produce these vests at a rate about one a month.
+  description: An armored protective chestplate scrapped together from various plates. It keeps up remarkably well, as the craftsmanship is solid, and the design mirrors such armors in the SPP and the UNMC. The many skilled craftsmen in the freelancers ranks produce these vests at a rate about one a month.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/freelancer.rsi
@@ -306,7 +306,7 @@
   parent: [RMCArmorM4PMCNoLight, RMCBaseMarineArmorLight]
   id: RMCArmorPMCRiot
   name: UN-M1 riot armor
-  description: Based on the M3 pattern employed by the USCM, the UN-M1 body armor is employed by security, riot control and union-busting teams. While robust against melee and bullet attacks, it critically lacks coverage of the legs and arms.
+  description: Based on the M3 pattern employed by the UNMC, the UN-M1 body armor is employed by security, riot control and union-busting teams. While robust against melee and bullet attacks, it critically lacks coverage of the legs and arms.
   suffix: ""
   components:
   - type: Sprite
@@ -332,7 +332,7 @@
   parent: RMCArmorPMCRiot
   id: RMCArmorPMCRiotSynth
   name: UN-M1S synthetic body armor
-  description: Based on the M3 pattern employed by the USCM, the UN-M1 body armor is employed by security, riot control and union-busting teams. The UN-1MS modification is Synthetic programming compliant, sacrificing protection for speed and carrying capacity.
+  description: Based on the M3 pattern employed by the UNMC, the UN-M1 body armor is employed by security, riot control and union-busting teams. The UN-1MS modification is Synthetic programming compliant, sacrificing protection for speed and carrying capacity.
   components:
   - type: CMArmor
     melee: 0

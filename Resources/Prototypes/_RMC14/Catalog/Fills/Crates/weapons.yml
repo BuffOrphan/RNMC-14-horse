@@ -1,7 +1,7 @@
 - type: entity
   id: RMCCrateM54CMK1
   parent: RMCCrateWeapons
-  name: M41A MK1 Rifle Crate (x2 mk1, x2 magazines)
+  name: M54C MK1 Rifle Crate (x2 mk1, x2 magazines)
   components:
   - type: StorageFill
     contents:

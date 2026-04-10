@@ -23,7 +23,7 @@
     components:
     - type: NpcFactionMember
       factions:
-      - UPP
+      - SPP
     - type: Skills
       skills:
         RMCSkillConstruction: 2

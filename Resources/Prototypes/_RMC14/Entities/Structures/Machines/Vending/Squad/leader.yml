@@ -337,8 +337,8 @@
 - type: entity
   parent: RMCKitBase
   id: RMCKitRifleM4SPR
-  name: M49A marksman kit
-  description: Contains a M49A rifle, a 4x telescopic scope, a suppressor, an extended barrel and 2 AP magazines.
+  name: M4SPR marksman kit
+  description: Contains a M4SPR rifle, a 4x telescopic scope, a suppressor, an extended barrel and 2 AP magazines.
   components:
   - type: Storage
     maxItemSize: Huge
@@ -356,8 +356,8 @@
 - type: entity
   parent: RMCKitBase
   id: RMCKitCM54C
-  name: M41A rifle kit
-  description: Contains a M41A rifle, an angled grip, a suppressor, an extended barrel and 2 AP magazines.
+  name: M54C rifle kit
+  description: Contains a M54C rifle, an angled grip, a suppressor, an extended barrel and 2 AP magazines.
   components:
   - type: Storage
     maxItemSize: Huge

@@ -178,8 +178,8 @@
 - type: entity
   parent: RMCContainerBase
   id: RMCContainerWeYaLeft
-  name: Weyland-Yutani Cargo Container
-  description: "A huge industrial shipping container.\nThis one is from The Weyland-Yutani Corporation, you have probably heard of them before."
+  name: Weston-Yamada Cargo Container
+  description: "A huge industrial shipping container.\nThis one is from The Weston-Yamada Corporation, you have probably heard of them before."
   suffix: WeYa, Left
   components:
   - type: Sprite
@@ -331,7 +331,7 @@
   parent: RMCContainerBase
   id: RMCContainerAICMiddle
   name: AIC Cargo Container
-  description: "A huge industrial shipping container.\nThis one is from the Asian Industrial Collective, which was absorded into the UPP. Their massive industrial output has ensured that cargo containers bearing their symbols and name won't be disappearing any time soon."
+  description: "A huge industrial shipping container.\nThis one is from the Asian Industrial Collective, which was absorded into the SPP. Their massive industrial output has ensured that cargo containers bearing their symbols and name won't be disappearing any time soon."
   suffix: AIC, Middle
   components:
   - type: Sprite
@@ -340,8 +340,8 @@
 - type: entity
   parent: RMCContainerBase
   id: RMCContainerSPPLeft
-  suffix: UPP, Left
-  name: UPP Cargo Container
+  suffix: SPP, Left
+  name: SPP Cargo Container
   description: "A huge industrial shipping container.\nThis one is from the Socialist Progressive Peoples, as indicated by the massive symbol on the side."
   components:
   - type: Sprite
@@ -350,7 +350,7 @@
 - type: entity
   parent: RMCContainerSPPLeft
   id: RMCContainerSPPMiddle
-  suffix: UPP, Middle
+  suffix: SPP, Middle
   components:
   - type: Sprite
     state: sppcontainermiddle
@@ -358,7 +358,7 @@
 - type: entity
   parent: RMCContainerSPPLeft
   id: RMCContainerSPPRight
-  suffix: UPP, Right
+  suffix: SPP, Right
   components:
   - type: Sprite
     state: sppcontainerright
@@ -366,7 +366,7 @@
 - type: entity
   parent: RMCContainerSPPLeft
   id: RMCContainerSPPAltLeft
-  suffix: UPP Alt, Left
+  suffix: SPP Alt, Left
   components:
   - type: Sprite
     state: sppaltcontainerleft
@@ -374,7 +374,7 @@
 - type: entity
   parent: RMCContainerSPPLeft
   id: RMCContainerSPPAltMiddle
-  suffix: UPP Alt, Middle
+  suffix: SPP Alt, Middle
   components:
   - type: Sprite
     state: sppaltcontainermiddle
@@ -382,7 +382,7 @@
 - type: entity
   parent: RMCContainerSPPLeft
   id: RMCContainerSPPAltRight
-  suffix: UPP Alt, Right
+  suffix: SPP Alt, Right
   components:
   - type: Sprite
     state: sppaltcontainerright
@@ -392,7 +392,7 @@
   id: RMCContainerMSPLeft
   suffix: MSP, Left
   name: Ministry of Space Protection Cargo Container
-  description: "A huge industrial shipping container.\nThis one belongs to the UPP's Ministry of Space Protection."
+  description: "A huge industrial shipping container.\nThis one belongs to the SPP's Ministry of Space Protection."
   components:
   - type: Sprite
     state: mspcontainerleft
@@ -415,36 +415,36 @@
 
 - type: entity
   parent: RMCContainerBase
-  id: RMCContainerUSCMLeft
-  suffix: USCM, Left
-  name: United States Marine Corps Cargo Container
-  description: "A huge industrial shipping container.\nThis one belongs to the UN's United States Marine Corps."
+  id: RMCContainerUNMCLeft
+  suffix: UNMC, Left
+  name: United Nations Marine Corps Cargo Container
+  description: "A huge industrial shipping container.\nThis one belongs to the UN's United Nations Marine Corps."
   components:
   - type: Sprite
-    state: uscmcontainerleft
+    state: unmccontainerleft
 
 - type: entity
-  parent: RMCContainerUSCMLeft
-  id: RMCContainerUSCMMiddle
-  suffix: USCM, Middle
+  parent: RMCContainerUNMCLeft
+  id: RMCContainerUNMCMiddle
+  suffix: UNMC, Middle
   components:
   - type: Sprite
-    state: uscmcontainermiddle
+    state: unmccontainermiddle
 
 - type: entity
-  parent: RMCContainerUSCMLeft
-  id: RMCContainerUSCMRight
-  suffix: USCM, Right
+  parent: RMCContainerUNMCLeft
+  id: RMCContainerUNMCRight
+  suffix: UNMC, Right
   components:
   - type: Sprite
-    state: uscmcontainerright
+    state: unmccontainerright
 
 - type: entity
   parent: RMCContainerBase
   id: RMCContainerAegisLeft
   suffix: AEGIS, Left
   name: AEGIS Cargo Container
-  description: "A huge industrial shipping container.\nThis one is from AEGIS, the defense contractors behind the M41A and other marine weaponry."
+  description: "A huge industrial shipping container.\nThis one is from AEGIS, the defense contractors behind the M54C and other marine weaponry."
   components:
   - type: Sprite
     state: aegiscontainerleft
@@ -561,7 +561,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPPLeft
-  suffix: UPP, 1, Left
+  suffix: SPP, 1, Left
   components:
   - type: Sprite
     state: spp1left
@@ -569,7 +569,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPPRight
-  suffix: UPP, 1, Right
+  suffix: SPP, 1, Right
   components:
   - type: Sprite
     state: spp1right
@@ -577,7 +577,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP2Left
-  suffix: UPP, 2, Left
+  suffix: SPP, 2, Left
   components:
   - type: Sprite
     state: spp2left
@@ -585,7 +585,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP2Right
-  suffix: UPP, 2, Right
+  suffix: SPP, 2, Right
   components:
   - type: Sprite
     state: spp2right
@@ -593,7 +593,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP3Left
-  suffix: UPP, 3, Left
+  suffix: SPP, 3, Left
   components:
   - type: Sprite
     state: spp3left
@@ -601,7 +601,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP3Right
-  suffix: UPP, 3, Right
+  suffix: SPP, 3, Right
   components:
   - type: Sprite
     state: spp3right
@@ -609,7 +609,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP4Left
-  suffix: UPP, 4, Left
+  suffix: SPP, 4, Left
   components:
   - type: Sprite
     state: spp4left
@@ -617,7 +617,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP4Right
-  suffix: UPP, 4, Right
+  suffix: SPP, 4, Right
   components:
   - type: Sprite
     state: spp4right
@@ -625,7 +625,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP5Left
-  suffix: UPP, 5, Left
+  suffix: SPP, 5, Left
   components:
   - type: Sprite
     state: spp5left
@@ -633,7 +633,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP5Right
-  suffix: UPP, 5, Right
+  suffix: SPP, 5, Right
   components:
   - type: Sprite
     state: spp5right
@@ -641,7 +641,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP6Left
-  suffix: UPP, 6, Left
+  suffix: SPP, 6, Left
   components:
   - type: Sprite
     state: spp6left
@@ -649,7 +649,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP6Right
-  suffix: UPP, 6, Right
+  suffix: SPP, 6, Right
   components:
   - type: Sprite
     state: spp6right
@@ -657,7 +657,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP7Left
-  suffix: UPP, 7, Left
+  suffix: SPP, 7, Left
   components:
   - type: Sprite
     state: spp7left
@@ -665,7 +665,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP7Right
-  suffix: UPP, 7, Right
+  suffix: SPP, 7, Right
   components:
   - type: Sprite
     state: spp7right
@@ -673,7 +673,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP8Left
-  suffix: UPP, 8, Left
+  suffix: SPP, 8, Left
   components:
   - type: Sprite
     state: spp8left
@@ -681,7 +681,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP8Right
-  suffix: UPP, 8, Right
+  suffix: SPP, 8, Right
   components:
   - type: Sprite
     state: spp8right
@@ -689,7 +689,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP9Left
-  suffix: UPP, 9, Left
+  suffix: SPP, 9, Left
   components:
   - type: Sprite
     state: spp9left
@@ -697,7 +697,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP9Right
-  suffix: UPP, 9, Right
+  suffix: SPP, 9, Right
   components:
   - type: Sprite
     state: spp9right
@@ -705,7 +705,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP10Left
-  suffix: UPP, 10, Left
+  suffix: SPP, 10, Left
   components:
   - type: Sprite
     state: spp10left
@@ -713,7 +713,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP10Right
-  suffix: UPP, 10, Right
+  suffix: SPP, 10, Right
   components:
   - type: Sprite
     state: spp10right
@@ -721,7 +721,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP11Left
-  suffix: UPP, 11, Left
+  suffix: SPP, 11, Left
   components:
   - type: Sprite
     state: spp11left
@@ -729,7 +729,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP11Right
-  suffix: UPP, 11, Right
+  suffix: SPP, 11, Right
   components:
   - type: Sprite
     state: spp11right
@@ -737,7 +737,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP12Left
-  suffix: UPP, 12, Left
+  suffix: SPP, 12, Left
   components:
   - type: Sprite
     state: spp12left
@@ -745,7 +745,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP12Right
-  suffix: UPP, 12, Right
+  suffix: SPP, 12, Right
   components:
   - type: Sprite
     state: spp12right
@@ -753,7 +753,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP13Left
-  suffix: UPP, 13, Left
+  suffix: SPP, 13, Left
   components:
   - type: Sprite
     state: spp13left
@@ -761,7 +761,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP13Right
-  suffix: UPP, 13, Right
+  suffix: SPP, 13, Right
   components:
   - type: Sprite
     state: spp13right
@@ -769,7 +769,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP14Left
-  suffix: UPP, 14, Left
+  suffix: SPP, 14, Left
   components:
   - type: Sprite
     state: spp14left
@@ -777,7 +777,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP14Right
-  suffix: UPP, 14, Right
+  suffix: SPP, 14, Right
   components:
   - type: Sprite
     state: spp14right
@@ -785,7 +785,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP15Left
-  suffix: UPP, 15, Left
+  suffix: SPP, 15, Left
   components:
   - type: Sprite
     state: spp15left
@@ -793,7 +793,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP15Right
-  suffix: UPP, 15, Right
+  suffix: SPP, 15, Right
   components:
   - type: Sprite
     state: spp15right
@@ -801,7 +801,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP16Left
-  suffix: UPP, 16, Left
+  suffix: SPP, 16, Left
   components:
   - type: Sprite
     state: spp16left
@@ -809,7 +809,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP16Right
-  suffix: UPP, 16, Right
+  suffix: SPP, 16, Right
   components:
   - type: Sprite
     state: spp16right
@@ -817,7 +817,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP17Left
-  suffix: UPP, 17, Left
+  suffix: SPP, 17, Left
   components:
   - type: Sprite
     state: spp17left
@@ -825,7 +825,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP17Right
-  suffix: UPP, 17, Right
+  suffix: SPP, 17, Right
   components:
   - type: Sprite
     state: spp17right
@@ -833,7 +833,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP18Left
-  suffix: UPP, 18, Left
+  suffix: SPP, 18, Left
   components:
   - type: Sprite
     state: spp18left
@@ -841,7 +841,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP18Right
-  suffix: UPP, 18, Right
+  suffix: SPP, 18, Right
   components:
   - type: Sprite
     state: spp18right
@@ -849,7 +849,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP19Left
-  suffix: UPP, 19, Left
+  suffix: SPP, 19, Left
   components:
   - type: Sprite
     state: spp19left
@@ -857,7 +857,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP19Right
-  suffix: UPP, 19, Right
+  suffix: SPP, 19, Right
   components:
   - type: Sprite
     state: spp19right
@@ -865,7 +865,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP20Left
-  suffix: UPP, 20, Left
+  suffix: SPP, 20, Left
   components:
   - type: Sprite
     state: spp20left
@@ -873,7 +873,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerShortSPP20Right
-  suffix: UPP, 20, Right
+  suffix: SPP, 20, Right
   components:
   - type: Sprite
     state: spp20right
@@ -947,7 +947,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerAMSLeft
-  description: A huge industrial shipping container. This one belongs to the Asian Multinational Shipping Line, a bulk-freight Weyland-Yutani subsidiary.
+  description: A huge industrial shipping container. This one belongs to the Asian Multinational Shipping Line, a bulk-freight Weston-Yamada subsidiary.
   suffix: AMS, Left
   components:
   - type: Sprite

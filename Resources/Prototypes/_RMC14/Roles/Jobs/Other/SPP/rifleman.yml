@@ -1,8 +1,8 @@
 ﻿- type: job
   parent: CMJobBase
   id: RMCSPPRifleman
-  name: rmc-job-name-upp-rifleman
-  description: rmc-job-description-upp-soldier
+  name: rmc-job-name-spp-rifleman
+  description: rmc-job-description-spp-soldier
   playTimeTracker: CMJobSPPRifleman
   ranks:
     RMCRankSPPRyadovoy: []
@@ -11,25 +11,25 @@
   joinNotifyCrew: false
   accessGroups:
   - Colonist
-  spawnMenuRoleName: UPP Conscript
+  spawnMenuRoleName: SPP Conscript
   special:
   - !type:AddComponentSpecial
     components:
     - type: NpcFactionMember
       factions:
-      - UPP
+      - SPP
     - type: Skills
       skills:
         RMCSkillEndurance: 1
         RMCSkillFirearms: 1
     - type: SquadArmorWearer
     - type: JobPrefix
-      prefix: rmc-job-prefix-upp-rifleman
+      prefix: rmc-job-prefix-spp-rifleman
   hidden: true
 
 - type: entity
   id: RMCRandomHumanoidSPPRiflemanHostile
-  name: upp ghost role rifleman
+  name: spp ghost role rifleman
   suffix: Spawner, Player, Hostile
   components:
   - type: Sprite
@@ -40,7 +40,7 @@
 
 - type: entity
   id: RMCRandomHumanoidSPPRiflemanFriendly
-  name: upp ghost role rifleman
+  name: spp ghost role rifleman
   suffix: Spawner, Player, Friendly
   components:
   - type: Sprite
@@ -54,9 +54,9 @@
   id: RMCSPPRifleman
   components:
   - type: GhostRole
-    name: rmc-ghost-name-upp-hostile-rifleman
-    description: rmc-ghost-role-information-upp-hostile-description
-    rules: rmc-ghost-role-information-upp-rules
+    name: rmc-ghost-name-spp-hostile-rifleman
+    description: rmc-ghost-role-information-spp-hostile-description
+    rules: rmc-ghost-role-information-spp-rules
     reregister: false
     job: RMCSPPRifleman
     raffle:
@@ -73,9 +73,9 @@
   id: RMCSPPRiflemanFriendly
   components:
   - type: GhostRole
-    name: rmc-ghost-name-upp-friendly-rifleman
-    description: rmc-ghost-role-information-upp-friendly-description
-    rules: rmc-ghost-role-information-upp-rules
+    name: rmc-ghost-name-spp-friendly-rifleman
+    description: rmc-ghost-role-information-spp-friendly-description
+    rules: rmc-ghost-role-information-spp-rules
     reregister: false
     job: RMCSPPRifleman
     raffle:

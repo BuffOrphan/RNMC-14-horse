@@ -17,7 +17,7 @@
     - id: RMCHeadRoyalBeretLead
     - id: RMCLaserDesignatorPVE
     - id: RMCWhistle
-    - id: RMCBackpackRTOTWE
+    - id: RMCBackpackRTOTSE
     - id: RMCPVEArmorCaseRoyalLight
 
 - type: entityTable
@@ -48,7 +48,7 @@
     - id: RMCHeadRoyalHelmetBallistic
     - id: RMCLaserDesignatorPVE
     - id: RMCWhistle
-    - id: RMCBackpackRTOTWE
+    - id: RMCBackpackRTOTSE
     - id: RMCPVEArmorCaseRoyalLight
 
 - type: entityTable
@@ -60,7 +60,7 @@
     - id: RMCWhistle
     - id: RMCBeltHolsterPistolRCML29Filled
     - id: RMCPVEArmorCaseRoyalLight
-    - id: RMCBackpackRTOTWE
+    - id: RMCBackpackRTOTSE
 
 - type: entityTable
   id: RMCClosetRCMSapperFill

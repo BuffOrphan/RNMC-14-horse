@@ -22806,21 +22806,21 @@ entities:
     - type: Transform
       pos: -3.2726846,-28.605154
       parent: 1
-- proto: RMCTentUSCMExtendedReq
+- proto: RMCTentUNMCExtendedReq
   entities:
   - uid: 3132
     components:
     - type: Transform
       pos: -5.5,-28.5
       parent: 1
-- proto: RMCTentUSCMStandardCommand
+- proto: RMCTentUNMCStandardCommand
   entities:
   - uid: 3133
     components:
     - type: Transform
       pos: 10.5,-25.5
       parent: 1
-- proto: RMCTentUSCMStandardMedical
+- proto: RMCTentUNMCStandardMedical
   entities:
   - uid: 3134
     components:

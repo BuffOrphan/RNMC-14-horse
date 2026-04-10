@@ -1,12 +1,12 @@
 - type: job
   parent: CMJobBase
-  id: CMTWEResponder
+  id: CMTSEResponder
   name: rmc-job-name-tse-responder
   description: rmc-job-description-tse-responder
-  playTimeTracker: CMJobTWEResponder
+  playTimeTracker: CMJobTSEResponder
   ranks:
-    RMCRankTWELieutenant: []
-  startingGear: RMCGearTWEResponder
+    RMCRankTSELieutenant: []
+  startingGear: RMCGearTSEResponder
   icon: "CMJobIconEmpty"
   joinNotifyCrew: false
   supervisors: cm-job-supervisors-staff
@@ -18,7 +18,7 @@
     components:
     - type: NpcFactionMember
       factions:
-      - TWE
+      - TSE
     - type: Skills
       skills:
         RMCSkillConstruction: 2
@@ -38,12 +38,12 @@
   hidden: true
 
 - type: startingGear
-  id: RMCGearTWEResponder
+  id: RMCGearTSEResponder
   equipment:
     jumpsuit: CMJumpsuitBO
     shoes: RMCBootsRoyal
     head: RMCHeadRoyalBeret
-    id: RMCIDCardTWEResponder
+    id: RMCIDCardTSEResponder
     ears: RMCHeadsetRoyalMarine
     eyes: RMCGlassesMedicalHUDGlasses
     back: CMSatchelFilledFaxResponder
@@ -51,12 +51,12 @@
     pocket1: RMCPouchGeneralLarge
     pocket2: RMCPouchDocument
   inhand:
-    - RMCStampTWE
+    - RMCStampTSE
 
 - type: entity
   parent: CMIDCardSilver
-  id: RMCIDCardTWEResponder
-  name: TWE Communications Officer ID card
+  id: RMCIDCardTSEResponder
+  name: TSE Communications Officer ID card
   description: A mass produced indentification card, imprinted with the logo of the Three Suns Empire.
   components:
   - type: Sprite
@@ -66,8 +66,8 @@
     - idcard
     sprite: _RMC14/Objects/CMIDs/silver_id.rsi
   - type: PresetIdCard
-    job: CMTWEResponder
+    job: CMTSEResponder
 
 - type: playTimeTracker
-  id: CMJobTWEResponder
+  id: CMJobTSEResponder
 

@@ -31,7 +31,7 @@
   id: CMPackFlareSPP
   name: R52 marking flare pack
   description: A packet of fourteen R52 Marking Flares. Carried by SPPAC soldiers to light dark areas that cannot be reached with the usual Shoulder Lamp.
-  suffix: Filled, UPP
+  suffix: Filled, SPP
   components:
   - type: CMItemSlots
     startingItem: CMFlareSPP

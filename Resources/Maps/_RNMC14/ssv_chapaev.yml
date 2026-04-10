@@ -7138,7 +7138,7 @@ entities:
     components:
     - type: MetaData
       desc: A miniature table flag of the Union of Progressive Peoples, consisting of 17 yellow stars, surrounding the bigger one in the middle on scarlet field.
-      name: UPP desk flag
+      name: SPP desk flag
     - type: Transform
       pos: -8.220779,32.67068
       parent: 1
@@ -7146,7 +7146,7 @@ entities:
     components:
     - type: MetaData
       desc: A miniature table flag of the Union of Progressive Peoples, consisting of 17 yellow stars, surrounding the bigger one in the middle on scarlet field.
-      name: UPP desk flag
+      name: SPP desk flag
     - type: Transform
       pos: 1.5595348,37.806274
       parent: 1
@@ -7154,7 +7154,7 @@ entities:
     components:
     - type: MetaData
       desc: A miniature table flag of the Union of Progressive Peoples, consisting of 17 yellow stars, surrounding the bigger one in the middle on scarlet field.
-      name: UPP desk flag
+      name: SPP desk flag
     - type: Transform
       pos: -3.3131943,37.821693
       parent: 1
@@ -9123,7 +9123,7 @@ entities:
   - uid: 1155
     components:
     - type: MetaData
-      desc: AEGIS-produced gun rack for storage of long guns. While initial model was supposed to be extremely modifiable, USCM comissioned racks with fixed slots which only fit M41A rifles. Due to the power of Communism and local engineer's ingenuity, it can now only fit Type 71 rifles.
+      desc: AEGIS-produced gun rack for storage of long guns. While initial model was supposed to be extremely modifiable, UNMC comissioned racks with fixed slots which only fit M54C rifles. Due to the power of Communism and local engineer's ingenuity, it can now only fit Type 71 rifles.
       name: Type 71 gun rack
     - type: Transform
       pos: -9.5,53.5
@@ -9131,7 +9131,7 @@ entities:
   - uid: 1156
     components:
     - type: MetaData
-      desc: AEGIS-produced gun rack for storage of long guns. While initial model was supposed to be extremely modifiable, USCM comissioned racks with fixed slots which only fit M41A rifles. Due to the power of Communism and local engineer's ingenuity, it can now only fit Type 71 rifles.
+      desc: AEGIS-produced gun rack for storage of long guns. While initial model was supposed to be extremely modifiable, UNMC comissioned racks with fixed slots which only fit M54C rifles. Due to the power of Communism and local engineer's ingenuity, it can now only fit Type 71 rifles.
       name: Type 71 gun rack
     - type: Transform
       pos: -9.5,54.5

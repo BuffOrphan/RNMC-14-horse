@@ -4,7 +4,7 @@
   name: rmc-job-name-pmc-corporate-goon
   description: cm-job-description-survivor
   startingGear: RMCGearSurvivorGoon
-  spawnMenuRoleName: We-Yu Goon (Survivor)
+  spawnMenuRoleName: We-Ya Goon (Survivor)
   icon: "RMCJobIconPMCGoonStandard"
   hasIcon: true
   accessGroups:

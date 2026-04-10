@@ -1,15 +1,15 @@
 - type: job
   parent: CMSurvivor
-  id: CMSurvivorUSCMRecruiter
-  name: rmc-job-name-survivor-uscm-recruiter
+  id: CMSurvivorUNMCRecruiter
+  name: rmc-job-name-survivor-unmc-recruiter
   description: cm-job-description-survivor
-  playTimeTracker: CMJobSurvivorUSCMRecruiter
-  spawnMenuRoleName: USCM Recruiter (Solaris Survivor)
+  playTimeTracker: CMJobSurvivorUNMCRecruiter
+  spawnMenuRoleName: UNMC Recruiter (Solaris Survivor)
   ranks:
     RMCRankSergeant: []
   accessGroups:
   - Colonist
-  startingGear: RMCGearSurvivorUSCMRecruiter
+  startingGear: RMCGearSurvivorUNMCRecruiter
   special:
   - !type:AddComponentSpecial
     components:
@@ -34,8 +34,8 @@
   useLoadoutOfJob: CMSurvivor # for inheritance
 
 - type: startingGear
-  parent: RMCGearSurvivorUSCM
-  id: RMCGearSurvivorUSCMRecruiter
+  parent: RMCGearSurvivorUNMC
+  id: RMCGearSurvivorUNMCRecruiter
   equipment:
     jumpsuit: CMJumpsuitBO
     outerClothing: RMCCoatService
@@ -47,16 +47,16 @@
 
 - type: entity
   parent: CMSpawnPointJobBase
-  id: RMCSpawnPointSurvivorUSCMRecruiter
-  name: survivor uscm recruiter spawn point
+  id: RMCSpawnPointSurvivorUNMCRecruiter
+  name: survivor unmc recruiter spawn point
   components:
   - type: SpawnPoint
-    job_id: CMSurvivorUSCMRecruiter
+    job_id: CMSurvivorUNMCRecruiter
   - type: Sprite
     layers:
     - sprite: _RMC14/Markers/landmarks.rsi
       state: surv
 
 - type: playTimeTracker
-  id: CMJobSurvivorUSCMRecruiter
+  id: CMJobSurvivorUNMCRecruiter
   isHumanoid: true

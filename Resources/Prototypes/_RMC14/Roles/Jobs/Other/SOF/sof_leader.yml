@@ -49,7 +49,7 @@
   components:
   - type: Sprite
     sprite: _RMC14/Markers/landmarks.rsi
-    state: uscm_spawn
+    state: unmc_spawn
   - type: RandomHumanoidSpawner
     settings: RMCMarineRaiderLeader
 

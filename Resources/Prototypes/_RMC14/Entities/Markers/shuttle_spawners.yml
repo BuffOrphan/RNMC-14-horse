@@ -48,15 +48,15 @@
 - type: entity
   parent: RMCSpawnerERTShuttle
   id: RMCSpawnerERTShuttleSPP
-  suffix: ERT UPP
+  suffix: ERT SPP
   components:
   - type: GridSpawner
     spawn: "/Maps/_RMC14/Shuttles/ert_spp_shuttle.yml"
 
 - type: entity
   parent: RMCSpawnerERTShuttle
-  id: RMCSpawnerERTShuttleTWE
-  suffix: ERT TWE
+  id: RMCSpawnerERTShuttleTSE
+  suffix: ERT TSE
   components:
   - type: GridSpawner
     spawn: "/Maps/_RMC14/Shuttles/ert_tse_shuttle.yml"
@@ -71,8 +71,8 @@
 
 - type: entity
   parent: RMCSpawnerERTShuttle
-  id: RMCSpawnerERTShuttleTWEPA
-  suffix: TWEPA, ERT
+  id: RMCSpawnerERTShuttleTSEPA
+  suffix: TSEPA, ERT
   components:
   - type: GridSpawner
     spawn: "/Maps/_RMC14/Shuttles/ert_zspa_shuttle.yml"
@@ -87,8 +87,8 @@
 
 - type: entity
   parent: RMCSpawnerERTShuttle
-  id: RMCSpawnerShuttleTWEPA
-  suffix: TWEPA
+  id: RMCSpawnerShuttleTSEPA
+  suffix: TSEPA
   components:
   - type: GridSpawner
     spawn: "/Maps/_RMC14/Shuttles/zspa_shuttle.yml"

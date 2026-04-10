@@ -242,7 +242,7 @@
 - type: entity
   parent: RMCJacketWindbreaker
   id: RMCJacketWindbreakerWEYA
-  name: Weyland-Yutani windbreaker
+  name: Weston-Yamada windbreaker
   description: A corporate windbreaker, distributed to important executives at corporate events and conferences. A jacket so good it needs two logos!
   components:
   - type: Sprite

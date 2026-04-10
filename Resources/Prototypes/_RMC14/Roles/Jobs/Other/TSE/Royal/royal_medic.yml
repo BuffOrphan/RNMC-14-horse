@@ -5,7 +5,7 @@
   description: rmc-ghost-role-information-rcm-description
   playTimeTracker: RMCJobRoyalMedic
   ranks:
-    RMCRankTWECorporal: [ ]
+    RMCRankTSECorporal: [ ]
   startingGear: RMCGearRoyalMedic
   icon: "RMCJobIconRoyalMedic"
   joinNotifyCrew: false
@@ -17,7 +17,7 @@
     - type: NpcFactionMember
       factions:
       - RoyalMarines
-      - TWE
+      - TSE
     - type: Skills
       skills:
         RMCSkillCqc: 2
@@ -76,12 +76,12 @@
 - type: startingGear
   id: RMCGearRoyalMedic
   equipment:
-    head: RMCHeadRoyalHelmet # TODO RMC14 TWE medic helmet
+    head: RMCHeadRoyalHelmet # TODO RMC14 TSE medic helmet
     eyes: RMCGlassesMedicalHUDGlasses
     ears: RMCHeadsetRoyalMarine
     jumpsuit: RMCJumpsuitMarineRoyalMedic
     outerClothing: RMCArmorRoyalLightFilledMedic
-    gloves: RMCHandsLatexMarine # TODO RMC14 TWE medic gloves
+    gloves: RMCHandsLatexMarine # TODO RMC14 TSE medic gloves
     shoes: RMCBootsRoyalFilled
     suitstorage: RMCWeaponRifleL24
     id: RMCIDRoyalMarinesMedic

@@ -75,7 +75,7 @@
   parent: RMCHazardVest
   id: RMCHazardVestBlack
   name: black hazard vest
-  description: A niche-market, black, allegedly high-visibility vest supposedly used in work zones. Features extra-reflective tapes. The etiquette on the vest insists that it's fully compliant with all the United States workplace safety standards.
+  description: A niche-market, black, allegedly high-visibility vest supposedly used in work zones. Features extra-reflective tapes. The etiquette on the vest insists that it's fully compliant with all the United Nations workplace safety standards.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/HazardVests/black.rsi
@@ -296,8 +296,8 @@
 - type: entity
   parent: [RMCAllowSuitStorageClothingChefApron, ClothingOuterBase]
   id: RMCOuterEngineeringUtilityOversuit
-  name: Weyland-Yutani engineer utility oversuit
-  description: A Weyland-Yutani engineer utility uniform. Used as a general purpose utility oversuit by Weyland-Yutani colony engineers.
+  name: Weston-Yamada engineer utility oversuit
+  description: A Weston-Yamada engineer utility uniform. Used as a general purpose utility oversuit by Weston-Yamada colony engineers.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Misc/weya_engineer_jacket.rsi

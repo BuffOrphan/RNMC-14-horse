@@ -182,7 +182,7 @@
   description: These synth-leather boots seem high quality when first worn, but quickly deteriorate, especially in the environments the corporate security members these are issued to operate in. Still, better than nothing.
 
 
-# UPP
+# SPP
 - type: entity
   parent: CMBootsBrown
   id: RMCBootsSPP
@@ -289,7 +289,7 @@
   parent: ClothingShoesBase
   id: RMCShoesTychoBoots
   name: Tycho 4000 radiation protection boots
-  description: The burn-resistant boots for the Weyland-Yutani Tycho 4000 Radiation Protection Suit. It's lined with lead, and the boot is steel-toed, perfect for trouncing around detonated nuclear reactors and avoiding radiation poisoning.
+  description: The burn-resistant boots for the Weston-Yamada Tycho 4000 Radiation Protection Suit. It's lined with lead, and the boot is steel-toed, perfect for trouncing around detonated nuclear reactors and avoiding radiation poisoning.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Shoes/Boots/rad_boots_weya.rsi
@@ -302,8 +302,8 @@
   parent: CMBootsBlack
   id: RMCBootsRoyal
   name: L10 pattern combat boots
-  description: Standard issue combat boots for combat scenarios or combat situations. Used by the Three World Empire's Royal Crown Marines.
-  suffix: TWE, RCM
+  description: Standard issue combat boots for combat scenarios or combat situations. Used by the Three Sun Empire's Royal Crown Marines.
+  suffix: TSE, RCM
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Shoes/Boots/rmc.rsi

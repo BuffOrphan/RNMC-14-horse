@@ -1,9 +1,9 @@
 # Standard Tents
 - type: entity
   parent: BaseItem
-  id: RMCTentUSCMStandardFolded
-  name: folded USCM Field Tent
-  description: A standard USCM Field Tent. This one is just a general purpose version. Unfold in a suitable location for micro-FOB vibes. ComTech not included. ENTRANCE TO THE SOUTH.
+  id: RMCTentUNMCStandardFolded
+  name: folded UNMC Field Tent
+  description: A standard UNMC Field Tent. This one is just a general purpose version. Unfold in a suitable location for micro-FOB vibes. ComTech not included. ENTRANCE TO THE SOUTH.
   components:
     - type: Item
       size: Huge
@@ -22,7 +22,7 @@
       areaBlockedCheck: true
       failIfNotSurface: true
       deploySetups:
-        - prototype: RMCTentUSCMStandard
+        - prototype: RMCTentUNMCStandard
           neverRedeployableSetup: false
           mode: ReactiveParental
           anchor: true
@@ -30,10 +30,10 @@
           angle: 0
 
 - type: entity
-  parent: RMCTentUSCMStandardFolded
-  id: RMCTentUSCMBigFolded
-  name: folded USCM Big Tent
-  description: A standard USCM Field Tent. This one is just a general purpose, large version. Unfold in a suitable location for micro-FOB vibes. ComTech not included. ENTRANCE TO THE SOUTH.
+  parent: RMCTentUNMCStandardFolded
+  id: RMCTentUNMCBigFolded
+  name: folded UNMC Big Tent
+  description: A standard UNMC Field Tent. This one is just a general purpose, large version. Unfold in a suitable location for micro-FOB vibes. ComTech not included. ENTRANCE TO THE SOUTH.
   components:
     - type: RMCDeployable
       deployTime: 10
@@ -45,7 +45,7 @@
       areaBlockedCheck: true
       failIfNotSurface: true
       deploySetups:
-        - prototype: RMCTentUSCMStandard
+        - prototype: RMCTentUNMCStandard
           neverRedeployableSetup: false
           mode: ReactiveParental
           anchor: true
@@ -54,9 +54,9 @@
 
 - type: entity
   parent: BaseItem
-  id: RMCTentUSCMStandardCommandFolded
-  name: folded USCM Command Tent
-  description: A standard USCM Command Tent. This one comes equipped with a self-powered Overwatch Console and a Telephone. Unfold in a suitable location to maximize usefulness. Staff Officer not included. ENTRANCE TO THE SOUTH.
+  id: RMCTentUNMCStandardCommandFolded
+  name: folded UNMC Command Tent
+  description: A standard UNMC Command Tent. This one comes equipped with a self-powered Overwatch Console and a Telephone. Unfold in a suitable location to maximize usefulness. Staff Officer not included. ENTRANCE TO THE SOUTH.
   components:
     - type: Item
       size: Huge
@@ -76,7 +76,7 @@
       areaBlockedCheck: true
       failIfNotSurface: true
       deploySetups:
-        - prototype: RMCTentUSCMStandardCommand
+        - prototype: RMCTentUNMCStandardCommand
           neverRedeployableSetup: false
           mode: ReactiveParental
           anchor: true
@@ -121,9 +121,9 @@
 
 - type: entity
   parent: BaseItem
-  id: RMCTentUSCMStandardMedicalFolded # TODO RMC14: Bonus to speed up operations and reduce pain
-  name: folded USCM Medical Tent
-  description: A standard USCM Medical Tent. This one comes equipped with advanced field surgery facilities. Unfold in a suitable location to maximize health gains. Surgical Tray not included. ENTRANCE TO THE SOUTH.
+  id: RMCTentUNMCStandardMedicalFolded # TODO RMC14: Bonus to speed up operations and reduce pain
+  name: folded UNMC Medical Tent
+  description: A standard UNMC Medical Tent. This one comes equipped with advanced field surgery facilities. Unfold in a suitable location to maximize health gains. Surgical Tray not included. ENTRANCE TO THE SOUTH.
   components:
     - type: Item
       size: Huge
@@ -138,7 +138,7 @@
         bounds: "-0.4,0.6,1.4,4.4"
       collapseToolPrototype: CMEntrenchingTool
       deploySetups:
-        - prototype: RMCTentUSCMStandardMedical
+        - prototype: RMCTentUNMCStandardMedical
           mode: ReactiveParental
           offset: 0.2, 0
         - prototype: ColMarTechMarineMedicalPowered
@@ -156,9 +156,9 @@
 # Extended Tents
 - type: entity
   parent: BaseItem
-  id: RMCTentUSCMExtendedFolded
-  name: folded USCM Extended Field Tent
-  description: A standard USCM Tent. This one is just an extended general purpose version. Unfold in a suitable location for mega FOB vibes. Mess Tech not included. ENTRANCE TO THE SOUTH.
+  id: RMCTentUNMCExtendedFolded
+  name: folded UNMC Extended Field Tent
+  description: A standard UNMC Tent. This one is just an extended general purpose version. Unfold in a suitable location for mega FOB vibes. Mess Tech not included. ENTRANCE TO THE SOUTH.
   components:
     - type: Item
       size: Huge
@@ -177,7 +177,7 @@
       areaBlockedCheck: true
       failIfNotSurface: true
       deploySetups:
-        - prototype: RMCTentUSCMExtended
+        - prototype: RMCTentUNMCExtended
           neverRedeployableSetup: false
           mode: ReactiveParental
           anchor: true
@@ -186,9 +186,9 @@
 
 - type: entity
   parent: BaseItem
-  id: RMCTentUSCMExtendedReqFolded
-  name: folded USCM Requisitions Tent
-  description: A standard USCM Requisitions Tent. Now, you can enjoy req line anywhere you go! Unfold in a suitable location to maximize resource distribution. ASRS not included. ENTRANCE TO THE SOUTH.
+  id: RMCTentUNMCExtendedReqFolded
+  name: folded UNMC Requisitions Tent
+  description: A standard UNMC Requisitions Tent. Now, you can enjoy req line anywhere you go! Unfold in a suitable location to maximize resource distribution. ASRS not included. ENTRANCE TO THE SOUTH.
   components:
     - type: Item
       size: Huge
@@ -203,7 +203,7 @@
         bounds: "-0.4,0.6,3.4,4.4"
       collapseToolPrototype: CMEntrenchingTool
       deploySetups:
-        - prototype: RMCTentUSCMExtendedReq
+        - prototype: RMCTentUNMCExtendedReq
           mode: ReactiveParental
           offset: -0.2, 0
         - prototype: CMChair
@@ -229,9 +229,9 @@
 
 - type: entity
   parent: BaseItem
-  id: RMCTentUSCMExtendedMessFolded
-  name: folded USCM Mess Tent
-  description: A standard USCM Mess Tent. This one comes equipped with a kitchen and dining utilities. Unfold in a suitable location to maximize meal handouts. ENTRANCE TO THE SOUTH.
+  id: RMCTentUNMCExtendedMessFolded
+  name: folded UNMC Mess Tent
+  description: A standard UNMC Mess Tent. This one comes equipped with a kitchen and dining utilities. Unfold in a suitable location to maximize meal handouts. ENTRANCE TO THE SOUTH.
   components:
     - type: Item
       size: Huge
@@ -246,7 +246,7 @@
         bounds: "-0.4,0.6,3.4,4.4"
       collapseToolPrototype: CMEntrenchingTool
       deploySetups:
-        - prototype: RMCTentUSCMExtendedMess
+        - prototype: RMCTentUNMCExtendedMess
           mode: ReactiveParental
           offset: -0.2, 0
         - prototype: CMTable
@@ -284,9 +284,9 @@
 
 - type: entity
   parent: BaseItem
-  id: RMCTentUSCMExtendedMPFolded
-  name: folded USCM Military Police Tent
-  description: A standard USCM Military Police Tent. This one comes equipped with a single detention cell and detainee handling equipment. Unfold in a suitable location to maximize order enforcement. ENTRANCE TO THE SOUTH.
+  id: RMCTentUNMCExtendedMPFolded
+  name: folded UNMC Military Police Tent
+  description: A standard UNMC Military Police Tent. This one comes equipped with a single detention cell and detainee handling equipment. Unfold in a suitable location to maximize order enforcement. ENTRANCE TO THE SOUTH.
   components:
     - type: Item
       size: Huge
@@ -301,7 +301,7 @@
         bounds: "-0.4,0.6,3.4,4.4"
       collapseToolPrototype: CMEntrenchingTool
       deploySetups:
-        - prototype: RMCTentUSCMExtendedMP
+        - prototype: RMCTentUNMCExtendedMP
           mode: ReactiveParental
           offset: -0.2, 0
         - prototype: CMChair

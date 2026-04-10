@@ -21,7 +21,7 @@
       - id: RMCHeadMilitiaHood
       - id: RMCHandsVeteran
       - id: RMCSatchelLightpack5Slot
-    - !type:AllSelector # UPP
+    - !type:AllSelector # SPP
       children:
       - id: ArmorHelmetSPP
       - id: CMJumpsuitSPP
@@ -69,7 +69,7 @@
         - id: RMCMagazineSMGMAC15
           amount: 2
         - id: RMCMagazineSMGMAC15Ext
-    - !type:AllSelector # UPP
+    - !type:AllSelector # SPP
       children:
       - id: RMCWeaponShotgunType23
       - id: RMCShellShotgunHeavyBeanbag

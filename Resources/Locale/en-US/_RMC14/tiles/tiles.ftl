@@ -20,7 +20,7 @@ tiles-cm-cargo = cargo tile
 tiles-cm-plating = plating tile
 tiles-cm-striped = striped tile
 tiles-cm-test = test tile
-tiles-cm-wy = WE-YU tile
+tiles-cm-wy = WE-YA tile
 tiles-cm-cult = cult tile
 tiles-cm-engine = engine tile
 

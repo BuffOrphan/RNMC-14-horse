@@ -1,6 +1,6 @@
 <Document>
-  ## Elite Assets of the USCM
-  Squad Specialists are among the most powerful assets the USCM deploys. From the outset, these operatives can dramatically influence the outcome of any battle.
+  ## Elite Assets of the UNMC
+  Squad Specialists are among the most powerful assets the UNMC deploys. From the outset, these operatives can dramatically influence the outcome of any battle.
 
   While they have access to unique kits and potent squad-supporting weaponry, they are [bold]not[/bold] lone wolves or "rambos" and should operate as integral parts of the team.
   Understanding each specialist's role is crucial to maximizing their impact on the marine war machine.
@@ -41,7 +41,7 @@
   <Box> <GuideEntityEmbed Entity="CMM96SSniperRifle" Context=""/> <GuideEntityEmbed Entity="RMCXM43E1AntiMaterielRifle" Context=""/> <GuideEntityEmbed Entity="RMCKitSpotter" Context=""/> </Box>
 
   - [bold][textlink="Scout Specialist" link="RMCGuideRoleScoutSpec"][/textlink][/bold] - "Silent Hunter & Intel"
-  - Armed with the hard-hitting M49A custom battle rifle and an M68 Thermal Cloak, the Scout excels in reconnaissance, target designation with their Scout Designator, and surgical engagements.
+  - Armed with the hard-hitting M4SPR custom battle rifle and an M68 Thermal Cloak, the Scout excels in reconnaissance, target designation with their Scout Designator, and surgical engagements.
   <Box> <GuideEntityEmbed Entity="WeaponRifleM4SPRCustom" Context=""/> <GuideEntityEmbed Entity="RMCBackpackScout" Context=""/> <GuideEntityEmbed Entity="RMCLaserDesignatorScout" Context=""/> </Box>
 
 </Document>

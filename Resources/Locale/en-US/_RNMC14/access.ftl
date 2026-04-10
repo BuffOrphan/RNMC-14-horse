@@ -1,1 +1,1 @@
-rmc-access-upp-machinegunner = Machinegunner
+rmc-access-spp-machinegunner = Machinegunner

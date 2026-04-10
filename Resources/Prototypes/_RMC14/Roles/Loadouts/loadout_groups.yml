@@ -201,7 +201,7 @@
   - HeadBeanieTanRMC
   - HeadBeanieGreenRMC
   - HeadBeanieGrayRMC
-  - USCMHeadsetRMC
+  - UNMCHeadsetRMC
 
 - type: loadoutGroup
   id: HeadwearRMCPVE
@@ -214,7 +214,7 @@
   - GrayHeadbandRMC
   - RedHeadbandRMC
   - TanHeadbandRMC
-  - USCMHeadsetRMC
+  - UNMCHeadsetRMC
 
 # Helmet Garbs
 - type: loadoutGroup
@@ -254,7 +254,7 @@
   - PeaceFlairRMC
   - IoFlairRMC
   - TerraTekFlairRMC
-  - USCMFlairRMC
+  - UNMCFlairRMC
   - MovieTicketRMC
 
 - type: loadoutGroup
@@ -285,7 +285,7 @@
   - PeaceFlairRMC
   - IoFlairRMC
   - TerraTekFlairRMC
-  - USCMFlairRMC
+  - UNMCFlairRMC
   - MovieTicketRMC
 
 # Accessories
@@ -295,7 +295,7 @@
   minLimit: 0
   maxLimit: 10
   loadouts:
-  - USCMSquadPatchRMC
+  - UNMCSquadPatchRMC
   - SquadArmbandRMC
   - PatchPeaceRMC
 
@@ -399,7 +399,7 @@
   - HG45AguilaCaseRMC
   - HG45MarinaCaseRMC
 
-# UPP Weapons
+# SPP Weapons
 - type: loadoutGroup
   id: SPPWeaponsRMC
   name: rmc-loadout-group-weapons
@@ -780,7 +780,7 @@
   - PatchWeYaRMCSquare
   - PatchWeYaRMCBlack
   - PatchWeYaRMCFury161
-  - PatchTWERMC
+  - PatchTSERMC
   - PatchMSCRMC
   - PatchOliveBranch
   # - PatchCLFRMC # RMC14 - Disabled intentionally to reduce admin burden.

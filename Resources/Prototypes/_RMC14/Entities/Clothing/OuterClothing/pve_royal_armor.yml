@@ -28,7 +28,7 @@
     denyReason: rmc-armor-not-tse-jumpsuit
     whitelist:
       tags:
-      - RMCUniformTWE
+      - RMCUniformTSE
   - type: WebbingClothing
     whitelist:
       tags:

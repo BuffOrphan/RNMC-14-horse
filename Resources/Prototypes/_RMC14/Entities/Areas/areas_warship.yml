@@ -820,8 +820,8 @@
 
 - type: entity
   parent: RMCAreaWarship
-  id: RMCAreaWarshipUSCMRecruitment
-  name: USCM Recruitment
+  id: RMCAreaWarshipUNMCRecruitment
+  name: UNMC Recruitment
   components:
   - type: Sprite
     color: "#A637E5"
@@ -836,8 +836,8 @@
 
 - type: entity
   parent: RMCAreaWarship
-  id: RMCAreaWarshipUSCMRecruitmentMaintenance
-  name: USCM Recruitment Maintenance
+  id: RMCAreaWarshipUNMCRecruitmentMaintenance
+  name: UNMC Recruitment Maintenance
   components:
   - type: Sprite
     color: "#07E063"

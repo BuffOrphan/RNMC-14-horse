@@ -2,7 +2,7 @@
   parent: BaseItem
   id: RMCFulton
   name: fulton recovery device
-  description: A system used by the USCM for retrieving objects of interest on the ground from an AUD-25 dropship. Can be used to extract unrevivable corpses, or crates, typically lasting around 3 minutes in the air.
+  description: A system used by the UNMC for retrieving objects of interest on the ground from an AUD-25 dropship. Can be used to extract unrevivable corpses, or crates, typically lasting around 3 minutes in the air.
   suffix: 1
   components:
   - type: Sprite

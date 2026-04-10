@@ -7,7 +7,7 @@
   randomRotation: false
   stations:
     HMSPratchett:
-      stationProto: StandardUSCMWarship
+      stationProto: StandardUNMCWarship
       components:
         - type: StationNameSetup
           mapNameTemplate: 'HMS Pratchett'

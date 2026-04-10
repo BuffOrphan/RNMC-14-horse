@@ -19,7 +19,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: RMCTentUSCMStandardMedicalFolded
+      - id: RMCTentUNMCStandardMedicalFolded
       - id: CMWebbingSurgicalGreen
       - id: CMPortableSurgicalBedSpawnFolded
       - id: RMCPortableDialysis

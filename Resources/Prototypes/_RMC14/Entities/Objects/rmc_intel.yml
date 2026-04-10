@@ -151,7 +151,7 @@
   parent: RMCCommunicationsConsoleBase
   id: RMCComputerIntel
   name: intel computer
-  description: An USCM Intel Computer for data cataloguing and distribution.
+  description: An UNMC Intel Computer for data cataloguing and distribution.
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/computer.rsi

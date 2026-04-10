@@ -17,7 +17,7 @@
     components:
     - type: NpcFactionMember
       factions:
-      - USCM
+      - UNMC
     - type: Skills
       preset: RMCSkillPresetPVESquadLeader
     - type: SquadArmorWearer

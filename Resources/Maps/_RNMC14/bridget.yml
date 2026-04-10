@@ -6985,7 +6985,7 @@ entities:
           id: RMCPatchFallingFalconsLarge
         - giveMapBlip: null
           giveIcon: null
-          name: USCM shoulder patch
+          name: UNMC shoulder patch
           amount: 15
           points: null
           spawn: 1
@@ -7000,10 +7000,10 @@ entities:
           isAppendSquadRoleName: False
           givePrefix: null
           isAppendPrefix: False
-          id: RMCPatchUSCM
+          id: RMCPatchUNMC
         - giveMapBlip: null
           giveIcon: null
-          name: United States shoulder patch
+          name: United Nations shoulder patch
           amount: 15
           points: null
           spawn: 1
@@ -7021,7 +7021,7 @@ entities:
           id: RMCPatchUnitedNations
         - giveMapBlip: null
           giveIcon: null
-          name: United States flag shoulder patch
+          name: United Nations flag shoulder patch
           amount: 15
           points: null
           spawn: 1
@@ -7166,7 +7166,7 @@ entities:
     - type: Transform
       pos: 15.265278,-12.077653
       parent: 1
-- proto: RMCFlagCarriableUSCM
+- proto: RMCFlagCarriableUNMC
   entities:
   - uid: 815
     components:

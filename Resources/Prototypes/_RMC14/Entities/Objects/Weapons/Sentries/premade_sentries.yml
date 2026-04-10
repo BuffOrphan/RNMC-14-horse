@@ -162,7 +162,7 @@
         5.5
   - type: NpcFactionMember
     factions:
-    - USCM
+    - UNMC
   - type: MarineIFF
   - type: UserIFF
     factions:

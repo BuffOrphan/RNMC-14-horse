@@ -119,7 +119,7 @@
       - CMCargoTech
       entries:
       - id: RMCBoxBulletsRifle
-        name: rifle ammunition box (10x24mm) (M49A)
+        name: rifle ammunition box (10x24mm) (M4SPR)
         box: CMMagazineRifleM4SPR
         boxSlots: 24 # 600 / 25
       - id: RMCBoxBulletsSMG
@@ -127,7 +127,7 @@
         box: CMMagazineSMGM63
         boxSlots: 13 # 600 / 48, yes we lose half a mag to the void
       - id: RMCBoxBulletsRifle
-        name: rifle ammunition box (10x24mm) (M41A)
+        name: rifle ammunition box (10x24mm) (M54C)
         box: CMMagazineRifleM54C
         boxSlots: 15 # 600 / 40
     - name: Other Boxes
@@ -345,7 +345,7 @@
       - id: RMCHelmetGarbGunOil
         name: firearm lubricant
         amount: 15
-      - id: RMCHelmetGarbUSCMFlair
+      - id: RMCHelmetGarbUNMCFlair
         amount: 15
       - id: RMCPatchFallingFalcons
         amount: 15
@@ -355,14 +355,14 @@
       - id: RMCPatchFallingFalconsLarge
         name: Falling Falcons large chest patch
         amount: 15
-      - id: RMCPatchUSCM
-        name: USCM shoulder patch
+      - id: RMCPatchUNMC
+        name: UNMC shoulder patch
         amount: 15
       - id: RMCPatchUnitedNations
-        name: United States shoulder patch
+        name: United Nations shoulder patch
         amount: 15
       - id: RMCPatchUnitedNationsSquare
-        name: United States flag shoulder patch
+        name: United Nations flag shoulder patch
         amount: 15
       - id: BedrollFolded
         amount: 20

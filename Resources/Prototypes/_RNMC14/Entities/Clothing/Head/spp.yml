@@ -5,9 +5,9 @@
   description: Naval Infantry helmet for multiple environments. Alloy/para-aramid ballistic 'shell' comprised of three seperate plates held together with a complex liner system. Capable of being worn in tandem with an exoatmospheric fighting hood. A tactical datalink and A/V feeds are provided, alongside facilities for an infrared imager complex. Surprisingly comfortable. The fabric utilized for this model is rubbery and colored after the standard paint coating of UPP armor.
   components:
   - type: Sprite
-    sprite: _RNMC14/Objects/Clothing/Head/UPP/Helmets/naval.rsi
+    sprite: _RNMC14/Objects/Clothing/Head/SPP/Helmets/naval.rsi
   - type: Clothing
-    sprite: _RNMC14/Objects/Clothing/Head/UPP/Helmets/naval.rsi
+    sprite: _RNMC14/Objects/Clothing/Head/SPP/Helmets/naval.rsi
   - type: CMArmor
     melee: 20
     bullet: 30
@@ -26,6 +26,6 @@
   id: CMArmorHelmetUPPNavalDesert
   components:
   - type: Sprite
-    sprite: _RNMC14/Objects/Clothing/Head/UPP/Helmets/naval_alt.rsi
+    sprite: _RNMC14/Objects/Clothing/Head/SPP/Helmets/naval_alt.rsi
   - type: Clothing
-    sprite: _RNMC14/Objects/Clothing/Head/UPP/Helmets/naval_alt.rsi
+    sprite: _RNMC14/Objects/Clothing/Head/SPP/Helmets/naval_alt.rsi

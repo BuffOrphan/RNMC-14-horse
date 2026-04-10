@@ -96,9 +96,9 @@
     - CMPosterMarineCorp6
     - CMPosterMarineCorp7
     - CMPosterFORECON
-    - RMCPosterTWEPA1
-    - RMCPosterTWEPA2
-    - RMCPosterTWEPA3
+    - RMCPosterTSEPA1
+    - RMCPosterTSEPA2
+    - RMCPosterTSEPA3
     - CMPosterSPP1
     - CMPosterSPP2
     - CMPosterSPP3
@@ -215,9 +215,9 @@
     - CMPosterMarineCorp6
     - CMPosterMarineCorp7
     - CMPosterFORECON
-    - RMCPosterTWEPA1
-    - RMCPosterTWEPA2
-    - RMCPosterTWEPA3
+    - RMCPosterTSEPA1
+    - RMCPosterTSEPA2
+    - RMCPosterTSEPA3
     chance: 0.95
     rarePrototypes:
     - PosterBroken
@@ -227,7 +227,7 @@
   parent: CMRandomPosterAny
   id: CMRandomPosterSPP
   name: random poster spawner
-  suffix: RMC14, UPP
+  suffix: RMC14, SPP
   components:
   - type: Sprite
     layers:

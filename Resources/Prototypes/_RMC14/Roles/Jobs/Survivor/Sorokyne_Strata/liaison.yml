@@ -20,7 +20,7 @@
     - type: NpcFactionMember
       factions:
       - Halcyon
-      - UPP
+      - SPP
       - Civilian
     - type: IntelRescueSurvivorObjective
     - type: RMCAllowSuitStorage

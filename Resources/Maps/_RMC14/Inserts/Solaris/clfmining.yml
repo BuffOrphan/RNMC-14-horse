@@ -3815,7 +3815,7 @@ entities:
     - type: Transform
       pos: 13.5,31.5
       parent: 1
-- proto: RMCTentUSCMStandard
+- proto: RMCTentUNMCStandard
   entities:
   - uid: 390
     components:

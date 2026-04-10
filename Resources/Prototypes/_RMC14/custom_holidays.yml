@@ -1,25 +1,25 @@
 # Lore Holidays
 
 - type: customHoliday
-  id: RMCUSCMFoundingDay # RMC14 Release
-  name: USCM Founding Day
+  id: RMCUNMCFoundingDay # RMC14 Release
+  name: UNMC Founding Day
   beginDay: 9
   beginMonth: June
-  description: An archaic holiday commemorating the founding of the United States Marine Corps.
+  description: An archaic holiday commemorating the founding of the United Nations Marine Corps.
 
 - type: customHoliday
   id: RMCNewHorizonDay # RMC14 Initial development and founding
   name: New Horizon Day
   beginDay: 28
   beginMonth: October
-  description: A day that commemorates the formation of the United States, and the peace and prosperity it has upheld for everyone.
+  description: A day that commemorates the formation of the United Nations, and the peace and prosperity it has upheld for everyone.
 
 - type: customHoliday
   id: RMCFleetDay # Lore
   name: Fleet Day
   beginDay: 6
   beginMonth: May
-  description: A day of celebration in which the USCM showcase their fleet.
+  description: A day of celebration in which the UNMC showcase their fleet.
 
 # Major Holidays
 

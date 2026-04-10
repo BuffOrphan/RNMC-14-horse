@@ -175,7 +175,7 @@
         amount: 10
       - id: RMCPatchSolarDevils #todo, forecon patch
         amount: 15
-      - id: RMCPatchUSCM
+      - id: RMCPatchUNMC
         amount: 15
       - id: BedrollFolded
         name: LRRP Bedroll

@@ -8,7 +8,7 @@
   randomRotation: false
   stations:
     Berkley:
-      stationProto: StandardUSCMWarship
+      stationProto: StandardUNMCWarship
       components:
         - type: StationNameSetup
           mapNameTemplate: 'UNS Berkley'

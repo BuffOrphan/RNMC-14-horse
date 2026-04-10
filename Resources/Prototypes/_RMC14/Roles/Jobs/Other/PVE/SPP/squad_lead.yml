@@ -1,8 +1,8 @@
 - type: job
   parent: CMJobBase
   id: RMCSPPSquadLeadPVE
-  name: rmc-job-name-upp-squadlead
-  description: rmc-job-description-upp-squadlead
+  name: rmc-job-name-spp-squadlead
+  description: rmc-job-description-spp-squadlead
   playTimeTracker: RMCJobSPPSquadLeadPVE
   ranks:
     RMCRankSPPSerzhant: []
@@ -11,18 +11,18 @@
   joinNotifyCrew: false
   accessGroups:
   - FTL
-  spawnMenuRoleName: UPP Squad Lead (PVE)
+  spawnMenuRoleName: SPP Squad Lead (PVE)
   special:
   - !type:AddComponentSpecial
     components:
     - type: NpcFactionMember
       factions:
-      - UPP
+      - SPP
     - type: Skills
       preset: RMCSkillPresetPVESquadLeader
     - type: SquadArmorWearer
     - type: JobPrefix
-      prefix: rmc-job-prefix-upp-squadlead
+      prefix: rmc-job-prefix-spp-squadlead
     - type: AssignSquad
       whitelist:
         tags:
@@ -40,7 +40,7 @@
 - type: entity
   parent: CMSpawnPointJobBase
   id: RMCSpawnPointSPPSquadLeadPVE
-  name: upp squad lead spawn point
+  name: spp squad lead spawn point
   suffix: PVE
   components:
   - type: SpawnPoint

@@ -1,7 +1,7 @@
 # Accessories
 
 - type: loadout
-  id: USCMSquadPatchRMC
+  id: UNMCSquadPatchRMC
   cost: 1
   storage:
     back:

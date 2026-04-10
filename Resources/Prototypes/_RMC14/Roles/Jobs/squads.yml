@@ -142,7 +142,7 @@
 - type: entity
   parent: SquadBase
   id: SquadSPP
-  name: UPP
+  name: SPP
   components:
   - type: SquadTeam
     color: "#9b0612"
@@ -154,12 +154,12 @@
     - Goggles
     - Armor
     - Gloves
-    radio: UPP
+    radio: SPP
     minimapBackground:
       sprite: /Textures/_RMC14/Interface/map_blips.rsi
       state: background_spp
     canSupplyDrop: false
-    group: UPP
+    group: SPP
     leaderIcon:
       sprite: _RMC14/Interface/cm_job_icons.rsi
       state: upp_sl_a
@@ -238,7 +238,7 @@
     - Goggles
     - Armor
     - Gloves
-    radio: TWE
+    radio: TSE
     minimapBackground:
       sprite: /Textures/_RMC14/Interface/map_blips.rsi
       state: background_twe
@@ -269,7 +269,7 @@
     - Goggles
     - Armor
     - Gloves
-    radio: TWE
+    radio: TSE
     minimapBackground:
       sprite: /Textures/_RMC14/Interface/map_blips.rsi
       state: background_twe
@@ -300,7 +300,7 @@
     - Goggles
     - Armor
     - Gloves
-    radio: TWE
+    radio: TSE
     minimapBackground:
       sprite: /Textures/_RMC14/Interface/map_blips.rsi
       state: background_para

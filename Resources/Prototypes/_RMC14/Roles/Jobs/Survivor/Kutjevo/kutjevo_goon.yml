@@ -5,7 +5,7 @@
   description: cm-job-description-survivor
   startingGear: RMCGearSurvivorKutjevoGoon
   hasIcon: true
-  spawnMenuRoleName: We-Yu Goon (Kutjevo Survivor)
+  spawnMenuRoleName: We-Ya Goon (Kutjevo Survivor)
 
 - type: startingGear
   parent: RMCGearSurvivorGoon

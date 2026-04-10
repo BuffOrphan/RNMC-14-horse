@@ -107,7 +107,7 @@
 - type: entity
   parent: RMCPouchMedkit
   id: RMCPouchMedkitFillSPP
-  suffix: Filled, UPP
+  suffix: Filled, SPP
   components:
   - type: StorageFill
     contents:

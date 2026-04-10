@@ -1,8 +1,8 @@
 ﻿- type: job
   parent: CMJobBase
   id: RMCSPPEngineer
-  name: rmc-job-name-upp-engineer
-  description: rmc-job-description-upp-engineer
+  name: rmc-job-name-spp-engineer
+  description: rmc-job-description-spp-engineer
   playTimeTracker: CMJobSPPEngineer
   ranks:
     RMCRankSPPMladshiySerzhant: []
@@ -12,13 +12,13 @@
   accessGroups:
   - Colonist
   - CombatTech
-  spawnMenuRoleName: UPP Sapper
+  spawnMenuRoleName: SPP Sapper
   special:
   - !type:AddComponentSpecial
     components:
     - type: NpcFactionMember
       factions:
-      - UPP
+      - SPP
     - type: Skills
       skills:
         RMCSkillConstruction: 2
@@ -30,12 +30,12 @@
         RMCSkillVehicles: 1
     - type: SquadArmorWearer
     - type: JobPrefix
-      prefix: rmc-job-prefix-upp-engineer
+      prefix: rmc-job-prefix-spp-engineer
   hidden: true
 
 - type: entity
   id: RMCRandomHumanoidSPPEngineerHostile
-  name: upp ghost role engineer
+  name: spp ghost role engineer
   suffix: Spawner, Player, Hostile
   components:
   - type: Sprite
@@ -46,7 +46,7 @@
 
 - type: entity
   id: RMCRandomHumanoidSPPEngineerFriendly
-  name: upp ghost role engineer
+  name: spp ghost role engineer
   suffix: Spawner, Player, Friendly
   components:
   - type: Sprite
@@ -60,9 +60,9 @@
   id: RMCSPPEngineer
   components:
   - type: GhostRole
-    name: rmc-ghost-name-upp-hostile-engineer
-    description: rmc-ghost-role-information-upp-hostile-description
-    rules: rmc-ghost-role-information-upp-rules
+    name: rmc-ghost-name-spp-hostile-engineer
+    description: rmc-ghost-role-information-spp-hostile-description
+    rules: rmc-ghost-role-information-spp-rules
     reregister: false
     job: RMCSPPEngineer
     raffle:
@@ -79,9 +79,9 @@
   id: RMCSPPEngineerFriendly
   components:
   - type: GhostRole
-    name: rmc-ghost-name-upp-friendly-engineer
-    description: rmc-ghost-role-information-upp-friendly-description
-    rules: rmc-ghost-role-information-upp-rules
+    name: rmc-ghost-name-spp-friendly-engineer
+    description: rmc-ghost-role-information-spp-friendly-description
+    rules: rmc-ghost-role-information-spp-rules
     reregister: false
     job: RMCSPPEngineer
     raffle:

@@ -5,7 +5,7 @@
   description: rmc-ghost-role-information-rcm-description
   playTimeTracker: RMCJobRoyalMajor
   ranks:
-    RMCRankTWEMajor: [ ]
+    RMCRankTSEMajor: [ ]
   startingGear: RMCGearRoyalMajor
   icon: "RMCJobIconRoyalMajor"
   joinNotifyCrew: false
@@ -16,7 +16,7 @@
     - type: NpcFactionMember
       factions:
       - RoyalMarines
-      - TWE
+      - TSE
     - type: Skills
       skills:
         RMCSkillCqc: 3

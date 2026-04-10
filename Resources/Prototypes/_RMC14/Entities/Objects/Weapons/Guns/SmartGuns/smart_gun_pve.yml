@@ -184,7 +184,7 @@
   parent: RMCSmartGunPVENoCamo
   id: RMCSmartGunPMCPVE
   name: ML79A heavy support gun
-  description: The actual firearm in the Support Gun System, modified for We-Yu PMCs. Essentially a heavy, mobile machinegun.
+  description: The actual firearm in the Support Gun System, modified for We-Ya PMCs. Essentially a heavy, mobile machinegun.
   suffix: PVE, PMC
   components:
   - type: Sprite

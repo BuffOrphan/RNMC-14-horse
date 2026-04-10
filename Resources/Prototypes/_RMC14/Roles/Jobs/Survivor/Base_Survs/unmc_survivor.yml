@@ -1,15 +1,15 @@
 - type: job
   parent: RMCSurvivorMilitary
-  id: CMSurvivorUSCM
-  name: cm-job-name-survivor-uscm
+  id: CMSurvivorUNMC
+  name: cm-job-name-survivor-unmc
   description: cm-job-description-survivor
-  playTimeTracker: CMJobSurvivorUSCM
-  spawnMenuRoleName: USCM Remnant (Survivor)
+  playTimeTracker: CMJobSurvivorUNMC
+  spawnMenuRoleName: UNMC Remnant (Survivor)
   ranks:
     RMCRankPrivateFirstClass: []
   accessGroups:
   - Colonist
-  startingGear: RMCGearSurvivorUSCM
+  startingGear: RMCGearSurvivorUNMC
   special:
   - !type:AddComponentSpecial
     components:
@@ -32,7 +32,7 @@
 
 - type: startingGear
   parent: RMCGearSurvivorBaseNoBackpack
-  id: RMCGearSurvivorUSCM
+  id: RMCGearSurvivorUNMC
   equipment:
     id: CMDogtagRifleman
     jumpsuit: JumpsuitMarine
@@ -45,16 +45,16 @@
 
 - type: entity
   parent: CMSpawnPointJobBase
-  id: RMCSpawnPointSurvivorUSCM
-  name: survivor uscm spawn point
+  id: RMCSpawnPointSurvivorUNMC
+  name: survivor unmc spawn point
   components:
   - type: SpawnPoint
-    job_id: CMSurvivorUSCM
+    job_id: CMSurvivorUNMC
   - type: Sprite
     layers:
     - sprite: _RMC14/Markers/landmarks.rsi
       state: surv
 
 - type: playTimeTracker
-  id: CMJobSurvivorUSCM
+  id: CMJobSurvivorUNMC
   isHumanoid: true

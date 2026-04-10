@@ -3,7 +3,7 @@
   id: RMCSPPSurplusPVE
   name: H-Tech Surplus Uniform Vendor
   description: An automated supply rack hooked up to a small storage of standard UPP uniforms.
-  suffix: PVE, UPP
+  suffix: PVE, SPP
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/spp_surplus.rsi
@@ -15,18 +15,18 @@
     - name: Standard Equipment
       entries:
       - id: CMBootsBlack
-        name: UPP Combat Boots
+        name: SPP Combat Boots
         amount: 15
       - id: CMJumpsuitSPP
-        name: UPP Uniform
+        name: SPP Uniform
         amount: 15
       - id: CMHandsBlackMarine
-        name: UPP Combat Gloves
+        name: SPP Combat Gloves
         amount: 15
       - id: RMCHeadsetSPP
-        name: UPP Radio Headset
+        name: SPP Radio Headset
         amount: 15
-      - id: RMCM5CameraGear #todo, upp cam headsets
+      - id: RMCM5CameraGear #todo, spp cam headsets
         name: M5 Pattern Camera Headset
         amount: 15
       - id: CMHeadCapSPP
@@ -60,7 +60,7 @@
         amount: 15
     - name: Backpack
       entries:
-      - id: CMBackpackMarine #todo, upp backpacks
+      - id: CMBackpackMarine #todo, spp backpacks
         amount: 15
       - id: CMBackpackMarineTech
         amount: 15
@@ -76,15 +76,15 @@
       entries:
       - id: RMCBeltSPPBrown
         amount: 15
-      - id: RMCBeltGrenade #todo upp grenade rigs
+      - id: RMCBeltGrenade #todo spp grenade rigs
         amount: 10
       - id: RMCBeltHolsterPistolSPP
         amount: 15
-      - id: RMCBeltHolsterRevolver #todo upp revolver belts
+      - id: RMCBeltHolsterRevolver #todo spp revolver belts
         amount: 15
-      - id: RMCM82FHolster #todo upp flare belts
+      - id: RMCM82FHolster #todo spp flare belts
         amount: 5
-      - id: RMCBeltUtilityGeneral #todo upp gen pouch belts
+      - id: RMCBeltUtilityGeneral #todo spp gen pouch belts
         amount: 5
     - name: Pouches
       entries:
@@ -144,7 +144,7 @@
 - type: entity
   parent: ColMarTechUtilities
   id: RMCSPPUtilitiesPVE
-  suffix: PVE, UPP
+  suffix: PVE, SPP
   name: H-Tech Automated Utilities Squad Vendor
   description: An automated supply rack hooked up to a small storage of various utilities and tools.
   components:
@@ -160,7 +160,7 @@
       - id: RMCMRESPP
         name: MRE
         amount: 5
-      - id: RMCBoxMRE # TODO RMC14 - UPP MRE
+      - id: RMCBoxMRE # TODO RMC14 - SPP MRE
         name: MRE Box
         amount: 1
     - name: Medical
@@ -208,7 +208,7 @@
       - id: RMCBoxFlashlights
         name: Box of Flashlights
         amount: 1
-      - id: RMCBoxPackFlare #todo upp flares
+      - id: RMCBoxPackFlare #todo spp flares
         name: Box of Flares
         amount: 1
       - id: CMPackFlare
@@ -221,7 +221,7 @@
         amount: 2
       - id: RMCWeaponPistolT73
         amount: 2
-      - id: RMCWeaponPistolM82F #todo upp flare gun
+      - id: RMCWeaponPistolM82F #todo spp flare gun
         amount: 1
     - name: Miscellaneous
       entries:
@@ -233,12 +233,12 @@
         amount: 1
       - id: CMRollerBedSpawnFolded
         amount: 2
-      - id: RMCScabbardMacheteFilled #todo upp machete scabbard
+      - id: RMCScabbardMacheteFilled #todo spp machete scabbard
         name: Machete Scabbard (Full)
         amount: 5
       - id: RMCAttachmentRailFlashlight
         amount: 5
       - id: RMCAttachmentTwoPointSling
         amount: 5
-      - id: RMCM5Bayonet #todo upp knife
+      - id: RMCM5Bayonet #todo spp knife
         amount: 25

@@ -24,7 +24,7 @@
     - name: Prepared Meals
       entries:
       - id: CMMRE
-        name: USCM Meal Ready to Eat
+        name: UNMC Meal Ready to Eat
         amount: 15
       - id: CMMarinePreparedMealChicken
         amount: 15
@@ -68,8 +68,8 @@
   parent: ColMarTechFood
   id: RMCNutriCoVendorRCM
   suffix: PVE
-  name: We-Yu Section AutoChef
-  description: A repurposed NutriCo machine refilled with recipes and components for Three Suns Empire cuisine by Weyland-Yutani. Equally as inedible as its Nations counterpart, but at least it looks more appealing. Slightly.
+  name: We-Ya Section AutoChef
+  description: A repurposed NutriCo machine refilled with recipes and components for Three Suns Empire cuisine by Weston-Yamada. Equally as inedible as its Nations counterpart, but at least it looks more appealing. Slightly.
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/NutriCo/food.rsi
@@ -79,7 +79,7 @@
     sections:
     - name: Prepared Meals
       entries:
-      - id: RMCMRETWE
+      - id: RMCMRETSE
         amount: 15
       - id: RMCMarinePreparedMealRCMFish
         amount: 15
@@ -111,7 +111,7 @@
   parent: RMCNutriCoVendor
   id: RMCVendorNutriCoFoodSPP
   name: food dispenser
-  suffix: UPP
+  suffix: SPP
   description: A food dispenser, capable of distributing food containing all the essential vitamins and nutrients anyone could ever need.
   components:
   - type: CMAutomatedVendor
@@ -120,7 +120,7 @@
     - name: Prepared Meals
       entries:
       - id: RMCMRESPP
-        name: UPP Combat Ration
+        name: SPP Combat Ration
         amount: 15
       - id: RMCMarinePreparedMealSPPBanush
         amount: 15
@@ -141,7 +141,7 @@
       - id: RMCMarinePreparedMealSPPWursts
         amount: 15
       - id: RMCSurvivalRationSPP
-        name: UPP Survival Ration
+        name: SPP Survival Ration
         amount: 15
     - name: Flasks
       entries:
@@ -286,7 +286,7 @@
   parent: ColMarTechBaseAnchorable
   id: CMVendorChess
   name: Chess-O-Mat
-  description: In 2107 Red Star Drinks, a UPP-CA (Colony Administration) affiliated corporation ran a promotional sweepstakes for drinkers who had found special codes on the inside of the caps of a limited run of Red Star Vodka, shipping them a Chess-O-Mat with unlimited refills.
+  description: In 2107 Red Star Drinks, a SPP-CA (Colony Administration) affiliated corporation ran a promotional sweepstakes for drinkers who had found special codes on the inside of the caps of a limited run of Red Star Vodka, shipping them a Chess-O-Mat with unlimited refills.
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/chessomat.rsi

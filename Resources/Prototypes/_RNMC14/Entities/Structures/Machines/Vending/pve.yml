@@ -5,7 +5,7 @@
   id: RMCUnTechSurplusPVE
   name: UnTech Surplus Uniform Vendor
   description: An automated supply rack hooked up to a small storage of standard UPP uniforms.
-  suffix: PVE, UPP
+  suffix: PVE, SPP
   components:
   - type: Sprite
     sprite: _RNMC14/Structures/Machines/VendingMachines/UnTech/uniformvendor.rsi
@@ -63,7 +63,7 @@
     - name: Backpack
       entries:
       - id: RMCSatchelSPP
-        name: UPP Satchel
+        name: SPP Satchel
         amount: 15
     - name: Restricted Backpack
       entries:
@@ -137,7 +137,7 @@
   id: RMCUnTechUtilitiesPVE
   name: UnTech Automated Utilities Squad Vendor
   description: An automated supply rack hooked up to a small storage of various utilities and tools. Can be accessed by any UPP Rifleman.
-  suffix: PVE, UPP
+  suffix: PVE, SPP
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/prep.rsi

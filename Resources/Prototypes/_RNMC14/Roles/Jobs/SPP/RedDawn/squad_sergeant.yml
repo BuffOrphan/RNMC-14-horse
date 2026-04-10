@@ -23,7 +23,7 @@
     components:
     - type: NpcFactionMember
       factions:
-      - UPP
+      - SPP
     - type: DemoSpecWhitelist
     - type: GrenadeSpecWhitelist
     - type: ScoutWhitelist

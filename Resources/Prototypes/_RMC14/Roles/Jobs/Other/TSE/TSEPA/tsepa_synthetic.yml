@@ -1,17 +1,17 @@
-# TWEPA Synthetic
+# TSEPA Synthetic
 - type: job
   parent: CMJobBase
-  id: RMCJobTWEPASynthetic
+  id: RMCJobTSEPASynthetic
   name: rmc-job-name-tsepa-synth
   description: rmc-job-description-tsepa-synth
-  playTimeTracker: RMCJobTWEPASynthetic
+  playTimeTracker: RMCJobTSEPASynthetic
   ranks:
-    RMCRankTWEPAConstable: [ ]
-  startingGear: RMCGearTWEPASynthetic
-  icon: "RMCJobIconTWEPASynth"
+    RMCRankTSEPAConstable: [ ]
+  startingGear: RMCGearTSEPASynthetic
+  icon: "RMCJobIconTSEPASynth"
   joinNotifyCrew: false
   accessGroups:
-  - ColonistTWEPAInspector
+  - ColonistTSEPAInspector
   - Synth
   special:
   - !type:AddComponentSpecial
@@ -37,7 +37,7 @@
         RMCSkillDomestics: 2
     - type: NpcFactionMember
       factions:
-      - TWE
+      - TSE
     - type: DemoSpecWhitelist
     - type: GrenadeSpecWhitelist
     - type: ScoutWhitelist
@@ -65,38 +65,38 @@
   hidden: true
 
 - type: startingGear
-  id: RMCGearTWEPASynthetic
+  id: RMCGearTSEPASynthetic
   equipment:
-    head: RMCHeadBeretTWEPA
-    ears: RMCHeadsetTWEPA
-    jumpsuit: RMCJumpsuitTWEPA
-    outerClothing: RMCCoatTWEPAHighVisVest
+    head: RMCHeadBeretTSEPA
+    ears: RMCHeadsetTSEPA
+    jumpsuit: RMCJumpsuitTSEPA
+    outerClothing: RMCCoatTSEPAHighVisVest
     gloves: RMCHandsVeteran
     shoes: CMBootsBlackFilled
-    id: RMCIDCardTWEPASilverGold
-    back: RMCSatchelTWEPA
+    id: RMCIDCardTSEPASilverGold
+    back: RMCSatchelTSEPA
 
 - type: entity
   parent: CMSpawnPointJobBase
-  id: RMCSpawnPointTWEPASynthetic
+  id: RMCSpawnPointTSEPASynthetic
   name: tsepa synthetic spawn point
   components:
   - type: SpawnPoint
-    job_id: RMCJobTWEPASynthetic
+    job_id: RMCJobTSEPASynthetic
   - type: Sprite
     layers:
     - sprite: Markers/jobs.rsi
       state: green
-    - sprite: _RMC14/Objects/Clothing/OuterClothing/TWE/TWEPA/highvis_vest.rsi
+    - sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/highvis_vest.rsi
       state: icon
 
 - type: playTimeTracker
-  id: RMCJobTWEPASynthetic
+  id: RMCJobTSEPASynthetic
   isHumanoid: true
 
 - type: jobIcon
   parent: CMJobIconBase
-  id: RMCJobIconTWEPASynth
+  id: RMCJobIconTSEPASynth
   icon:
     sprite: _RMC14/Interface/cm_job_icons.rsi
     state: tse_pasynth

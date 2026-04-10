@@ -119,23 +119,23 @@
 
 - type: entity
   parent: CMAirlockGlassSecurity
-  id: RMCAirlockGlassSecurityLockedTWEPA
-  suffix: TWEPA, Colony, Glass, Locked
+  id: RMCAirlockGlassSecurityLockedTSEPA
+  suffix: TSEPA, Colony, Glass, Locked
   components:
   - type: AccessReader
-    access: [["RMCAccessTWEPA"], ["CMAccessColonyCommand"]]
+    access: [["RMCAccessTSEPA"], ["CMAccessColonyCommand"]]
 
 - type: entity
   parent: CMAirlockSecurity
-  id: RMCAirlockSecurityLockedTWEPA
-  suffix: TWEPA, Colony, Solid, Locked
+  id: RMCAirlockSecurityLockedTSEPA
+  suffix: TSEPA, Colony, Solid, Locked
   components:
   - type: AccessReader
-    access: [["RMCAccessTWEPA"], ["CMAccessColonyCommand"]]
+    access: [["RMCAccessTSEPA"], ["CMAccessColonyCommand"]]
 
 - type: entity
-  parent: RMCAirlockGlassSecurityLockedTWEPA
-  id: RMCAirlockGlassSecurityLockedTWEPAAlt
+  parent: RMCAirlockGlassSecurityLockedTSEPA
+  id: RMCAirlockGlassSecurityLockedTSEPAAlt
   name: airlock
   components:
   - type: Sprite
@@ -143,47 +143,47 @@
 
 - type: entity
   parent: CMAirlockGlassSecurity
-  id: RMCAirlockGlassSecurityLockedTWEPABrig
-  suffix: TWEPA Brig, Colony, Glass, Locked
+  id: RMCAirlockGlassSecurityLockedTSEPABrig
+  suffix: TSEPA Brig, Colony, Glass, Locked
   components:
   - type: AccessReader
-    access: [["RMCAccessTWEPABrig"], ["CMAccessColonyCommand"]]
+    access: [["RMCAccessTSEPABrig"], ["CMAccessColonyCommand"]]
 
 - type: entity
   parent: CMDoubleDoorSecurityGlass
-  id: RMCDoubleDoorSecurityGlassLockedTWEPA
-  suffix: TWEPA, Glass, Locked
+  id: RMCDoubleDoorSecurityGlassLockedTSEPA
+  suffix: TSEPA, Glass, Locked
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessTWEPA" ], [ "RMCAccessCommand" ] ]
+    access: [ [ "RMCAccessTSEPA" ], [ "RMCAccessCommand" ] ]
 
 - type: entity
-  parent: RMCDoubleDoorSecurityGlassLockedTWEPA
-  id: RMCDoubleDoorSecurityGlassLockedTWEPAAlt
+  parent: RMCDoubleDoorSecurityGlassLockedTSEPA
+  id: RMCDoubleDoorSecurityGlassLockedTSEPAAlt
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Doors/Airlocks/Double/hybrisa_glass.rsi
 
 - type: entity
   parent: CMAirlockMaint
-  id: RMCAirlockMaintLockedTWEPA
-  suffix: TWEPA, Maint, Locked
+  id: RMCAirlockMaintLockedTSEPA
+  suffix: TSEPA, Maint, Locked
   components:
   - type: AccessReader
-    access: [["RMCAccessTWEPA"], ["CMAccessColonyCommand"]]
+    access: [["RMCAccessTSEPA"], ["CMAccessColonyCommand"]]
 
 - type: entity
   parent: RMCAirlockHybrisaPersonal
-  id: RMCAirlockHybrisaPersonalLockedTWEPA
-  suffix: TWEPA, Solid, Locked
+  id: RMCAirlockHybrisaPersonalLockedTSEPA
+  suffix: TSEPA, Solid, Locked
   components:
   - type: AccessReader
-    access: [["RMCAccessTWEPA"], ["CMAccessColonyCommand"]]
+    access: [["RMCAccessTSEPA"], ["CMAccessColonyCommand"]]
 
 - type: entity
   parent: RMCAirlockHybrisaPersonal
-  id: RMCAirlockHybrisaPersonalLockedTWEPABrig
-  suffix: TWEPA Brig, Solid, Locked
+  id: RMCAirlockHybrisaPersonalLockedTSEPABrig
+  suffix: TSEPA Brig, Solid, Locked
   components:
   - type: AccessReader
-    access: [["RMCAccessTWEPABrig"], ["CMAccessColonyCommand"]]
+    access: [["RMCAccessTSEPABrig"], ["CMAccessColonyCommand"]]

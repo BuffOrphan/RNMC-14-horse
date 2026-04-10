@@ -14,7 +14,7 @@
         - type: NpcFactionMember
           factions:
             - RoyalMarines
-            - TWE
+            - TSE
         - type: Skills
           preset: RMCSkillPresetParaLeader
         - type: RMCAllowSuitStorage

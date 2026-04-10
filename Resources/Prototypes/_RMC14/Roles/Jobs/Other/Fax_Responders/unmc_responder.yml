@@ -1,12 +1,12 @@
 - type: job
   parent: CMJobBase
-  id: RMCUSCMResponder
-  name: rmc-job-name-uscm-responder
-  description: rmc-job-description-uscm-responder
-  playTimeTracker: CMJobUSCMResponder
+  id: RMCUNMCResponder
+  name: rmc-job-name-unmc-responder
+  description: rmc-job-description-unmc-responder
+  playTimeTracker: CMJobUNMCResponder
   ranks:
     RMCRankFirstLT: []
-  startingGear: RMCGearUSCMResponder
+  startingGear: RMCGearUNMCResponder
   icon: "CMJobIconEmpty"
   joinNotifyCrew: false
   supervisors: cm-job-supervisors-staff
@@ -35,13 +35,13 @@
   hidden: true
 
 - type: startingGear
-  id: RMCGearUSCMResponder
+  id: RMCGearUNMCResponder
   equipment:
     jumpsuit: CMJumpsuitXOFormal
     outerClothing: CMCoatXOFormal
     shoes: RMCShoesLaceup
     head: RMCHeadCapFlippable
-    id: RMCIDCardUSCMResponder
+    id: RMCIDCardUNMCResponder
     ears: CMHeadsetHighCommand
     eyes: RMCGlassesMedicalHUDGlasses
     back: CMSatchelFilledFaxResponder
@@ -53,9 +53,9 @@
 
 - type: entity
   parent: CMIDCardGold
-  id: RMCIDCardUSCMResponder
-  name: USCM Communications Officer ID card
-  description: Issued to the fax operators of USCM Regional Command.
+  id: RMCIDCardUNMCResponder
+  name: UNMC Communications Officer ID card
+  description: Issued to the fax operators of UNMC Regional Command.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/gold_id.rsi
@@ -64,8 +64,8 @@
     - idcard
     sprite: _RMC14/Objects/CMIDs/gold_id.rsi
   - type: PresetIdCard
-    job: RMCUSCMResponder
+    job: RMCUNMCResponder
 
 - type: playTimeTracker
-  id: CMJobUSCMResponder
+  id: CMJobUNMCResponder
 

@@ -49444,7 +49444,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -2.5,-44.5
       parent: 1
-- proto: RMCBannerTWE
+- proto: RMCBannerTSE
   entities:
   - uid: 2084
     components:
@@ -63872,7 +63872,7 @@ entities:
     - type: Transform
       pos: -25.037804,-39.28954
       parent: 1
-- proto: RMCMRETWE
+- proto: RMCMRETSE
   entities:
   - uid: 2224
     components:
@@ -66551,7 +66551,7 @@ entities:
   - uid: 1451
     components:
     - type: MetaData
-      name: TWE Hanger
+      name: TSE Hanger
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -2.5,-13.5
@@ -66559,7 +66559,7 @@ entities:
   - uid: 1452
     components:
     - type: MetaData
-      name: TWE Hanger
+      name: TSE Hanger
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -2.5,-12.5
@@ -66889,7 +66889,7 @@ entities:
   - uid: 6403
     components:
     - type: MetaData
-      name: UPP Landing Pad
+      name: SPP Landing Pad
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -9.5,-66.5
@@ -66897,7 +66897,7 @@ entities:
   - uid: 6404
     components:
     - type: MetaData
-      name: UPP Landing Pad
+      name: SPP Landing Pad
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -9.5,-67.5
@@ -66905,14 +66905,14 @@ entities:
   - uid: 6405
     components:
     - type: MetaData
-      name: UPP Landing Pad
+      name: SPP Landing Pad
     - type: Transform
       pos: -18.5,-45.5
       parent: 1
   - uid: 6406
     components:
     - type: MetaData
-      name: UPP Landing Pad
+      name: SPP Landing Pad
     - type: Transform
       pos: -17.5,-45.5
       parent: 1
@@ -67181,7 +67181,7 @@ entities:
   - uid: 8938
     components:
     - type: MetaData
-      name: USCM LZ Lockdown
+      name: UNMC LZ Lockdown
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -55.5,-113.5
@@ -67521,7 +67521,7 @@ entities:
   - uid: 1450
     components:
     - type: MetaData
-      name: TWE Hanger
+      name: TSE Hanger
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -2.98405,-14.615191
@@ -67570,7 +67570,7 @@ entities:
   - uid: 6407
     components:
     - type: MetaData
-      name: UPP Landing Pad
+      name: SPP Landing Pad
     - type: Transform
       pos: -19.40208,-45.673073
       parent: 1
@@ -67579,7 +67579,7 @@ entities:
   - uid: 6408
     components:
     - type: MetaData
-      name: UPP Landing Pad
+      name: SPP Landing Pad
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -10.056671,-64.62393
@@ -67629,7 +67629,7 @@ entities:
   - uid: 8939
     components:
     - type: MetaData
-      name: USCM LZ Lockdown
+      name: UNMC LZ Lockdown
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -55.936275,-110.84211
@@ -68553,7 +68553,7 @@ entities:
     - type: Transform
       pos: -25.5,-130.5
       parent: 1
-- proto: RMCSecureCaseStrappedTWEMRE
+- proto: RMCSecureCaseStrappedTSEMRE
   entities:
   - uid: 2303
     components:
@@ -69086,7 +69086,7 @@ entities:
     - type: Transform
       pos: -17.5,-56.5
       parent: 1
-- proto: RMCSpawnerERTShuttleTWE
+- proto: RMCSpawnerERTShuttleTSE
   entities:
   - uid: 10114
     components:

@@ -84,12 +84,12 @@
 - type: entity
   parent: RMCMapInsertTrijentBase
   id: RMCMapInsertTrijentCrashlandingSPPBar
-  name: Crashlanding UPP Bar
+  name: Crashlanding SPP Bar
   suffix: Insert Trijent
   components:
   - type: MapInsert
     variations:
-    - spawn: "/Maps/_RMC14/Inserts/Trijent/crashlanding-upp-bar.yml"
+    - spawn: "/Maps/_RMC14/Inserts/Trijent/crashlanding-spp-bar.yml"
       probability: 0.4
       offset: 0,-2.0
       nightmareScenario: spp_bar

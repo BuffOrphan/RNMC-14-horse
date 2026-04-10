@@ -58,7 +58,7 @@
   parent: ArmorHelmetM10
   id: RMCArmorHelmetM10SO
   name: M10 pattern officer helmet
-  description: A special variant of the M10 Pattern Helmet worn by Officers of the USCM, attracting the attention of the grunts and sniper fire alike.
+  description: A special variant of the M10 Pattern Helmet worn by Officers of the UNMC, attracting the attention of the grunts and sniper fire alike.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/m10/officer/jungle.rsi
@@ -210,7 +210,7 @@
   parent: ArmorHelmetM10
   id: CMArmorHelmetM11CCO
   name: M11C pattern commanding officer helmet
-  description: A special M11 Pattern Helmet worn by Commanding Officers of the USCM. It reads on the label, 'The difference between an open-casket and closed-casket funeral. Wear on head for best results.'.
+  description: A special M11 Pattern Helmet worn by Commanding Officers of the UNMC. It reads on the label, 'The difference between an open-casket and closed-casket funeral. Wear on head for best results.'.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/m11/co.rsi
@@ -242,7 +242,7 @@
   parent: CMArmorHelmetM11CCO
   id: CMArmorHelmetM11CGeneral
   name: M11C pattern ceremonial helmet
-  description: A special M11 pattern ceremonial helmet worn occasionally by general officers of the USCM.
+  description: A special M11 pattern ceremonial helmet worn occasionally by general officers of the UNMC.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/m11/ceremonial.rsi
@@ -382,7 +382,7 @@
   parent: ArmorHelmetM10
   id: CMArmorHelmetM35
   name: M35 pyrotechnician helmet
-  description: A helmet designed for USCM Pyrotechnicians.
+  description: A helmet designed for UNMC Pyrotechnicians.
   components:
   - type: Corrodible
     isCorrodible: false

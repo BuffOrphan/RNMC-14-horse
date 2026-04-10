@@ -11,9 +11,9 @@ cmd-rmcgivecommendation-help = Usage: rmcgivecommendation <giverName> <receiver>
   roundId: round number, defaults to current round (optional)
   
   Examples:
-    rmcgivecommendation "USCM High Command" PlayerName "John Doe" medal 1 "For exceptional bravery"
+    rmcgivecommendation "UNMC High Command" PlayerName "John Doe" medal 1 "For exceptional bravery"
     rmcgivecommendation "The Queen Mother" XenoPlayer "XX-Alpha" jelly 2 "For defending the hive"
-    rmcgivecommendation "USCM High Command" PlayerName "John Doe" medal 1 "For exceptional bravery" 42
+    rmcgivecommendation "UNMC High Command" PlayerName "John Doe" medal 1 "For exceptional bravery" 42
 
 # Errors
 cmd-rmcgivecommendation-invalid-arguments = Incorrect number of arguments!

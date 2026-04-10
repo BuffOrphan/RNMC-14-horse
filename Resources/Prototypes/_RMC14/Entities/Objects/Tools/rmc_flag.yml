@@ -32,13 +32,13 @@
   - type: RMCLoreExaminable
     content: rmc-lore-examinable-un-flag
     factions:
-    - USCM
+    - UNMC
 
 - type: entity
   parent: RMCFlagCarriableBase
-  id: RMCFlagCarriableUSCM
-  name: USCM flag
-  description: "The flag of the USCM." # This one looks ready to be planted into the ground."
+  id: RMCFlagCarriableUNMC
+  name: UNMC flag
+  description: "The flag of the UNMC." # This one looks ready to be planted into the ground."
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Flags/uscm_flag.rsi
+    sprite: _RMC14/Objects/Flags/unmc_flag.rsi

@@ -102,8 +102,8 @@
     head: RMCHeadBeanieGray
 
 - type: loadout
-  id: USCMHeadsetRMC
+  id: UNMCHeadsetRMC
   cost: 2
   storage:
     back:
-    - RMCHeadUSCMHeadset
+    - RMCHeadUNMCHeadset

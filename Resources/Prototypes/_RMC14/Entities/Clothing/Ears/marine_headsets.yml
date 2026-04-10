@@ -467,7 +467,7 @@
   parent: RMCHeadsetShip
   id: RMCHeadsetGoldenArrow
   name: sun riders radio headset
-  description: This is used by the USCM Sun Riders Platoon.
+  description: This is used by the UNMC Sun Riders Platoon.
   components:
   - type: Sprite
     state: delta_headset

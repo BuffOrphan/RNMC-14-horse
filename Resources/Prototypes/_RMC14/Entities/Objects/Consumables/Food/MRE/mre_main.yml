@@ -207,7 +207,7 @@
   - type: Sprite
     state: open_pizza
 
-# UPP survival ration
+# SPP survival ration
 
 - type: entity
   parent: CMMREFoodMain

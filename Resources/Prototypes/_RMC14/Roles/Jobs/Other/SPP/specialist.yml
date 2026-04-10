@@ -1,8 +1,8 @@
 ﻿- type: job
   parent: CMJobBase
   id: RMCSPPSpecialist
-  name: rmc-job-name-upp-specialist
-  description: rmc-job-description-upp-specialist
+  name: rmc-job-name-spp-specialist
+  description: rmc-job-description-spp-specialist
   playTimeTracker: CMJobSPPSpecialist
   ranks:
     RMCRankSPPSerzhant: []
@@ -12,13 +12,13 @@
   accessGroups:
   - Colonist
   - HospitalCorpsman
-  spawnMenuRoleName: UPP Specialist
+  spawnMenuRoleName: SPP Specialist
   special:
   - !type:AddComponentSpecial
     components:
     - type: NpcFactionMember
       factions:
-      - UPP
+      - SPP
     - type: Skills
       skills:
         RMCSkillCqc: 1
@@ -32,12 +32,12 @@
         RMCSkillSpecialistWeapons: 1
     - type: SquadArmorWearer
     - type: JobPrefix
-      prefix: rmc-job-prefix-upp-specialist
+      prefix: rmc-job-prefix-spp-specialist
   hidden: true
 
 - type: entity
   id: RMCRandomHumanoidSPPSpecialistHostile
-  name: upp ghost role specialist
+  name: spp ghost role specialist
   suffix: Spawner, Player, Hostile
   components:
   - type: Sprite
@@ -48,7 +48,7 @@
 
 - type: entity
   id: RMCRandomHumanoidSPPSpecialistFriendly
-  name: upp ghost role specialist
+  name: spp ghost role specialist
   suffix: Spawner, Player, Friendly
   components:
   - type: Sprite
@@ -62,9 +62,9 @@
   id: RMCSPPSpecialist
   components:
   - type: GhostRole
-    name: rmc-ghost-name-upp-hostile-specialist
-    description: rmc-ghost-role-information-upp-hostile-description
-    rules: rmc-ghost-role-information-upp-rules
+    name: rmc-ghost-name-spp-hostile-specialist
+    description: rmc-ghost-role-information-spp-hostile-description
+    rules: rmc-ghost-role-information-spp-rules
     reregister: false
     job: RMCSPPSpecialist
     raffle:
@@ -81,9 +81,9 @@
   id: RMCSPPSpecialistFriendly
   components:
   - type: GhostRole
-    name: rmc-ghost-name-upp-friendly-specialist
-    description: rmc-ghost-role-information-upp-friendly-description
-    rules: rmc-ghost-role-information-upp-rules
+    name: rmc-ghost-name-spp-friendly-specialist
+    description: rmc-ghost-role-information-spp-friendly-description
+    rules: rmc-ghost-role-information-spp-rules
     reregister: false
     job: RMCSPPSpecialist
     raffle:

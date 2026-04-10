@@ -179,7 +179,7 @@
   parent: CMPlushieBase
   id: RCMPlushieRounyLizard
   name: silly rouny plushie
-  description: A silly rouny plushie produced by the USCM to reduce stress in marines, shown to be highly effective when thrown into walls.
+  description: A silly rouny plushie produced by the UNMC to reduce stress in marines, shown to be highly effective when thrown into walls.
   components:
   - type: Sprite
     state: rouny_plushie

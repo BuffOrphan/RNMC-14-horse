@@ -1,7 +1,7 @@
 ﻿- type: job
   parent: CMJobBase
   id: RMCSPPCommandoLeader
-  name: rmc-job-name-upp-commando-leader
+  name: rmc-job-name-spp-commando-leader
   description: rmc-ghost-role-information-deathsquad-description
   playTimeTracker: CMJobSPPCommmandoLeader
   ranks:
@@ -11,13 +11,13 @@
   joinNotifyCrew: false
   accessGroups:
   - ShipMasterAccess
-  spawnMenuRoleName: UPP Commando Leader (!DEATHSQUAD!)
+  spawnMenuRoleName: SPP Commando Leader (!DEATHSQUAD!)
   special:
   - !type:AddComponentSpecial
     components:
     - type: NpcFactionMember
       factions:
-      - UPP
+      - SPP
     - type: Skills
       skills:
         RMCSkillConstruction: 2
@@ -40,12 +40,12 @@
     - type: MarineOrders
     - type: RMCPointing
     - type: JobPrefix
-      prefix: rmc-job-prefix-upp-commando-leader
+      prefix: rmc-job-prefix-spp-commando-leader
   hidden: true
 
 - type: entity
   id: RMCRandomHumanoidSPPCommandoLeader
-  name: DEATHSQUAD upp ghost role commando leader
+  name: DEATHSQUAD spp ghost role commando leader
   suffix: Spawner, Player
   components:
   - type: Sprite
@@ -59,9 +59,9 @@
   id: RMCSPPCommandoLeader
   components:
   - type: GhostRole
-    name: rmc-ghost-name-upp-commando-leader
+    name: rmc-ghost-name-spp-commando-leader
     description: rmc-ghost-role-information-deathsquad-description
-    rules: rmc-ghost-role-information-upp-rules
+    rules: rmc-ghost-role-information-spp-rules
     reregister: false
     job: RMCSPPCommandoLeader
     requirements:
@@ -94,8 +94,8 @@
   storage:
     back:
     - RMCMRESPP
-    - CMPacketGrenadeHighExplosiveFilled # TODO RMC14 - UPP White Phosphorus Grenade
-    - CMPacketGrenadeHighExplosiveFilled # TODO RMC14 - UPP White Phosphorus Grenade
+    - CMPacketGrenadeHighExplosiveFilled # TODO RMC14 - SPP White Phosphorus Grenade
+    - CMPacketGrenadeHighExplosiveFilled # TODO RMC14 - SPP White Phosphorus Grenade
     - CMCrowbar
     - RMCRangefinder
     - RMCHandcuffs

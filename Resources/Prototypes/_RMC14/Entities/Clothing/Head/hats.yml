@@ -64,8 +64,8 @@
 - type: entity
   parent: CMHeadBeret
   id: CMHeadBeretCMP
-  name: USCM Chief MP beret
-  description: A beret with the USCM Military Police insignia emblazoned on it. It shines with the glow of corrupt authority and a smudge of doughnut.
+  name: UNMC Chief MP beret
+  description: A beret with the UNMC Military Police insignia emblazoned on it. It shines with the glow of corrupt authority and a smudge of doughnut.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/beret_wo.rsi
@@ -137,7 +137,7 @@
 - type: entity
   parent: CMHeadBeret
   id: RMCHeadBeretGreen
-  name: USCM beret
+  name: UNMC beret
   suffix: Green
   components:
   - type: Sprite
@@ -362,8 +362,8 @@
 - type: entity
   parent: RMCHeadCapFlippable
   id: CMHeadCapOfficer
-  name: USCM officer cap
-  description: A hat usually worn by officers in the USCM. While it provides no protection, some officers wear it in the field to make themselves more recognisable.
+  name: UNMC officer cap
+  description: A hat usually worn by officers in the UNMC. While it provides no protection, some officers wear it in the field to make themselves more recognisable.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/cap_officer/jungle.rsi
@@ -381,8 +381,8 @@
 - type: entity
   parent: RMCHeadCapFlippable
   id: RMCHeadCapASO
-  name: USCM ASO cap
-  description: A hat usually worn by ASOs in the USCM. Provides no protection, but makes you look better when sorting papers.
+  name: UNMC ASO cap
+  description: A hat usually worn by ASOs in the UNMC. Provides no protection, but makes you look better when sorting papers.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/ASO/cap_aso.rsi
@@ -455,7 +455,7 @@
 - type: entity
   parent: CMHeadCapMP
   id: CMHeadFlapCap
-  name: USCM expedition cap
+  name: UNMC expedition cap
   description: It's a cap, with flaps. A patch stitched across the front reads "UNS ALMAYER".
   components:
   - type: Sprite
@@ -589,7 +589,7 @@
 - type: entity
   parent: CMHeadBeret
   id: RMCHeadBeretSquad
-  name: USCM squad beret
+  name: UNMC squad beret
   description: For those who want to show pride and have nothing to lose (in their head, at least).
   suffix: None
   components:
@@ -610,7 +610,7 @@
 - type: entity
   parent: CMHeadBeret
   id: RMCHeadBeretSquadAlpha
-  name: USCM squad beret
+  name: UNMC squad beret
   description: Often found atop heads, slightly less found on those still attached.
   suffix: Alpha
   components:
@@ -688,8 +688,8 @@
 - type: entity
   parent: CMHeadBeret
   id: RMCProvostCommandBeret
-  name: USCM provost command beret
-  description: A beret with the USCM Military Police insignia emblazoned on it.
+  name: UNMC provost command beret
+  description: A beret with the UNMC Military Police insignia emblazoned on it.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/pvciberet.rsi
@@ -756,10 +756,10 @@
 
 - type: entity
   parent: RMCHeadBeanie
-  id: RMCHeadBeanieTWE
+  id: RMCHeadBeanieTSE
   name: royal marine beanie
   description: A standard military beanie.
-  suffix: TWE
+  suffix: TSE
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Beanies/tse.rsi
@@ -789,7 +789,7 @@
   parent: RMCHeadRadiationHood
   id: RMCHeadTychoRadiationHood
   name: Tycho 4000 radiation protection hood
-  description: The burn-resistant hood for the Weyland-Yutani Tycho 4000 Radiation Protection Suit. It's lined with lead, and it's recommended you wear a rebreather or gas mask under it.
+  description: The burn-resistant hood for the Weston-Yamada Tycho 4000 Radiation Protection Suit. It's lined with lead, and it's recommended you wear a rebreather or gas mask under it.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/rad_hood_weya.rsi
@@ -805,8 +805,8 @@
 - type: entity
   parent: CMHeadBeret
   id: RMCHeadWeYaPilotCap
-  name: Weyland-Yutani Pilot cap
-  description: A dark peaked cap enscribed with the Weyland-Yutani 'Wings' logo. A formal cap for qualified civilian Pilots, akin to old Earth formal Pilots-wear.
+  name: Weston-Yamada Pilot cap
+  description: A dark peaked cap enscribed with the Weston-Yamada 'Wings' logo. A formal cap for qualified civilian Pilots, akin to old Earth formal Pilots-wear.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/weya_pilot_cap.rsi

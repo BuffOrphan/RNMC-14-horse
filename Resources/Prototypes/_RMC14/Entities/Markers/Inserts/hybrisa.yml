@@ -23,8 +23,8 @@
 
 - type: entity
   parent: RMCMapInsertHybrisaBase
-  id: RMCMapInsertHybrisaTWEAirbase
-  name: TWE Airbase
+  id: RMCMapInsertHybrisaTSEAirbase
+  name: TSE Airbase
   suffix: Insert Hybrisa
   components:
   - type: MapInsert
@@ -33,4 +33,4 @@
       probability: 1
       nightmareScenario: tse_airbase
 
-# todo: fix the TWE non-surv airbase map insert (armoury is wrong) and make it work with the surv spawn together system
+# todo: fix the TSE non-surv airbase map insert (armoury is wrong) and make it work with the surv spawn together system

@@ -13,7 +13,7 @@
       - type: NpcFactionMember
         factions:
           - RoyalMarines
-          - TWE
+          - TSE
       - type: RMCAllowSuitStorage
       - type: IntelRescueSurvivorObjective
       - type: MotionDetectorTracked
@@ -43,7 +43,7 @@
     eyes: RMCGlassesMedicalHUDGlasses
     belt: RMCMedicalL75RCMFillPara
     outerClothing: RMCArmorParaVest
-    suitstorage: RMCWeaponSMGPDW90TWE
+    suitstorage: RMCWeaponSMGPDW90TSE
 
 - type: entity
   parent: CMSpawnPointJobBase

@@ -2,7 +2,7 @@
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
   id: RMCWeaponRifleSSG45NoLock
   name: SSG-45 Assault Rifle
-  description: A hard-hitting, prototype assault rifle typically found in the hands of Weyland-Yutani’s PMC teams. Exclusively produced in corporate white.
+  description: A hard-hitting, prototype assault rifle typically found in the hands of Weston-Yamada’s PMC teams. Exclusively produced in corporate white.
   suffix: No ID Lock
   components:
   - type: Sprite

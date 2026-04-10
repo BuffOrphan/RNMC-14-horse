@@ -13,7 +13,7 @@
 - type: entity
   parent: RMCMapInsertSorokyneBase
   id: RMCMapInsertSorokyneSPPSOF
-  name: UPP SOF Dropship
+  name: SPP SOF Dropship
   components:
   - type: MapInsert
     variations:
@@ -24,7 +24,7 @@
 - type: entity
   parent: RMCMapInsertSorokyneBase
   id: RMCMapInsertSorokyneSPPSOFAlt
-  name: UPP SOF Supply Ship
+  name: SPP SOF Supply Ship
   components:
   - type: MapInsert
     variations:

@@ -1911,49 +1911,49 @@ entities:
         - node:
             angle: 1.5707963267948966 rad
             color: '#FF3B3BFF'
-            id: RMCDecalTWEBomber
+            id: RMCDecalTSEBomber
           decals:
             1155: -67,-12
         - node:
             angle: 4.71238898038469 rad
             color: '#FF3B3BFF'
-            id: RMCDecalTWEGPMG
+            id: RMCDecalTSEGPMG
           decals:
             1158: -56,-12
         - node:
             angle: 1.5707963267948966 rad
             color: '#FF3B3BFF'
-            id: RMCDecalTWESapper
+            id: RMCDecalTSESapper
           decals:
             1156: -67,-4
         - node:
             angle: 4.71238898038469 rad
             color: '#FF3B3BFF'
-            id: RMCDecalTWESectionLead
+            id: RMCDecalTSESectionLead
           decals:
             1160: -56,-7
         - node:
             angle: 1.5707963267948966 rad
             color: '#FF3B3BFF'
-            id: RMCDecalTWESniper
+            id: RMCDecalTSESniper
           decals:
             1157: -67,-8
         - node:
             angle: 4.71238898038469 rad
             color: '#FF3B3BFF'
-            id: RMCDecalTWETeamLead
+            id: RMCDecalTSETeamLead
           decals:
             1159: -56,-8
         - node:
             angle: 4.71238898038469 rad
             color: '#FF3B3BFF'
-            id: RMCDecalTWETroopCommander
+            id: RMCDecalTSETroopCommander
           decals:
             1161: -56,-3
         - node:
             angle: 4.71238898038469 rad
             color: '#FF3B3BFF'
-            id: RMCDecalTWETroopSergeant
+            id: RMCDecalTSETroopSergeant
           decals:
             1162: -56,-4
         - node:
@@ -9422,7 +9422,7 @@ entities:
     - type: Transform
       pos: -62.5,-28.5
       parent: 1
-- proto: CMFaxTWE
+- proto: CMFaxTSE
   entities:
   - uid: 465
     components:
@@ -25553,7 +25553,7 @@ entities:
   - uid: 3380
     components:
     - type: MetaData
-      desc: An advanced artificial intelligence system installed in the HMS Pratchett. Like many other military-grade AI systems, this one was built by We-Yu.
+      desc: An advanced artificial intelligence system installed in the HMS Pratchett. Like many other military-grade AI systems, this one was built by We-Ya.
       name: SHIVA v7.1
     - type: Transform
       pos: -42.5,-71.5
@@ -25773,7 +25773,7 @@ entities:
     - type: Transform
       pos: -45.29423,-21.95336
       parent: 1
-- proto: RMCBannerTWE
+- proto: RMCBannerTSE
   entities:
   - uid: 3416
     components:
@@ -25796,7 +25796,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -62.5,-10.5
       parent: 1
-- proto: RMCBannerTWEAlt
+- proto: RMCBannerTSEAlt
   entities:
   - uid: 3420
     components:
@@ -31126,7 +31126,7 @@ entities:
           givePrefix: null
           isAppendPrefix: False
           giveIcon: null
-          id: RMCMRETWE
+          id: RMCMRETSE
         - replaceSlot: null
           linkedEntries: []
           name: MRE Box
@@ -31668,7 +31668,7 @@ entities:
           givePrefix: null
           isAppendPrefix: False
           giveIcon: null
-          id: RMCMRETWE
+          id: RMCMRETSE
         - replaceSlot: null
           linkedEntries: []
           name: MRE Box
@@ -32210,7 +32210,7 @@ entities:
           givePrefix: null
           isAppendPrefix: False
           giveIcon: null
-          id: RMCMRETWE
+          id: RMCMRETSE
         - replaceSlot: null
           linkedEntries: []
           name: MRE Box
@@ -32752,7 +32752,7 @@ entities:
           givePrefix: null
           isAppendPrefix: False
           giveIcon: null
-          id: RMCMRETWE
+          id: RMCMRETSE
         - replaceSlot: null
           linkedEntries: []
           name: MRE Box
@@ -41848,7 +41848,7 @@ entities:
     - type: Transform
       pos: -39.5,-5.5
       parent: 1
-- proto: RMCPosterTWEPA1
+- proto: RMCPosterTSEPA1
   entities:
   - uid: 5918
     components:
@@ -42368,7 +42368,7 @@ entities:
           givePrefix: null
           isAppendPrefix: False
           giveIcon: null
-          id: RMCBeltHolsterPistolTWE
+          id: RMCBeltHolsterPistolTSE
         - replaceSlot: null
           linkedEntries: []
           name: null

@@ -1,17 +1,17 @@
-# UPP
+# SPP
 - type: entity
   parent: RMCOverwatchConsole
   id: RMCOverwatchConsoleSPP
-  suffix: UPP
+  suffix: SPP
   components:
   - type: OverwatchConsole
     canOrbitalBombardment: false
-    group: UPP
+    group: SPP
 
 - type: entity
   parent: RMCOverwatchConsoleSPP
   id: RMCOverwatchConsoleSPPRotating
-  suffix: UPP, Rotating
+  suffix: SPP, Rotating
   components:
   - type: Sprite
     overrideDir: South
