@@ -57,4 +57,11 @@ public sealed partial class GhillieSuitComponent : Component
 
     [DataField, AutoNetworkedField]
     public EntityUid? Action;
+    // RNMC start
+    [DataField, AutoNetworkedField]
+    public float NPCDetectionRange = 2;
+
+    [DataField, AutoNetworkedField]
+    public float DetectionRangeAddedOnShoot = 1;
+    // RNMC end
 }

@@ -17,12 +17,12 @@
   - type: GhostRole
     name: cm-job-name-xeno-queen
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Queen/queen.rsi
+    sprite: _RNMC14/Mobs/Xenos/Queen/queen.rsi
     layers:
     - map: [ "enum.XenoVisualLayers.Base" ]
       state: alive
     - map: [ "enum.XenoVisualLayers.Ovipositor" ]
-      sprite: _RMC14/Mobs/Xenonids/Queen/ovipositor.rsi
+      sprite: _RNMC14/Mobs/Xenos/Queen/ovipositor.rsi
     - map: [ "enum.RMCDamageVisualLayers.Base" ]
       visible: false
     - map: [ "enum.XenoInhandVisualLayers.Left" ]
@@ -298,12 +298,12 @@
   suffix: Cat Maid Queen
   components:
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Extras/Maid_queen/maid_queen.rsi
+    sprite: _RNMC14/Mobs/Xenos/Queen/queen_maid.rsi
     layers:
     - map: [ "enum.XenoVisualLayers.Base" ]
       state: alive
     - map: [ "enum.XenoVisualLayers.Ovipositor" ]
-      sprite: _RMC14/Mobs/Xenonids/Extras/Maid_queen/maid_ovipositor.rsi
+      sprite: _RNMC14/Mobs/Xenos/Queen/queen_maid/maid_ovipositor.rsi
     - map: [ "enum.RMCDamageVisualLayers.Base" ]
       visible: false
   - type: XenoStrain

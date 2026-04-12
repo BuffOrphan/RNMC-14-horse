@@ -166,6 +166,7 @@ public sealed class SharedGhillieSuitSystem : EntitySystem
             var activeInvisibility = EnsureComp<EntityActiveInvisibleComponent>(user);
             activeInvisibility.Opacity = comp.Opacity;
             activeInvisibility.DisableMobCollision = true;
+            activeInvisibility.NPCDetectionRange = comp.NPCDetectionRange; // RNMC14
             Dirty(user, activeInvisibility);
 
             turnInvisible.UncloakTime = _timing.CurTime;
@@ -252,6 +253,7 @@ public sealed class SharedGhillieSuitSystem : EntitySystem
             && TryComp<RMCPassiveStealthComponent>(user, out var passive))
         {
             invis.Opacity += suitComp.AddedOpacityOnShoot;
+            invis.NPCDetectionRange += suitComp.DetectionRangeAddedOnShoot; // RNMC14
             Dirty(user, invis);
 
             passive.ToggleTime = _timing.CurTime + suitComp.InvisibilityBreakDelay;
