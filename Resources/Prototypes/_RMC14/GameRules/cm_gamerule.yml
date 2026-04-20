@@ -6,3 +6,8 @@
   - type: GameRule
     minPlayers: 1
   - type: CMDistressSignalRule
+    spawnXenos: false
+    spawnSurvivors: false
+    autoEnd: false
+    bioscan: false
+    requireXenoPlayers: false    
