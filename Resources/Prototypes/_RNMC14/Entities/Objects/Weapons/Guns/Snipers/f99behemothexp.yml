@@ -2,7 +2,7 @@
   parent: RMCBaseWeaponSniperRifle
   id: RNMCF99BehemothSniperRifleEXP
   name: F-101 «Behemoth» EXP
-  description: A formidable weapon designed for large individuals. Accepts cartridges of the largest and heaviest caliber in order to neutralize them. It is used in situations where you know for sure that the enemy is strong. The reloading of weapons and their rate of fire are extremely slow.
+  description: An already formidable weapon modified to shoot even larger rounds. Able to take down the strongest of foes, if you are careful to avoid catching your teammates in the crossfire. The reloading and the rate of fire has been increased via enhanced internal systems, if you can reload fast enough.
   components:
   - type: Sprite
     sprite: _RNMC14/Objects/Weapons/Guns/Snipers/f99behemoth/f99behemoth_inhands.rsi
