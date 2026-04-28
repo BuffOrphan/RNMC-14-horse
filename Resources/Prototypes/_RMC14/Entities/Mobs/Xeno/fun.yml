@@ -53,7 +53,7 @@
     - DoorBumpOpener
     - RMCSynthGrabbable
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Extras/lesser_carrier.rsi
+    sprite: _RNMC14/Mobs/Xenos/Extras/lesser_carrier.rsi
     layers:
     - map: [ "enum.XenoVisualLayers.Base" ]
       state: alive
