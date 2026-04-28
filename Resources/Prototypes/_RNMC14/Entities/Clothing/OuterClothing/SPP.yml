@@ -11,6 +11,17 @@
     bullet: 20
     bio: 15
     explosionArmor: 10
+  - type: ClothingRequireEquipped
+    autoUnequip: true
+    denyReason: rmc-armor-not-spp-jumpsuit
+    whitelist:
+      tags:
+      - RMCUniformSPP
+  - type: RMCArmorSpeedTier
+    speedTier: light
+  - type: ClothingSpeedModifier
+    walkModifier: .725
+    sprintModifier: .725
 
 - type: entity
   parent: RMCArmorSPP

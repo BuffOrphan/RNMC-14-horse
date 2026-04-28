@@ -20,6 +20,13 @@
   - type: IntegratedVisors
     visorsToAdd:
     - RMCVisorSquadIntegrated
+  - type: ItemCamouflage
+    camouflageVariations:
+      Jungle: _RNMC14/Objects/Clothing/Head/SPP/Helmets/naval.rsi
+      Desert: _RNMC14/Objects/Clothing/Head/SPP/Helmets/naval.rsi
+      Snow: _RNMC14/Objects/Clothing/Head/SPP/Helmets/naval.rsi
+      Classic: _RNMC14/Objects/Clothing/Head/SPP/Helmets/naval.rsi
+      Urban: _RNMC14/Objects/Clothing/Head/SPP/Helmets/naval.rsi
 
 - type: entity
   parent: CMArmorHelmetUPPNaval
@@ -29,3 +36,10 @@
     sprite: _RNMC14/Objects/Clothing/Head/SPP/Helmets/naval_alt.rsi
   - type: Clothing
     sprite: _RNMC14/Objects/Clothing/Head/SPP/Helmets/naval_alt.rsi
+  - type: ItemCamouflage
+    camouflageVariations:
+      Jungle: _RNMC14/Objects/Clothing/Head/SPP/Helmets/naval_alt.rsi
+      Desert: _RNMC14/Objects/Clothing/Head/SPP/Helmets/naval_alt.rsi
+      Snow: _RNMC14/Objects/Clothing/Head/SPP/Helmets/naval_alt.rsi
+      Classic: _RNMC14/Objects/Clothing/Head/SPP/Helmets/naval_alt.rsi
+      Urban: _RNMC14/Objects/Clothing/Head/SPP/Helmets/naval_alt.rsi
