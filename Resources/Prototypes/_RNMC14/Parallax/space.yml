@@ -1,0 +1,7 @@
+- type: parallax
+  id: RNMCParallaxSpace
+  layers:
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_RNMC14/Parallaxes/Space/Static/static.png"
+      slowness: 0
