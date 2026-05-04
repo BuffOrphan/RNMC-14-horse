@@ -52,6 +52,26 @@
   - type: MortarCameraShell
   - type: ActivateMortarShellOnSpawn
 
+- type: entity
+  parent: MarkerBase
+  id: RNMCMortarWhitePhosphorus
+  name: white phosphorus mortar explosion
+  suffix: Fires a mortar shell!
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Explosive
+    explosionType: RMCMortar
+    maxIntensity: 0
+    intensitySlope: 0
+    totalIntensity: 0
+    canCreateVacuum: false
+  - type: SpawnOnTerminate
+    spawn: RMCSmokeWhitePhosphorus
+  - type: RMCScorchEffect
+  - type: MortarShell
+  - type: ActivateMortarShellOnSpawn
+
 ## Dropship Weapons
 
 - type: entity

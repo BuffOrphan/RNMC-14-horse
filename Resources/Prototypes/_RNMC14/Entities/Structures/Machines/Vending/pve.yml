@@ -54,6 +54,7 @@
         amount: 15
       - id: CMArmorHelmetUPPNavalDesert
         name: 6b82 Combat Helmet (Brown)
+        amount: 15
       - id: CMArmorSPP6b72
         name: 6B72-03 Pattern Vest
         amount: 15
@@ -67,7 +68,7 @@
         amount: 15
     - name: Restricted Backpack
       entries:
-      - id: RMCBackpackRTO
+      - id: RMCBackpackRTOSPP
         amount: 1
     - name: Belts
       entries:
