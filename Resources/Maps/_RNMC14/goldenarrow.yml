@@ -217,6 +217,8 @@ entities:
         path: /Audio/Effects/alert.ogg
       inherent: True
       enabled: True
+    - type: Parallax
+      parallax: RNMCParallaxSpace
     - type: DecalGrid
       chunkCollection:
         version: 2

@@ -305,7 +305,7 @@
     sprite: _RMC14/Effects/smoke.rsi
     state: smoke2
   - type: TimedDespawn
-    lifetime: 5
+    lifetime: 30
   - type: Tag
     tags:
     - HideContextMenu

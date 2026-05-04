@@ -204,7 +204,7 @@
   id: RMCSmokePhosphorusNoSpreadStrong
   components:
   - type: TimedDespawn
-    lifetime: 3
+    lifetime: 30
 
 - type: entity
   parent: RMCSmokePhosphorusNoSpreadStrong
