@@ -11,10 +11,12 @@
   - type: Storage
     maxItemSize: Normal
     grid:
-    - 0,0,19,1
+    - 0,0,20,1
     whitelist:
       tags:
       - RNMCBulletElephant
+      - RNMCBulletBehemothEXPI
+      - RNMCBulletBehemothEXP
 
 - type: entity
   parent: CMBeltMarine
