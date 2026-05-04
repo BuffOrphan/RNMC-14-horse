@@ -5,14 +5,14 @@
   description: An already formidable weapon modified to shoot even larger rounds. Able to take down the strongest of foes, if you are careful to avoid catching your teammates in the crossfire. The reloading and the rate of fire has been increased via enhanced internal systems, if you're able to reload fast enough.
   components:
   - type: Sprite
-    sprite: _RNMC14/Objects/Weapons/Guns/Snipers/f99behemoth/f99behemoth_inhands.rsi
+    sprite: _RNMC14/Objects/Weapons/Guns/Snipers/f99behemoth/f101behemothexp_inhands.rsi
     layers:
     - state: base
-      sprite: _RNMC14/Objects/Weapons/Guns/Snipers/f99behemoth/f99behemoth_icon.rsi
+      sprite: _RNMC14/Objects/Weapons/Guns/Snipers/f99behemoth/f101behemothexp_icon.rsi
   - type: Item
     size: Large
   - type: Clothing
-    sprite: _RNMC14/Objects/Weapons/Guns/Snipers/f99behemoth/f99behemoth_inhands.rsi
+    sprite: _RNMC14/Objects/Weapons/Guns/Snipers/f99behemoth/f101behemothexp_inhands.rsi
   - type: Tag
     tags:
     - RNMCF99BehemothSniperRifleEXP
@@ -81,6 +81,8 @@
   id: RNMCBulletBehemothEXP
   name: cartridge (15,2×76 mm EXP)
   components:
+  - type: Item
+    size: Normal
   - type: Tag
     tags:
      - Cartridge
@@ -94,6 +96,8 @@
   id: RNMCBulletBehemothEXPI
   name: cartridge (15,2×76 mm EXPI)
   components:
+  - type: Item
+    size: Normal
   - type: Tag
     tags:
     - Cartridge
@@ -170,6 +174,7 @@
     forceSound: true
     damage:
       types:
+        Blunt: 15
         Heat: 30
     soundHit: null
   - type: TriggerOnFixedDistanceStop
@@ -203,17 +208,17 @@
   - type: ExplodeOnTrigger
   - type: DeleteOnTrigger
   - type: CMExplosionEffect
-    minShrapnel: 40
-    maxShrapnel: 100
+    minShrapnel: 25
+    maxShrapnel: 50
     shrapnelSpeed: 8
   - type: RMCScorchEffect
     radius: 3
     centerRadius: 1
   - type: Explosive
     explosionType: RMCLTBCannon
-    maxIntensity: 40
+    maxIntensity: 35
     intensitySlope: 18
-    totalIntensity: 650
+    totalIntensity: 600
     tileBreakScale: 4
     maxTileBreak: 12
 
