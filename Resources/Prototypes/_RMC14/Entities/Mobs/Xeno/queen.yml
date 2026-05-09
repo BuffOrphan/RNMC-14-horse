@@ -338,7 +338,8 @@
 
 - type: entity
   parent: CMXenoQueen
-  id: RNMCXenoQueev
+  id: RNMCXenoQueen
+  suffix: CM
   components:
   - type: Sprite
     sprite: _RMC14/Mobs/XenonidsCM/Queen/queen.rsi

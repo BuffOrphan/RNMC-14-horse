@@ -120,6 +120,7 @@
 - type: entity
   parent: CMXenoLarva
   id: RNMCXenoLarva
+  suffix: CM
   components:
   - type: Sprite
     sprite: _RMC14/Mobs/XenonidsCM/Larva/larva.rsi

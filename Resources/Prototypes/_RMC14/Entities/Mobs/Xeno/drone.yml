@@ -301,6 +301,7 @@
 - type: entity
   parent: CMXenoDrone
   id: RNMCXenoDrone
+  suffix: CM
   components:
   - type: Sprite
     sprite: _RMC14/Mobs/XenonidsCM/Drone/drone.rsi

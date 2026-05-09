@@ -386,6 +386,7 @@
 - type: entity
   parent: CMXenoPraetorian
   id: RNMCXenoPraetorian
+  suffix : CM
   components:
   - type: Sprite
     sprite: _RMC14/Mobs/XenonidsCM/Praetorian/praetorian.rsi

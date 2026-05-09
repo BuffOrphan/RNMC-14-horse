@@ -1,6 +1,6 @@
 - type: entity
   parent: CMXenoRunner
-  id: CMXenoRunnerNPC
+  id: RMCXenoNPCRunner
   name: Runner
   description: A small red alien that looks like it could run fairly quickly...
   suffix: AI
@@ -47,8 +47,9 @@
         Heat: 25
 
 - type: entity
-  parent: CMXenoRunnerNPC
-  id: RNMCXenoRunnerNPC
+  parent: RMCXenoNPCRunner
+  id: RNMCXenoNPCRunner
+  suffix: CM|AI
   components:
   - type: Sprite
     sprite: _RMC14/Mobs/XenonidsCM/Runner/runner.rsi

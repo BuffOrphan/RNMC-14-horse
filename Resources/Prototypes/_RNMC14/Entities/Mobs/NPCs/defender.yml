@@ -1,7 +1,7 @@
 - type: entity
-  parent: RMCXenoDefender
+  parent: CMXenoDefender
   id: RMCXenoNPCDefender
-  suffix: AI, Original
+  suffix: AI
   components:
   - type: NPCUseActionOnTarget
     actionId: ActionXenoCharge
@@ -51,8 +51,9 @@
         Heat: 25
 
 - type: entity
-  parent: CMXenoDefenderNPC
-  id: RNMCXenoDefenderNPC
+  parent: RMCXenoNPCDefender
+  id: RNMCXenoNPCDefender
+  suffix: CM|AI
   components:
   - type: Sprite
     sprite: _RMC14/Mobs/XenonidsCM/Defender/defender.rsi

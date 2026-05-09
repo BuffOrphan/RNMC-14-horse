@@ -1,6 +1,6 @@
 - type: entity
   parent: CMXenoRavager
-  id: CMXenoRavagerNPC
+  id: RMCXenoNPCRavager
   suffix: AI
   components:
   - type: Xeno
@@ -58,8 +58,9 @@
         Heat: 25
 
 - type: entity
-  parent: CMXenoRavagerNPC
-  id: RNMCXenoRavagerNPC
+  parent: RMCXenoNPCRavager
+  id: RNMCXenoNPCRavager
+  suffix: CM|AI
   components:
   - type: Sprite
-    sprite: _RMC14/Mobs/XenonidsCM//ravager.rsi
+    sprite: _RMC14/Mobs/XenonidsCM/Ravager/ravager.rsi

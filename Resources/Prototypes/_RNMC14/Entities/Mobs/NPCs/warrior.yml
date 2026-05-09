@@ -1,6 +1,6 @@
 - type: entity
   parent: CMXenoWarrior
-  id: CMXenoWarriorNPC
+  id: RMCXenoNPCWarrior
   suffix: AI
   components:
   - type: MobThresholds
@@ -51,8 +51,9 @@
         Heat: 25
 
 - type: entity
-  parent: CMXenoWarriorNPC
-  id: RNMCXenoWarriorNPC
+  parent: RMCXenoNPCWarrior
+  id: RNMCXenoNPCWarrior
+  suffix: CM|AI
   components:
   - type: Sprite
     sprite: _RMC14/Mobs/XenonidsCM/Warrior/warrior.rsi

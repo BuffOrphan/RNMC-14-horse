@@ -272,6 +272,7 @@
 - type: entity
   parent: CMXenoRunner
   id: RNMCXenoRunner
+  suffix: CM
   components:
   - type: Sprite
     sprite: _RMC14/Mobs/XenonidsCM/Runner/runner.rsi

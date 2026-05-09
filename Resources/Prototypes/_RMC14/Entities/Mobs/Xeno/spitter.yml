@@ -126,6 +126,7 @@
 - type: entity
   parent: CMXenoSpitter
   id: RNMCXenoSpitter
+  suffix: CM
   components:
   - type: Sprite
     sprite: _RMC14/Mobs/XenonidsCM/Spitter/spitter.rsi
