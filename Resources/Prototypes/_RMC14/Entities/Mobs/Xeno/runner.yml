@@ -268,3 +268,10 @@
     ventCrawlIcon: runner
   - type: RMCActionOrder
     id: RMCXenoRunnerAcider
+
+- type: entity
+  parent: CMXenoRunner
+  id: RNMCXenoRunner
+  components:
+  - type: Sprite
+    sprite: _RMC14/Mobs/XenonidsCM/Runner/runner.rsi

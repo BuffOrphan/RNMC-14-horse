@@ -211,3 +211,10 @@
     ventCrawlIcon: vampire
   - type: RMCActionOrder
     id: RMCXenoLurkerVampire
+
+- type: entity
+  parent: CMXenoLurker
+  id: RNMCXenoLurker
+  components:
+  - type: Sprite
+    sprite: _RMC14/Mobs/XenonidsCM/Lurker/lurker.rsi

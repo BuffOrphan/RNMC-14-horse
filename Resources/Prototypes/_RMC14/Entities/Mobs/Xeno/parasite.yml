@@ -189,3 +189,10 @@
   suffix: Parasite, Auto-Assign, Prime Hive
   components:
   - type: AutoAssignHive
+
+- type: entity
+  parent: CMXenoParasite
+  id: RNMCXenoParasite
+  components:
+  - type: Sprite
+    sprite: _RMC14/Mobs/XenonidsCM/Parasite/parasite.rsi

@@ -116,3 +116,11 @@
       sprite: _RMC14/Mobs/Xenonids/Larva/larva.rsi
       noRot: true
       state: embryo
+
+- type: entity
+  parent: CMXenoLarva
+  id: RNMCXenoLarva
+  components:
+  - type: Sprite
+    sprite: _RMC14/Mobs/XenonidsCM/Larva/larva.rsi
+

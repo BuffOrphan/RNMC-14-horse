@@ -382,3 +382,10 @@
   - type: XenoHidden
   - type: RMCActionOrder
     id: RMCXenoPraetorianOppressor
+
+- type: entity
+  parent: CMXenoPraetorian
+  id: RNMCXenoPraetorian
+  components:
+  - type: Sprite
+    sprite: _RMC14/Mobs/XenonidsCM/Praetorian/praetorian.rsi

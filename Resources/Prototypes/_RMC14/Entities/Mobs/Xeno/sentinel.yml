@@ -104,3 +104,10 @@
     ventCrawlIcon: sentinel
   - type: RMCActionOrder
     id: CMXenoSentinel
+
+- type: entity
+  parent: CMXenoSentinel
+  id: RNMCXenoSentinel
+  components:
+  - type: Sprite
+    sprite: _RMC14/Mobs/XenonidsCM/Sentinel/sentinel.rsi

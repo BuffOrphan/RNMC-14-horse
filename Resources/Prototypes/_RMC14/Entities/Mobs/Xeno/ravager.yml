@@ -326,3 +326,10 @@
   - type: XenoHidden
   - type: RMCActionOrder
     id: RMCXenoRavagerHedgehog
+
+- type: entity
+  parent: CMXenoRavager
+  id: RNMCXenoRavager
+  components:
+  - type: Sprite
+    sprite: _RMC14/Mobs/XenonidsCM/ravager.rsi

@@ -198,3 +198,10 @@
   - type: XenoToggleChargingKnockback
     enabled: false
   - type: XenoToggleChargingStop
+
+- type: entity
+  parent: RMCXenoKing
+  id: RNMCXenoKing
+  components:
+  - type: Sprite
+    sprite: _RMC14/Mobs/XenonidsCM/King/king.rsi

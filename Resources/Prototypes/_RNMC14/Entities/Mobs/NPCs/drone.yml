@@ -50,3 +50,11 @@
       types:
         Heat: 25
   - type: AutoAssignHive
+
+- type: entity
+  parent: CMXenoDroneNPC
+  id: RNMCXenoDroneNPC
+  components:
+  - type: Sprite
+    sprite: _RMC14/Mobs/XenonidsCM/Drone/drone.rsi
+

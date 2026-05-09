@@ -299,3 +299,10 @@
   - type: XenoHidden
   - type: RMCActionOrder
     id: CMXenoHivelordDesigner
+
+- type: entity
+  parent: CMXenoHivelord
+  id: RNMCXenoHivelord
+  components:
+  - type: Sprite
+    sprite: _RMC14/Mobs/XenonidsCM/Hivelord/hivelord.rsi

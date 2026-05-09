@@ -123,3 +123,10 @@
   - type: RMCActionOrder
     id: CMXenoLesserDrone
   - type: ExcludedFromKingVote
+
+- type: entity
+  parent: CMXenoLesserDrone
+  id: RNMCXenoLesserDrone
+  components:
+  - type: Sprite
+    sprite: _RMC14/Mobs/XenonidsCM/LesserDrone/lesser_drone.rsi

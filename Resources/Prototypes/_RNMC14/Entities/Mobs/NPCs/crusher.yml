@@ -55,3 +55,10 @@
     damage:
       groups:
         Brute: 65
+
+- type: entity
+  parent: CMXenoCrusherNPC
+  id: RNMCXenoCrusherNPC
+  components:
+  - type: Sprite
+    sprite: _RMC14/Mobs/XenonidsCM/Crusher/crusher.rsi

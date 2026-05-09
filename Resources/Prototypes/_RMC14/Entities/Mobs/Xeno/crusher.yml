@@ -203,3 +203,18 @@
   - type: XenoHidden
   - type: RMCActionOrder
     id: RMCXenoCrusherCharger
+
+- type: entity
+  parent: RMCXenoCrusher
+  id: RNMCXenoCrusher
+  components:
+  - type: Sprite
+    sprite: _RMC14/Mobs/XenonidsCM/Crusher/crusher.rsi
+
+- type: entity
+  parent: RMCXenoCrusherCharger
+  id: RNMCXenoCrusherCharger
+  components:
+  - type: Sprite
+    sprite: _RMC14/Mobs/XenonidsCM/Crusher/charger_crusher.rsi
+

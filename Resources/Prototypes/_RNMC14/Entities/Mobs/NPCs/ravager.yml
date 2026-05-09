@@ -56,3 +56,10 @@
     damage:
       types:
         Heat: 25
+
+- type: entity
+  parent: CMXenoRavagerNPC
+  id: RNMCXenoRavagerNPC
+  components:
+  - type: Sprite
+    sprite: _RMC14/Mobs/XenonidsCM//ravager.rsi

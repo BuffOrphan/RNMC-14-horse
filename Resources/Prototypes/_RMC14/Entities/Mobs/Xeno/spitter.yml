@@ -122,3 +122,11 @@
     ventCrawlIcon: spitter
   - type: RMCActionOrder
     id: CMXenoSpitter
+
+- type: entity
+  parent: CMXenoSpitter
+  id: RNMCXenoSpitter
+  components:
+  - type: Sprite
+    sprite: _RMC14/Mobs/XenonidsCM/Spitter/spitter.rsi
+

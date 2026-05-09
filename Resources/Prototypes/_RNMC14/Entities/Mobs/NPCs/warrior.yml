@@ -49,3 +49,10 @@
     damage:
       types:
         Heat: 25
+
+- type: entity
+  parent: CMXenoWarriorNPC
+  id: RNMCXenoWarriorNPC
+  components:
+  - type: Sprite
+    sprite: _RMC14/Mobs/XenonidsCM/Warrior/warrior.rsi

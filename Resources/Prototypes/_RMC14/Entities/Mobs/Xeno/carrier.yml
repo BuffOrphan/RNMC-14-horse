@@ -209,3 +209,10 @@
   - type: RMCActionOrder
     id: RMCXenoCarrierEggsac
 
+- type: entity
+  parent: CMXenoCarrier
+  id: RNMCXenoCarrier
+  components:
+  - type: Sprite
+    sprite: _RMC14/Mobs/XenonidsCM/Carrier/Carrier.rsi
+

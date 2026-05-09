@@ -107,3 +107,10 @@
     item: RMCOrganXenoHeartT2
   - type: RMCActionOrder
     id: CMXenoWarrior
+
+- type: entity
+  parent: CMXenoWarrior
+  id: RNMCXenoWarrior
+  components:
+  - type: Sprite
+    sprite: _RMC14/Mobs/XenonidsCM/Warrior/warrior.rsi

@@ -45,3 +45,10 @@
     damage:
       types:
         Heat: 25
+
+- type: entity
+  parent: CMXenoRunnerNPC
+  id: RNMCXenoRunnerNPC
+  components:
+  - type: Sprite
+    sprite: _RMC14/Mobs/XenonidsCM/Runner/runner.rsi
