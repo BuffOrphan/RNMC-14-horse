@@ -1,0 +1,7 @@
+- type: entity
+  parent: CMXenoLesserDrone
+  id: RNMCXenoLesserDrone
+  suffix: CM
+  components:
+  - type: Sprite
+    sprite: _RNMC14/Mobs/XenonidsCM/LesserDrone/lesser_drone.rsi

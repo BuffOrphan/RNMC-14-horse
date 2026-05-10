@@ -199,10 +199,3 @@
     enabled: false
   - type: XenoToggleChargingStop
 
-- type: entity
-  parent: RMCXenoKing
-  id: RNMCXenoKing
-  suffix: CM
-  components:
-  - type: Sprite
-    sprite: _RMC14/Mobs/XenonidsCM/King/king.rsi

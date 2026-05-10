@@ -297,12 +297,3 @@
     ventCrawlIcon: healer
   - type: RMCActionOrder
     id: CMXenoDroneHealer
-
-- type: entity
-  parent: CMXenoDrone
-  id: RNMCXenoDrone
-  suffix: CM
-  components:
-  - type: Sprite
-    sprite: _RMC14/Mobs/XenonidsCM/Drone/drone.rsi
-

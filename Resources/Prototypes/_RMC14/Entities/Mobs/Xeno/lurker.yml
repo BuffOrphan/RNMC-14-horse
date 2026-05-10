@@ -212,10 +212,3 @@
   - type: RMCActionOrder
     id: RMCXenoLurkerVampire
 
-- type: entity
-  parent: CMXenoLurker
-  id: RNMCXenoLurker
-  suffix: CM
-  components:
-  - type: Sprite
-    sprite: _RMC14/Mobs/XenonidsCM/Lurker/lurker.rsi

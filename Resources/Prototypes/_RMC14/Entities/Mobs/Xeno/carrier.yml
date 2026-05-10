@@ -208,12 +208,3 @@
   - type: XenoHidden
   - type: RMCActionOrder
     id: RMCXenoCarrierEggsac
-
-- type: entity
-  parent: CMXenoCarrier
-  id: RNMCXenoCarrier
-  suffix: CM
-  components:
-  - type: Sprite
-    sprite: _RMC14/Mobs/XenonidsCM/Carrier/Carrier.rsi
-

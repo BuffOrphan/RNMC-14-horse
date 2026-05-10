@@ -165,11 +165,3 @@
     name: cm-job-name-xeno-boiler
   - type: RMCActionOrder
     id: CMXenoBoiler
-
-- type: entity
-  parent: CMXenoBoiler
-  id: RNMCXenoBoiler
-  suffix: CM
-  components:
-  - type: Sprite
-    sprite: _RMC14/Mobs/XenonidsCM/Boiler/boiler.rsi

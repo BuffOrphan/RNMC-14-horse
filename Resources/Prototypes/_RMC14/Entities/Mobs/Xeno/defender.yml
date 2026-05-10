@@ -187,12 +187,3 @@
   - type: XenoHidden
   - type: RMCActionOrder
     id: CMXenoDefenderSteelcrest
-
-- type: entity
-  parent: CMXenoDefender
-  id: RNMCXenoDefender
-  suffix: CM
-  components:
-  - type: Sprite
-    sprite: _RMC14/Mobs/XenonidsCM/Defender/defender.rsi
-

@@ -1,0 +1,8 @@
+- type: entity
+  parent: CMXenoDefender
+  id: RNMCXenoDefender
+  suffix: CM
+  components:
+  - type: Sprite
+    sprite: _RNMC14/Mobs/XenonidsCM/Defender/defender.rsi
+

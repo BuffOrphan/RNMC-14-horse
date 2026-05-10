@@ -133,11 +133,3 @@
     ventCrawlIcon: burrower
   - type: RMCActionOrder
     id: CMXenoBurrower
-
-- type: entity
-  parent: CMXenoBurrower
-  id: RNMCXenoBurrower
-  suffix: CM
-  components:
-  - type: Sprite
-    sprite: _RMC14/Mobs/XenonidsCM/Burrower/burrower.rsi

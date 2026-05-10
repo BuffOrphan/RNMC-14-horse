@@ -1,0 +1,7 @@
+- type: entity
+  parent: CMXenoParasite
+  id: RNMCXenoParasite
+  suffix: CM
+  components:
+  - type: Sprite
+    sprite: _RNMC14/Mobs/XenonidsCM/Parasite/parasite.rsi
