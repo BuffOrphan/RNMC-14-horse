@@ -1,0 +1,8 @@
+- type: entity
+  parent: CMXenoCarrier
+  id: RNMCXenoCarrier
+  suffix: CM
+  components:
+  - type: Sprite
+    sprite: _RNMC14/Mobs/XenonidsCM/Carrier/carrier.rsi
+

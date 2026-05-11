@@ -1,6 +1,6 @@
 - type: entity
   parent: RMCXenoCrusher
-  id: CMXenoCrusherNPC
+  id: RMCXenoNPCCrusher
   suffix: AI
   components:
   - type: Xeno
@@ -55,3 +55,11 @@
     damage:
       groups:
         Brute: 65
+
+- type: entity
+  parent: RMCXenoNPCCrusher
+  id: RNMCXenoNPCCrusher
+  suffix: CM|AI
+  components:
+  - type: Sprite
+    sprite: _RNMC14/Mobs/XenonidsCM/Crusher/crusher.rsi

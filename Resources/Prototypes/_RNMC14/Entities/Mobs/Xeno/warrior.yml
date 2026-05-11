@@ -1,0 +1,7 @@
+- type: entity
+  parent: CMXenoWarrior
+  id: RNMCXenoWarrior
+  suffix: CM
+  components:
+  - type: Sprite
+    sprite: _RNMC14/Mobs/XenonidsCM/Warrior/warrior.rsi

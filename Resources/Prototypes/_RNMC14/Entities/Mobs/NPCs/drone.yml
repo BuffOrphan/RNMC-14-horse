@@ -1,6 +1,6 @@
 - type: entity
   parent: CMXenoDrone
-  id: CMXenoDroneNPC
+  id: RMCXenoNPCDrone
   name: Drone
   description: An alien drone.
   suffix: AI
@@ -50,3 +50,12 @@
       types:
         Heat: 25
   - type: AutoAssignHive
+
+- type: entity
+  parent: RMCXenoNPCDrone
+  id: RNMCXenoNPCDrone
+  suffix: CM|AI
+  components:
+  - type: Sprite
+    sprite: _RNMC14/Mobs/XenonidsCM/Drone/drone.rsi
+

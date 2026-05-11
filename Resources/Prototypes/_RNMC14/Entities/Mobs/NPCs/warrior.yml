@@ -1,6 +1,6 @@
 - type: entity
   parent: CMXenoWarrior
-  id: CMXenoWarriorNPC
+  id: RMCXenoNPCWarrior
   suffix: AI
   components:
   - type: MobThresholds
@@ -49,3 +49,11 @@
     damage:
       types:
         Heat: 25
+
+- type: entity
+  parent: RMCXenoNPCWarrior
+  id: RNMCXenoNPCWarrior
+  suffix: CM|AI
+  components:
+  - type: Sprite
+    sprite: _RNMC14/Mobs/XenonidsCM/Warrior/warrior.rsi
