@@ -125,6 +125,9 @@
         damage:
           types:
             Heat: 4
+  #RNMC
+  - type: AutoAssignHive
+
 #  - type: Physics
 #    bodyType: Static
 #  - type: FootstepModifier
@@ -465,7 +468,7 @@
   - type: Tag
     tags:
     - XenoWeedNode
-    
+
 
 - type: entity
   parent: XenoHardyWeeds

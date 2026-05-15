@@ -49,7 +49,6 @@
     damage:
       types:
         Heat: 25
-  - type: AutoAssignHive
 
 - type: entity
   parent: RMCXenoNPCDrone
