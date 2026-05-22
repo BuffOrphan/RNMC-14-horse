@@ -38,6 +38,7 @@
       tags:
       - RNMCBulletBehemothEXP
       - RNMCBulletBehemothEXPI
+      - RNMCBulletBehemothEXPC
     proto: RNMCBulletBehemothEXP
     capacity: 1
   - type: GunUserWhitelist
